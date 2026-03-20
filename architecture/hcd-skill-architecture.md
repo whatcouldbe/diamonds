@@ -184,6 +184,7 @@ Method (from Skill Library)  ×  Mode (from Mode Engine)  =  Agent Behavior
 | Participation Mechanics | `modes/mechanics/method-participation-mechanics.md` | To be built | Mechanics for participation mode |
 | Method Selection | `selection/hcd-method-selection.md` | To be built | Method recipes and sequencing — Layer 3 |
 | Affinity Clustering | `methods/understanding/patterns-and-priorities/method-affinity-clustering.md` | To be built | First method file — Understanding / Patterns & Priorities |
+| Importance / Difficulty Matrix | `methods/understanding/patterns-and-priorities/method-importance-difficulty-matrix.md` | Active | Prioritization method — Understanding / Patterns & Priorities |
 
 ---
 
