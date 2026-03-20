@@ -40,3 +40,4 @@ Place your method file in the appropriate subfolder based on its primary phase a
 | Method | Phase | Category | Status |
 |--------|-------|----------|--------|
 | Affinity Clustering | Understanding | Patterns & Priorities | To be built |
+| Importance / Difficulty Matrix | Understanding | Patterns & Priorities | Active |
