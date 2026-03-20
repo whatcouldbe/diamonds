@@ -4,6 +4,11 @@ category: patterns-and-priorities
 phase: understanding
 tags: [prioritization, 2x2, matrix, decision-making, road-mapping, trade-offs]
 also-known-as: [impact-effort matrix, importance-difficulty, the 2x2]
+files:
+  - method.md (this file) — Core reference: purpose, steps, facilitation notes, variations, connections
+  - mechanics.md — Facilitation cheat sheet: purpose statements, inputs, outputs, five-stage process, stuff
+  - teaching.md — Teaching arc content: hook, personal story, key insight
+  - resources/ — PDFs, templates, example artifacts
 ---
 
 # Importance / Difficulty Matrix
@@ -232,16 +237,3 @@ This method lives in the **Define** stage of the first diamond or the transition
 - Road mapping and sprint planning
 - Decision-making frameworks
 - Retrospectives (did we follow through?)
-
----
-
-## Teaching This Method
-
-### The "Have You Ever..." Hook
-*"Have you ever been in a meeting where everyone agrees that everything is important, but you leave without any clarity on what to do first? Where the loudest voice wins, or the team just picks whatever seems easiest without talking about whether it actually matters?"*
-
-### The Personal Story
-Justin and David use this method every week to decide what they'll work on within What Could Be and how it ties back to client objectives. It's not just a workshop tool — it's a thinking tool for ongoing prioritization.
-
-### The Key Insight to Land
-The method produces a conversation as much as an artifact. The discussion about relative importance and relative difficulty — the moments of disagreement, the trade-offs surfaced, the connections discovered — that's where the real value lives. The matrix documents it. But the conversation is the work.

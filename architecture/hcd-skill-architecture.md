@@ -176,15 +176,15 @@ Method (from Skill Library)  ×  Mode (from Mode Engine)  =  Agent Behavior
 | Coaching Mode | `modes/mode-coaching.md` | Migrated | Coaching arc, 5 support options, coaching principles |
 | Teaching Mode | `modes/mode-teaching.md` | Migrated | 7-step Method Instruction Mechanics arc |
 | Instruction Mechanics | `modes/mechanics/method-instruction-mechanics.md` | Migrated | Full instructional arc detail |
-| Facilitating Mode | `modes/mode-facilitating.md` | To be built | Governing framework for facilitating mode |
+| Facilitating Mode | `modes/mode-facilitating.md` | Active | Governing framework for facilitating mode |
 | Executing Mode | `modes/mode-executing.md` | To be built | Governing framework for executing mode |
 | Participating Mode | `modes/mode-participating.md` | To be built | Governing framework for participating mode |
-| Facilitation Mechanics | `modes/mechanics/method-facilitation-mechanics.md` | To be built | Mechanics for facilitation mode |
+| Facilitation Mechanics | `modes/mechanics/method-facilitation-mechanics.md` | Active | Mechanics for facilitation mode — method mechanics framework |
 | Execution Mechanics | `modes/mechanics/method-execution-mechanics.md` | To be built | Mechanics for execution mode |
 | Participation Mechanics | `modes/mechanics/method-participation-mechanics.md` | To be built | Mechanics for participation mode |
 | Method Selection | `selection/hcd-method-selection.md` | To be built | Method recipes and sequencing — Layer 3 |
 | Affinity Clustering | `methods/understanding/patterns-and-priorities/method-affinity-clustering.md` | To be built | First method file — Understanding / Patterns & Priorities |
-| Importance / Difficulty Matrix | `methods/understanding/patterns-and-priorities/method-importance-difficulty-matrix.md` | Active | Prioritization method — Understanding / Patterns & Priorities |
+| Importance / Difficulty Matrix | `methods/understanding/patterns-and-priorities/importance-difficulty-matrix/` | Active | Prioritization method — Understanding / Patterns & Priorities (method.md, mechanics.md, teaching.md, resources/) |
 
 ---
 
