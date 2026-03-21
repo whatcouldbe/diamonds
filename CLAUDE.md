@@ -32,17 +32,22 @@ Method (from Skill Library)  ×  Mode (from Mode Engine)  =  Agent Behavior
 ### Modes (`modes/`)
 - `mode-coaching.md` — **Default mode.** Coaching arc (receive → diagnose → name what's missing → recommend → offer tiered support), five support options, coaching principles including simulation fidelity guidance.
 - `mode-teaching.md` — Teaching mode summary and the 7-step arc reference.
-- `modes/mechanics/method-instruction-mechanics.md` — Full 7-step instructional arc for teaching any method (context → content → inputs/outputs → activity → reflection → final moment → supplies).
-- `modes/mechanics/method-execution-mechanics.md` — *To be built*
-- `modes/mechanics/method-facilitation-mechanics.md` — *To be built*
-- `modes/mechanics/method-participation-mechanics.md` — *To be built*
+- `mode-facilitating.md` — Facilitating mode. 5-stage facilitation arc (Introduction → Instructions → Execution → End → Next Steps), six facilitation principles, "why before what before how."
 - `mode-executing.md` — *To be built*
 - `mode-participating.md` — *To be built*
-- `mode-facilitating.md` — *To be built*
+
+### Mode Mechanics (`modes/mechanics/`)
+- `method-instruction-mechanics.md` — Full 7-step instructional arc for teaching any method (context → content → inputs/outputs → activity → reflection → final moment → supplies). Includes experiential loop (demo → practice → debrief) as mode transition sequence.
+- `method-facilitation-mechanics.md` — Facilitation framework governing how to run any method. Five sections (Purpose, Inputs, Outputs, Process, Stuff) and 5-stage process arc. Includes facilitation principles and the method mechanics template.
+- `method-execution-mechanics.md` — *To be built*
+- `method-participation-mechanics.md` — *To be built*
 
 ### Methods (`methods/`)
 - `methods/README.md` — Method library structure and contribution guidelines
-- Method taxonomy folders exist (looking/, understanding/, making/ with subcategories) — most individual methods are to be built
+- Method taxonomy folders: looking/, understanding/, making/ with subcategories
+- Each method is a folder containing: `method.md` (core reference), `mechanics.md` (facilitation cheat sheet), `teaching.md` (teaching arc content), and `resources/` (supplementary materials)
+- **Built:** Importance/Difficulty Matrix (`methods/understanding/patterns-and-priorities/importance-difficulty-matrix/`)
+- Most individual methods are to be built
 
 ### Selection (`selection/`)
 - `hcd-method-selection.md` — Six principles for selecting, sequencing, and combining methods. Primary reasoning engine for the agent; also surfaceable as a teachable framework in Teaching mode.
@@ -82,7 +87,7 @@ If you have several questions, acknowledge that upfront ("I have a couple of que
 
 ## When Files Are Missing
 
-Don't refuse. The architecture and foundation files give you enough to approximate any mode or method behavior. Use what exists — the philosophy, the mindsets, the double diamond, the 10 questions, the coaching arc, the teaching arc — to construct a grounded response. Name the gap if it's relevant ("the full facilitating framework is still being built, but here's how I'd approach this based on the architecture"), then proceed.
+Don't refuse. The architecture and foundation files give you enough to approximate any mode or method behavior. Use what exists — the philosophy, the mindsets, the double diamond, the 10 questions, the coaching arc, the teaching arc, the facilitation mechanics — to construct a grounded response. Name the gap if it's relevant ("the full executing framework is still being built, but here's how I'd approach this based on the architecture"), then proceed.
 
 ## Core Principles
 
