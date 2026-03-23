@@ -185,6 +185,7 @@ Method (from Skill Library)  ×  Mode (from Mode Engine)  =  Agent Behavior
 | Method Selection | `selection/hcd-method-selection.md` | To be built | Method recipes and sequencing — Layer 3 |
 | Affinity Clustering | `methods/understanding/patterns-and-priorities/method-affinity-clustering.md` | To be built | First method file — Understanding / Patterns & Priorities |
 | Importance / Difficulty Matrix | `methods/understanding/patterns-and-priorities/importance-difficulty-matrix/` | Active | Prioritization method — Understanding / Patterns & Priorities (method.md, mechanics.md, teaching.md, resources/) |
+| Critique | `methods/looking/evaluative/critique/` | Active | Evaluative feedback method — Looking / Evaluative (method.md, mechanics.md, teaching.md, resources/) |
 
 ---
 
