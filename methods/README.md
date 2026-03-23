@@ -59,5 +59,6 @@ Create the method folder in the appropriate subcategory. At minimum, create `met
 
 | Method | Phase | Category | Status |
 |--------|-------|----------|--------|
+| Critique | Looking | Evaluative | Active |
 | Affinity Clustering | Understanding | Patterns & Priorities | To be built |
 | Importance / Difficulty Matrix | Understanding | Patterns & Priorities | Active |
