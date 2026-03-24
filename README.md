@@ -1,8 +1,8 @@
 # Diamonds
 
-**The WCB Human-Centered Design Agent System**
+**The Human-Centered Design Agent System**
 
-Diamonds is a structured knowledge base that teaches AI agents to apply human-centered design (HCD) methodology. Built by [What Could Be](https://whatcouldbe.com), it encodes decades of design practice into a format that AI can reason with — not just retrieve from.
+Diamonds is a structured knowledge base that teaches AI agents to apply human-centered design (HCD) methodology. It encodes decades of design practice into a format that AI can reason with — not just retrieve from.
 
 ## Architecture
 
