@@ -26,10 +26,19 @@ Each method lives in its own folder within the appropriate subcategory. A method
 
 ```
 method-name/
-├── method.md       — Core reference: purpose, setup, steps, facilitation notes, variations, outputs, connections
-├── mechanics.md    — Facilitation cheat sheet: purpose statements, inputs, outputs, five-stage process, stuff
-├── teaching.md     — Teaching arc content: hook, personal story, key insight, conviction close
-└── resources/      — PDFs, templates, example artifacts, workshop materials
+├── method.md           — Core reference: purpose, setup, steps, facilitation notes, variations, outputs, connections
+├── mechanics.md        — Facilitation cheat sheet: purpose statements, inputs, outputs, five-stage process, stuff
+├── teaching.md         — Teaching arc content: hook, personal story, key insight, conviction close
+└── resources/
+    ├── README.md       — Resource index and agent mode guidance (how to use these resources by mode)
+    ├── tips.md         — Practitioner wisdom, facilitation gotchas, things that trip people up
+    ├── faq.md          — Questions that come up repeatedly — grows over time
+    ├── ai-usage.md     — How to use this method with AI tools, simulation guidance
+    ├── recipes.md      — How this method connects to and sequences with other methods
+    ├── references.md   — External reading, videos, related frameworks, further resources
+    ├── visuals/        — Sketch-planations, protocol posters, concept drawings
+    ├── templates/      — Tool-specific templates (Miro, FigJam, printable PDFs)
+    └── examples/       — Real sessions, organizational examples, filled-in artifacts
 ```
 
 **method.md** is the comprehensive reference — everything you need to understand the method deeply. The frontmatter includes a `files:` field listing all related files in the folder.
@@ -38,7 +47,23 @@ method-name/
 
 **teaching.md** provides content for the 7-step instructional arc — what the agent needs when in Teaching mode. Maps to `modes/mechanics/method-instruction-mechanics.md`.
 
-**resources/** holds supplementary materials — PDFs, templates, filled-in examples, images, or anything a facilitator or learner might reference.
+**resources/** holds supplementary materials organized by type. Each category serves a different mode:
+- `tips.md` and `faq.md` — Coaching and Facilitating modes
+- `ai-usage.md` — Executing mode
+- `recipes.md` — Coaching mode (method selection and sequencing)
+- `visuals/` — Teaching mode
+- `templates/` — Facilitating and Executing modes
+- `examples/` — Teaching and Coaching modes
+
+**resources/README.md** is the index and agent guide — it lists what's in each category and tells the agent which resources to reach for in each mode. Read this first when entering a method's resources folder.
+
+### Provenance
+
+Resource files include a `source:` field in their frontmatter: `canonical` for core WCB methodology content, `custom` for organizational additions contributed by a specific team or context. Both are valid. The distinction helps practitioners understand what is general and what is context-specific.
+
+### Adding New Resources
+
+New methods can start with stub resource files and fill them over time. Not all categories need to be populated immediately — a method can ship with just `method.md` and add resources as practitioners use and contribute to it. The structure is consistent across all methods so the agent always knows where to look.
 
 ## Contributing a New Method
 
