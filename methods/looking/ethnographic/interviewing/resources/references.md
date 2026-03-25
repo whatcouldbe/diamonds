@@ -30,6 +30,23 @@ LUMA's reference for the interviewing method. Useful comparator for practitioner
 
 ---
 
+## Question Frameworks
+
+**[7 Game-Changing User Interview Questions](https://x.com/joulee/status/1645859578880606209) — Julie Zhuo (X/Twitter thread)**
+Julie Zhuo (founder of Sundial, author of "The Making of a Manager") shares seven questions that structure a complete user interview: capture an eyewitness account of a specific incident, check table stakes on existing solutions, probe for pain, research costs (time/money/effort), determine the bar (best experience), gather potential visions (magic wand), and test your thesis (save this for the end to avoid biasing the conversation). Highly aligned with the protocol taught in this method.
+
+**[Customer Interview Questions](https://www.insightpipeline.com/customer-interview-questions) — Fraser Deans, Insight Pipeline**
+A comprehensive collection of customer interview questions organized across seven phases of the customer journey — from warm-up through first awareness, search, decision, purchase, usage, and marketing-ready quotes. Each question includes guidance on what a strong response looks like. Useful for product discovery interviews specifically.
+
+---
+
+## Bias and Technique
+
+**[Mitigating Bias in User Interviews](https://blog.prototypr.io/mitigating-bias-in-user-interviews-3bf473d9d69f) — Prototypr**
+Addresses the biases that creep into research interviews — confirmation bias, leading questions, social desirability — and practical techniques for mitigating them. Good reading for interviewers who want to sharpen their neutrality.
+
+---
+
 ## Additional References
 
 *This section grows over time. Add articles, videos, books, and other resources that practitioners find useful for learning or refining their interviewing skills.*
