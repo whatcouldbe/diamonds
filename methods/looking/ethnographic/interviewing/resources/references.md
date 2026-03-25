@@ -10,6 +10,13 @@ Curated external resources for going deeper on research interviewing. Useful in 
 
 ---
 
+## Essential Reading
+
+**[Handbook of People Research: Deriving Value by Asking Questions](https://kilthub.cmu.edu/articles/journal_contribution/Handbook_of_People_Research_Deriving_Value_by_Asking_Questions/7602968?file=14284694) — Carnegie Mellon University (KiltHub, freely available PDF)**
+A comprehensive guide to conducting people research. Covers the fundamentals of asking good questions, structuring research conversations, and deriving actionable value from qualitative research. Freely available for download. Highly recommended as foundational reading before conducting research interviews.
+
+---
+
 ## Foundational Reading
 
 **[Interviewing Users: How to Uncover Compelling Insights](https://rosenfeldmedia.com/books/interviewing-users/) — Steve Portigal (Rosenfeld Media)**
