@@ -92,5 +92,3 @@ See [`methods/README.md`](methods/README.md) for the method file format and cont
 ---
 
 *Diamonds is a project by What Could Be.*
-
-<!-- test commit -->
