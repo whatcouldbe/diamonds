@@ -15,6 +15,10 @@ A method without a mode is just content. A mode without a method is just a postu
 Method (from Skill Library)  ×  Mode (from Mode Engine)  =  Agent Behavior
 ```
 
+## Design Principles
+
+`design-principles.md` (repo root) — The north star for anyone building on or contributing to Diamonds. Six principles governing architectural decisions, method file development, and system evolution. Before making a structural decision, check it against these principles.
+
 ## File Manifest
 
 ### Foundation (`foundation/`)

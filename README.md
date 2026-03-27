@@ -20,6 +20,23 @@ The behavioral layer that controls *how* the agent engages. The same skill (e.g.
 
 Located in: `modes/`
 
+## Setup
+
+Diamonds works as a persistent context layer in Claude Code — available across all your projects, not just inside this repo.
+
+1. Clone this repository to your machine
+2. Create `~/.claude/CLAUDE.md` if it doesn't already exist
+3. Add the following lines to that file, replacing the path with wherever you cloned the repo:
+
+```
+# Diamonds — HCD Agent System
+Diamonds is a human-centered design knowledge base located at /path/to/diamonds.
+When doing any work that involves research, synthesis, design, or innovation, reference the Diamonds system.
+Start with /path/to/diamonds/CLAUDE.md for full instructions.
+```
+
+Once set up, Diamonds will be available in every Claude Code session automatically.
+
 ## Repository Structure
 
 ```
@@ -78,16 +95,16 @@ See [`methods/README.md`](methods/README.md) for the method file format and cont
 
 | Component | Status |
 |-----------|--------|
-| Foundation (philosophy, mindsets, double diamond, principles) | Migrating |
-| Navigation (10-questions process) | Migrating |
-| Modes: Coaching, Teaching | Migrating |
-| Modes: Executing, Participating, Facilitating | To be built |
-| Mechanics: Instruction | Migrating |
-| Mechanics: Facilitation, Execution, Participation | To be built |
-| Skill Architecture | Migrating |
-| Method Selection | To be built |
+| Foundation (philosophy, mindsets, double diamond, principles) | Complete |
+| Navigation (10-questions process) | Complete |
+| Modes: Coaching, Teaching, Facilitating | Complete |
+| Modes: Executing, Participating | To be built |
+| Mechanics: Instruction, Facilitation | Complete |
+| Mechanics: Execution, Participation | To be built |
+| Skill Architecture | Complete |
+| Method Selection | Complete |
 | Methods Library (taxonomy structure) | In place |
-| Methods Library (individual methods) | To be built |
+| Methods Library (individual methods) | In progress |
 
 ---
 
