@@ -12,6 +12,8 @@ The Bridge Exercise creates a shared experience — not an argument or a lecture
 
 This is why it precedes the double diamond introduction. The framework lands differently when people have already experienced its logic.
 
+The Bridge Exercise was created as a time-efficient alternative to the Vase Exercise, which achieves the same outcome but takes 40–45 minutes. The Bridge does the same job in three.
+
 > *"If you fail to define the problem accurately, no amount of resources — or creativity — will save you."* — Hugh Dubberly
 
 ---
@@ -23,6 +25,11 @@ This is why it precedes the double diamond introduction. The framework lands dif
 - When introducing HCD to a group unfamiliar with the practice
 - As a quick reset when a session drifts back into solution mode
 - One-to-one, as a coaching prompt for someone examining a solution they're already committed to
+- In stakeholder alignment sessions where senior stakeholders have already converged on a direction — the exercise does the challenging without it feeling like a direct challenge
+- Before procurement or commissioning decisions, when a specification has been written and money is about to move — it surfaces whether the spec describes a solution or a problem
+- At cross-functional team kick-offs, when product, engineering, and design each arrive with different implicit assumptions — it creates a shared reference point before those assumptions calcify
+- In leadership coaching, one-to-one, when a leader is describing a change programme and is already inside a solution — it works conversationally without feeling like a formal exercise
+- In post-delivery retrospectives, as a reflective prompt — asking "where were we building a bridge?" surfaces moments where the team got attached to a solution too early
 
 Works with any group size — 4 to 40 people. Requires no materials and no preparation.
 
