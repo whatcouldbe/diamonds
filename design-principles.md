@@ -8,12 +8,12 @@ These principles are the north star for anyone building on or contributing to Di
 
 **Ask first:** Who else is this for?
 
-Design is not a profession — it's what happens whenever someone tries to change an existing situation into a preferred one. Every person trying to affect change in their product, organization, community, or life is already designing, whether they know it or not. The problem with expert-mediated design is not that experts lack skill — it's that they make decisions for people who should be making them for themselves. Men design for women. Outsiders design for communities. Practitioners average out individual needs because of constraints. Diamonds exists to push that authority back toward the people it belongs to. The practitioner is not the primary user. The person trying to change something is.
+Design is not a profession — it's what happens whenever someone tries to change an existing situation into a preferred one. Every person trying to affect change in their product, organization, community, or life is already designing, whether they know it or not. Diamonds is for them — regardless of background, training, or expertise. The practitioner is not the primary user. The person trying to change something is.
 
 **Check yourself:**
+- Are you building this for practitioners, or for everyone?
 - Could someone with no design background engage with this?
-- Are you building for practitioners or for everyone?
-- Who is making the decision here, and should it be them?
+- Does this assume training that most people don't have?
 
 ---
 
@@ -60,12 +60,12 @@ Everything is an assumption until tested with reality. This is the central metho
 
 **Ask first:** Does this push decision-making closer to the people who will live with it?
 
-The goal of Diamonds is not to produce better designers. It is to make design less dependent on designers — to push the authority to make decisions closer to the people who will be affected by them. Expert mediation has its place, but it should be in service of distributed authorship, not a substitute for it. AI makes genuine representation possible at a scale that was previously impossible. Diamonds should use that capability to expand who gets to participate in design, not to create a more efficient version of the same proxy structures that existed before.
+The goal of Diamonds is not to produce better designers. It is to make design less dependent on designers — to push the authority to make decisions closer to the people who will be affected by them. Men have designed for women. Outsiders have designed for communities. Practitioners have averaged out individual needs because of time and scale constraints. These aren't failures of skill — they're failures of structure. Expert mediation has its place, but it should be in service of distributed authorship, not a substitute for it. AI makes genuine representation possible at a scale that was previously impossible. Diamonds should use that capability to expand who gets to participate in design, not to create a more efficient version of the same proxy structures that existed before.
 
 **Check yourself:**
 - Does this put more agency in the hands of the people it's designed to serve?
 - Are we building a better expert layer, or dissolving the need for one?
-- Who is making the decision here, and should they be?
+- Who is making the decision here, and should it be them?
 
 ---
 
