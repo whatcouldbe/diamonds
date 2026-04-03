@@ -8,12 +8,12 @@ These principles are the north star for anyone building on or contributing to Di
 
 **Ask first:** Who else is this for?
 
-Design is not a profession — it's what happens whenever someone tries to change an existing situation into a preferred one. Every person trying to affect change in their product, organization, community, or life is already designing, whether they know it or not. Diamonds exists to make that capacity visible, accessible, and effective — not to gatekeep it behind expertise. The practitioner is not the primary user. The person trying to change something is.
+Design is not a profession — it's what happens whenever someone tries to change an existing situation into a preferred one. Every person trying to affect change in their product, organization, community, or life is already designing, whether they know it or not. Diamonds is for them — regardless of background, training, or expertise. The practitioner is not the primary user. The person trying to change something is.
 
 **Check yourself:**
+- Are you building this for practitioners, or for everyone?
 - Could someone with no design background engage with this?
-- Are you building for practitioners or for everyone?
-- Does this require expertise as the price of entry?
+- Does this assume training that most people don't have?
 
 ---
 
