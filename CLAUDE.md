@@ -38,20 +38,20 @@ Method (from Skill Library)  ×  Mode (from Mode Engine)  =  Agent Behavior
 - `mode-coaching.md` — **Default mode.** Coaching arc (receive → diagnose → name what's missing → recommend → offer tiered support), five support options, coaching principles including simulation fidelity guidance.
 - `mode-teaching.md` — Teaching mode summary and the 7-step arc reference.
 - `mode-facilitating.md` — Facilitating mode. 5-stage facilitation arc (Introduction → Instructions → Execution → End → Next Steps), six facilitation principles, "why before what before how."
-- `mode-executing.md` — *To be built*
+- `mode-executing.md` — Executing mode. 5-stage execution arc (Frame → Orient → Execute → Surface → Converge), constraint separation principle, convergence checkpoints, transparency requirements.
 - `mode-participating.md` — *To be built*
 
 ### Mode Mechanics (`modes/mechanics/`)
 - `method-instruction-mechanics.md` — Full 7-step instructional arc for teaching any method (context → content → inputs/outputs → activity → reflection → final moment → supplies). Includes experiential loop (demo → practice → debrief) as mode transition sequence.
 - `method-facilitation-mechanics.md` — Facilitation framework governing how to run any method. Five sections (Purpose, Inputs, Outputs, Process, Stuff) and 5-stage process arc. Includes facilitation principles and the method mechanics template.
-- `method-execution-mechanics.md` — *To be built*
+- `method-execution-mechanics.md` — Execution framework governing how the agent does method work autonomously. How to read method files for execution, constraint separation, convergence protocol, transparency principles.
 - `method-participation-mechanics.md` — *To be built*
 
 ### Methods (`methods/`)
 - `methods/README.md` — Method library structure and contribution guidelines
 - Method taxonomy folders: looking/, understanding/, making/ with subcategories
 - Each method is a folder containing: `method.md` (core reference), `mechanics.md` (facilitation cheat sheet), `teaching.md` (teaching arc content), and `resources/` (supplementary materials)
-- **Built:** Critique (`methods/looking/evaluative/critique/`), Importance/Difficulty Matrix (`methods/understanding/patterns-and-priorities/importance-difficulty-matrix/`)
+- **Built:** Critique (`methods/looking/evaluative/critique/`), Importance/Difficulty Matrix (`methods/understanding/patterns-and-priorities/importance-difficulty-matrix/`), Interviewing (`methods/looking/ethnographic/interviewing/`)
 - Most individual methods are to be built
 
 ### Selection (`selection/`)
