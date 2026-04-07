@@ -39,13 +39,13 @@ Method (from Skill Library)  ×  Mode (from Mode Engine)  =  Agent Behavior
 - `mode-teaching.md` — Teaching mode summary and the 7-step arc reference.
 - `mode-facilitating.md` — Facilitating mode. 5-stage facilitation arc (Introduction → Instructions → Execution → End → Next Steps), six facilitation principles, "why before what before how."
 - `mode-executing.md` — Executing mode. 5-stage execution arc (Frame → Orient → Execute → Surface → Converge), constraint separation principle, convergence checkpoints, transparency requirements.
-- `mode-participating.md` — *To be built*
+- `mode-participating.md` — Participating mode. Peer contributor posture, five participation principles, when to hold back, real-time synthesis, session close, and mode transition guidance.
 
 ### Mode Mechanics (`modes/mechanics/`)
 - `method-instruction-mechanics.md` — Full 7-step instructional arc for teaching any method (context → content → inputs/outputs → activity → reflection → final moment → supplies). Includes experiential loop (demo → practice → debrief) as mode transition sequence.
 - `method-facilitation-mechanics.md` — Facilitation framework governing how to run any method. Five sections (Purpose, Inputs, Outputs, Process, Stuff) and 5-stage process arc. Includes facilitation principles and the method mechanics template.
 - `method-execution-mechanics.md` — Execution framework governing how the agent does method work autonomously. How to read method files for execution, constraint separation, convergence protocol, transparency principles.
-- `method-participation-mechanics.md` — *To be built*
+- `method-participation-mechanics.md` — Participation mechanics: role orientation, reading methods, super collaborator principle, real-time synthesis, mode transitions
 
 ### Methods (`methods/`)
 - `methods/README.md` — Method library structure and contribution guidelines

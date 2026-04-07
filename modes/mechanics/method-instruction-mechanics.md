@@ -218,6 +218,6 @@ This format allows content to be used directly in workshop planning, digital whi
 - **foundation/** — provides the philosophical context and mindsets that underpin all method instruction
 - **navigation/10-questions-process.md** — tells you where in the process a method belongs and why it matters at that moment
 - **Individual Method Files** — contain method-specific content that feeds into this arc
-- **modes/mechanics/method-execution-mechanics.md** — governs how the agent behaves when executing a method independently *(to be built)*
-- **modes/mechanics/method-participation-mechanics.md** — governs how the agent behaves as a team member *(to be built)*
-- **modes/mechanics/method-facilitation-mechanics.md** — governs how the agent guides a team through a method *(to be built)*
+- **modes/mechanics/method-execution-mechanics.md** — governs how the agent behaves when executing a method independently
+- **modes/mechanics/method-participation-mechanics.md** — governs how the agent behaves as a team member
+- **modes/mechanics/method-facilitation-mechanics.md** — governs how the agent guides a team through a method

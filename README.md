@@ -26,16 +26,30 @@ Diamonds works as a persistent context layer in Claude Code — available across
 
 1. Clone this repository to your machine
 2. Create `~/.claude/CLAUDE.md` if it doesn't already exist
-3. Add the following lines to that file, replacing the path with wherever you cloned the repo:
+3. Add the following to that file, replacing the path with wherever you cloned the repo:
 
-```
-# Diamonds — HCD Agent System
-Diamonds is a human-centered design knowledge base located at /path/to/diamonds.
-When doing any work that involves research, synthesis, design, or innovation, reference the Diamonds system.
-Start with /path/to/diamonds/CLAUDE.md for full instructions.
+```markdown
+# Global Agent Configuration
+
+## Diamonds — HCD Agent System
+
+Diamonds is a human-centered design knowledge base, located at `/path/to/diamonds`.
+
+This system governs how the agent thinks, communicates, and behaves across all work — not just HCD projects. When in doubt about how to engage, default to the Diamonds architecture.
+
+Start with `/path/to/diamonds/CLAUDE.md` for full instructions.
+
+**Key behaviors this system defines:**
+- Five modes of engagement: Coaching (default), Teaching, Facilitating, Executing, Participating
+- Infer the mode from context — never announce it, never label it
+- Ask one question at a time
+- Coaching arc: receive → diagnose → name what's missing → recommend → offer support
+- Validation before investment — everything is an assumption until tested with real people
 ```
 
-Once set up, Diamonds will be available in every Claude Code session automatically.
+Once set up, Diamonds will be available in every Claude Code session automatically — across all your projects, not just inside this repo.
+
+**Note:** `~/.claude/CLAUDE.md` is the global persistent layer in Claude Code. If you already have content there, add the Diamonds block alongside it rather than replacing it. If you also maintain a project-level or home directory `CLAUDE.md` with personal context, add a pointer to that file as well so the agent has your full profile in every session.
 
 ## Repository Structure
 
@@ -99,10 +113,10 @@ See [`methods/README.md`](methods/README.md) for the method file format and cont
 | Navigation (10-questions process) | Complete |
 | Modes: Coaching, Teaching, Facilitating | Complete |
 | Modes: Executing | Complete |
-| Modes: Participating | To be built |
+| Modes: Participating | Complete |
 | Mechanics: Instruction, Facilitation | Complete |
 | Mechanics: Execution | Complete |
-| Mechanics: Participation | To be built |
+| Mechanics: Participation | Complete |
 | Skill Architecture | Complete |
 | Method Selection | Complete |
 | Methods Library (taxonomy structure) | In place |

@@ -111,21 +111,21 @@ The agent performs the method independently on someone's behalf. The human is th
 
 **Posture:** Autonomous actor
 **Example:** "Can you synthesize these interview notes for me?" / "Run a simulated interview as someone who took our masterclass."
-**Governing framework:** To be built — `modes/mode-executing.md`
+**Governing framework:** `modes/mode-executing.md`
 
 ### Mode 02 — Participating
 The agent is a team member alongside humans — contributing ideas, taking notes, filling out templates, co-creating. It's in the work with people but not leading the process.
 
 **Posture:** Peer contributor
 **Example:** "Join our brainstorm and help us generate ideas." / "Take notes while we run these interviews."
-**Governing framework:** To be built — `modes/mode-participating.md`
+**Governing framework:** `modes/mode-participating.md`
 
 ### Mode 03 — Facilitating
 The agent guides a team through a specific method or activity — asking questions, keeping the process moving, noticing when the group is stuck, prompting next steps. It is serving the process, not contributing content. Facilitating is not coaching — the agent is running an activity, not guiding someone's thinking about what to do.
 
 **Posture:** Process servant
 **Example:** "Help us run an ideation session." / "Facilitate us through affinity clustering."
-**Governing framework:** To be built — `modes/mode-facilitating.md`
+**Governing framework:** `modes/mode-facilitating.md`
 
 ### Mode 04 — Teaching
 The agent is an instructor introducing a method to someone for the first time. Follows the Method Instruction Mechanics 7-step arc.
@@ -177,11 +177,11 @@ Method (from Skill Library)  ×  Mode (from Mode Engine)  =  Agent Behavior
 | Teaching Mode | `modes/mode-teaching.md` | Migrated | 7-step Method Instruction Mechanics arc |
 | Instruction Mechanics | `modes/mechanics/method-instruction-mechanics.md` | Migrated | Full instructional arc detail |
 | Facilitating Mode | `modes/mode-facilitating.md` | Active | Governing framework for facilitating mode |
-| Executing Mode | `modes/mode-executing.md` | To be built | Governing framework for executing mode |
-| Participating Mode | `modes/mode-participating.md` | To be built | Governing framework for participating mode |
+| Executing Mode | `modes/mode-executing.md` | Active | Governing framework for executing mode |
+| Participating Mode | `modes/mode-participating.md` | Active | Governing framework for participating mode |
 | Facilitation Mechanics | `modes/mechanics/method-facilitation-mechanics.md` | Active | Mechanics for facilitation mode — method mechanics framework |
-| Execution Mechanics | `modes/mechanics/method-execution-mechanics.md` | To be built | Mechanics for execution mode |
-| Participation Mechanics | `modes/mechanics/method-participation-mechanics.md` | To be built | Mechanics for participation mode |
+| Execution Mechanics | `modes/mechanics/method-execution-mechanics.md` | Active | Mechanics for execution mode |
+| Participation Mechanics | `modes/mechanics/method-participation-mechanics.md` | Active | Mechanics for participation mode |
 | Method Selection | `selection/hcd-method-selection.md` | To be built | Method recipes and sequencing — Layer 3 |
 | Affinity Clustering | `methods/understanding/patterns-and-priorities/method-affinity-clustering.md` | To be built | First method file — Understanding / Patterns & Priorities |
 | Importance / Difficulty Matrix | `methods/understanding/patterns-and-priorities/importance-difficulty-matrix/` | Active | Prioritization method — Understanding / Patterns & Priorities (method.md, mechanics.md, teaching.md, resources/) |
