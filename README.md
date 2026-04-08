@@ -111,12 +111,8 @@ See [`methods/README.md`](methods/README.md) for the method file format and cont
 |-----------|--------|
 | Foundation (philosophy, mindsets, double diamond, principles) | Complete |
 | Navigation (10-questions process) | Complete |
-| Modes: Coaching, Teaching, Facilitating | Complete |
-| Modes: Executing | Complete |
-| Modes: Participating | Complete |
-| Mechanics: Instruction, Facilitation | Complete |
-| Mechanics: Execution | Complete |
-| Mechanics: Participation | Complete |
+| Modes: Coaching, Teaching, Facilitating, Participating, Executing | Complete |
+| Mechanics: Instruction, Facilitation, Participation, Execution | Complete |
 | Skill Architecture | Complete |
 | Method Selection | Complete |
 | Methods Library (taxonomy structure) | In place |
