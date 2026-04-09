@@ -1,0 +1,69 @@
+---
+source: canonical
+method: whats-on-your-radar
+description: How to use AI tools with What's on Your Radar — for item generation and simulated participation.
+---
+
+# What's on Your Radar — AI Usage
+
+## Using AI to Generate Items
+
+Before a workshop or research session, AI can generate a starting set of items for each category based on the directive. This is useful for:
+- Giving participants a starting point when a blank page is difficult to begin from
+- Generating examples to show what kind of responses the trigger questions are looking for
+- Producing a synthetic perspective to compare against real participant data
+
+**Important:** AI-generated items are a starting point, not answers. They reflect likely patterns based on the directive — they are not validated perspectives from real people. Always make this clear to participants if you share them.
+
+---
+
+## The Prompt
+
+```
+You are acting as a helpful, reflective teammate participating in a strategic design exercise titled "What is the Opportunity?"
+
+Directive: [INSERT THE INITIATIVE OR DIRECTIVE YOU'RE EXPLORING]
+
+Your task is to generate four short, sticky-note–style responses for each of the following categories, written in plain, everyday language.
+
+For each category:
+Mark the sticky that feels most important with (MOST).
+Mark the sticky that feels least important with (LEAST).
+The other two should be unmarked but still meaningful.
+
+The categories are:
+Vision – What would the future look like if this initiative succeeds? (Aspirational, future-state outcomes)
+Impact – How would success be measured for this initiative? (Observable or measurable indicators of progress or value)
+People – Who is this for? (End users, target audience, or key stakeholders)
+Challenges – What problems need solving? (Current pain points, blockers, or constraints)
+
+Please format your output as a 4-column table with the category label in the first column and four sticky notes in the columns that follow.
+```
+
+---
+
+## How to Use the Output
+
+The prompt produces a 4-column table with four items per category, with the most and least important items marked. Use this output to:
+
+1. **Prime facilitation:** Review AI-generated items before the session to anticipate what participants might surface — and what they might miss.
+2. **Provide a starting point:** Share the table with participants before or at the start of the generate step, framed as "here's an example of what responses might look like — your job is to generate your own."
+3. **Create a synthetic participant:** In a simulation or low-access research context, treat the AI output as one perspective among others — with the explicit understanding that it is synthetic, not validated. The (MOST) and (LEAST) markers map directly to the Must and Won't rings on the radar.
+
+---
+
+## Customizing the Prompt
+
+To adapt the prompt for different category sets, replace the four default categories with your own. Keep:
+- The directive clearly stated
+- Plain language in category descriptions
+- The (MOST) and (LEAST) markers — these produce a synthetic prioritization that maps directly to the Must/Won't rings
+- The table format — it maps cleanly to the radar structure
+
+---
+
+## Limitations
+
+AI-generated items reflect patterns in training data, not the lived experience of specific people. They are useful for priming, structuring, and simulating — not for substituting real human perspectives. The further the directive is from common organizational contexts, the less reliable the AI output will be.
+
+Always treat AI-generated radar items as hypotheses to test, not insights to act on.
