@@ -64,7 +64,7 @@ These four categories are a strong default for opening a new project or initiati
 - **Workshop use:** Individuals complete personal radars first, then gather in small groups (3–5 people) to build a collaborative radar together.
 
 ### What You Need
-- **Radar template:** Concentric circles divided into segments (one per category), with rings labeled Must, Should, Could, Won't from center to edge. Labels visible on the template.
+- **Radar template:** Concentric circles divided into segments (one per category), with three rings from center to outer edge. No labels on the rings — importance is expressed through placement.
 - **Sticky notes:** One idea per sticky. Short phrases, plain language.
 - **Coloured tabs or dots (optional but recommended):** Used for category attribution — so items carry their segment of origin when moved during the group phase. Can also be used for authorship attribution — marking which person generated each item. Both uses are valid; sometimes both are used simultaneously.
 - **Markers:** One per participant.
@@ -93,16 +93,15 @@ Each person generates responses to each trigger question independently. Write on
 People generate all their items before placing anything on the radar. Do not begin prioritizing until everyone has finished generating.
 
 ### Step 3 — Prioritize (individually)
-Each person places their items onto their personal radar using the MoSCoW rings:
+Each person places their items onto their personal radar in order of importance:
 
-| Ring | Label | Meaning |
+| Ring | Meaning | Capacity |
 |---|---|---|
-| Center | **Must** | The most important — what cannot be absent |
-| Second ring | **Should** | Important, but not the most critical |
-| Third ring | **Could** | Useful if time and resources allow |
-| Outer edge | **Won't** | Not important in this context, or actively deprioritized |
+| **Center** | Most important — the single consideration that matters most in this category | 1 item only |
+| **Middle ring** | Secondary importance — meaningful but not the top priority | 2–3 items |
+| **Outer ring** | Least important — relevant but lower priority given the constraints | 3–5 items |
 
-Each person places items in the segment corresponding to their category. Only one item can sit at the center (Must) of any given segment — this choice is deliberate. If two items feel equally important, the method requires a choice.
+Each person places items in the segment corresponding to their category. Only one item can sit at the center per segment — this choice is deliberate. The constraint is also spatial: the rings have limited physical space, which forces trade-offs. If two items feel equally important, the method requires a choice.
 
 Apply category tabs or dots to stickies at this stage so items retain their origin if moved during the group phase.
 
@@ -115,18 +114,14 @@ Apply category tabs or dots to stickies at this stage so items retain their orig
 ### Step 5 — Compare and build the group radar (workshop)
 In small groups, each person shares the single item they placed at the center of each segment — one segment at a time.
 
-The group then negotiates: only one item can sit at the center of the group radar for each segment. The other items move to the Should or Could ring based on the group's discussion. The MoSCoW labels are applied to items based on their final placement on the group radar — not carried over from individual radars.
+The group then negotiates: only one item can sit at the center of the group radar for each segment. The other items move to the middle or outer ring based on the group's discussion. An item's placement on the group radar is determined by the group's negotiation — not carried over from the individual's radar.
 
 Work through each segment before moving to the next.
 
 The negotiation is the point. The conversation that happens when two people each believe their item belongs at the center — and only one can go there — surfaces assumptions, differences in perspective, and genuine priorities that would not emerge from an open group discussion.
 
-### Step 6 — Mark up the group radar
-After all segments are resolved, apply MoSCoW labels to each item based on its final placement:
-- Center → Must
-- Second ring → Should
-- Third ring → Could
-- Outer edge → Won't
+### Step 6 — Confirm the group radar
+After all segments are resolved, review the full radar together. Confirm that each item is in the right ring — center, middle, or outer — and that the placement reflects the group's genuine negotiation, not just where things landed by default.
 
 The group radar is now a shared artifact: *What's on Our Radar.*
 
@@ -148,7 +143,7 @@ When groups resist choosing ("they're both equally important"), the facilitation
 2. **Authorship (optional, often valuable):** When the group radar will be shared with people who weren't in the session, or when you want to trace priorities back to individuals, marking each item with the author's name or color preserves the diversity of perspectives in the artifact.
 
 ### Work segment by segment in the group phase
-Don't ask everyone to share everything at once. Work through one segment at a time: share the Must from that segment, negotiate, place on the group radar, then move to the next. This keeps conversation focused and prevents participants from jumping ahead to items they feel strongly about.
+Don't ask everyone to share everything at once. Work through one segment at a time: share the most important item from that segment, negotiate, place on the group radar, then move to the next. This keeps conversation focused and prevents participants from jumping ahead to items they feel strongly about.
 
 ### Divergence is data, not a problem
 When participants can't agree on what belongs at the center of a segment, that disagreement is valuable information. Name it: *"It's interesting that we're not aligned here — that tells us something about this category worth exploring further."* Don't rush to resolution just to complete the artifact.
@@ -196,13 +191,16 @@ What's on Your Radar lives in **Looking / Participatory** and is used primarily 
 - **Secondary research or stakeholder context** — can inform which categories to use and how to phrase trigger questions
 - **Prior synthesis** — if a previous research round has identified themes, those can shape the categories
 
-### Downstream Methods (radar data feeds into)
-- **Affinity Clustering** — group items from across multiple individual radars to find themes
-- **Importance / Difficulty Matrix** — take the Must items from a group radar and prioritize further by difficulty
-- **Problem Framing** — use patterns in the Challenges segment to frame the problem to solve
-- **Interviewing** — use the categories and items that generated the most divergence as the focus for deeper individual interviews
+### Downstream (what the radar feeds into)
 
-### Related Methods
-- **Interviewing** — complementary. The radar surfaces what people believe matters; interviewing explores why.
-- **Importance / Difficulty Matrix** — a downstream prioritization method. Where the radar surfaces what matters, the IDM helps decide what to act on by adding a feasibility dimension.
-- **Affinity Clustering** — used to synthesize across multiple individual radars in a research context.
+**Problem Framing / How Might We Statements**
+The most common next move after a workshop session. The Challenges segment and the center ring items across all categories provide the raw material for reframing what matters most into actionable opportunity statements. The radar surfaces what people believe; problem framing turns that into questions worth designing against.
+
+**Deeper Research / Interviewing**
+The natural next move when individual radars show significant divergence — categories where people's most important items varied widely, or where the group couldn't agree on a single center item. The radar tells you where the real differences in perspective live; interviews explore why those differences exist.
+
+**Project Brief**
+When used as a project kickoff activity with the default four categories, a completed group radar maps directly to the core elements of a project brief: Vision → goals and direction, Impact → measures of success, People → key stakeholders and audiences, Challenges → the problem space. The group radar is a first draft of shared project context — a starting point for a brief, not a substitute for one.
+
+### A note on prioritization methods
+The radar already produces an importance signal through ring placement. Methods like the Importance/Difficulty Matrix add a second dimension — feasibility — that can be useful when a large number of center ring items need to be further narrowed. But that's a specific scenario, not the default next step. Don't route people into another prioritization method simply because the radar produced priorities.

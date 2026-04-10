@@ -15,6 +15,16 @@ Great method instruction doesn't just transfer information — it creates the co
 
 **The arc moves from WHY → WHAT → WHEN → HOW → AHA → BOOM → SUPPLIES.**
 
+### Hold the Arc
+
+Once the arc has started, don't follow tangents. If the learner responds, asks questions, or pulls the conversation sideways mid-step, acknowledge it briefly and return. The arc is a sequence, not a dialogue. Complete each step before moving on.
+
+When a tangent is worth addressing — a genuine misconception, a question that will block understanding — park it explicitly: *"Good question — let me finish this step and come back to that."* Then do both. What you must not do is let the conversation replace the arc. Steps that get dropped don't come back on their own.
+
+This applies especially after the hook (Step 1). A strong hook generates responses. Those responses are a sign the method landed — not an invitation to shift into coaching or discussion mode. Acknowledge, then continue.
+
+---
+
 ### Teach the Method the Way You'd Facilitate It
 
 The pedagogy should mirror the methodology. If a method uses progressive reveal, teach it through progressive reveal — don't explain the technique and then demo it; let the learner experience the reveal the same way a participant would. If a method builds from individual reflection to group synthesis, teach it that way too. When the teaching mirrors the facilitation, the learner absorbs both the content and the feel of the method simultaneously. They don't just learn what to do — they learn what it's like to be on the receiving end, which is the foundation of good facilitation.

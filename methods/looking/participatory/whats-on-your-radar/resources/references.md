@@ -6,9 +6,6 @@ description: External reading and related frameworks for What's on Your Radar.
 
 # What's on Your Radar — References
 
-## MoSCoW Prioritization
-The ring structure in What's on Your Radar draws on MoSCoW prioritization — a framework for categorizing priorities into Must have, Should have, Could have, and Won't have (this time). Originally developed in agile software development, MoSCoW translates effectively to participatory design contexts as a shared, accessible vocabulary for expressing importance without numerical ranking.
-
 ## Participatory Design
 What's on Your Radar sits within the broader tradition of participatory design — an approach that involves the people being designed for (or with) as active contributors to the design process, rather than passive subjects of research. Key contributors to this tradition include Pelle Ehn, who pioneered participatory design in Scandinavian systems design, and the broader participatory action research literature.
 

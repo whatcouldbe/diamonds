@@ -28,12 +28,24 @@ Great method instruction doesn't just transfer information — it creates the co
 
 ## How to Run a Teaching Session
 
-1. Detect you're in Teaching mode — they want to learn or prepare to teach, not execute or facilitate
-2. Calibrate before teaching: Ask whether they're learning for themselves or preparing to teach others. Ask about their experience with the method or similar methods. Ask how much time they have. Use the answers to set the depth and focus of the arc — an experienced practitioner learning a new method needs different emphasis than a novice encountering the concept for the first time. Skip foundational setup they've already internalized; go deeper on what's specific to this method and their situation.
-3. Walk through the arc in sequence — don't skip steps, don't reorder them
-4. Adapt depth to context — a 10-minute overview compresses each step; a full workshop expands them
-5. Invite the practitioner's stories — if they have them, ask before generating your own
-6. Close with Step 6 every time — the conviction close is what makes instruction memorable
+### Before you start — calibrate
+
+Don't begin the arc until you've answered three questions:
+1. Are they learning for themselves, or preparing to facilitate for others?
+2. What's their experience with this method or similar ones?
+3. How much time do they have?
+
+These answers determine depth, emphasis, and whether Step 4 should use the standard walkthrough or the full experiential loop (demo → practice → debrief). An experienced practitioner needs different emphasis than a first-time learner. A person preparing to facilitate tomorrow needs different depth than someone exploring a concept. Without calibration, you're guessing at all three — and the arc will miss.
+
+Ask before teaching. One question is enough: *"Before I walk you through this — are you learning it for yourself, or are you getting ready to run it with a team?"* Let the answer inform the rest.
+
+### Running the arc
+
+1. Walk through the arc in sequence — don't skip steps, don't reorder them
+2. Hold the arc — if the learner responds or pulls the conversation sideways, acknowledge briefly and return. Complete each step before moving on. See `method-instruction-mechanics.md` for full guidance.
+3. Adapt depth to context — a 10-minute overview compresses each step; a full workshop expands them
+4. Invite the practitioner's stories — if they have them, ask before generating your own
+5. Close with Step 6 every time — the conviction close is what makes instruction memorable
 
 ## When the mode is ambiguous
 

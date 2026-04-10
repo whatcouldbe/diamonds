@@ -25,13 +25,13 @@ When items are moved from individual to group radars, they can lose their segmen
 If the group radar will be shared with people who weren't in the session, or if you want to trace priorities back to individuals later, mark each item with the author's name or color. This is optional during the session itself but often worth the overhead when the artifact will be analyzed or presented.
 
 ## The group negotiation should go segment by segment
-Don't ask everyone to share everything at once. Work through one segment at a time: share the Must from that segment, negotiate, place on the group radar, then move to the next. This keeps the conversation focused and prevents participants from jumping ahead to items they feel strongly about.
+Don't ask everyone to share everything at once. Work through one segment at a time: share the most important item from that segment, negotiate, place on the group radar, then move to the next. This keeps the conversation focused and prevents participants from jumping ahead to items they feel strongly about.
 
 ## Divergence is data, not a problem
 When participants can't agree on what belongs at the center of a segment, that disagreement is valuable information. Name it explicitly: *"It's interesting that we're not aligned here — that tells us something about this category that we should probably explore further."* Don't rush to resolution just to complete the artifact.
 
-## Apply MoSCoW labels to the group radar after negotiation
-The ring placement on the group radar is determined by the group's negotiation — not carried over from individual radars. An item that was a Must for one person may land in the Should ring of the group radar. Apply labels after each segment is resolved.
+## Ring placement on the group radar is determined by negotiation
+Where an item lands on the group radar — center, middle, or outer — is determined by the group's discussion, not carried over from individual radars. An item that was at the center for one person may land in the middle or outer ring of the group radar. Confirm placement after each segment is resolved.
 
 ## The radar is not the output — the conversation is
 Participants and stakeholders sometimes fixate on the artifact. Remind them that the group radar is a record of a conversation, not a strategy document. Its value is in what it took to produce it: the choices made, the assumptions surfaced, the divergence revealed.

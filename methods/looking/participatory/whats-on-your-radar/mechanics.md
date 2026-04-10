@@ -5,7 +5,7 @@ description: Facilitation cheat sheet for running What's on Your Radar. Maps to 
 
 # What's on Your Radar — Mechanics
 
-A structured prioritization method that surfaces what matters most to individuals before seeking collective understanding.
+A participatory discovery method that surfaces what matters most to individuals before seeking collective understanding.
 **Phase:** Looking | **Category:** Participatory
 
 ---
@@ -26,7 +26,7 @@ Use these in the introduction — lead with why, not what:
 - **A directive** — the initiative, opportunity, or challenge being explored. Required. Frames all trigger questions.
 - **Categories and trigger questions** — typically 2–6, default four: Vision, Impact, People, Challenges
 - **Participants** — individuals who hold relevant perspectives on the directive
-- **Radar template** — concentric rings divided into segments (one per category), labeled Must / Should / Could / Won't from center to edge
+- **Radar template** — concentric circles divided into segments (one per category), with three rings: center, middle, and outer. No labels on the rings.
 - **Sticky notes and markers** — one idea per sticky, short phrases
 - **Coloured tabs or dots** (optional but recommended) — for category attribution and/or authorship
 
@@ -57,7 +57,7 @@ Use these in the introduction — lead with why, not what:
 | Show the categories | "There are [n] categories we're going to look at. For each one, there's a trigger question." |
 | Explain the generate step | "First, read each question and write your responses on sticky notes — one idea per sticky. Aim for two to four per category. Don't worry about prioritizing yet — just get your thinking on paper." |
 | Hold the radar reveal | *Do not show the radar template yet. Show it only when people are ready to prioritize.* |
-| Explain prioritization | "Now you're going to place your stickies onto your personal radar. The center ring is Must — the most important. Moving outward: Should, Could, and Won't. Only one item can sit at the center of each segment." |
+| Explain placement | "Now you're going to place your stickies onto your personal radar. Arrange them in order of importance: the single most important item in the center ring, secondary importance in the middle ring, least important in the outer ring. Only one item can sit at the center of each segment." |
 | Name the constraint | "If two items feel equally important, you still have to choose. That choice is the point." |
 
 ### Execution
@@ -68,14 +68,14 @@ Use these in the introduction — lead with why, not what:
 | Prioritize | Participants place stickies on personal radars. Enforce one item at center per segment. Apply category tabs if using them. |
 | Research split | If research only: collect individual radars. Session ends here for participants. |
 | Workshop — share most important | Ask each person to share only the item at the center of each segment — one segment at a time. |
-| Workshop — negotiate | Group decides which single item goes at the center of the group radar for that segment. Other items move to Should or Could based on discussion. |
+| Workshop — negotiate | Group decides which single item goes at the center of the group radar for that segment. Other items move to the middle or outer ring based on discussion. |
 | Workshop — build group radar | Place items on the shared radar as the group negotiates. Work through all segments before moving to the next. |
 
 ### End
 
 | Step | What to do |
 |---|---|
-| Mark up the group radar | Apply Must / Should / Could / Won't labels to items based on their final placement — not carried over from individual radars |
+| Confirm the group radar | Review the full radar together. Confirm each item is in the right ring — center, middle, or outer — based on the group's negotiation, not carried over from individual radars. |
 | Acknowledge the conversation | Name 1–2 moments where the group had to make a genuine choice — that's where the value was |
 | Name the divergence | Call out any segments where agreement was hardest — these are candidates for further research |
 
@@ -83,7 +83,7 @@ Use these in the introduction — lead with why, not what:
 
 | Step | What to do |
 |---|---|
-| Research path | Analyze individual radars for convergence (common Must items), divergence (different priorities for the same category), and gaps (categories with few responses) |
+| Research path | Analyze individual radars for convergence (common center ring items), divergence (different priorities for the same category), and gaps (categories with few responses) |
 | Workshop path | Use the group radar to inform the next activity — problem framing, Importance / Difficulty Matrix, or interviews |
 | Follow-up | Identify segments or items that generated the most tension — these warrant deeper investigation |
 
@@ -92,7 +92,7 @@ Use these in the introduction — lead with why, not what:
 ## Stuff
 
 - **Time:** 30–45 minutes total. Generate: 5–10 min. Prioritize: 5–10 min. Group phase: 15–20 min.
-- **Radar template:** Concentric circles with Must / Should / Could / Won't rings, divided into segments (one per category). Labels visible on the template.
+- **Radar template:** Concentric circles with three rings (center, middle, outer), divided into segments (one per category). No labels on the rings — importance is expressed through placement.
 - **Sticky notes:** One per idea. Short phrases, plain language. One sticky per idea.
 - **Markers:** One per participant.
 - **Coloured tabs or dots:** One color per category (category attribution). Optional second color system for authorship. Both uses can coexist.

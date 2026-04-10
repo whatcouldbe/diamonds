@@ -35,8 +35,8 @@ Yes. Digital tools like Miro and FigJam support the radar structure well. The in
 **How is this different from dot voting?**
 Dot voting asks people to distribute preference across a set of options that have already been surfaced, usually by the group. What's on Your Radar asks people to surface their own options individually before any group input, then prioritizes through structured choice rather than a vote. The result is individual perspective preserved within a collective artifact — not a majority view.
 
-**Do the MoSCoW labels carry over from the individual radar to the group radar?**
-No. An item's placement on the group radar is determined by the group's negotiation — not by where it sat on the individual's radar. An item that was a Must for one person may land in the Should or Could ring of the group radar. Apply MoSCoW labels to the group radar based on final placement after negotiation is complete.
+**Does an item's ring placement carry over from the individual radar to the group radar?**
+No. An item's placement on the group radar is determined by the group's negotiation — not by where it sat on the individual's radar. An item that was a center ring item for one person may land in the middle or outer ring of the group radar. Ring placement on the group radar is determined after negotiation is complete.
 
 **What do we do with the divergence?**
-Divergence — segments where people couldn't agree on the center, or where Must items varied widely across individual radars — is the most interesting output of the method. Use it to identify where deeper research is needed, where assumptions differ, or where alignment work needs to happen before moving forward.
+Divergence — segments where people couldn't agree on the center, or where the most important items varied widely across individual radars — is the most interesting output of the method. Use it to identify where deeper research is needed, where assumptions differ, or where alignment work needs to happen before moving forward.

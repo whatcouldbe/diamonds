@@ -7,7 +7,7 @@ Tool-specific templates for running What's on Your Radar.
 *To be added.*
 
 Planned:
-- Miro template — individual radar frame (4-segment, 4-ring with MoSCoW labels)
+- Miro template — individual radar frame (4-segment, 3-ring: center, middle, outer)
 - Miro template — group radar frame
 - FigJam template
 - Printable PDF — individual radar sheet

@@ -25,15 +25,10 @@ If a previous research round has identified themes or areas of interest, use tho
 ### Into Interviewing
 The divergence revealed by individual radars — segments where people prioritized very differently — is ideal input for a research interview. You know what to probe. The radar tells you where assumptions differ; the interview explores why.
 
-**Sequence:** What's on Your Radar → Interviewing (using Must items and divergent segments as the interview focus)
-
-### Into Affinity Clustering
-In a research context with multiple individual radars, use affinity clustering to find patterns across all items generated — not just the Must items, but everything people surfaced across all categories. This turns a set of individual perspectives into a synthesized view of the landscape.
-
-**Sequence:** What's on Your Radar (research) → Affinity Clustering → [themes and insights]
+**Sequence:** What's on Your Radar → Interviewing (using center ring items and divergent segments as the interview focus)
 
 ### Into Importance / Difficulty Matrix
-Use the Must items from the group radar as the input set for an Importance / Difficulty Matrix. The radar tells you what matters — the IDM helps decide what to act on first by adding a dimension of feasibility.
+A specific scenario — not the default next step. Use the center ring items from the group radar as input for an Importance / Difficulty Matrix only when you have a large number of center ring items across segments and need to narrow further by feasibility. The radar already provides an importance signal; the IDM adds a second dimension. Don't use it simply because the radar produced priorities.
 
 **Sequence:** What's on Your Radar → Importance / Difficulty Matrix → prioritized action set
 
@@ -50,4 +45,4 @@ The Challenges segment is direct input for problem framing. What people believe 
 A powerful research pairing. Use the radar to efficiently surface individual priorities from a group of participants (fast, structured, comparable). Then use interviews to go deep on the most important or most divergent items. The radar gives you breadth; the interview gives you depth.
 
 ### What's on Your Radar + Importance / Difficulty Matrix
-A sequencing that moves from "what matters most?" to "what do we act on?" The radar answers the first question; the IDM answers the second. Together they take a team from a broad landscape of concerns to a prioritized set of actions.
+A sequencing that moves from "what matters most?" to "what do we act on first?" The radar answers the first question; the IDM adds a feasibility dimension to answer the second. Most useful when the radar produces a large number of center ring items that still need to be narrowed.

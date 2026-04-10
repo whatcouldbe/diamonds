@@ -48,7 +48,7 @@ The prompt produces a 4-column table with four items per category, with the most
 
 1. **Prime facilitation:** Review AI-generated items before the session to anticipate what participants might surface — and what they might miss.
 2. **Provide a starting point:** Share the table with participants before or at the start of the generate step, framed as "here's an example of what responses might look like — your job is to generate your own."
-3. **Create a synthetic participant:** In a simulation or low-access research context, treat the AI output as one perspective among others — with the explicit understanding that it is synthetic, not validated. The (MOST) and (LEAST) markers map directly to the Must and Won't rings on the radar.
+3. **Create a synthetic participant:** In a simulation or low-access research context, treat the AI output as one perspective among others — with the explicit understanding that it is synthetic, not validated. The (MOST) marker maps to the center ring; the (LEAST) marker maps to the outer ring.
 
 ---
 
@@ -57,7 +57,7 @@ The prompt produces a 4-column table with four items per category, with the most
 To adapt the prompt for different category sets, replace the four default categories with your own. Keep:
 - The directive clearly stated
 - Plain language in category descriptions
-- The (MOST) and (LEAST) markers — these produce a synthetic prioritization that maps directly to the Must/Won't rings
+- The (MOST) and (LEAST) markers — these produce a synthetic importance signal that maps to the center and outer rings
 - The table format — it maps cleanly to the radar structure
 
 ---

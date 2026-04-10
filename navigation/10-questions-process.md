@@ -9,7 +9,14 @@ This is a process framework that guides teams through innovation work using ques
 
 ## Core Principle
 
-Each question is a checkpoint that must be answered before the next stage can be effective. Teams get stuck when they try to answer later questions without validating earlier ones. These aren't steps to rush through - they're validation checkpoints that ensure you're building on solid ground.
+Each question is a validation gate. You cannot move forward until you can answer it with validated knowledge — not assumption, not confidence, not consensus. Validated knowledge means you've tested it with real people and have evidence.
+
+At every gate, there are three possible outcomes:
+- **Move forward** — you've validated the answer. Proceed.
+- **Iterate** — you haven't validated it yet. Keep working until you can.
+- **Stop** — you've validated that the answer is "no." There's no real need, no viable problem, no customer for this solution. Stopping is the right call. Moving forward anyway is how teams build the wrong thing.
+
+The questions are process-agnostic. They apply regardless of methodology — Double Diamond, Agile, Lean, or anything else. Any process is just one way to answer these questions. The questions themselves are the universal checkpoints. What matters is whether you can answer them with evidence, not which tools you used to get there.
 
 ## The 10 Questions Framework
 

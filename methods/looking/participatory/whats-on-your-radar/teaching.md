@@ -37,7 +37,7 @@ You can't find that in a spreadsheet or a survey. You have to put people in the 
 
 A radar with two dimensions:
 - **Segments (wedges):** One per category. The number of categories determines the shape of the radar. Default is four; range is two to six.
-- **Rings:** Must (center) → Should → Could → Won't (outer edge). Based on MoSCoW prioritization.
+- **Rings:** Three rings from center to outer edge, expressing importance — most important at center, secondary importance in the middle ring, least important in the outer ring.
 
 **Default four categories for project kick-offs:**
 
@@ -48,7 +48,7 @@ A radar with two dimensions:
 | People | Who is this for? |
 | Challenges | What problems need solving? |
 
-The categories and trigger questions can be customized to fit the context. What doesn't change: the segment/ring structure, the MoSCoW framework, the individual-before-group sequence.
+The categories and trigger questions can be customized to fit the context. What doesn't change: the segment/ring structure, the importance gradient from center to outer ring, the individual-before-group sequence.
 
 ---
 
@@ -60,10 +60,10 @@ Three phases:
 Respond to each trigger question with sticky-note–style phrases. Two to four per category. No prioritizing yet — just get thinking on paper before the radar is revealed.
 
 **2. Prioritize individually**
-Place items on your personal radar. One item at the center per segment. The MoSCoW rings provide the vocabulary: Must, Should, Could, Won't.
+Place items on your personal radar in order of importance: the single most important item in the center ring, secondary importance in the middle ring, least important in the outer ring. One item at the center per segment — no exceptions.
 
 **3. Compare and build together** (workshop only)
-Share your most important item per segment — not everything, just the one at the center. The group negotiates which single item goes at the center of the collective radar. The MoSCoW labels are applied to the group radar based on final placement, not carried over from individual radars.
+Share your most important item per segment — not everything, just the one at the center. The group negotiates which single item goes at the center of the collective radar. Everything else is placed in the middle or outer ring based on the group's discussion, not carried over from individual radars.
 
 The individual phase is non-negotiable. Skip it and you've converted the method into a group discussion with a visual prop.
 
@@ -98,7 +98,7 @@ It's a participation structure. The radar is the artifact — the *conversation*
 No. The individual step is the mechanism. Without it, you have a group discussion with a radar drawn on it.
 
 **"Everyone agrees, so we don't need to negotiate."**
-Surface agreement is not the same as genuine alignment. The method is designed to test whether the agreement is real. If everyone genuinely has the same Must item, that itself is valuable information — and rare.
+Surface agreement is not the same as genuine alignment. The method is designed to test whether the agreement is real. If everyone genuinely has the same most important item, that itself is valuable information — and rare.
 
 **"The coloured tabs are just for aesthetics."**
 They serve two functional purposes: category attribution (so items don't lose their origin when moved) and optionally authorship attribution (so the group radar preserves who generated what). Both matter.
