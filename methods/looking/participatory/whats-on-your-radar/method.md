@@ -2,7 +2,7 @@
 status: active
 category: participatory
 phase: looking
-tags: [participatory, prioritization, radar, workshop, research, discovery, moscow, what-matters, stakeholder-alignment]
+tags: [participatory, radar, workshop, research, discovery, trade-offs, what-matters, stakeholder-alignment]
 also-known-as: [radar, priority radar, what's on our radar, WOYR]
 files:
   - method.md (this file) — Core reference: purpose, steps, facilitation notes, variations, connections
@@ -13,7 +13,7 @@ files:
 
 # What's on Your Radar
 
-A structured prioritization method that surfaces what matters most to individuals — before seeking collective understanding.
+A participatory discovery method that surfaces what matters most to individuals — and why — before seeking collective understanding.
 
 ---
 
@@ -26,7 +26,7 @@ Use when you need to understand what a group of people believes is most importan
 **Why What's on Your Radar works:**
 - It separates thinking from discussion. People generate and prioritize individually before any group conversation happens. This prevents the loudest voice from dominating, and ensures the group radar reflects genuine individual priorities rather than social consensus.
 - It makes individual priorities visible and comparable. Because everyone uses the same structure — the same segments, the same rings — you can look across radars and immediately see where people align and where they diverge.
-- It forces a choice. By requiring only one item at the center of each segment, it surfaces what people actually believe matters most — not a comfortable list of everything.
+- It forces trade-offs. By requiring only one item at the center of each segment, the method makes it impossible to treat everything as equally important. The choices people make — and the reasoning behind them — are where the real insight lives. Why did someone trade fuel efficiency for towing capacity? Why did safety land at center and entertainment at the outer ring? Participatory methods are fundamentally about understanding trade-offs, and the radar is designed to surface them.
 - It scales across contexts. The same method works as a research tool (gather individual radars, analyze patterns) and as a workshop tool (compare priorities, build a collective radar together).
 
 **Where it sits in the process:**
@@ -57,7 +57,9 @@ The radar is divided into segments — one per category. Each category has a tri
 | **People** | Who is this for? |
 | **Challenges** | What problems need solving? |
 
-These four categories are a strong default for opening a new project or initiative. The number of categories can range from two to six depending on what you need to understand. Customize both the categories and their trigger questions to fit the context.
+These four categories are a strong default for opening a new project or initiative. The number of categories can range from two to eight depending on what you need to understand. Customize both the categories and their trigger questions to fit the context.
+
+**Wild card segments:** One or more segments can be left intentionally blank — no label, no trigger question. Blank segments give participants a place to surface considerations that don't fit the defined categories. After a participant places items on a blank segment, the researcher or facilitator asks them to name the category. This mirrors good interview technique: defined categories cover what you know to investigate; blank segments open the door to what you didn't anticipate. If all segments are blank, participants are effectively building their own category structure — a more open-ended research approach where the categories themselves become data.
 
 ### Participants
 - **Research use:** Individual participants, each completing their own radar independently. The researcher collects and analyzes across all radars.
@@ -148,6 +150,9 @@ Don't ask everyone to share everything at once. Work through one segment at a ti
 ### Divergence is data, not a problem
 When participants can't agree on what belongs at the center of a segment, that disagreement is valuable information. Name it: *"It's interesting that we're not aligned here — that tells us something about this category worth exploring further."* Don't rush to resolution just to complete the artifact.
 
+### Listen for the reasoning, not just the placement
+Where an item lands tells you what someone chose. Why they chose it tells you what they value. The most important facilitation move — especially in research contexts — is to ask people to explain their trade-offs: *"Why did this end up at center instead of that one?"* or *"What made you put this in the outer ring?"* The artifact records the choices. The conversation captures the reasoning. Both are outputs.
+
 ---
 
 ## Variations
@@ -161,8 +166,17 @@ Steps 1–6. Individuals complete personal radars, then move into small groups (
 ### Mixed (research then workshop)
 Run the individual radar as research in advance — participants complete their radars independently, perhaps digitally. Then bring those individual radars into a workshop as the starting point for the group comparison and collaborative radar phase. This separates generate/prioritize time from workshop time and can produce more considered individual radars.
 
+### Pairs
+Two people work through the radar together, with each completing an individual radar first. The pair then negotiates a shared radar. Especially valuable when the decision or challenge being explored is shared between the two people — partners making a large purchase, co-leads on a project, two stakeholders who need to reach alignment. The negotiation between two people with shared stakes is unusually revealing: you can hear the trade-offs they're willing to make, the assumptions each person holds, and where their values actually diverge. The conversation between the pair is often more data-rich than the artifact. Can also be used as a deliberate pairing of people without a prior relationship — two people from different functions or backgrounds — to surface how differently the same challenge is experienced.
+
+### Project kickoff
+A high-value application of the full workshop sequence. Use the default four categories (Vision, Impact, People, Challenges) to open a new project with key stakeholders. Each person completes an individual radar independently, then the group builds a shared radar through negotiation. The result is a negotiated view of what matters most across all four dimensions — and a group radar that maps directly to the elements of a project brief: goals, measures of success, key stakeholders, and the problem space. The divergence revealed in the session tells you where assumptions need to be tested before work begins. Best run at project kick-off, before any definition or design work has started.
+
+### Open / Wild card radar
+One or more segments left blank, with no predefined label or trigger question. Participants place items that don't fit the defined categories onto blank segments, then name those categories with the researcher's help. If the entire radar is blank, participants are constructing their own category structure — the categories themselves become data. Use when you want the method to be generative rather than confirmatory, or when you're not yet sure what the important categories are.
+
 ### Fewer or more categories
-The default is four. Two categories work for a tightly scoped question. Six is a practical upper limit — more than that and the radar becomes too fragmented and the session too long. Fewer categories allow more time per segment in the group phase.
+The default is four. Two categories work for a tightly scoped question. Eight is a practical upper limit — more than that and the radar becomes too fragmented and the session too long. Fewer categories allow more time per segment in the group phase.
 
 ### Custom categories and questions
 Replace the default four with categories specific to the context. Trigger questions should be open-ended and in plain language: "What would...?", "Who is...?", "What problems...?" rather than leading or yes/no questions.

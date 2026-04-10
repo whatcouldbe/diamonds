@@ -39,16 +39,11 @@ A radar with two dimensions:
 - **Segments (wedges):** One per category. The number of categories determines the shape of the radar. Default is four; range is two to six.
 - **Rings:** Three rings from center to outer edge, expressing importance — most important at center, secondary importance in the middle ring, least important in the outer ring.
 
-**Default four categories for project kick-offs:**
+Categories and trigger questions are defined by the researcher or facilitator based on what they need to learn. They can be anything — safety, performance, brand, experience; or vision, impact, people, challenges. One or more segments can be left blank as wild cards, giving participants a place to surface considerations that don't fit the defined categories.
 
-| Category | Trigger Question |
-|---|---|
-| Vision | What would the future look like if this initiative succeeds? |
-| Impact | How would success be measured for this initiative? |
-| People | Who is this for? |
-| Challenges | What problems need solving? |
+The number of categories typically ranges from two to eight. What doesn't change regardless of categories: the segment/ring structure, the importance gradient from center to outer ring, the individual-before-group sequence.
 
-The categories and trigger questions can be customized to fit the context. What doesn't change: the segment/ring structure, the importance gradient from center to outer ring, the individual-before-group sequence.
+**One common application — project kickoff:** Four categories (Vision, Impact, People, Challenges) used to open a new project with key stakeholders. The group radar produced maps directly to the elements of a project brief. It's a high-value use of this method, but one application among many.
 
 ---
 
