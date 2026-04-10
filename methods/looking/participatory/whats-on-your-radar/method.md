@@ -62,8 +62,12 @@ These four categories are a strong default for opening a new project or initiati
 **Wild card segments:** One or more segments can be left intentionally blank — no label, no trigger question. Blank segments give participants a place to surface considerations that don't fit the defined categories. After a participant places items on a blank segment, the researcher or facilitator asks them to name the category. This mirrors good interview technique: defined categories cover what you know to investigate; blank segments open the door to what you didn't anticipate. If all segments are blank, participants are effectively building their own category structure — a more open-ended research approach where the categories themselves become data.
 
 ### Participants
-- **Research use:** Individual participants, each completing their own radar independently. The researcher collects and analyzes across all radars.
-- **Workshop use:** Individuals complete personal radars first, then gather in small groups (3–5 people) to build a collaborative radar together.
+Everyone begins with a list — individual generation always comes first, regardless of group size. What happens next depends on the number of people:
+
+- **Individual:** Generate a list, then place items on a single radar. One person, one radar.
+- **Pairs:** Each person generates a list independently, then the two build the radar together. The joint placement conversation is where the value is — skip the individual radar step.
+- **Small group (4–6):** Each person generates a list independently, then places items on their own individual radar. Each person brings only their most important item per segment to the group. The individual radar is a convergence mechanism — it keeps the group discussion manageable by reducing what each person brings to the table.
+- **Large group:** Each person generates a list and narrows to their top one or two items. Those items come directly to the group radar. Individual radars are skipped in the interest of efficiency.
 
 ### What You Need
 - **Radar template:** Concentric circles divided into segments (one per category), with three rings from center to outer edge. No labels on the rings — importance is expressed through placement.
@@ -88,14 +92,17 @@ Present the directive and the overarching frame. Show all categories and their t
 Do not show the radar template yet. Revealing the radar before the generate step can narrow what people write — they generate with placement in mind rather than generating freely.
 
 ### Step 2 — Generate (individually)
-Each person generates responses to each trigger question independently. Write one idea per sticky note in short, plain-language phrases.
+Each person generates responses to each trigger question independently. Write one idea per sticky note in short, plain-language phrases. This step is always individual — regardless of group size or format.
 
-**Target:** 2–4 items per category in a workshop setting. The minimum is 2 — so there is always something to compare and choose between when prioritizing. In a research context, allow more time and more items if depth is the goal rather than convergence.
+**Target:** 2–4 items per category. The minimum is 2 — so there is always something to compare and choose between. In a research context, allow more time and more items if depth is the goal.
 
-People generate all their items before placing anything on the radar. Do not begin prioritizing until everyone has finished generating.
+Do not show the radar template yet. Do not begin placing items until everyone has finished generating.
 
-### Step 3 — Prioritize (individually)
-Each person places their items onto their personal radar in order of importance:
+### Step 3 — Place items on the radar
+
+How this step runs depends on the group configuration:
+
+**Individual or research:** Each person places their items on their own radar in order of importance:
 
 | Ring | Meaning | Capacity |
 |---|---|---|
@@ -103,15 +110,21 @@ Each person places their items onto their personal radar in order of importance:
 | **Middle ring** | Secondary importance — meaningful but not the top priority | 2–3 items |
 | **Outer ring** | Least important — relevant but lower priority given the constraints | 3–5 items |
 
-Each person places items in the segment corresponding to their category. Only one item can sit at the center per segment — this choice is deliberate. The constraint is also spatial: the rings have limited physical space, which forces trade-offs. If two items feel equally important, the method requires a choice.
+Only one item can sit at the center per segment. The constraint is also spatial — the rings have limited physical space, which forces trade-offs. If two items feel equally important, the method requires a choice.
 
-Apply category tabs or dots to stickies at this stage so items retain their origin if moved during the group phase.
+**Pairs:** Both people place items on a single shared radar together. The negotiation during placement is the method — don't rush it. Listen for the reasoning behind each placement decision.
 
-### Step 4 — Split: research or workshop
+**Small group:** Each person completes their own individual radar first (using the ring structure above), then brings only their most important item per segment to the group in Step 5. The individual radar is a convergence tool — it reduces what each person brings to the group discussion.
 
-**Research path:** Collect individual radars. The researcher analyzes across all radars: what appears at the center most often? Where is there divergence? What categories are most and least populated? Individual radars are the primary data. The session ends here for participants.
+**Large group:** Each person narrows their list to one or two items total and brings those directly to the group. Individual radars are skipped.
 
-**Workshop path:** Move to Step 5. Do not ask people to share their full radars yet — begin with only the most important item per segment.
+Apply category tabs or dots to stickies so items retain their segment origin if moved during the group phase.
+
+### Step 4 — Split: research or group
+
+**Research path:** Collect individual radars. Analyze for patterns: what appears at the center most often? Where is there divergence? What categories are most and least populated? Individual radars are the primary data. The session ends here for participants.
+
+**Group path:** Move to Step 5.
 
 ### Step 5 — Compare and build the group radar (workshop)
 In small groups, each person shares the single item they placed at the center of each segment — one segment at a time.
@@ -167,7 +180,11 @@ Steps 1–6. Individuals complete personal radars, then move into small groups (
 Run the individual radar as research in advance — participants complete their radars independently, perhaps digitally. Then bring those individual radars into a workshop as the starting point for the group comparison and collaborative radar phase. This separates generate/prioritize time from workshop time and can produce more considered individual radars.
 
 ### Pairs
-Two people work through the radar together, with each completing an individual radar first. The pair then negotiates a shared radar. Especially valuable when the decision or challenge being explored is shared between the two people — partners making a large purchase, co-leads on a project, two stakeholders who need to reach alignment. The negotiation between two people with shared stakes is unusually revealing: you can hear the trade-offs they're willing to make, the assumptions each person holds, and where their values actually diverge. The conversation between the pair is often more data-rich than the artifact. Can also be used as a deliberate pairing of people without a prior relationship — two people from different functions or backgrounds — to surface how differently the same challenge is experienced.
+Each person generates their list independently, then the two build a single radar together. Skip the individual radar step — go straight from list to shared placement. The joint placement conversation is where the value is: you can hear the trade-offs people are willing to make, the assumptions each person holds, and where their values actually diverge.
+
+Especially valuable when the decision or challenge is shared between the two — partners making a large purchase, co-leads on a project, two stakeholders who need alignment. The conversation as they negotiate placement is often more data-rich than the artifact itself.
+
+Can also be used as a deliberate pairing of people without a prior relationship — two people from different functions or backgrounds — to surface how differently the same challenge is experienced.
 
 ### Project kickoff
 A high-value application of the full workshop sequence. Use the default four categories (Vision, Impact, People, Challenges) to open a new project with key stakeholders. Each person completes an individual radar independently, then the group builds a shared radar through negotiation. The result is a negotiated view of what matters most across all four dimensions — and a group radar that maps directly to the elements of a project brief: goals, measures of success, key stakeholders, and the problem space. The divergence revealed in the session tells you where assumptions need to be tested before work begins. Best run at project kick-off, before any definition or design work has started.
