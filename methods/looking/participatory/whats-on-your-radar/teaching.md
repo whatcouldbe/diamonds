@@ -37,7 +37,7 @@ You can't find that in a spreadsheet or a survey. You have to put people in the 
 
 A radar with two dimensions:
 - **Segments (wedges):** One per category. The number of categories determines the shape of the radar. Default is four; range is two to six.
-- **Rings:** Three rings from center to outer edge, expressing importance — most important at center, secondary importance in the middle ring, least important in the outer ring.
+- **Rings:** Three rings from center to outer edge, expressing importance — Most at center, Some in the middle ring, Least in the outer ring.
 
 Categories and trigger questions are defined by the researcher or facilitator based on what they need to learn. They can be anything — safety, performance, brand, experience; or vision, impact, people, challenges. One or more segments can be left blank as wild cards, giving participants a place to surface considerations that don't fit the defined categories.
 
@@ -55,7 +55,7 @@ Three phases:
 Respond to each trigger question with sticky-note–style phrases. Two to four per category. No prioritizing yet — just get thinking on paper before the radar is revealed.
 
 **2. Prioritize individually**
-Place items on your personal radar in order of importance: the single most important item in the center ring, secondary importance in the middle ring, least important in the outer ring. One item at the center per segment — no exceptions.
+Place items on your personal radar using three rings: Most at the center — one item only — Some in the middle ring, and Least in the outer ring. One item at the center per segment — no exceptions.
 
 **3. Compare and build together** (workshop only)
 Share your most important item per segment — not everything, just the one at the center. The group negotiates which single item goes at the center of the collective radar. Everything else is placed in the middle or outer ring based on the group's discussion, not carried over from individual radars.

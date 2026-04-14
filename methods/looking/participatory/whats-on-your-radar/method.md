@@ -106,9 +106,9 @@ How this step runs depends on the group configuration:
 
 | Ring | Meaning | Capacity |
 |---|---|---|
-| **Center** | Most important — the single consideration that matters most in this category | 1 item only |
-| **Middle ring** | Secondary importance — meaningful but not the top priority | 2–3 items |
-| **Outer ring** | Least important — relevant but lower priority given the constraints | 3–5 items |
+| **Center** | Most — the single consideration that matters most in this category | 1 item only |
+| **Middle ring** | Some — important but not the top priority | 2–3 items |
+| **Outer ring** | Least — worth noting but lower priority given the constraints | 3–5 items |
 
 Only one item can sit at the center per segment. The constraint is also spatial — the rings have limited physical space, which forces trade-offs. If two items feel equally important, the method requires a choice.
 
