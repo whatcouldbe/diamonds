@@ -57,7 +57,7 @@ Use these in the introduction — lead with why, not what:
 | Show the categories | "There are [n] categories we're going to look at. For each one, there's a trigger question." |
 | Explain the generate step | "First, read each question and write your responses on sticky notes — one idea per sticky. Aim for two to four per category. Don't worry about prioritizing yet — just get your thinking on paper." |
 | Hold the radar reveal | *Do not show the radar template yet. Show it only when people are ready to prioritize.* |
-| Explain placement | "Now you're going to place your stickies onto your personal radar. Arrange them in order of importance: the single most important item in the center ring, secondary importance in the middle ring, least important in the outer ring. Only one item can sit at the center of each segment." |
+| Explain placement | "Now you're going to place your stickies onto your personal radar using three rings: Most at the center — one item only — Some in the middle ring, and Least in the outer ring. Only one item can sit at the center of each segment." |
 | Name the constraint | "If two items feel equally important, you still have to choose. That choice is the point." |
 
 ### Execution
