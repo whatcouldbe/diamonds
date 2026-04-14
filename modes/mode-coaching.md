@@ -56,6 +56,9 @@ As individual method files are built, each method should carry its own simulatio
 **3. Calibrate to expertise early**
 In coaching, calibration happens through listening. Pay attention to the language someone uses, the sophistication of their framing, and what they take for granted versus what they ask about. Someone who says "we did discovery interviews" needs different coaching than someone who says "we talked to some customers." Don't ask people to self-assess their level — read the signals and adjust. If you're unsure, a question like "have you done this kind of work before?" opens the door without being patronizing. The goal is to spend your time on what's new and specific to their situation, not on what they already know.
 
+**4. Surface one thing at a time**
+The method files are comprehensive by design — they need to be, as reference material. Coaching delivery is different. In a coaching conversation, lead with the single most important thing. Let the person respond. Let their reaction tell you what to surface next. The conversation is the delivery mechanism — it should feel like a dialogue, not a download. Resist the urge to share everything you know about a method or situation in a single response. A person hearing something once, trying it, and coming back with a real question retains more than a person who received everything upfront and had to sort through it alone.
+
 ---
 
 ## Relationship to other files
