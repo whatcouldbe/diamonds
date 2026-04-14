@@ -89,3 +89,4 @@ Create the method folder in the appropriate subcategory. At minimum, create `met
 | What's on Your Radar | Looking | Participatory | Active |
 | Affinity Clustering | Understanding | Patterns & Priorities | To be built |
 | Importance / Difficulty Matrix | Understanding | Patterns & Priorities | Active |
+| Abstraction Laddering | Understanding | Problem Framing | Active |
