@@ -115,8 +115,10 @@ The starters are not suggestions — they're guardrails. If a WHY doesn't begin 
 ### Individual Generation First
 Always generate individually before sharing. This protects quieter participants, prevents anchoring (the first speaker doesn't set the frame for everyone), and ensures the team sees genuine diversity of perspective. Skip this step and you'll get groupthink — one or two voices and a lot of nodding.
 
-### It's Okay to Reframe the Directive
+### It's Okay to Reframe the Directive — And It's Okay Not To
 If the level-selection discussion reveals that the original directive was framed at the wrong altitude — too tactical, too vague, or pointed at the wrong goal — that's a successful outcome. The team has just learned something critical before investing in the wrong thing. Name it as a win.
+
+But the team may also end up right where they started — and that's equally valid. The method doesn't mandate a reframe. Sometimes the original framing was correct, and the ladder confirms it. What the team gains is everything around it: the WHYs become the narrative for marketing and communicating the initiative; the HOWs point to quick wins and early approaches. Armed with that context, the team can move forward with more confidence and a richer story to tell.
 
 ### The Sponsor's WHYs Are Gold
 If a project sponsor or stakeholder is in the room, their WHYs often reveal the unstated goals behind the directive — the things they care about that never made it into the brief. Ask them to generate WHYs individually alongside the team. The gaps between their responses and the team's are frequently the most important thing in the room.
@@ -128,8 +130,11 @@ If a project sponsor or stakeholder is in the room, their WHYs often reveal the 
 ### AI-Assisted Generation
 Use the structured AI prompt (see `resources/ai-usage.md`) to generate WHY and HOW ladders from the directive. Use the output as a starting point for team discussion rather than individual sticky generation. Good for solo preparation or for kickstarting a session when a team is stuck.
 
-### WHYs Only
-When the goal is simply to understand the purpose behind a directive before scoping, skip HOW generation. Run the WHY ladder, choose the right level, and carry that framing forward. Faster and appropriate when the team isn't yet at the point of exploring approaches.
+### WHYs Only — When You're Starting Tactical
+If the team has been handed a very specific, highly tactical challenge, go up the ladder only. Ask WHY questions to surface the goals and benefits behind the directive. This is especially useful when the team suspects they're in the weeds and needs to evaluate whether this is the right thing to work on — the WHYs give them the criteria to assess it against other options.
+
+### HOWs Only — When You're Starting Broad
+If the team is facing a large, ambitious directive — the kind of organization that's always trying to boil the ocean — go down the ladder only. Ask HOW questions to break the challenge into manageable approaches and identify quick wins. The HOWs are the "one bite at a time" — a way to make a very large initiative actionable without losing sight of the ambition.
 
 ### Solo
 Done individually to prepare a brief, proposal, or project plan. Follow the same steps — generate WHYs and HOWs, then choose the level. Writing forces clarity. Useful before a stakeholder conversation when you want to be sure you're framing the challenge well.

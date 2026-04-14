@@ -47,11 +47,17 @@ When a WHY surfaces a goal nobody had articulated, stop and acknowledge it: "Tha
 **State the chosen framing explicitly before people leave.**
 Don't let the session end with a vague sense that "we talked about it." Name the chosen framing out loud. Write it down. Confirm that everyone agrees. This is the output. Everything else is context.
 
+**Ending where you started is a valid outcome.**
+The method doesn't require a reframe to be successful. If the team looks at the full ladder and decides the original directive was right, that's fine — name it explicitly and move on. What they've gained is everything around it: WHYs they can use to communicate and market the initiative, and HOWs that point to quick wins and early approaches. That's a richer foundation than they had when they walked in.
+
 **The ladder is a reference, not a deliverable.**
 Keep the full ladder — it's useful context. But the deliverable is the chosen framing. That's the thing that goes into the brief, the kickoff document, the research plan. The rest of the ladder informs it.
 
 **Convert to a How Might We statement.**
 The chosen framing almost always translates into a useful HMW question. Try it: "How might we [chosen framing]?" If it works, you have a design challenge ready to take into ideation or research.
 
-**Use the WHYs as success criteria.**
-The goals and benefits surfaced above the directive are implicit measures of success. What does the project need to deliver on? The WHYs tell you. Make them explicit and carry them forward.
+**Use the WHYs as success criteria — and as marketing.**
+The goals and benefits surfaced above the directive are implicit measures of success. What does the project need to deliver on? The WHYs tell you. Make them explicit and carry them forward. They're also the narrative for communicating the initiative: why this matters, what it's in service of, what the team is ultimately trying to make possible.
+
+**Use the HOWs to identify quick wins.**
+The approaches surfaced below the directive aren't just options to evaluate — they're a map of what's immediately actionable. If the team needs early momentum or wants to demonstrate progress before committing to a full solution, scan the HOWs for the moves that are feasible now. Quick wins buy time, build confidence, and generate evidence.
