@@ -31,6 +31,15 @@ The language starters are not a nice-to-have. "In order to..." and "So that..." 
 **Individual generation first, always.**
 Skip individual generation and you'll get groupthink — one or two voices dominating, everyone else nodding. The individual round equalizes voice and surfaces genuine diversity. A quiet person's "In order to..." might be the most important thing in the room.
 
+**Watch for "because" answers in WHY generation.**
+If a WHY answer starts with "because" — "because people don't understand their finances," "because our process is inefficient" — the person has shifted from goal articulation into root cause analysis. They're diagnosing why a problem exists rather than naming what solving it would make possible. These feel similar but they're different modes of thinking, and they lead to different places.
+
+Redirect: *"That's telling us why the problem exists — which is worth exploring. In this step, we're asking what solving it would make possible. Can you reframe that as a goal or benefit?"*
+
+If multiple people are giving "because" answers, the team may actually need to understand root causes before they're ready to frame an opportunity. Name it: *"It sounds like we're not sure enough about what's driving this to frame the opportunity yet. That's important to know — problem tree analysis is the right method for that work. We could run that first and come back to this."*
+
+The language starters are your prevention. "In order to..." and "So that..." make "because" answers structurally awkward — they do active work to hold the team at the right level. Enforce them.
+
 **Watch for the HOW that's actually a solution.**
 "By building a mobile app" is not a HOW at the right level. "Enabled by mobile-first access" is. The distinction matters: the first constrains the work before it's begun; the second opens up the design space. Train yourself to hear the difference and redirect consistently.
 

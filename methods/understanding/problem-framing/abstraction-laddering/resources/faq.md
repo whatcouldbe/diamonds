@@ -29,4 +29,8 @@ WHYs are goals and benefits — qualitative statements about what the project sh
 Take it back to the sponsor. This is a feature, not a bug — you've discovered that the team's understanding of the challenge is different from (or deeper than) what was originally handed down. That's a critical alignment conversation to have before the team invests further. Come with the ladder as context, not just a different conclusion.
 
 **Is this the same as asking "five whys"?**
-Related but different. Five whys is a root cause analysis tool — it's used to find the underlying cause of a problem, and it moves in one direction (up). Abstraction laddering goes both directions (goals above, approaches below), starts with a directive rather than a problem, and ends with a team choosing a framing level rather than identifying a root cause. The questioning instinct is similar; the purpose and structure are different.
+No — and conflating them is a common source of confusion. Five whys (and problem tree analysis) is a root cause analysis tool. It asks: *why does this problem exist?* The answers are causal explanations — they diagnose what's causing a situation. Abstraction laddering asks something fundamentally different: *what would solving this make possible?* The answers are goals and benefits, not causes.
+
+The clearest signal that someone has crossed from abstraction laddering into root cause territory is the word "because." If a WHY answer starts with "because" — "because people don't understand their finances," "because our process is broken" — that's a diagnosis, not a goal. It belongs in a different activity entirely.
+
+If a team is trying to understand *why a problem is happening*, abstraction laddering is the wrong tool. Problem tree analysis is designed for that work: it maps root causes below the problem and effects above it. That's a valuable activity — just not this one.

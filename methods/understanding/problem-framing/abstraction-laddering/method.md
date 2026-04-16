@@ -106,6 +106,13 @@ The chosen framing becomes the working definition of the challenge going forward
 
 ## Facilitation Notes
 
+### Watch for "Because" — It Signals Root Cause Drift
+If a WHY answer starts with "because," the person has shifted into root cause analysis — diagnosing why a problem exists rather than articulating what solving it would make possible. These are fundamentally different lines of thinking, and the methods that serve them are different too.
+
+When it happens, redirect: *"That's describing why the problem exists — which is worth exploring. But in this method, we're asking what solving it would make possible. Can you reframe that as a goal or benefit?"* If the team genuinely needs to understand root causes, name it: *"It sounds like we might need to spend time on why this problem is happening before we frame the opportunity. That's a different activity — problem tree analysis is built for it."*
+
+The starters — "In order to..." and "So that..." — are your first line of defense here. They structurally prevent "because" answers. Enforce them consistently.
+
 ### The Level-Selection Discussion Is the Method
 Everything before it is generating material. The real value comes from the team looking at the full ladder together and choosing a level. Don't let the session end without an explicit decision. If the team can't agree, that disagreement is the insight — surface it, name it, and decide how to proceed.
 
