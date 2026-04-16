@@ -71,8 +71,17 @@ Everyone begins with a list — individual generation always comes first, regard
 - **Small group (4–6):** Each person generates a list independently, then places items on their own individual radar. Each person brings only their most important item per segment to the group. The individual radar is a convergence mechanism — it keeps the group discussion manageable by reducing what each person brings to the table.
 - **Large group:** Each person generates a list and narrows to their top one or two items. Those items come directly to the group radar. Individual radars are skipped in the interest of efficiency.
 
+### Medium
+The radar is a spatial artifact — the rings do real work when participants can physically or digitally place items. How you run the method depends on the medium:
+
+- **Physical room:** Draw the radar on paper or a whiteboard. Participants write items on sticky notes and place them literally on the rings. The spatial act of placement is part of the method.
+- **Digital whiteboard:** Use a radar template in Miro or equivalent. Participants drag and drop items onto the rings. The artifact is visible to everyone in real time.
+- **Conversational interface (chat or voice):** No visual artifact. The radar becomes a mental model. Explain the three rings at the start of the prioritisation step, then work through placement verbally — category by category, asking the participant where each item sits. The facilitator tracks placement and reflects the completed radar back at the end.
+
+Facilitation language shifts with the medium. In a room: "place your item at the center." In a conversation: "which item would you put at the center?" The method is the same; the medium changes how it is run.
+
 ### What You Need
-- **Radar template:** Concentric circles divided into segments (one per category), with three rings from center to outer edge. No labels on the rings — importance is expressed through placement.
+- **Radar template:** Concentric circles divided into segments (one per category), with three rings from center to outer edge. No labels on the rings — importance is expressed through placement. Not required in a conversational interface — the radar is described rather than shown.
 - **Sticky notes:** One idea per sticky. Short phrases, plain language.
 - **Coloured tabs or dots (optional but recommended):** Used for category attribution — so items carry their segment of origin when moved during the group phase. Can also be used for authorship attribution — marking which person generated each item. Both uses are valid; sometimes both are used simultaneously.
 - **Markers:** One per participant.
@@ -199,6 +208,8 @@ The default is four. Two categories work for a tightly scoped question. Eight is
 
 ### Custom categories and questions
 Replace the default four with categories specific to the context. Trigger questions should be open-ended and in plain language: "What would...?", "Who is...?", "What problems...?" rather than leading or yes/no questions.
+
+Avoid framing that implies a limit on responses. A question like "If one thing changed, what would make the biggest difference?" signals to participants that one answer is enough — constraining generation before it has started. The generate step is where you want breadth. Narrowing happens in the prioritisation step, not before. Prefer: "If you could change anything about this, what would be different?" or "Wave a magic wand — what does the ideal version look like?"
 
 ### AI-assisted generation
 Before the workshop, use an AI tool to generate a starting set of items for each category based on the directive. Share with participants as examples or starting points — not as answers. Particularly useful for groups who find a blank page difficult to start from. See `resources/ai-usage.md` for the prompt and guidance.
