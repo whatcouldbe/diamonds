@@ -14,6 +14,12 @@ A participatory discovery method that surfaces what matters most to individuals 
 
 Use these in the introduction — lead with why, not what:
 
+**Individual / research context:**
+- Understand what matters most to you — across these categories — before we decide how to respond
+- Give your perspective a structure so we can hear what you actually prioritize, not just what you mention first
+- Surface the trade-offs you're making — what's at the center tells us what would make the biggest difference
+
+**Group / workshop context:**
 - Understand what matters most to each person before the group conversation shapes individual thinking
 - Surface genuine priorities, not social consensus
 - Make individual perspectives visible and comparable across a group
