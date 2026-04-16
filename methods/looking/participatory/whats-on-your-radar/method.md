@@ -19,15 +19,17 @@ A participatory discovery method that surfaces what matters most to individuals 
 
 ## Purpose
 
-Use when you need to understand what a group of people believes is most important in relation to a specific initiative, opportunity, or challenge — without letting group dynamics shape individual thinking before it has been expressed.
+Use when you need to understand what matters most to a person — or a set of people — in relation to a specific initiative, opportunity, or challenge.
 
-**The core question:** What matters most to you — and how does that compare to what matters most to others?
+At its core, the method gives any individual a structured way to articulate their priorities across a defined set of categories and make explicit trade-offs within each. That individual articulation is valuable on its own: as research with end users, as a way to understand what a business customer needs before deciding how to serve them, or as the starting point for a product or service decision. The group session — where individual radars are compared and a shared radar is built — is one application of that core capability, not the only one.
+
+**The core question:** What matters most to you — and why?
 
 **Why What's on Your Radar works:**
-- It separates thinking from discussion. People generate and prioritize individually before any group conversation happens. This prevents the loudest voice from dominating, and ensures the group radar reflects genuine individual priorities rather than social consensus.
+- It forces trade-offs. By requiring only one item at the center of each segment, the method makes it impossible to treat everything as equally important. The choices a person makes — and the reasoning behind them — are where the real insight lives. Why did safety land at center and entertainment at the outer ring? Why did this customer prioritize integration over features? Participatory methods are fundamentally about understanding trade-offs, and the radar is designed to surface them.
+- It separates thinking from discussion. In group settings, people generate and prioritize individually before any group conversation happens. This prevents the loudest voice from dominating and ensures the group radar reflects genuine individual priorities rather than social consensus.
 - It makes individual priorities visible and comparable. Because everyone uses the same structure — the same segments, the same rings — you can look across radars and immediately see where people align and where they diverge.
-- It forces trade-offs. By requiring only one item at the center of each segment, the method makes it impossible to treat everything as equally important. The choices people make — and the reasoning behind them — are where the real insight lives. Why did someone trade fuel efficiency for towing capacity? Why did safety land at center and entertainment at the outer ring? Participatory methods are fundamentally about understanding trade-offs, and the radar is designed to surface them.
-- It scales across contexts. The same method works as a research tool (gather individual radars, analyze patterns) and as a workshop tool (compare priorities, build a collective radar together).
+- It works across research and workshop contexts. The same method works as a research tool with end users (collect individual radars, analyze patterns across them) and as a workshop tool with a team or group of stakeholders (compare priorities, build a collective radar together). The individual radar is always the primary unit.
 
 **Where it sits in the process:**
 What's on Your Radar lives in **Looking / Participatory**. It is primarily a Discovery method — used early in an initiative to surface what different people believe matters before any definition or design work begins. It can also be used at the start of a specific phase to re-orient a team around what matters most before moving forward.
