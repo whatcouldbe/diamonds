@@ -12,7 +12,7 @@ A `diamonds-vault/` folder is the complete Diamonds footprint within a project �
 diamonds-vault/
 ├── project.md     — orientation: what the project is, who's involved, where external resources live, key decisions made
 ├── health.md      — status: validation progress, question status, activity log, open assumptions
-└── activities/    — dated activity files (interviews, sessions, emails, experiments)
+└── log/           — dated records of actions and experiments
 ```
 
 The two core files have distinct, non-overlapping jobs:
