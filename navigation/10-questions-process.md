@@ -24,7 +24,7 @@ The questions are process-agnostic. They apply regardless of methodology — Dou
 
 Before you start the double diamond, establish why you're doing this work.
 
-#### **Question 1: What goals do we need to deliver against in order to be successful?**
+#### **Question 1: What goals do we need to achieve, and how will we know we've achieved them?**
 
 **Team's Core Task:** Set strategic goals and communicate so that they can be proposed and evaluated against objectives.
 
@@ -71,26 +71,25 @@ Before you start the double diamond, establish why you're doing this work.
 
 Validate the problem space before jumping to solutions.
 
-#### **Question 3: How do things work now?**
+#### **Question 3: What are people actually trying to accomplish?**
 
 **Action: DISCOVER what people need**
 
 **Team's Core Task:** Discover whether we truly are addressing real customer partners' needs and identify what matters most to them.
 
 **Outcomes:**
-- Identify the pains, gains, and jobs to be done
-- Know what is a desirable and valuable to customers
-- Understand and access opportunities
+- Understand what motivates the people you are designing for
+- Identify the needs, goals, and frustrations that represent real opportunity
+- Know how people are currently trying to solve the problem on their own
 
-**Leader's Core Tasks:** Agree whether to continue working on current plans or change them based on new evidence around what customers need.
+**Leader's Core Tasks:** Agree whether to continue working on current plans or change them based on new evidence around what people actually need.
 
 **Questions leaders can ask to validate:**
-- Who key customer insights did we discover?
-- What did we learn?
-- What did we learn?
-- How are people currently addressing this need on their own?
-- What are the access opportunities?
-- What is the market size?
+- What are people actually trying to accomplish?
+- How are they currently trying to accomplish it?
+- What workarounds or compensating behaviors have we observed?
+- What key insights did we discover from spending time with real people?
+- What did we learn that surprised us or challenged our assumptions?
 
 **Can you move on?** When you've spent time with real customers, observed their actual behavior, and validated what matters to them. Not when you think you know - when you've validated with real people.
 
@@ -106,20 +105,18 @@ Validate the problem space before jumping to solutions.
 
 **Outcomes:**
 - Verify the problem is worth solving
-- Verify that this is a problem that honors should solve because it is viable in the marketplace and in technically feasible
-- Align business goals with customer pains, gains and HMWs
-- Build upon a foundation of evidence and data
-- Build a value proposition that can be tested
-- Define a hypothesis
+- Verify that this is a problem the organization should solve — that it is viable in the marketplace and technically feasible
+- Build upon a foundation of evidence and data, not assumption
+- Define a clear opportunity statement that connects customer needs to business goals
 
-**Leader's Core Tasks:** Verify the most valuable problem(s) to solve have been defined before continuing on to explore the best potential solution(s).
+**Leader's Core Tasks:** Verify the most valuable problem(s) to solve have been defined before moving into solution development.
 
 **Questions leaders can ask to validate:**
-- What evidence do we have?
-- How do we validate or test it?
-- What is the problem?
-- How have you converted this to something people need?
-- Have we uncovered any unmet or unique customer needs the propose we have identified?
+- What evidence do we have that this is the right problem?
+- What is the actual problem, stated clearly?
+- Have we connected this to what people are trying to accomplish?
+- Have we uncovered any unmet needs we hadn't anticipated?
+- Why is this the most valuable problem to solve right now?
 
 **Can you move on?** When you've synthesized insights from Q3, identified patterns, and framed a validated opportunity tied to outcomes for both customers and the business. You should be able to articulate the problem clearly and explain why solving it matters.
 
@@ -161,7 +158,7 @@ Validate which solution approach actually works.
 
 ---
 
-#### **Question 6: What should we build to test our idea works?**
+#### **Question 6: What can we build to test whether our solution works for people?**
 
 **Action: DELIVER something impactful**
 
@@ -217,68 +214,71 @@ Sustain, scale, or sunset based on validated performance.
 
 ---
 
-#### **Question 8: What can we do to accelerate growth? (Reach, revenue, results)**
+#### **Question 8: What can we do to accelerate growth?**
 
-**Team's Core Task:** Scale the validated business model to more people to generate greater business outcomes.
+**Team's Core Task:** Scale the validated solution to more people to generate greater business outcomes.
 
 **Outcomes:**
-- Accelerate the growth (reach, revenue, and results)
-- Identify where the highest ROI solution improvements, existing geographic/ scalability efforts
-- Continuously track customer and solution health
+- Accelerate growth across reach (more people using it), revenue (greater return), and results (stronger outcomes)
+- Identify the highest-impact opportunities for expansion — geographic, demographic, or capability-based
+- Continuously track customer and solution health as scale increases
 
-**Leader's Core Tasks:** Plan to scale the validated business model to more people to generate greater business outcomes.
+**Leader's Core Tasks:** Plan to scale the validated solution to more people to generate greater business outcomes.
 
 **Questions leaders can ask to validate:**
-- What could enable limiting growth?
-- How do we measure how well we're scaling effectiveness and efficiently?
-- What unfair advantages do we have to understand relative to competition?
-- What can we do to increase our solution's user base and attract new customers using our solution?
+- What is currently driving growth, and how do we amplify it?
+- What could limit or slow growth, and how do we address it?
+- How do we measure whether we're scaling effectively?
+- What advantages do we have relative to alternatives in the market?
+- What can we do to expand our user base while maintaining the value that made this work?
 
 **Can you move on?** When you understand what's driving growth and have a plan to amplify it systematically.
 
 ---
 
-#### **Question 9: What can we do to maintain our market position?**
+#### **Question 9: How do we keep adding value and stay relevant?**
 
-**Team's Core Task:** Sustain business outcomes while minimizing costs and optimizing efficiencies.
+**Team's Core Task:** Continuously improve the solution so it remains valuable to customers and worth sustaining for the business.
 
 **Outcomes:**
-- Optimize efficiency and leverage costs
-- Maintain relevancy in the market
-- Continuous improvements
+- Identify opportunities to improve based on ongoing customer and market feedback
+- Optimize efficiency and reduce cost where possible without compromising value
+- Monitor whether the solution continues to address the original problem effectively
 
-**Leader's Core Tasks:** Ensure business outcomes are sustained while minimizing costs and optimizing efficiencies.
+**Leader's Core Tasks:** Ensure the solution continues to deliver value while managing costs and identifying when significant reinvestment or change is needed.
 
 **Questions leaders can ask to validate:**
-- How can we improve brand upon customers and their work products?
-- How might we leverage our scale?
-- How might we improve quality, experience?
-- How do we set our back-line quality while cutting costs?
-- What capabilities should we have we don't?
+- Are customers still getting meaningful value from this solution?
+- What feedback or signals suggest the solution needs to evolve?
+- What would it take to keep this solution relevant for the next 1–2 years?
+- Are we investing the right amount to sustain this?
+- Is there a point at which we should consider stopping?
 
-**Can you move on?** This is an ongoing question - you're never "done." You continue monitoring, optimizing, and deciding whether to sustain or move to Q10.
+**Can you move on?** This is an ongoing question — there is no single "done." Continue monitoring and improving. When the investment required to stay relevant exceeds the value delivered, move to the next question.
+
+**Note:** Sustain is not a terminal state. If ongoing effort reveals new unmet needs or shifting goals, it may be worth looping back to re-examine what should be worked on next.
 
 ---
 
-#### **Question 10: Is this solution still adding value, or should it be retired?**
+#### **Question 10: Is this solution still worth the investment, or is it time to stop?**
 
-**Team's Core Task:** Determine if products continue to provide value to our customers and the business.
+**Team's Core Task:** Assess whether the solution continues to provide sufficient value to justify ongoing investment, and if not, manage a responsible wind-down.
 
 **Outcomes:**
-- Realign resources to other pursuing towards to long-term value to future solutions
-- Gather insights into why this solution is no longer valuable
+- Capture and transfer knowledge from this solution to inform future work
+- Realign resources freed by stopping toward higher-value opportunities
+- Ensure customers are supported through any transition
 
-**Leader's Core Tasks:** Evaluate whether products continue to provide value to our customers and the business.
+**Leader's Core Tasks:** Make a clear, evidence-based decision about whether to continue investing in or stop this solution.
 
 **Questions leaders can ask to validate:**
-- How are we monitoring whether this solution is still valuable?
-- What might impact or will impact the customer or market?
-- What are we do to the trigger to retire the offering?
-- What may trigger us all determine our decision to sunset?
-- What can we do continue to improve or plan for running this solution?
-- What has respond or will impact the customer or market?
+- What evidence tells us whether this solution is still delivering value?
+- What would it cost to keep this solution viable versus what it currently delivers?
+- Are there signals from customers, the market, or internal data that this solution has run its course?
+- What do we need to do to responsibly stop and transition customers if we decide to?
+- What have we learned from this solution that should inform what we do next?
 
-**Can you move on?** When you've validated that the solution no longer delivers sufficient value relative to the cost of maintaining it, and you've captured learnings to inform future work.
+**Can you move on?** When you've made a clear decision — continue with significant reinvestment (which may mean looping back to earlier questions) or stop. If stopping, capture learnings before closing out.
 
 ---
 
@@ -288,7 +288,7 @@ Sustain, scale, or sunset based on validated performance.
 - Use the questions as your guide to understand where teams are and what they need to validate
 - Speak naturally about validation, outcomes, and what needs to be answered
 - Never reference questions by number in conversation — not "Q6," not "Question 6," not "the sixth question"
-- Instead of "Have you answered Question 3?" say "Have you validated what your customers' actual needs and pain points are?"
+- Instead of "Have you answered Question 3?" say "Have you validated what people are actually trying to accomplish?"
 - The question itself is the principle. The number is an internal index and stays internal.
 - When you need to show they've skipped a checkpoint: "It sounds like we're exploring concepts before we've validated the customer problem"
 - When helping them see a dependency: "We can't effectively answer this without first understanding..."
