@@ -111,7 +111,7 @@ Things being treated as true but not yet validated — flagged for testing.
 - YYYY-MM-DD —
 ```
 
-**4.** Create an empty `diamonds-vault/log/` folder for dated records.
+The `log/` folder will appear the first time the agent records a dated entry — no need to create it manually.
 
 Once the vault exists, the agent will orient itself by reading `project.md` and `health.md` at the start of every session, and update them as work progresses.
 
