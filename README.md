@@ -51,6 +51,70 @@ Once set up, Diamonds will be available in every Claude Code session automatical
 
 **Note:** `~/.claude/CLAUDE.md` is the global persistent layer in Claude Code. If you already have content there, add the Diamonds block alongside it rather than replacing it. If you also maintain a project-level or home directory `CLAUDE.md` with personal context, add a pointer to that file as well so the agent has your full profile in every session.
 
+## Project Setup
+
+The engine above tells the agent *how* to think. Projects need a place for the agent to remember *what it's learning* — that's the vault.
+
+Each project using Diamonds gets a `diamonds-vault/` folder at its root. This is the project's knowledge layer: persistent context the agent reads at the start of every session and updates as work progresses.
+
+```
+your-project/
+└── diamonds-vault/
+    ├── project.md     — orientation: who, what, where (read first to get oriented)
+    ├── health.md      — status: what's validated, what's open (read to get current)
+    └── log/           — dated records of actions and experiments
+```
+
+To set up a vault in a new project:
+
+**1.** Create `diamonds-vault/` at the root of the project.
+
+**2.** Create `diamonds-vault/project.md`:
+
+```markdown
+# Project
+
+## What
+One or two sentences on what this project is and why it exists.
+
+## Who
+- Team:
+- Customers / users being served:
+- Stakeholders:
+
+## Where
+- Build / code:
+- Research notes:
+- Other resources:
+
+## Key decisions
+Decisions made that shape the work — added as they happen.
+```
+
+**3.** Create `diamonds-vault/health.md`:
+
+```markdown
+# Health
+
+*Last updated: YYYY-MM-DD*
+
+## Current focus
+The question the team is trying to answer right now, and why it matters.
+
+## Validation progress
+What's been tested with real people and what was learned.
+
+## Open assumptions
+Things being treated as true but not yet validated — flagged for testing.
+
+## Activity log
+- YYYY-MM-DD —
+```
+
+**4.** Create an empty `diamonds-vault/log/` folder for dated records.
+
+Once the vault exists, the agent will orient itself by reading `project.md` and `health.md` at the start of every session, and update them as work progresses.
+
 ## Repository Structure
 
 ```
