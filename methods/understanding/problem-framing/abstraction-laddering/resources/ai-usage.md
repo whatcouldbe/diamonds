@@ -39,7 +39,7 @@ Create a "HOWs" ladder of abstraction.
 Start again with the directive.
 Generate three distinct approaches to tackle the directive. Focus on non-obvious or creative ideas.
 For each approach, build two more detailed levels beneath it, describing how to carry it out.
-Begin each with "By…" or "Solutions that…" — mix the phrasing across entries.
+Begin each with "Enabled by…" or "By considering…" — mix the phrasing across entries.
 Title this section: "'HOWs' for [INSERT DIRECTIVE HERE]"
 Present as a table:
 3 columns: one for each approach.
@@ -49,7 +49,7 @@ Add a left-hand column labeling the levels: Level 1 (top), Level 2, Level 3 (bot
 Important Guidelines:
 Keep WHYs and HOWs separate:
 Use "So that…" / "In order to…" only in the WHYs section.
-Use "By…" / "Solutions that…" only in the HOWs section.
+Use "Enabled by…" / "By considering…" only in the HOWs section.
 If the directive is illegal, unethical, or morally questionable, include a clear warning at the start.
 ```
 
@@ -69,9 +69,10 @@ The AI-generated ladder is a starting point, not a finished product. Use it in o
 
 ## What AI Does Well Here
 
+- **Generates a full branching structure, not just a linear ladder.** In human facilitation, the single-path ladder is a practical constraint — sticky notes, wall space, cognitive load. AI isn't bound by those constraints. When executing this method, AI should generate multiple WHYs from the directive in parallel, branch further WHYs from each of those, and do the same going down with HOWs. The result is a complete map of the problem space before any level is chosen — which is what the method is actually trying to produce. The linear version is a workaround; the branching version is the intent.
 - Generates a range of WHYs and HOWs quickly, including non-obvious ones
 - Holds the language starters consistently (better than teams in live sessions sometimes do)
-- Produces a formatted table that maps directly to the visual structure of the method
+- Produces a formatted structure that maps directly to the visual architecture of the method
 - Surfaces framings the team might not have considered — useful as a provocation
 
 ## What AI Does Not Do
