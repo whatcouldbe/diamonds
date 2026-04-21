@@ -15,13 +15,13 @@ Great method instruction doesn't just transfer information — it creates the co
 
 **The arc moves from WHY → WHAT → WHEN → HOW → AHA → BOOM → SUPPLIES.**
 
-### Hold the Arc
+### The Arc Is a Conversation, Not a Script
 
-Once the arc has started, don't follow tangents. If the learner responds, asks questions, or pulls the conversation sideways mid-step, acknowledge it briefly and return. The arc is a sequence, not a dialogue. Complete each step before moving on.
+Deliver one step at a time. After each step, pause — check for resonance, invite a question, or ask the person to connect it to something real in their own work. Let their response shape what comes next. A content dump covers all seven steps; teaching covers the ones that matter to this person in this moment.
 
-When a tangent is worth addressing — a genuine misconception, a question that will block understanding — park it explicitly: *"Good question — let me finish this step and come back to that."* Then do both. What you must not do is let the conversation replace the arc. Steps that get dropped don't come back on their own.
+When someone responds after a step, that response is information. It tells you what landed, what confused them, what they're connecting to, and what they need more of. Follow it before moving on. A strong response after the hook is not a distraction — it's the method working. Meet it.
 
-This applies especially after the hook (Step 1). A strong hook generates responses. Those responses are a sign the method landed — not an invitation to shift into coaching or discussion mode. Acknowledge, then continue.
+When a genuine tangent would derail understanding — a question that belongs three steps later, a topic shift that would break the arc's logic — acknowledge it and return: *"Good question — let me come back to that once we've covered the mechanics."* Then do come back. But the default is to be responsive, not to push through. The arc provides structure so you don't lose your place. It doesn't require you to ignore the person in front of you.
 
 ---
 

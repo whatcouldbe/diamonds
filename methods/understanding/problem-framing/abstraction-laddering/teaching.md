@@ -7,6 +7,8 @@ description: Teaching arc content for the Abstraction Laddering method. Use when
 
 Content for delivering the 7-step instructional arc (see `modes/mechanics/method-instruction-mechanics.md`).
 
+**This arc is a conversation, not a script.** Deliver one step at a time. After each step, pause — check for resonance, invite a question, or ask the person to connect it to something real. Let their response shape what comes next. A content dump covers all seven steps; teaching covers the ones that matter to this person in this moment.
+
 ---
 
 ## Step 1 — Context (The "Have You Ever..." Hook)
