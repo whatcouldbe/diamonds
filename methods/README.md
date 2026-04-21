@@ -78,6 +78,11 @@ The `method.md` file should follow this structure:
 7. **Outputs** — What artifacts or insights this method produces
 8. **Connections** — Related methods and natural next steps
 
+**Protocol for adding a new method — in order:**
+1. Have the practitioner teach the method before building any files. Teaching sessions encode stories, facilitation edge cases, and conviction closes that cannot be approximated from research.
+2. Collect templates before building files. Seeing actual template language produces better first drafts and avoids updating method.md after the fact when template section names differ from what was written.
+3. For the FAQ: generate a prioritized list of plausible questions, then ask the practitioner to add any from real experience and flag any as non-issues. Work through them together one at a time — don't make the practitioner generate the list from scratch, but don't build the FAQ from generated questions alone either.
+
 Create the method folder in the appropriate subcategory. At minimum, create `method.md`. Add `mechanics.md` and `teaching.md` when the content is available.
 
 ## Current Methods
