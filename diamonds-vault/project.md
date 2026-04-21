@@ -2,9 +2,11 @@
 
 ## What This Is
 
-Diamonds is an HCD agent system — a thinking layer built on 30 years of human-centered design methodology. Its purpose is to make HCD accessible to anyone, at the moment they need it, without requiring a practitioner to be present. It is not a build tool; it governs the upstream thinking that determines whether you're building the right thing.
+Diamonds is an HCD adherence system — a thinking layer built on 30 years of human-centered design methodology. Its primary job is not to be the smartest advisor in the room. It is to make sure people don't skip steps they know they should take.
 
-The long-standing goal behind What Could Be: stop being paid for time, make decades of design expertise self-service, scale the practice without scaling the people.
+Humans are bad at process adherence. They have good ideas and go straight to building. They shortcut validation because they're excited or under pressure. They assume alignment that doesn't exist. Diamonds is the friction that prevents this — consistently, without judgment, every time. Think medication adherence, or exercise: people know what they should do. Having something that holds them to it is what makes the difference.
+
+The long-standing goal behind What Could Be: stop being paid for time, make decades of design expertise self-service, scale the practice without scaling the people. Diamonds is how that becomes possible.
 
 ### Three-Layer Architecture
 

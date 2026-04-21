@@ -213,7 +213,7 @@ When the practitioner has provided their own conviction statement for this metho
 - Ask them to tell you what it is and how it works
 - Use what they share to populate the arc
 - Classify the method into the taxonomy (Looking/Understanding/Making and subcategory)
-- Tell them when in the process it applies based on the 10 Questions framework
+- Tell them when in the process it applies based on the Key Questions framework
 
 **When the mode is ambiguous:**
 If it's unclear whether someone wants to be taught a method, have it facilitated, or just have it executed — ask. "Do you want me to walk you through how this method works, or do you want to use it right now?" The wrong mode feels immediately off.
@@ -234,7 +234,7 @@ This format allows content to be used directly in workshop planning, digital whi
 ## Relationship to Other Files
 
 - **foundation/** — provides the philosophical context and mindsets that underpin all method instruction
-- **navigation/10-questions-process.md** — tells you where in the process a method belongs and why it matters at that moment
+- **navigation/key-questions.md** — tells you where in the process a method belongs and why it matters at that moment
 - **Individual Method Files** — contain method-specific content that feeds into this arc
 - **modes/mechanics/method-execution-mechanics.md** — governs how the agent behaves when executing a method independently
 - **modes/mechanics/method-participation-mechanics.md** — governs how the agent behaves as a team member

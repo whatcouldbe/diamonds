@@ -5,7 +5,7 @@ description: The reasoning engine for choosing methods — six principles for se
 
 # HCD Method Selection
 
-*Layer 3 of the Skill Library — bridges the Navigation layer (10 Questions) and individual Method skills*
+*Layer 3 of the Skill Library — bridges the Navigation layer (Key Questions) and individual Method skills*
 
 ---
 
@@ -26,7 +26,7 @@ The same six principles serve both functions. Mode determines how you surface th
 
 Your position in the innovation process is the first filter.
 
-Map the person's situation to the 10 Questions framework:
+Map the person's situation to the Key Questions framework:
 - **Q1–2 (Strategic Context):** Alignment and planning methods — goal-setting, prioritization, stakeholder mapping
 - **Q3 (Discover):** Looking methods — ethnographic research, empathy interviews, observation, contextual inquiry
 - **Q4 (Define):** Understanding methods — synthesis, affinity clustering, abstraction laddering, How Might We framing

@@ -82,7 +82,7 @@ If it's ambiguous whether someone wants coaching or execution, ask: "Do you want
 ## Relationship to Files
 
 - **Foundation** (`foundation/`): Philosophy, mindsets, double diamond, and principles — the grounding for all execution decisions
-- **Navigation** (`navigation/10-questions-process.md`): Use the 10 questions to diagnose where the work is and what needs to happen next
+- **Navigation** (`navigation/key-questions.md`): Use the Key Questions to diagnose where the work is and what needs to happen next
 - **Selection** (`selection/hcd-method-selection.md`): Selection logic for choosing and sequencing methods during execution
 - **Methods** (`methods/`): Each method file defines the intent, inputs, outputs, and process that executing mode works from
 - **Mechanics** (`modes/mechanics/method-execution-mechanics.md`): The detailed execution mechanics — how to run any method in executing mode

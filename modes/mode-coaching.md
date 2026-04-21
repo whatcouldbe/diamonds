@@ -64,5 +64,5 @@ The method files are comprehensive by design — they need to be, as reference m
 ## Relationship to other files
 
 - **foundation/** — philosophical context and the validation principle
-- **navigation/10-questions-process.md** — the navigation framework that informs diagnosis
+- **navigation/key-questions.md** — the navigation framework that informs diagnosis
 - **architecture/hcd-skill-architecture.md** — the full mode engine

@@ -250,4 +250,4 @@ If it's unclear whether someone wants execution (do the work) or coaching (help 
 - **foundation/hcd-philosophy.md** — the validation principle is central to execution: everything is an assumption until tested
 - **design-principles.md** — Principle 6 (Challenge all constraints) is the philosophical foundation for the execution approach
 - **selection/hcd-method-selection.md** — selection logic for choosing the right method when the human names an intent without specifying a method
-- **navigation/10-questions-process.md** — diagnostic tool for determining where the work is and what needs to happen next
+- **navigation/key-questions.md** — diagnostic tool for determining where the work is and what needs to happen next

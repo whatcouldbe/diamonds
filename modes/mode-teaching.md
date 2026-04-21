@@ -56,5 +56,5 @@ Ask: "Do you want me to walk you through how this method works, or do you want t
 ## Relationship to other files
 
 - **foundation/** — philosophical context and mindsets
-- **navigation/10-questions-process.md** — where in the process a method belongs
+- **navigation/key-questions.md** — where in the process a method belongs
 - **architecture/hcd-skill-architecture.md** — the full mode engine

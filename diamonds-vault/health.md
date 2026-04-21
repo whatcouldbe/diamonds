@@ -6,7 +6,7 @@
 
 ## Where We Are
 
-Diamonds is between Q1 and Q2 of the 10 questions process.
+Diamonds is between Q1 and Q2 of the Key Questions.
 
 ---
 

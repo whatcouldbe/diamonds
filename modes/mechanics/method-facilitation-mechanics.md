@@ -255,4 +255,4 @@ This section is distinct from the method's detailed Steps and Facilitation Notes
 - **modes/mechanics/method-instruction-mechanics.md** — governs Teaching mode; the experiential loop's demo phase uses facilitation mechanics
 - **modes/mode-coaching.md** — coaching may lead to facilitation when a method is chosen; the coaching arc's "offer tiered support" can transition into facilitation
 - **foundation/hcd-principles.md** — facilitation guidelines and tone
-- **navigation/10-questions-process.md** — helps determine which method to facilitate based on where the group is in their process
+- **navigation/key-questions.md** — helps determine which method to facilitate based on where the group is in their process

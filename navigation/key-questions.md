@@ -1,11 +1,13 @@
 ---
-name: 10-questions-process
-description: A practical process framework for navigating innovation work through 10 key questions. Use when teams need to understand where they are in their innovation journey, what they need to answer next, and whether they can move forward or need to iterate.
+name: key-questions
+description: A practical process framework for navigating innovation work through key questions. Use when teams need to understand where they are in their innovation journey, what they need to answer next, and whether they can move forward or need to iterate.
 ---
 
-# The 10 Questions Process
+# The Key Questions
 
 This is a process framework that guides teams through innovation work using questions as checkpoints. It's tool-agnostic - you can use HCD methods, Lean, strategic frameworks, or other approaches to answer each question. The key principle: **If you can answer the question with validated knowledge, move forward. If not, iterate to validate.**
+
+Each question is a key. Answering it with validated knowledge unlocks the next one. You cannot move forward on assumption alone.
 
 ## Core Principle
 
@@ -18,7 +20,7 @@ At every gate, there are three possible outcomes:
 
 The questions are process-agnostic. They apply regardless of methodology — Double Diamond, Agile, Lean, or anything else. Any process is just one way to answer these questions. The questions themselves are the universal checkpoints. What matters is whether you can answer them with evidence, not which tools you used to get there.
 
-## The 10 Questions Framework
+## The Key Questions Framework
 
 ### **Pre-Discovery: Strategic Context**
 

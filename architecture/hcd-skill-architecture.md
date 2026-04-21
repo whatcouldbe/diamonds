@@ -34,7 +34,7 @@ Philosophy, mindsets, double diamond framework, diagnostic 2×2, validation prin
 - `hcd-principles.md` — critical principles, facilitation guidelines, tone and approach
 
 ### Layer 2 — Navigation
-**`navigation/10-questions-process.md`**
+**`navigation/key-questions.md`**
 Process checkpoints that guide teams through innovation work. Tool-agnostic. Helps determine which methods to apply and when it's safe to move forward vs. when to iterate.
 
 ### Layer 3 — Selection *(to be built)*
@@ -48,7 +48,7 @@ The art of choosing methods — recipes, sequences, progressions. Bridges the na
 Layer 4 is not a fixed library of approved methods — it is a **classification and recommendation system**. Any method can be evaluated and placed within the taxonomy. The agent uses the architecture to recommend methods intelligently based on where a person is in their process, not based on a hardcoded list.
 
 **How it works:**
-1. The 10 Questions Process identifies where the person is in their innovation work
+1. The Key Questions Process identifies where the person is in their innovation work
 2. That position maps to a practice area (Looking, Understanding, or Making)
 3. That practice area maps to a subcategory
 4. The agent recommends methods that fit — whether pre-loaded, user-brought, or discovered
@@ -60,7 +60,7 @@ Layer 4 is not a fixed library of approved methods — it is a **classification 
 
 #### Looking
 *Becoming a student of human behavior — observing, watching, listening, experiencing firsthand*
-*Maps to: 10 Questions 3 (Discover customer needs)*
+*Maps to: Key Questions 3 (Discover customer needs)*
 
 | Subcategory | Purpose |
 |---|---|
@@ -70,7 +70,7 @@ Layer 4 is not a fixed library of approved methods — it is a **classification 
 
 #### Understanding
 *Making sense of what was observed — synthesizing, identifying patterns, framing opportunities*
-*Maps to: 10 Questions 4 (Define the right problem)*
+*Maps to: Key Questions 4 (Define the right problem)*
 
 | Subcategory | Purpose |
 |---|---|
@@ -80,7 +80,7 @@ Layer 4 is not a fixed library of approved methods — it is a **classification 
 
 #### Making
 *Developing and testing solutions — prototyping, experimenting, iterating*
-*Maps to: 10 Questions 5–6 (Develop and Deliver)*
+*Maps to: Key Questions 5–6 (Develop and Deliver)*
 
 | Subcategory | Purpose |
 |---|---|
@@ -171,7 +171,7 @@ Method (from Skill Library)  ×  Mode (from Mode Engine)  =  Agent Behavior
 | HCD Mindsets | `foundation/hcd-mindsets.md` | Migrated | The six HCD mindsets |
 | HCD Double Diamond | `foundation/hcd-double-diamond.md` | Migrated | Double diamond framework, practice structure, diagnostic tool |
 | HCD Principles | `foundation/hcd-principles.md` | Migrated | Critical principles, facilitation guidelines, tone and approach |
-| 10 Questions Process | `navigation/10-questions-process.md` | Migrated | Navigation framework |
+| Key Questions Process | `navigation/key-questions.md` | Migrated | Navigation framework |
 | Skill Architecture | `architecture/hcd-skill-architecture.md` | Migrated | This file — system blueprint |
 | Coaching Mode | `modes/mode-coaching.md` | Migrated | Coaching arc, 5 support options, coaching principles |
 | Teaching Mode | `modes/mode-teaching.md` | Migrated | 7-step Method Instruction Mechanics arc |
