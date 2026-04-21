@@ -40,10 +40,6 @@ Diamonds is not a set of callable skills (that makes it opt-in, which defeats th
 - Demonstration projects are the next priority — not more engine building. The existing method library is sufficient to test with real clients.
 - TK Elevator identified as the warmest client relationship for a paid discovery engagement on AI enablement.
 
-## Open Questions
-
-- **Should the knowledge layer eventually grow out of Diamonds, or is it a genuinely separate concern?** Right now Diamonds is stateless — it shapes thinking but doesn't remember what's been learned across sessions. This feels like the biggest gap between where it is and the full vision.
-
 ## Strategic Direction
 
 Diamonds is moving toward client deployment — positioning as a product that scales HCD investment inside organizations, specifically those already familiar with Luma methods. Paid discovery engagements with existing clients are the mechanism for validating this while generating revenue.
