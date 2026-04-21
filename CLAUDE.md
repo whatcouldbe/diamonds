@@ -81,7 +81,7 @@ Method (from Skill Library)  ×  Mode (from Mode Engine)  =  Agent Behavior
 - `methods/README.md` — Method library structure and contribution guidelines
 - Method taxonomy folders: looking/, understanding/, making/ with subcategories
 - Each method is a folder containing: `method.md` (core reference), `mechanics.md` (facilitation cheat sheet), `teaching.md` (teaching arc content), and `resources/` (supplementary materials)
-- **Built:** Critique (`methods/looking/evaluative/critique/`), Importance/Difficulty Matrix (`methods/understanding/patterns-and-priorities/importance-difficulty-matrix/`), Interviewing (`methods/looking/ethnographic/interviewing/`), What's on Your Radar (`methods/looking/participatory/whats-on-your-radar/`)
+- **Built:** Critique (`methods/looking/evaluative/critique/`), Importance/Difficulty Matrix (`methods/understanding/patterns-and-priorities/importance-difficulty-matrix/`), Interviewing (`methods/looking/ethnographic/interviewing/`), What's on Your Radar (`methods/looking/participatory/whats-on-your-radar/`), Abstraction Laddering (`methods/understanding/problem-framing/abstraction-laddering/`), Round Robin (`methods/making/concept-ideation/round-robin/`)
 - Most individual methods are to be built
 
 ### Selection (`selection/`)
