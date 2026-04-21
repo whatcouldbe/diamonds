@@ -120,6 +120,12 @@ With more participants than three, run multiple simultaneous sets of templates. 
 ### Station Rotation
 Post large-format templates on the wall. Participants draft at their station, then physically rotate to the next station for critique, then rotate again for resolution. Good for energizing a room and creating visible, spatial work product.
 
+### Alternate Worlds Constraint
+Adds a creative forcing function to the generate pass. Participants are given an "Alternate Company" — a brand from a completely unrelated industry — and asked to borrow its characteristics and combine them with enabling technologies to generate an unexpected concept. The generate pass expands: Brand Characteristics → Enabling Technologies → Written Proposal → Pictorial Proposal → Name & Tagline. The critique and resolve passes follow the standard structure. Use when teams are locked into familiar solution patterns and need a structural reason to think differently. See `resources/templates/Round_Robin_Alternate_Worlds_Template_11x17.pdf`.
+
+### Positioning Statement
+Applies the Round Robin mechanic to developing organizational language rather than product concepts. The generate pass uses a structured positioning format: Who / What / For Whom / What Need / Against Whom or What / What's Different / So. The critique and resolve passes mirror the same structure field by field. Useful for collaboratively authored mission statements, value propositions, or brand positioning. See `resources/templates/Round_Robin_PositioningStatement_template.pdf`.
+
 ### AI-Assisted Execution
 When running solo or in a one-on-one session, the agent can run all three passes sequentially: generate a set of ideas, critique each one for failure modes, then resolve the critique for each. The output is more robust than a flat list because the failure modes have been surfaced and addressed. See `resources/ai-usage.md`.
 
