@@ -37,7 +37,7 @@ Diamonds is between Q1 and Q2 of the 10 questions process.
 
 **What's still open:**
 - Demonstration project not yet selected. Five candidates identified; David has not yet weighed in.
-- TK Elevator identified as warmest client for a paid discovery engagement — conversation not yet initiated.
+- A prospective client identified as the warmest relationship for a paid discovery engagement — proposal submitted.
 
 ---
 
@@ -80,4 +80,4 @@ Diamonds is between Q1 and Q2 of the 10 questions process.
 
 ## Recent Activity
 
-- 2026-04-20 — Session with Justin: walked through architecture, fixed projects.md convention, created onboarding.md and ~/.diamonds/config.json, fixed stems inconsistency in Abstraction Laddering ai-usage.md, updated branching capability documentation, walked through Q1 and Q2 diagnostic, identified TK Elevator as warmest client, surfaced five demonstration project candidates, established seven-criteria rubric.
+- 2026-04-20 — Session with Justin: walked through architecture, fixed projects.md convention, created onboarding.md and ~/.diamonds/config.json, fixed stems inconsistency in Abstraction Laddering ai-usage.md, updated branching capability documentation, walked through Q1 and Q2 diagnostic, identified warmest client for paid discovery, surfaced five demonstration project candidates, established seven-criteria rubric.

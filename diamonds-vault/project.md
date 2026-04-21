@@ -38,7 +38,7 @@ Diamonds is not a set of callable skills (that makes it opt-in, which defeats th
 - Vault creation is triggered during usage, not at setup
 - Diamonds itself does not get governed by a separate thinking layer — it is the engine. The vault here tracks project progress, not methodology.
 - Demonstration projects are the next priority — not more engine building. The existing method library is sufficient to test with real clients.
-- TK Elevator identified as the warmest client relationship for a paid discovery engagement on AI enablement.
+- A prospective client identified as the warmest relationship for a paid discovery engagement on AI enablement.
 
 ## Strategic Direction
 
