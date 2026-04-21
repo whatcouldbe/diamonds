@@ -71,15 +71,15 @@ Each person generates their best idea in response to the prompt. Encourage unusu
 *In Miro/Mural:* Each person works on their own template frame, then rotates to the next one.
 *On posters:* Each person drafts their poster, then physically moves to the next station.
 
-### Step 3 — Critique (Round 2)
-Each person inherits someone else's idea and lists all the ways it could fail. This is the critique — not a gentle feedback session, but an honest inventory of risks, weaknesses, and gaps. The goal is to surface every significant failure mode before anyone invests in resolving them.
+### Step 3 — Why the Solution Will Fail (Round 2)
+Each person inherits someone else's idea and lists all the ways it could fail. This is the critique — not a gentle feedback session, but an honest inventory of risks, weaknesses, and gaps. The goal is to surface every significant failure mode before anyone invests in resolving them. The template calls this "Why the Solution Will Fail" — that framing is intentional. Be the armchair critic.
 
 Structured critique frameworks work well here. Rose/Thorn/Bud is one option: what's strong (Rose), what could fail (Thorn), what's promising but undeveloped (Bud).
 
 *Important:* The person critiquing should not know whose idea they have if possible. Physical separation and the folded template help maintain this. With seniority in the room, anonymity makes critique more honest.
 
-### Step 4 — Resolve (Round 3)
-Each person inherits an idea with its critique attached. Their job is to address the critique: fix the failures, reinforce the weaknesses, and develop the bud. The resolved idea should be stronger than the original — not a new idea, but an evolved version of the one they inherited.
+### Step 4 — Final Concept (Round 3)
+Each person inherits an idea with its critique attached. Their job is to address the critique: fix the failures, reinforce the weaknesses, and develop the bud. The final concept should be stronger than the original — not a new idea, but an evolved version of the one they inherited.
 
 This is the hardest round and needs the most time. The person resolving has to hold the original intent of the idea while responding to critique they didn't write about work they didn't generate. That tension is where the real development happens.
 
