@@ -31,6 +31,14 @@ The pedagogy should mirror the methodology. If a method uses progressive reveal,
 
 This principle applies across all methods and all steps of the arc. It's especially important in Step 4, where the temptation is to explain mechanics from the outside rather than model them from the inside.
 
+### Follow Genuine Engagement Into Execution
+
+When the teaching arc generates enough momentum that the learner wants to try the method on something real — follow it. Don't stop to finish the mechanics. The method teaches itself in practice better than any explanation can.
+
+When this happens, transition into execution and name the moves as they happen: *"Notice we just generated WHYs — here's what we're looking for as we do that."* The learner absorbs the mechanics from the inside, which is faster and stickier than hearing them described from the outside.
+
+If there's any ambiguity about whether the learner is ready to run it or wants more explanation first, ask once: *"Do you want to hear more about how it works, or try it on something you're working on?"* Then follow their answer without qualification.
+
 ---
 
 ## The 7-Step Instructional Arc
