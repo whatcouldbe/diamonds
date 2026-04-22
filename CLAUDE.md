@@ -59,10 +59,12 @@ Before engaging, read in this order:
 
 ## Diamonds Engine
 
-This project uses the Diamonds HCD agent system. Full instructions: `~/projects/diamonds/CLAUDE.md`.
+This project uses the Diamonds HCD agent system.
+
+To load the engine: read `~/.diamonds/config.json` to get the `diamonds_path` value, then read `{diamonds_path}/CLAUDE.md` for full instructions.
 
 When assessing project status or determining what to work on next:
-- Read `~/projects/diamonds/navigation/key-questions.md`
+- Read `{diamonds_path}/navigation/key-questions.md` (path resolved from config)
 - Map the health.md question status against the key questions to diagnose what's validated, what's assumed, and what needs to happen next
 - Use the coaching arc to recommend the next move: receive → diagnose → name what's missing → recommend → offer support
 
@@ -72,6 +74,8 @@ Key behaviors:
 - Diagnose before recommending
 - Validation before investment — everything is an assumption until tested with real people
 ```
+
+The only hardcoded reference in any project CLAUDE.md is `~/.diamonds/config.json`. That is the universal anchor — every Diamonds user has it, and it stores where Diamonds lives on their machine. Never hardcode the Diamonds path directly into a project CLAUDE.md.
 
 ---
 
