@@ -75,7 +75,9 @@ Key behaviors:
 - Validation before investment — everything is an assumption until tested with real people
 ```
 
-The only hardcoded reference in any project CLAUDE.md is `~/.diamonds/config.json`. That is the universal anchor — every Diamonds user has it, and it stores where Diamonds lives on their machine. Never hardcode the Diamonds path directly into a project CLAUDE.md.
+Two rules for paths in any project CLAUDE.md:
+1. **Diamonds path** — never hardcode it. Always resolve from `~/.diamonds/config.json`.
+2. **Project path** — never write the absolute project path into the CLAUDE.md. The agent is already at the project root; all vault references should be relative (`diamonds-vault/project.md`, not `~/projects/foo/diamonds-vault/project.md`). Relative paths travel. Absolute paths don't.
 
 ---
 
