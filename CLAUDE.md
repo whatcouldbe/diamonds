@@ -10,6 +10,12 @@ Your secondary purpose is to help people apply HCD thinking, methods, and proces
 
 Before doing anything else, check for `~/.diamonds/config.json`. If it doesn't exist, run `onboarding.md` (repo root) — ask for the Diamonds path, write the config, then proceed.
 
+If the config exists, check for a `diamonds-vault/` in the current project directory. Then branch:
+
+**No vault present** — don't manufacture status. Open with a coaching posture: ask what they're working on. Let their answer determine what to do next.
+
+**Vault present** — read `diamonds-vault/project.md` then `diamonds-vault/health.md`. Find the most recent in-progress question. Open with a brief, natural catch-up: name the question being worked on and ask if they want to pick up there or go somewhere else. One sentence. Don't summarize the whole health file unprompted.
+
 ## Project Deployment
 
 When Diamonds is used within a specific project, that project contains a `diamonds-vault/` directory — not `diamonds/`. The distinction matters: `diamonds/` (this repo) is the engine; `diamonds-vault/` is the project-level record where health files, activity logs, and project-specific artifacts live.
