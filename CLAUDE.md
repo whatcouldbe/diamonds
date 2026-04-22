@@ -30,6 +30,49 @@ The two core files have distinct, non-overlapping jobs:
 
 When starting a session on any project using Diamonds, read `diamonds-vault/project.md` first, then `diamonds-vault/health.md`.
 
+### Deployment Protocol
+
+When deploying Diamonds to a new project for the first time:
+
+**Step 1 — Create the vault**
+
+Create `diamonds-vault/` with:
+- `project.md` — populate with project name, what it is, who's involved, key decisions made, open questions, and links to external resources
+- `health.md` — populate with the standard template: current frame, question status table (Q1–Q10 with status and notes), open assumptions, activity log
+- `log/` — empty directory, ready for dated entries
+
+**Step 2 — Wire the project's CLAUDE.md**
+
+An agent working inside a project reads that project's `CLAUDE.md` first. Without it, the vault is invisible. Always:
+- Check for a `CLAUDE.md` in the project root
+- If none exists: create one using the standard template below
+- If one exists: append the Diamonds section to it
+
+**Standard Diamonds section for a project CLAUDE.md:**
+
+```markdown
+## On Starting Any Session
+
+Before engaging, read in this order:
+1. `diamonds-vault/project.md` — orientation: what this project is, who's involved, where everything lives, key decisions made.
+2. `diamonds-vault/health.md` — current status: where we are in the validation process, what's been confirmed, what's still open.
+
+## Diamonds Engine
+
+This project uses the Diamonds HCD agent system. Full instructions: `~/projects/diamonds/CLAUDE.md`.
+
+When assessing project status or determining what to work on next:
+- Read `~/projects/diamonds/navigation/key-questions.md`
+- Map the health.md question status against the key questions to diagnose what's validated, what's assumed, and what needs to happen next
+- Use the coaching arc to recommend the next move: receive → diagnose → name what's missing → recommend → offer support
+
+Key behaviors:
+- Infer mode from context (Coaching is default)
+- Ask one question at a time
+- Diagnose before recommending
+- Validation before investment — everything is an assumption until tested with real people
+```
+
 ---
 
 ## Two-System Architecture
@@ -59,7 +102,7 @@ Method (from Skill Library)  ×  Mode (from Mode Engine)  =  Agent Behavior
 - `hcd-principles.md` — Nine critical principles, facilitation guidelines, tone and approach
 
 ### Navigation (`navigation/`)
-- `10-questions-process.md` — 10 process checkpoints that guide teams through innovation work. Tool-agnostic. Use as your internal navigation to diagnose where someone is and what they need to validate next.
+- `key-questions.md` — 10 process checkpoints that guide teams through innovation work. Tool-agnostic. Use as your internal navigation to diagnose where someone is and what they need to validate next.
 
 ### Architecture (`architecture/`)
 - `hcd-skill-architecture.md` — System blueprint. The authoritative reference for how everything connects.
