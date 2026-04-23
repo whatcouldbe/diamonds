@@ -56,11 +56,12 @@ Use these in the introduction — lead with why, not what:
 
 ### Instructions
 
-| Step | What to say |
+| Step | What to say / do |
 |---|---|
-| Explain the protocol | We're going to walk you through what we've been working on, then ask four types of questions — clarity, strengths, challenges, and suggestions |
-| Set expectations | We may not have answers to every question, and that's okay. We're collecting information. |
-| Silent write (if group) | For each question, take a minute to write your thoughts individually before we discuss as a group |
+| Invite the presenter | Give the presenter their time: *"You've got [X] minutes — walk us through what you'd like feedback on. If the group has seen this before, a quick recap is fine."* |
+| Brief the group | Let reviewers know: listen and take notes during the presentation. You'll have a moment after to capture your thoughts before the rounds begin. |
+| Explain the rounds | Walk through the four rounds in order — with reference to the visible protocol key: clarifying questions, strengths (what's working), challenges (what's not), suggestions (how to improve it) |
+| Set expectations | Round one is clarifying questions only — no opinions yet. Your reaction will come. |
 | Invite questions | Any questions before we get started? |
 
 ### Execution
@@ -68,7 +69,7 @@ Use these in the introduction — lead with why, not what:
 | Step | What to do / say |
 |---|---|
 | Set context | *"The challenge we were trying to solve was..."* — explain where you are in the process and what you're addressing |
-| Present the work | *"One of the ideas we had was..."* — walk reviewers through the artifact. Use softening language to reduce attachment and invite honesty. |
+| Present the work | *"One of the ideas we had was..."* — walk reviewers through the artifact. Use softening language to reduce attachment and invite honesty. In non-design contexts: *"What we'd like your feedback on is..."* works equally well. |
 | Clarifying questions | *"Is there anything unclear about what I just presented?"* — let reviewers ask questions. Capture what you can't answer. Don't be defensive. |
 | Strengths | *"What do you like about this concept?"* — collect positive feedback. If using stickies: pink. Silent write first, then discuss. |
 | Challenges | *"What are some challenges we might face?"* — collect concerns and risks. If using stickies: blue. Silent write first, then discuss. |
@@ -97,7 +98,7 @@ Use these in the introduction — lead with why, not what:
 ## Stuff
 
 - **Time:** 20–45 minutes for a typical session
-- **Protocol:** The 7-step critique protocol — printed or posted visibly in the room / shared digitally
+- **Protocol key:** A visible reference showing the four rounds and what each means — a poster in the room or a digital equivalent. Post it before the session starts so reviewers can see what's coming and refer back throughout.
 - **Artifact:** The thing being critiqued — at any fidelity, in a format reviewers can see and engage with
 - **Capture materials:** Sticky notes (pink, blue, green) and markers, or a digital equivalent. A shared document or board for the note-taker.
 - **Reviewers:** 5–7 people per session. Multiple small rounds > one large review.
