@@ -73,13 +73,15 @@ Critique is used throughout the process — not phase-locked. Any time you have 
 Explain where you are in the process and what problem or opportunity you're addressing. This grounds the reviewers in the same starting point as the team.
 
 ### Step 2 — Present the Work
-*"One of the ideas we had was..."*
+*"One of the ideas we had was..."* or *"What we'd like your feedback on is..."*
 
 Present the artifact, concept, or work-in-progress. Walk reviewers through it.
 
 **The language matters:** "One of the ideas we had" is deliberately softening. It does double duty:
 - For the **reviewer**, it signals this is a working idea, not a finished product — making it safer to give honest feedback
 - For the **presenter**, it reduces attachment to the work. The Time/Love Continuum principle: the longer you spend with an idea, the more attached you get, and the less receptive you become to feedback. Framing it as "one idea" creates healthy distance.
+
+In non-design contexts — plans, proposals, policies, strategies — *"What we'd like your feedback on is..."* carries the same softening intent without implying an idea or concept.
 
 ### Step 3 — Clarifying Questions
 *"Is there anything unclear about what I just presented?"*
@@ -116,7 +118,7 @@ Close with gratitude. Feedback is a gift. This isn't just politeness — it rein
 This is the single most important facilitation principle. The presenter is there to receive feedback, not to justify decisions or explain why something is the way it is. When presenters become defensive, reviewers stop being honest. Name this at the start of the session and hold the line if it happens.
 
 ### Post the Protocol Visibly
-In a physical space, post the protocol poster so everyone can see the structure and know what's coming. This reduces anxiety ("when do I get to say the negative stuff?") and helps the facilitator manage transitions between steps.
+Make the four rounds visible to everyone throughout the session — a poster in the room, a slide, or a digital equivalent in your shared workspace. This reduces anxiety ("when do I get to say the negative stuff?"), helps reviewers know what's coming, and helps the facilitator manage transitions between steps. In digital sessions, a simple visible key in the Miro or FigJam board serves the same purpose as a physical poster.
 
 ### Silent Write Before Group Discussion
 When working in a group, give reviewers individual time to capture their feedback before sharing aloud. This:
