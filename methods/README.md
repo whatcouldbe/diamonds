@@ -78,6 +78,8 @@ The `method.md` file should follow this structure:
 7. **Outputs** — What artifacts or insights this method produces
 8. **Connections** — Related methods and natural next steps
 
+**Method names are for navigation, not for participants.** A method name that is technical, jargon-heavy, or opaque should never be the first thing participants hear. Lead with what the method does: its purpose and what it produces. Use the formal name only in contexts where it is meaningful — such as teaching practitioners to recognise methods in the Luma system or another named framework. The name is how we find the method; the experience is what participants remember.
+
 **Protocol for adding a new method — in order:**
 1. Have the practitioner teach the method before building any files. Teaching sessions encode stories, facilitation edge cases, and conviction closes that cannot be approximated from research.
 2. Collect templates before building files. Seeing actual template language produces better first drafts and avoids updating method.md after the fact when template section names differ from what was written.

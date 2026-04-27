@@ -51,12 +51,35 @@ See `method.md` for the full steps and `mechanics.md` for the facilitation cheat
 
 **Key mechanics to emphasize when teaching:**
 
-- **The starters are guardrails, not suggestions.** "In order to..." and "So that..." hold WHYs at the outcome level. "Enabled by..." holds HOWs at the approach level. Enforce them — if someone's WHY restates the directive in different words, ask them to reframe it.
+- **Lead with what it does.** Don't introduce this as "abstraction laddering" — say "we're going to explore the whys and hows of this challenge." The name gets in the way. Use it only when the Luma system name is specifically relevant.
+- **The starters are guardrails, not suggestions.** "In order to..." and "So that..." hold WHYs at the outcome level. "Enabled by..." and "By considering..." hold HOWs at the approach level. Enforce them — if someone's WHY restates the directive in different words, ask them to reframe it.
 - **Individual generation first.** Always. This prevents anchoring and ensures genuine diversity of perspective before the group starts influencing each other.
 - **The level-selection discussion is the whole method.** Everything before it is generating material. The value comes from the team looking at the landscape together and choosing a level. Don't let the session end without an explicit decision.
 - **Discovering the wrong framing is a success.** If the team realizes mid-session that the original directive was pointed at the wrong goal, name it as a win. They just saved themselves from investing in the wrong thing.
+- **HOWs anchor to the original directive.** If someone wants to explore the HOWs of a higher WHY, that's a separate ladder — not an extension of this one.
 
-**When teaching someone to facilitate abstraction laddering:** Run it live with a real directive — ideally one the learners are actually working on. Debrief on what surprised them. What WHYs came up that weren't on anyone's radar? What level did they choose, and why not higher or lower? Then practice the redirect: what do you say when someone's HOW collapses into a specific solution?
+**Teach the chain before the tree.** The method can branch into a tree of WHYs and HOWs. But teach the chain first. Give each person just two stickies: their WHY, and the WHY of their WHY. That one link up is enough to demonstrate the core movement before expanding. Once people understand that each WHY can ladder further, the branching structure becomes intuitive.
+
+**Using a worked example.** Before running the method on real work, use a relatable example to establish the mechanics without the cognitive load of the actual project. Good examples: *We need to have a tidy house.* *We need to get a better night's sleep.* *We need to eat healthier during the working week.*
+
+The tidy house example works well because it has rich branching on both sides:
+
+*WHYs:*
+- In order to find things easily → in order to get out of the house quickly → so that we feel less stressed
+- In order to have a good-looking home → so that we feel pride in our home / to improve family harmony
+- In order to reduce arguments in the house → so that we have a happy home life
+- Higher order: peace of mind, a more harmonious family atmosphere
+
+*HOWs (anchored to the directive):*
+- Enabled by outsourcing the task → by hiring a cleaner / by getting the kids to do it → by incentivising the kids
+- Enabled by removing unnecessary stuff → by having a yard sale / by donating to charity
+- Enabled by getting the kids to be tidier → by rewarding tidy behaviour / by monitoring and reporting on behaviour
+
+Two delivery choices:
+- **Reveal** — show the completed example and walk through it, so people focus on the structure rather than generating content
+- **Interactive** — invite the group to contribute, building it live together before applying it to real work
+
+When teaching someone to facilitate: run it live with a real directive — ideally one the learners are actually working on. Debrief on what surprised them. What WHYs came up that weren't on anyone's radar? What level did they choose, and why not higher or lower? Then practice the redirect: what do you say when someone's HOW collapses into a specific solution?
 
 ---
 
