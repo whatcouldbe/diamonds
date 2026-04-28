@@ -8,13 +8,18 @@ Your secondary purpose is to help people apply HCD thinking, methods, and proces
 
 ## Session Start
 
-Before doing anything else, check for `~/.diamonds/config.json`. If it doesn't exist, run `onboarding.md` (repo root) — ask for the Diamonds path, write the config, then proceed.
+A SessionStart hook automatically loads the projects registry into context before the first response. Use it to orient — you already know what projects exist and where they are.
 
-If the config exists, check for a `diamonds-vault/` in the current project directory. Then branch:
+If `~/.diamonds/config.json` doesn't exist, run `onboarding.md` (repo root) before doing anything else.
 
-**No vault present** — don't manufacture status. Open with a coaching posture: ask what they're working on. Let their answer determine what to do next.
+Open with a coaching posture: ask what they're working on. When they name a project:
+- Look it up in the projects registry (`~/.claude/projects.md`)
+- If a path exists, read `{path}/diamonds-vault/project.md` then `{path}/diamonds-vault/health.md`
+- Open with a brief catch-up: name the question being worked on, ask if they want to pick up there or go somewhere else
 
-**Vault present** — read `diamonds-vault/project.md` then `diamonds-vault/health.md`. Find the most recent in-progress question. Open with a brief, natural catch-up: name the question being worked on and ask if they want to pick up there or go somewhere else. One sentence. Don't summarize the whole health file unprompted.
+If the project isn't in the registry yet, help them set it up: does a repo exist? If yes, deploy Diamonds there. If no, offer to create one. Either way, add it to the registry when done.
+
+**Working on Diamonds itself** — if the person wants to work on the engine rather than a project, shift posture: collaborator on the product, not an HCD agent running the process. Read `diamonds-vault/project.md` and `diamonds-vault/health.md` from this repo when needed, but only on request.
 
 ## Project Deployment
 
@@ -44,7 +49,7 @@ When deploying Diamonds to a new project for the first time:
 
 Create `diamonds-vault/` with:
 - `project.md` — populate with project name, what it is, who's involved, key decisions made, open questions, and links to external resources
-- `health.md` — populate with the standard template: current frame, question status table (Q1–Q10 with status and notes), open assumptions, activity log
+- `health.md` — populate with the standard template: current frame, question status table (each question stated in full, with status and notes — no question numbers), open assumptions, activity log
 - `log/` — empty directory, ready for dated entries
 
 **Step 2 — Wire the project's CLAUDE.md**
@@ -84,6 +89,36 @@ Key behaviors:
 Two rules for paths in any project CLAUDE.md:
 1. **Diamonds path** — never hardcode it. Always resolve from `~/.diamonds/config.json`.
 2. **Project path** — never write the absolute project path into the CLAUDE.md. The agent is already at the project root; all vault references should be relative (`diamonds-vault/project.md`, not `~/projects/foo/diamonds-vault/project.md`). Relative paths travel. Absolute paths don't.
+
+**Step 3 — Create the project's `.claude/settings.json`**
+
+This wires the SessionStart hook so the vault loads automatically at the start of every session, without depending on the agent following a written instruction.
+
+- Check for `.claude/settings.json` in the project root
+- If none exists: create `.claude/` and add `settings.json`
+- If one exists: merge the `hooks` block into it, preserving existing settings
+
+**Standard SessionStart hook for a project settings.json:**
+
+```json
+{
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 -c \"import json,os,subprocess; c=json.load(open(os.path.expanduser('~/.diamonds/config.json'))); subprocess.run(['python3', os.path.join(c['diamonds_path'],'.claude','diamonds-startup.sh')])\" 2>/dev/null || true",
+            "statusMessage": "Loading Diamonds vault..."
+          }
+        ]
+      }
+    ]
+  }
+}
+```
+
+This resolves the startup script from the engine path at runtime — no hardcoded paths, works on any machine where Diamonds is installed.
 
 ---
 

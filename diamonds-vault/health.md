@@ -6,11 +6,11 @@
 
 ## Where We Are
 
-Diamonds is between Q1 and Q2 of the Key Questions.
+Diamonds has partially answered "What goals do we need to achieve?" and is actively working on "What should we be working on to achieve those goals?"
 
 ---
 
-## Q1 — What goals do we need to achieve, and how will we know we've achieved them?
+## What goals do we need to achieve, and how will we know we've achieved them?
 
 **Status: Partially validated**
 
@@ -26,7 +26,7 @@ Diamonds is between Q1 and Q2 of the Key Questions.
 
 ---
 
-## Q2 — What should we be working on to achieve our goals?
+## What should we be working on to achieve our goals?
 
 **Status: In progress — direction emerging**
 
