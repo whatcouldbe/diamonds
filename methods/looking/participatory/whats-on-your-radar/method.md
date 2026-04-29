@@ -47,6 +47,8 @@ Every use of What's on Your Radar begins with a directive — a clear statement 
 
 The directive should be specific enough to orient people, but not so narrow that it constrains the range of perspectives you're trying to surface. The directive may come from a prior method (a problem framing activity, a stakeholder brief, a research synthesis) or may simply be the starting point for a new initiative.
 
+**Provenance matters.** Participants respond differently when they know where the opportunity came from. A directive that originated in an employee survey, a prior research session, or a leadership conversation carries more authority than one that appears without context. When possible, name the source: *"This came from a problem framing session last month"* or *"This surfaced in the employee survey as a recurring theme."* Provenance signals that the opportunity was heard, not assumed — and increases participant buy-in to the frame before the method begins.
+
 ### Categories and Trigger Questions
 The radar is divided into segments — one per category. Each category has a trigger question that participants respond to in the generate step.
 
@@ -81,7 +83,7 @@ The radar is a spatial artifact — the rings do real work when participants can
 Facilitation language shifts with the medium. In a room: "place your item at the center." In a conversation: "which item would you put at the center?" The method is the same; the medium changes how it is run.
 
 ### What You Need
-- **Radar template:** Concentric circles divided into segments (one per category), with three rings from center to outer edge. No labels on the rings — importance is expressed through placement. Not required in a conversational interface — the radar is described rather than shown.
+- **Radar template:** Concentric circles divided into segments (one per category), with three rings from center to outer edge. No labels on the rings — importance is expressed through placement. Not required in a conversational interface — the radar is described rather than shown. **Exception — teaching contexts:** When the method is being learned for the first time, labeling the rings Most/Some/Least on the artifact is appropriate scaffolding. It reinforces the cognitive task without changing it. Use unlabeled rings once practitioners are familiar with the ring structure.
 - **Sticky notes:** One idea per sticky. Short phrases, plain language.
 - **Coloured tabs or dots (optional but recommended):** Used for category attribution — so items carry their segment of origin when moved during the group phase. Can also be used for authorship attribution — marking which person generated each item. Both uses are valid; sometimes both are used simultaneously.
 - **Markers:** One per participant.

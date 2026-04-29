@@ -35,3 +35,9 @@ Where an item lands on the group radar — center, middle, or outer — is deter
 
 ## The radar is not the output — the conversation is
 Participants and stakeholders sometimes fixate on the artifact. Remind them that the group radar is a record of a conversation, not a strategy document. Its value is in what it took to produce it: the choices made, the assumptions surfaced, the divergence revealed.
+
+## Avoid MoSCoW labeling on the rings
+Must/Should/Could/Won't is a common legacy substitution for ring labels, often inherited from earlier versions of the method or from teams familiar with MoSCoW prioritization. It changes the cognitive task — from an importance judgment ("what matters most to me?") to a necessity or feasibility judgment — in ways that undermine what the method is designed to surface. If labels are needed, use Most/Some/Least.
+
+## Name where the directive came from
+Telling participants where the opportunity originated — a survey, a prior session, a leadership conversation — increases buy-in and trust in the frame before the method begins. It also models good practice: the opportunity was heard, not assumed. A single sentence is enough: *"This came from the employee survey — travel and expenses came up repeatedly as a pain point."*

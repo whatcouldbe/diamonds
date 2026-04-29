@@ -40,3 +40,8 @@ No. An item's placement on the group radar is determined by the group's negotiat
 
 **What do we do with the divergence?**
 Divergence — segments where people couldn't agree on the center, or where the most important items varied widely across individual radars — is the most interesting output of the method. Use it to identify where deeper research is needed, where assumptions differ, or where alignment work needs to happen before moving forward.
+
+**Should the rings be labeled?**
+In live facilitation: no. The rings are intentionally unlabeled — importance is expressed through placement, and the absence of labels keeps the cognitive task clean. When teaching the method for the first time, labeling the rings Most/Some/Least on the artifact is appropriate scaffolding.
+
+A common substitution to avoid: labeling the rings Must/Should/Could/Won't (MoSCoW prioritization). This changes the cognitive task from an importance judgment ("what matters most to me?") to a necessity or feasibility judgment ("what has to happen vs. what won't?"). The two questions produce different thinking and different outputs. If labels are needed, use Most/Some/Least — never MoSCoW.
