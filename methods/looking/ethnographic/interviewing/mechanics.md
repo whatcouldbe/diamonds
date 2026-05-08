@@ -96,7 +96,7 @@ Use these in the introduction — lead with why, not what:
 ## Stuff
 
 - **Time:** 30–60 minutes per interview (45 minutes is a good default). Budget 15 minutes before and after for setup and debrief.
-- **Protocol:** A written sequence of open-ended questions — printed, on a screen, or on an index card. Keep it visible but don't read from it mechanically.
+- **Protocol:** A written sequence of open-ended questions — printed, on a screen, or on an index card. Keep it visible but don't read from it mechanically. Format it so you can scan it mid-conversation: **section headings in bold**, questions as bullets (things you say), analytical notes and facilitation guidance in italics (things you're thinking). The distinction matters — it tells you at a glance what to ask versus what to watch for.
 - **Recording:** Audio recording device or video call recording (with explicit permission). Essential backup to notes.
 - **Notes:** Laptop, notebook, or shared document for real-time capture. Dedicated note-taker is ideal.
 - **Participants:** One interviewer + one note-taker (optional but recommended). One interviewee. No more than two people from your side.

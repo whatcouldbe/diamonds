@@ -100,6 +100,19 @@ The practitioner should always review and refine the protocol before using it. T
 
 ---
 
+## What to Listen For When Interviewing About AI Adoption
+
+When the research topic is AI tool usage, the standard say-do gap takes a specific form: people describe what they aspire to do, not what they consistently do. Someone may have tried a tool twice and describe it as "part of their workflow." They may frame an intention as a practice. This isn't dishonesty — it's the gap between aspiration and reality that opens up whenever people are early in adopting something new and personally invested in seeming capable with it.
+
+Listen for signals that you're hearing aspiration rather than practice:
+- Present tense descriptions of behaviors that turn out to be past experiments ("I use it to..." often means "I tried it once")
+- Inability to give a specific recent example when you ask for one
+- Language that describes the tool's potential rather than their experience ("you could..." rather than "I did...")
+
+Probe with specifics: "Tell me about the last time you used it — what were you working on?" The specific instance question cuts through aspiration faster than any other technique.
+
+---
+
 ## Transparency — What Simulation Can and Cannot Do
 
 **What simulation does well:**
