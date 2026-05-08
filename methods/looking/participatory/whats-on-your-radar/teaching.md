@@ -98,6 +98,9 @@ Surface agreement is not the same as genuine alignment. The method is designed t
 **"The coloured tabs are just for aesthetics."**
 They serve two functional purposes: category attribution (so items don't lose their origin when moved) and optionally authorship attribution (so the group radar preserves who generated what). Both matter.
 
+**"Isn't this just an empathy map?"**
+No. An empathy map is something you do *about* someone — a researcher or team fills it in to synthesize what they've learned about a user's says, thinks, does, feels. The subject is rarely in the room. What's on Your Radar is something you do *with* someone: the person fills it in themselves, in the session. That's a fundamentally different relationship. The second distinction is the constraint — an empathy map captures a picture with no prioritization mechanism. The radar forces a choice: one item at the center per segment. That constraint is what makes it a discovery tool rather than a documentation tool.
+
 ---
 
 ## Supplies

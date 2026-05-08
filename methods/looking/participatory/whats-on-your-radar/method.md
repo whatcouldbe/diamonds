@@ -63,6 +63,21 @@ The radar is divided into segments — one per category. Each category has a tri
 
 These four categories are a strong default for opening a new project or initiative. The number of categories can range from two to eight depending on what you need to understand. Customize both the categories and their trigger questions to fit the context.
 
+**Default four categories for customer discovery:**
+
+| Category | Trigger Question |
+|---|---|
+| **Goals** | What are you trying to achieve? |
+| **Hopes** | What does a good outcome look like to you? |
+| **Challenges** | What's getting in the way? |
+| **[Wild card]** | What else is on your radar? |
+
+These four categories are designed for use with customers or stakeholders — when the goal is to understand what matters to the people you're serving, rather than to align a project team. The sequence moves from aspiration to tension deliberately: Goals and Hopes establish what people want before Challenges surfaces what's in the way. This ordering tends to produce richer responses, because participants have articulated their aspirations before they're asked to name their obstacles.
+
+**Segment placement:** When laying out a four-segment radar with these categories, place Goals and Challenges in opposing segments. The natural tension between aspiration and obstacle — what you want to achieve sitting directly across from what's in the way — is reinforced by their position on the radar. Hopes and Wild card occupy the remaining two segments.
+
+Including a Wild card segment is particularly recommended in discovery contexts: you don't yet know what you don't know, and a blank segment signals openness to the participant's frame rather than locking them into yours.
+
 **Wild card segments:** One or more segments can be left intentionally blank — no label, no trigger question. Blank segments give participants a place to surface considerations that don't fit the defined categories. After a participant places items on a blank segment, the researcher or facilitator asks them to name the category. This mirrors good interview technique: defined categories cover what you know to investigate; blank segments open the door to what you didn't anticipate. If all segments are blank, participants are effectively building their own category structure — a more open-ended research approach where the categories themselves become data.
 
 ### Participants
