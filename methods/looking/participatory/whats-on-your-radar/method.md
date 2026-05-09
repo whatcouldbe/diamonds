@@ -47,6 +47,8 @@ Every use of What's on Your Radar begins with a directive — a clear statement 
 
 The directive should be specific enough to orient people, but not so narrow that it constrains the range of perspectives you're trying to surface. The directive may come from a prior method (a problem framing activity, a stakeholder brief, a research synthesis) or may simply be the starting point for a new initiative.
 
+**Provenance matters.** Participants respond differently when they know where the opportunity came from. A directive that originated in an employee survey, a prior research session, or a leadership conversation carries more authority than one that appears without context. When possible, name the source: *"This came from a problem framing session last month"* or *"This surfaced in the employee survey as a recurring theme."* Provenance signals that the opportunity was heard, not assumed — and increases participant buy-in to the frame before the method begins.
+
 ### Categories and Trigger Questions
 The radar is divided into segments — one per category. Each category has a trigger question that participants respond to in the generate step.
 
@@ -60,6 +62,21 @@ The radar is divided into segments — one per category. Each category has a tri
 | **Challenges** | What problems need solving? |
 
 These four categories are a strong default for opening a new project or initiative. The number of categories can range from two to eight depending on what you need to understand. Customize both the categories and their trigger questions to fit the context.
+
+**Default four categories for customer discovery:**
+
+| Category | Trigger Question |
+|---|---|
+| **Goals** | What are you trying to achieve? |
+| **Hopes** | What does a good outcome look like to you? |
+| **Challenges** | What's getting in the way? |
+| **[Wild card]** | What else is on your radar? |
+
+These four categories are designed for use with customers or stakeholders — when the goal is to understand what matters to the people you're serving, rather than to align a project team. The sequence moves from aspiration to tension deliberately: Goals and Hopes establish what people want before Challenges surfaces what's in the way. This ordering tends to produce richer responses, because participants have articulated their aspirations before they're asked to name their obstacles.
+
+**Segment placement:** When laying out a four-segment radar with these categories, place Goals and Challenges in opposing segments. The natural tension between aspiration and obstacle — what you want to achieve sitting directly across from what's in the way — is reinforced by their position on the radar. Hopes and Wild card occupy the remaining two segments.
+
+Including a Wild card segment is particularly recommended in discovery contexts: you don't yet know what you don't know, and a blank segment signals openness to the participant's frame rather than locking them into yours.
 
 **Wild card segments:** One or more segments can be left intentionally blank — no label, no trigger question. Blank segments give participants a place to surface considerations that don't fit the defined categories. After a participant places items on a blank segment, the researcher or facilitator asks them to name the category. This mirrors good interview technique: defined categories cover what you know to investigate; blank segments open the door to what you didn't anticipate. If all segments are blank, participants are effectively building their own category structure — a more open-ended research approach where the categories themselves become data.
 
@@ -81,7 +98,7 @@ The radar is a spatial artifact — the rings do real work when participants can
 Facilitation language shifts with the medium. In a room: "place your item at the center." In a conversation: "which item would you put at the center?" The method is the same; the medium changes how it is run.
 
 ### What You Need
-- **Radar template:** Concentric circles divided into segments (one per category), with three rings from center to outer edge. No labels on the rings — importance is expressed through placement. Not required in a conversational interface — the radar is described rather than shown.
+- **Radar template:** Concentric circles divided into segments (one per category), with three rings from center to outer edge. No labels on the rings — importance is expressed through placement. Not required in a conversational interface — the radar is described rather than shown. **Exception — teaching contexts:** When the method is being learned for the first time, labeling the rings Most/Some/Least on the artifact is appropriate scaffolding. It reinforces the cognitive task without changing it. Use unlabeled rings once practitioners are familiar with the ring structure.
 - **Sticky notes:** One idea per sticky. Short phrases, plain language.
 - **Coloured tabs or dots (optional but recommended):** Used for category attribution — so items carry their segment of origin when moved during the group phase. Can also be used for authorship attribution — marking which person generated each item. Both uses are valid; sometimes both are used simultaneously.
 - **Markers:** One per participant.

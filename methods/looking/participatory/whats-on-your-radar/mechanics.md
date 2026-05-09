@@ -30,7 +30,7 @@ Use these in the introduction — lead with why, not what:
 ## Inputs
 
 - **A directive** — the initiative, opportunity, or challenge being explored. Required. Frames all trigger questions.
-- **Categories and trigger questions** — typically 2–6, default four: Vision, Impact, People, Challenges
+- **Categories and trigger questions** — typically 2–6. Project kickoff default: Vision, Impact, People, Challenges. Customer discovery default: Goals, Hopes, Challenges, [Wild card].
 - **Participants** — individuals who hold relevant perspectives on the directive
 - **Radar template** — concentric circles divided into segments (one per category), with three rings: center, middle, and outer. No labels on the rings.
 - **Sticky notes and markers** — one idea per sticky, short phrases
@@ -84,13 +84,14 @@ Use these in the introduction — lead with why, not what:
 | Confirm the group radar | Review the full radar together. Confirm each item is in the right ring — center, middle, or outer — based on the group's negotiation, not carried over from individual radars. |
 | Acknowledge the conversation | Name 1–2 moments where the group had to make a genuine choice — that's where the value was |
 | Name the divergence | Call out any segments where agreement was hardest — these are candidates for further research |
+| Thank participants | Name what their individual perspectives contributed to the collective view |
 
 ### Next Steps
 
 | Step | What to do |
 |---|---|
 | Research path | Analyze individual radars for convergence (common center ring items), divergence (different priorities for the same category), and gaps (categories with few responses) |
-| Workshop path | Use the group radar to inform the next activity — problem framing, Importance / Difficulty Matrix, or interviews |
+| Workshop path | Reframe — use center ring items, especially from Goals and Challenges, to generate How Might We opportunity statements. If significant divergence exists across segments, follow up with deeper interviews. |
 | Follow-up | Identify segments or items that generated the most tension — these warrant deeper investigation |
 
 ---
