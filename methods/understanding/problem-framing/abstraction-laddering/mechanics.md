@@ -56,9 +56,11 @@ Use these in the introduction — lead with why, not what:
 
 | Step | What to say |
 |---|---|
+| Name it accessibly | Don't lead with "abstraction laddering" unless the Luma name is relevant. Say: *"We're going to explore the whys and hows of this challenge."* |
 | Show the ladder | The directive goes in the center. Above it are WHYs — goals and benefits. Below it are HOWs — approaches and tactics. |
 | Explain the starters | For WHYs, start with "In order to..." or "So that..." For HOWs, start with "Enabled by..." or "By considering..." |
 | Explain why starters matter | The starters hold you at the right level. "In order to..." keeps WHYs as outcomes, not activities. "Enabled by..." keeps HOWs as approaches, not specific solutions. |
+| Anchor the HOWs | HOWs always respond to the original directive — not to a higher-order WHY. If someone wants to explore the HOWs of a WHY, that's a separate ladder. |
 | Set up individual generation | We'll generate individually and silently first — one idea per sticky. Then we'll share and build the ladder together. |
 
 ### Execution
@@ -73,9 +75,11 @@ Use these in the introduction — lead with why, not what:
 
 | Step | What to do |
 |---|---|
-| Level-selection discussion | *"Which of these framings is most useful for what we need to do next?"* — too high = not actionable; too low = too constraining; right altitude = clear direction with room for the best solution |
-| Name the chosen framing | State it explicitly. Make sure the team hears it and agrees. |
+| Level-selection discussion | *"Which of these framings is most useful for what we need to do next?"* — too high = not actionable (and disconnected from organisational strategy); too low = too constraining given time and resource; right altitude = clear direction with room for the best solution |
+| Choose the mechanic | Use discussion when the ladder is clear and the group is small. Use voting — dot votes on clusters or candidate framings — when there's more content or more participants, or when you want to surface genuine disagreement rather than let it hide. |
+| Name the outcome explicitly | Three things can happen: (1) reframe upward — a WHY is the better challenge; (2) reframe downward — a HOW is the right scope given constraints; (3) confirm and contextualise — the original framing was right, and the team now has the context and vocabulary to back it up. All three are valid. Name whichever one happened. |
 | Acknowledge the surprises | Note anything that shifted — a goal that wasn't on anyone's radar, a framing that turned out to be more useful than the original directive |
+| Consider visual alignment | If HOWs roughly correspond to WHYs above them, organise them into columns before closing. It creates a readable path from tactic through directive to benefit and helps the team see the full picture. |
 
 ### Next Steps
 
