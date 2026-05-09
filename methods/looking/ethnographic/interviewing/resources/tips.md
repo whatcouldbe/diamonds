@@ -45,6 +45,9 @@ Even if you're recording, capture key quotes, observations, and your own reactio
 **Thank people.**
 Close with genuine gratitude. People who feel valued will be more open, may agree to follow-up conversations, and may connect you to others.
 
+**When interviewing a domain expert, give them the floor first.**
+If the person you're interviewing has done their own research or has deep expertise in the topic — they've been running experiments, synthesizing findings, or thinking hard about the problem — don't open with your warm-up questions. Open with "What have you been finding?" or "What's your read on this right now?" Let them share what they know before you start asking questions. This acknowledges their work, reduces defensiveness, and often surfaces something your protocol didn't cover. You can transition into the protocol once they've had the floor: "That's useful context — I want to make sure I explore some of this more deeply."
+
 **Ask who else to talk to.**
 "If I could only speak with one other person to gain better insight, who would that be?" Constraining to one person forces the best lead. Let interviewees point you to the next conversation.
 
