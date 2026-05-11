@@ -130,6 +130,12 @@ But the team may also end up right where they started — and that's equally val
 ### The Sponsor's WHYs Are Gold
 If a project sponsor or stakeholder is in the room, their WHYs often reveal the unstated goals behind the directive — the things they care about that never made it into the brief. Ask them to generate WHYs individually alongside the team. The gaps between their responses and the team's are frequently the most important thing in the room.
 
+### Unclustered Items May Belong Higher on the Ladder
+When items can't be placed in any existing cluster during Share and Cluster, resist the urge to force them in. Unclustered items are often operating at a different level of abstraction — they may belong above the existing clusters as a bridge between themes and the top of the ladder, or as a standalone capstone. Before creating a new cluster for a single item, ask: "Is this item at a higher level than the clusters we have? What is it pointing toward?"
+
+### The Capstone and Bridge Node Pattern
+At the top of a well-built ladder, two distinct roles often emerge: a **bridge node** (the mechanism — what needs to happen for everything below it to lead somewhere) and a **capstone** (the ultimate outcome — the final "so that" the whole ladder is pointing toward). These are not the same thing. The bridge node sits just above the themed clusters and connects them; the capstone sits above that and names the final destination. When these two roles are conflated into one item, or when teams treat the bridge as the capstone, the ladder loses its top. Look for both.
+
 ---
 
 ## Variations
