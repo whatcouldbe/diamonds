@@ -95,7 +95,35 @@ Return to the outputs at the end of the session: *"We said we'd have X. Did we g
 
 ### PROCESS — How Will You Facilitate This Method?
 
-This is the heart of facilitation — the actual arc of running the method. Every method, regardless of content, moves through five stages:
+This is the heart of facilitation — the actual arc of running the method. Every method, regardless of content, moves through five stages.
+
+#### Before the Method: Setting Working Norms
+
+In sessions where honest engagement matters — strategy workshops, cross-functional rooms, any room with a visible power dynamic — it's worth establishing how the group will work together before introducing the method or framing the purpose.
+
+The "let's agree to..." move:
+- Present 3–5 short, verb-led commitments
+- Frame them as collective: "we all agree to..." — not rules handed down, but norms owned by the room
+- Keep them short enough to hold without explanation
+- Use "we" language where possible — it signals mutual accountability
+- Before closing: *"Does anything here land wrong, or is there something we've missed?"*
+- Close with a signing moment — "Signed: all of us" — to make the agreement feel real rather than performative
+
+What makes these work:
+- They lead with a verb and are hard to disagree with
+- They name behaviors people would usually avoid naming out loud
+- The invitation to challenge or add before signing builds genuine buy-in
+- The signing moment creates a shared reference point to return to if the room drifts
+
+When there is a power imbalance in the room — senior leadership and direct reports, for example — naming the relational dimension explicitly ("respect and trust each other") signals that the commitment flows both ways.
+
+Examples that travel well across contexts:
+- Speak honestly, not safely
+- Own it, don't just receive it
+- Say the thing we'd usually hold back
+- Challenge the work, not each other
+- Be a little messy, not perfect and late
+- Respect and trust each other
 
 #### Introduction
 **Purpose:** Establish why we're here and what we're going to accomplish.
