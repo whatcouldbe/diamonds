@@ -94,6 +94,6 @@ Create the method folder in the appropriate subcategory. At minimum, create `met
 | Interviewing | Looking | Ethnographic | Active |
 | Critique | Looking | Evaluative | Active |
 | What's on Your Radar | Looking | Participatory | Active |
-| Affinity Clustering | Understanding | Patterns & Priorities | To be built |
+| Affinity Clustering | Understanding | Patterns & Priorities | Active |
 | Importance / Difficulty Matrix | Understanding | Patterns & Priorities | Active |
 | Abstraction Laddering | Understanding | Problem Framing | Active |
