@@ -34,6 +34,10 @@ Diamonds has partially answered "What goals do we need to achieve?" and is activ
 - The existing method library (Abstraction Laddering, Interviewing, Critique, Importance/Difficulty Matrix, What's on Your Radar) is sufficient to run a meaningful engagement. More engine-building is not the priority.
 - The highest-value next investment is a proof of concept project — applying Diamonds to a real project and documenting the experience.
 - Paid discovery engagements with existing clients are the mechanism for validating Diamonds while generating revenue.
+- The target method set is defined: 12 methods from the WCB client training programme, plus What's on Your Radar and Round Robin as additional methods. 6 of the 12 training methods are now built; 6 remain.
+
+**Training programme methods — to build:**
+Think-Aloud Testing, Stakeholder Mapping, Statement Starters, Creative Matrix, Rough & Ready Prototyping, Value Proposition Poster
 
 **What's still open:**
 - Demonstration project not yet selected. Five candidates identified; David has not yet weighed in.
@@ -80,4 +84,5 @@ Diamonds has partially answered "What goals do we need to achieve?" and is activ
 
 ## Recent Activity
 
+- 2026-05-13 — Session with David: pulled latest from main, built Affinity Clustering (full method folder from practitioner teach), built Rose, Thorn, Bud (full method folder from practitioner teach + visual), updated architecture file manifest, defined the 12-method training programme target set, documented 6 built / 6 to go.
 - 2026-04-20 — Session with Justin: walked through architecture, fixed projects.md convention, created onboarding.md and ~/.diamonds/config.json, fixed stems inconsistency in Abstraction Laddering ai-usage.md, updated branching capability documentation, walked through Q1 and Q2 diagnostic, identified warmest client for paid discovery, surfaced five demonstration project candidates, established seven-criteria rubric.

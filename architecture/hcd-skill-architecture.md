@@ -183,9 +183,14 @@ Method (from Skill Library)  ×  Mode (from Mode Engine)  =  Agent Behavior
 | Execution Mechanics | `modes/mechanics/method-execution-mechanics.md` | Active | Mechanics for execution mode |
 | Participation Mechanics | `modes/mechanics/method-participation-mechanics.md` | Active | Mechanics for participation mode |
 | Method Selection | `selection/hcd-method-selection.md` | To be built | Method recipes and sequencing — Layer 3 |
-| Affinity Clustering | `methods/understanding/patterns-and-priorities/method-affinity-clustering.md` | To be built | First method file — Understanding / Patterns & Priorities |
+| Affinity Clustering | `methods/understanding/patterns-and-priorities/affinity-clustering/` | Active | Synthesis method — Understanding / Patterns & Priorities (method.md, mechanics.md, teaching.md, resources/) |
 | Importance / Difficulty Matrix | `methods/understanding/patterns-and-priorities/importance-difficulty-matrix/` | Active | Prioritization method — Understanding / Patterns & Priorities (method.md, mechanics.md, teaching.md, resources/) |
+| Abstraction Laddering | `methods/understanding/problem-framing/abstraction-laddering/` | Active | Problem framing method — Understanding / Problem Framing (method.md, mechanics.md, teaching.md, resources/) |
+| Rose, Thorn, Bud | `methods/understanding/problem-framing/rose-thorn-bud/` | Active | Codification method — Understanding / Problem Framing (method.md, mechanics.md, teaching.md, resources/) |
 | Critique | `methods/looking/evaluative/critique/` | Active | Evaluative feedback method — Looking / Evaluative (method.md, mechanics.md, teaching.md, resources/) |
+| Interviewing | `methods/looking/ethnographic/interviewing/` | Active | Ethnographic research method — Looking / Ethnographic (method.md, mechanics.md, teaching.md, resources/) |
+| What's on Your Radar | `methods/looking/participatory/whats-on-your-radar/` | Active | Participatory research method — Looking / Participatory (method.md, mechanics.md, teaching.md, resources/) |
+| Round Robin | `methods/making/concept-ideation/round-robin/` | Active | Concept ideation method — Making / Concept Ideation (method.md, mechanics.md, teaching.md, resources/) |
 
 ---
 

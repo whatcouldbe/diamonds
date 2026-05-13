@@ -87,14 +87,23 @@ The `method.md` file should follow this structure:
 
 Create the method folder in the appropriate subcategory. At minimum, create `method.md`. Add `mechanics.md` and `teaching.md` when the content is available.
 
-## Current Methods
+## Target Method Set
 
-| Method | Phase | Category | Status |
-|--------|-------|----------|--------|
-| Interviewing | Looking | Ethnographic | Active |
-| Critique | Looking | Evaluative | Active |
-| What's on Your Radar | Looking | Participatory | Active |
-| Affinity Clustering | Understanding | Patterns & Priorities | Active |
-| Importance / Difficulty Matrix | Understanding | Patterns & Priorities | Active |
-| Abstraction Laddering | Understanding | Problem Framing | Active |
-| Rose, Thorn, Bud | Understanding | Problem Framing | Active |
+The 12 methods below form the core training programme — the first complete set to build. Methods marked with † are additional methods that sit outside the training programme but are still part of the Diamonds library.
+
+| Method | Phase | Category | Training | Status |
+|--------|-------|----------|----------|--------|
+| Interviewing | Looking | Ethnographic | ✓ | Active |
+| Think-Aloud Testing | Looking | Evaluative | ✓ | To be built |
+| Critique | Looking | Evaluative | ✓ | Active |
+| What's on Your Radar | Looking | Participatory | † | Active |
+| Stakeholder Mapping | Understanding | People & Systems | ✓ | To be built |
+| Affinity Clustering | Understanding | Patterns & Priorities | ✓ | Active |
+| Importance / Difficulty Matrix | Understanding | Patterns & Priorities | ✓ | Active |
+| Abstraction Laddering | Understanding | Problem Framing | ✓ | Active |
+| Statement Starters | Understanding | Problem Framing | ✓ | To be built |
+| Rose, Thorn, Bud | Understanding | Problem Framing | ✓ | Active |
+| Creative Matrix | Making | Concept Ideation | ✓ | To be built |
+| Round Robin | Making | Concept Ideation | † | Active |
+| Rough & Ready Prototyping | Making | Modeling & Prototyping | ✓ | To be built |
+| Value Proposition Poster | Making | Design Rationale | ✓ | To be built |
