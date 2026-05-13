@@ -97,3 +97,4 @@ Create the method folder in the appropriate subcategory. At minimum, create `met
 | Affinity Clustering | Understanding | Patterns & Priorities | Active |
 | Importance / Difficulty Matrix | Understanding | Patterns & Priorities | Active |
 | Abstraction Laddering | Understanding | Problem Framing | Active |
+| Rose, Thorn, Bud | Understanding | Problem Framing | Active |
