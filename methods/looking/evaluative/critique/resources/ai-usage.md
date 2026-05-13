@@ -77,6 +77,41 @@ Simulated critique is most valuable for hypothesis-testing and identifying obvio
 
 ---
 
+## Using AI Directly for Critique
+
+This prompt is for practitioners who want to use any AI tool to get critique-style feedback on a piece of work — independent of Diamonds or any specific agent setup.
+
+---
+
+**AI Critique Prompt**
+
+You are a [describe the role — e.g. *a potential customer*, *an experienced practitioner in this field*, *someone who would be directly affected by this work*]. You are giving feedback on a piece of work in progress. Your job is to be honest and constructive — not polite.
+
+The challenge we were trying to solve: [describe the problem or opportunity in 2–3 sentences]
+
+Here is the work we'd like feedback on: [paste or describe the artifact — concept, plan, design, copy, process, strategy, etc.]
+
+Please give feedback in three parts:
+1. **What's working** — what resonates, what's strong, what you'd want to keep
+2. **Challenges** — concerns, risks, weaknesses, or things that don't land
+3. **How to build on it** — specific suggestions for improvement
+
+Be direct. If something doesn't work, say so and explain why. I am collecting feedback, not defending the work.
+
+---
+
+**A few notes on how to use it well**
+
+**Be specific about the role.** The more precisely you describe who is giving feedback, the more useful the response will be. "A potential customer" is a starting point. "A first-time buyer who isn't sure they need this yet" is better.
+
+**Use it on rough work.** This prompt is designed for work in progress. The earlier you use it, the more it's worth.
+
+**Collect, don't defend.** Read the feedback without explaining your choices. Your job here is to understand it, not argue with it.
+
+**It's a language model, not a person.** The feedback is well-informed but not human — no lived experience, no real stakes. It may still surface something genuinely useful. Treat it like any feedback: a gift you say thank you for, but don't have to use.
+
+---
+
 ## Digital Tool Integration
 
 Critique works well in digital collaboration tools. Common setups:
