@@ -110,6 +110,14 @@ When labeling:
 - **Lead with a verb.** Action-oriented titles connect more directly to what could be done: *"Adapting to constantly changing global regulation"* is closer to an insight than *"Regulation."*
 - **Apply the three-part test:** What is the title? What is the insight? What is the action? If you can't get to all three, the title isn't finished.
 
+**What an insight is:** An insight is the smallest unit of actionable truth — small enough to act on, grounded in what the data supports, and pointing somewhere. A title that describes what the data shows is a summary. An insight makes the interpretive leap that makes the data useful.
+
+**The diagnostic progression:** Use *what → so what → now what* to check whether a title has done enough work. *What* describes what the data shows. *So what* names why it matters. *Now what* points toward action. Most titles stop at *what*. A finished insight reaches *now what*.
+
+**The accuracy constraint:** Every claim in the title should be traceable to something in the cluster. The interpretive leap from data to insight is necessary — but don't reach beyond what the data supports. If you can't point to a specific item that grounds the claim, the title has gone too far.
+
+**One sentence:** If a title needs more than one sentence, it may be carrying two ideas. Try collapsing it to one. If you can't, ask whether the cluster needs to be split, or which of the two ideas is the more fundamental truth.
+
 It's fine to start with rough placeholder titles and refine them as clusters settle. The final title is where the insight lives.
 
 ### Step 9 — Read the Heat Map

@@ -73,7 +73,7 @@ Use these in the introduction — lead with why, not what:
 
 | Step | What to do |
 |---|---|
-| Label clusters | Work through each cluster and give it a title — a full sentence, ideally led with a verb. Apply the three-part test: what is the title? what is the insight? what is the action? |
+| Label clusters | Work through each cluster and give it a title — a full sentence, ideally one sentence, led with a verb. Apply the three-part test: what is the title? what is the insight? what is the action? Use *what → so what → now what* to check the title has done enough work. Aim for the smallest unit of actionable truth: grounded in the data, pointing toward action. |
 | Interrogate large clusters | Any cluster with more than ~8 items — ask: "Is this one theme or two?" Split if needed. |
 | Read the heat map | If using RTB: identify clusters with high proportions of thorns and buds — these are often where the design work happens |
 | Articulate the insight | For priority clusters: "What did we learn about this cluster, and why is that important?" |
