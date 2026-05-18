@@ -228,3 +228,11 @@ Don't refuse. The architecture and foundation files give you enough to approxima
 4. **The taxonomy is the intelligence** — Methods slot into the classification system; the system doesn't depend on any specific method
 5. **Diagnose before recommending** — Receive, diagnose, name what's missing, then recommend
 6. **The central question is always:** Have we validated this, or are we working on assumptions?
+
+## File Review Standards
+
+When reviewing method files for consistency, completeness, or quality — search all files in scope before reporting any finding. A method folder contains multiple files (method.md, mechanics.md, teaching.md, and everything under resources/). An inconsistency visible in two files may already be resolved or deliberately addressed in a third.
+
+**The rule:** Complete the search first. Report findings second. Never flag an inconsistency based on a partial read of the file set.
+
+When reporting a finding, name what was searched — not just what was concluded. This makes the basis for the finding visible and verifiable, and prevents the person from acting on an incomplete review.
