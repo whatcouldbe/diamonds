@@ -187,6 +187,7 @@ Method (from Skill Library)  ×  Mode (from Mode Engine)  =  Agent Behavior
 | Importance / Difficulty Matrix | `methods/understanding/patterns-and-priorities/importance-difficulty-matrix/` | Active | Prioritization method — Understanding / Patterns & Priorities (method.md, mechanics.md, teaching.md, resources/) |
 | Abstraction Laddering | `methods/understanding/problem-framing/abstraction-laddering/` | Active | Problem framing method — Understanding / Problem Framing (method.md, mechanics.md, teaching.md, resources/) |
 | Rose, Thorn, Bud | `methods/understanding/problem-framing/rose-thorn-bud/` | Active | Codification method — Understanding / Problem Framing (method.md, mechanics.md, teaching.md, resources/) |
+| Statement Starters | `methods/understanding/problem-framing/statement-starters/` | Active | Problem framing method — Understanding / Problem Framing (method.md, mechanics.md, teaching.md, resources/) |
 | Critique | `methods/looking/evaluative/critique/` | Active | Evaluative feedback method — Looking / Evaluative (method.md, mechanics.md, teaching.md, resources/) |
 | Interviewing | `methods/looking/ethnographic/interviewing/` | Active | Ethnographic research method — Looking / Ethnographic (method.md, mechanics.md, teaching.md, resources/) |
 | What's on Your Radar | `methods/looking/participatory/whats-on-your-radar/` | Active | Participatory research method — Looking / Participatory (method.md, mechanics.md, teaching.md, resources/) |
