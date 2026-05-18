@@ -56,12 +56,12 @@ The radar is divided into segments — one per category. Each category has a tri
 
 | Category | Trigger Question |
 |---|---|
-| **Vision** | What would the future look like if this initiative succeeds? |
+| **Vision** | What would the future look like? |
 | **Impact** | How would success be measured for this initiative? |
 | **People** | Who is this for? |
 | **Challenges** | What problems need solving? |
 
-These four categories are a strong default for opening a new project or initiative. The number of categories can range from two to eight depending on what you need to understand. Customize both the categories and their trigger questions to fit the context.
+These four categories are a strong default for opening a new project or initiative. The set has no wild card — the categories are specific enough to cover the territory for an internal project team. The number of categories can range from two to eight depending on what you need to understand. Customize both the categories and their trigger questions to fit the context.
 
 **Default four categories for customer discovery:**
 
@@ -70,15 +70,59 @@ These four categories are a strong default for opening a new project or initiati
 | **Goals** | What are you trying to achieve? |
 | **Hopes** | What does a good outcome look like to you? |
 | **Challenges** | What's getting in the way? |
-| **[Wild card]** | What else is on your radar? |
+| **Wildcard** | What else is on your mind? |
 
 These four categories are designed for use with customers or stakeholders — when the goal is to understand what matters to the people you're serving, rather than to align a project team. The sequence moves from aspiration to tension deliberately: Goals and Hopes establish what people want before Challenges surfaces what's in the way. This ordering tends to produce richer responses, because participants have articulated their aspirations before they're asked to name their obstacles.
 
-**Segment placement:** When laying out a four-segment radar with these categories, place Goals and Challenges in opposing segments. The natural tension between aspiration and obstacle — what you want to achieve sitting directly across from what's in the way — is reinforced by their position on the radar. Hopes and Wild card occupy the remaining two segments.
+The Wildcard segment always gets both a name and a trigger question. "What else is on your mind?" is the standard question — it's open, warm, and doesn't presuppose any particular domain. A named wild card with a broad question works better in practice than a fully blank segment: participants are more likely to use it when they have a prompt to get started.
 
-Including a Wild card segment is particularly recommended in discovery contexts: you don't yet know what you don't know, and a blank segment signals openness to the participant's frame rather than locking them into yours.
+**Segment placement:** When laying out a four-segment radar with these categories, place Goals and Challenges in opposing segments. The natural tension between aspiration and obstacle — what you want to achieve sitting directly across from what's in the way — is reinforced by their position on the radar. Hopes and Wildcard occupy the remaining two segments.
 
-**Wild card segments:** One or more segments can be left intentionally blank — no label, no trigger question. Blank segments give participants a place to surface considerations that don't fit the defined categories. After a participant places items on a blank segment, the researcher or facilitator asks them to name the category. This mirrors good interview technique: defined categories cover what you know to investigate; blank segments open the door to what you didn't anticipate. If all segments are blank, participants are effectively building their own category structure — a more open-ended research approach where the categories themselves become data.
+Including a Wildcard segment is particularly recommended in discovery contexts: you don't yet know what you don't know, and an open segment signals that you're interested in the participant's frame, not just your own.
+
+**Wild card segments:** A wild card is a segment with a name and a broad trigger question — it covers whatever doesn't fit the defined categories. The standard question is *"What else is on your mind?"* In more open-ended research contexts where the categories themselves are uncertain, a segment can be left entirely blank — no name, no question. After a participant places items on a blank segment, the researcher or facilitator asks them to name it. This is a more advanced variation: use it when you want participants to construct their own category structure, and the categories themselves are part of what you're trying to learn.
+
+### Designing Custom Categories and Trigger Questions
+
+When the defaults don't fit the context, you're designing your own category set. The two components of each segment — the category name and the trigger question — do different jobs and need to be designed together.
+
+**The category name orients. The trigger question activates.**
+
+The name tells participants what territory they're in. The trigger question tells them what to do with it. A name like *Challenges* gives the segment its identity. A question like *"What's getting in the way?"* tells participants what kind of response is useful. Neither alone is sufficient: the name without a question leaves participants uncertain about what to generate; the question without a clear name makes the radar hard to navigate when placing items.
+
+**Principles for naming categories:**
+
+- **Distinct** — each category should cover different territory. If two categories could generate the same response, they overlap. Overlap fragments what should be a single segment and confuses placement.
+- **Generative** — the name should open up a topic, not close it down. A category called *Problems* invites fewer responses than *Challenges*; *Future* invites fewer than *Vision*. Test each name by asking: could a participant generate two to four genuinely different responses without straining?
+- **Brief** — the wedge has limited space. One word or a short noun phrase. Save the explanation for the trigger question.
+- **Anchored to the directive** — categories are not universal. They should reflect the specific initiative, opportunity, or challenge being explored. A category that works for a product team may not work for a customer or a field technician.
+
+**Principles for writing trigger questions:**
+
+- **Open-ended** — "What...?", "How...?", "Who...?" Questions that can be answered yes or no close down generation.
+- **Broad enough for multiple responses** — avoid questions that imply a single answer. "If one thing changed, what would it be?" signals one answer is enough. "What would be different?" leaves room for more.
+- **In the participant's language** — write the question the way the participant would say it, not the way the organisation would document it. "What's getting in the way?" not "What are the primary inhibitors to value delivery?"
+- **Additive to the name** — the question should say something the name doesn't. If the category is *Challenges* and the question is "What challenges are you facing?", the question adds nothing. Push further: "What's getting in the way?" or "Where does the process break down for you?"
+
+**A simple design process:**
+
+1. Start with the directive — what are you trying to understand?
+2. List the dimensions of the directive — what different angles would a complete picture require?
+3. Draft one category name per dimension — brief, distinct, generative
+4. Test for overlap — if two categories could generate the same response, merge or redraw them
+5. Test for generativity — for each category, try to generate four responses yourself. If you struggle, the category may be too narrow or too abstract
+6. Write one trigger question per category — open-ended, plain language, additive to the name
+7. Add a Wildcard segment if there are dimensions you may not have anticipated — give it a name and the question *"What else is on your mind?"*
+
+**On number of segments:**
+
+Four is the right default because it balances coverage against time. Each additional segment beyond four adds cognitive load for participants and time to the group phase. More segments are justified when the directive spans genuinely different domains that would be conflated in fewer categories — not because the topic feels complex.
+
+Six segments work well when the directive has distinct dimensions that shouldn't share space but where each dimension is rich enough to generate genuine responses. Eight is rare and should only be used with experienced participants and extended time. As a practical check: if two categories could be combined without losing insight, they should be.
+
+When using six or more segments, include at least one Wildcard. The more structured the frame, the more important it is to leave a door open for what you didn't anticipate. The Wildcard always gets both a name and a trigger question — *"What else is on your mind?"* is the standard. A named Wildcard gets used; a blank segment often doesn't.
+
+---
 
 ### Participants
 Everyone begins with a list — individual generation always comes first, regardless of group size. What happens next depends on the number of people:
