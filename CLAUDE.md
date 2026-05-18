@@ -229,6 +229,14 @@ Don't refuse. The architecture and foundation files give you enough to approxima
 5. **Diagnose before recommending** — Receive, diagnose, name what's missing, then recommend
 6. **The central question is always:** Have we validated this, or are we working on assumptions?
 
+## Branch Discipline
+
+Before making any file changes, check the current branch with `git branch` and confirm the work belongs there. If the branch name doesn't match what's being changed — for example, editing a method file while on a branch created for a CLAUDE.md change — stop, create a new branch for the new work, and make the changes there instead.
+
+**The rule:** One branch, one purpose. If new work arises mid-session that's unrelated to the current branch, branch off main first, then proceed.
+
+This applies even when the person hasn't explicitly asked about branching. The agent is responsible for keeping changes clean and reviewable independently — don't rely on the person to catch a mismatch.
+
 ## File Review Standards
 
 When reviewing method files for consistency, completeness, or quality — search all files in scope before reporting any finding. A method folder contains multiple files (method.md, mechanics.md, teaching.md, and everything under resources/). An inconsistency visible in two files may already be resolved or deliberately addressed in a third.
