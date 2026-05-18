@@ -70,7 +70,7 @@ These four categories are a strong default for opening a new project or initiati
 | **Goals** | What are you trying to achieve? |
 | **Hopes** | What does a good outcome look like to you? |
 | **Challenges** | What's getting in the way? |
-| **[Wild card]** | What else is on your radar? |
+| **Wildcard** | What else is on your mind? |
 
 These four categories are designed for use with customers or stakeholders — when the goal is to understand what matters to the people you're serving, rather than to align a project team. The sequence moves from aspiration to tension deliberately: Goals and Hopes establish what people want before Challenges surfaces what's in the way. This ordering tends to produce richer responses, because participants have articulated their aspirations before they're asked to name their obstacles.
 

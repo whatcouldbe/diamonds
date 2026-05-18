@@ -60,6 +60,26 @@ To adapt the prompt for different category sets, replace the four default catego
 - The (MOST) and (LEAST) markers — these produce a synthetic importance signal that maps to the center and outer rings
 - The table format — it maps cleanly to the radar structure
 
+Always include a wildcard as the final category, labelled as such, with the question "What else is on your mind?" It captures what the defined categories miss — and in discovery contexts, that is often where the most useful data lives.
+
+---
+
+## Generating Practice Scenarios
+
+Use this prompt to generate a ready-to-use practice scenario for facilitation training. The output gives participants a realistic context to work with without requiring a live customer relationship.
+
+### The Prompt
+
+```
+I need a practice scenario for a facilitation training exercise using the What's on Your Radar? method. Please generate a short context description (2–3 sentences) and four radar categories, each with a trigger question.
+
+The context should describe a realistic situation where someone at Autodesk is meeting a customer or internal stakeholder group — not to sell, but to understand what matters most to them right now. It should be recognisable to most employees regardless of role or seniority.
+
+The four categories should be distinct enough that participants naturally surface different things in each. Each trigger question should invite honest individual reflection. The final category should always be a wildcard — labelled as such, with the question "What else is on your mind?"
+
+My scenario should be based on: [describe the context — e.g. "senior engineers from a long-standing account" or "an internal team who rely on a shared service"]
+```
+
 ---
 
 ## Limitations
