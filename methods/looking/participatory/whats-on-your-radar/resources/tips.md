@@ -33,6 +33,9 @@ When participants can't agree on what belongs at the center of a segment, that d
 ## Ring placement on the group radar is determined by negotiation
 Where an item lands on the group radar — center, middle, or outer — is determined by the group's discussion, not carried over from individual radars. An item that was at the center for one person may land in the middle or outer ring of the group radar. Confirm placement after each segment is resolved.
 
+## Listen for the reasoning, not just the placement
+Where an item lands tells you what someone chose. Why they chose it tells you what they value. The most important facilitation move — especially in research contexts — is to ask people to explain their trade-offs: *"What made you put that at the centre instead of this one?"* The artifact records the choices. The conversation captures the reasoning. Both are outputs.
+
 ## The radar is not the output — the conversation is
 Participants and stakeholders sometimes fixate on the artifact. Remind them that the group radar is a record of a conversation, not a strategy document. Its value is in what it took to produce it: the choices made, the assumptions surfaced, the divergence revealed.
 
