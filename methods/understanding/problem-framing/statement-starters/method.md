@@ -76,6 +76,8 @@ The statement has three parts:
 - **Context** — the where, when, or what. Be specific enough to give the question direction.
 - **People** — who will benefit. Name them. This keeps the statement human-centered and prevents solutions from drifting toward the system rather than the person.
 
+The verb is the fixed anchor — it always comes first. Context and people can switch order depending on what reads most naturally for a given statement.
+
 *Example:* How might we **eliminate** [verb] **waiting for room-temperature insulin** [context] **for people with diabetes** [people]?
 
 ### Step 3 — Check for Common Failure Modes

@@ -23,6 +23,9 @@ When a team has used Abstraction Laddering to find the right level of challenge,
 **Interviewing → Statement Starters**
 Field research produces observations about human behaviour, needs, and frustrations. These observations can be translated directly into HMW statements, particularly when a team is moving quickly from research to ideation without a full synthesis phase. Less rich than the Affinity Clustering route, but viable for faster-moving work.
 
+**What's on Your Radar → Statement Starters**
+When a group has run What's on Your Radar and worked together to prioritise the results, the collective output is ready material for Statement Starters. The most important item in a category anchors the HMW question — it gives the statement its direction. But the full cluster of items in that category should inform it: the surrounding content adds nuance, reveals the pattern, and prevents the statement from being so narrow it only reflects one person's top priority. The MOST item is the starting point; the category is the context. A team can generate one statement per prioritised category, or focus on whichever categories feel most generative.
+
 ---
 
 ## What Follows Statement Starters
@@ -43,3 +46,4 @@ The HMW statement provides the challenge that the Creative Matrix is built to ex
 | Affinity Clustering → Statement Starters → Creative Matrix | When you want structured ideation across multiple lenses rather than open generation |
 | Abstraction Laddering → Statement Starters → Round Robin | When scope alignment is needed before ideation begins |
 | Interviewing → Statement Starters → Round Robin | Fast track: field research directly into ideation, skipping full synthesis |
+| What's on Your Radar → Statement Starters → Round Robin | Participatory listening followed by collective prioritisation, then ideation against the most important themes |
