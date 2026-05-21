@@ -14,6 +14,18 @@ Planned:
 
 ---
 
+## Where this method is useful
+
+What's on Your Radar works across a wide range of situations — anywhere you need to understand what matters most to a person or group before making a decision, starting a project, or having a difficult conversation. A few examples:
+
+- **Explore what your future career looks like** — individual radar, personal priorities across categories like growth, relationships, skills, life outside work
+- **Run a more meaningful one-to-one with someone on your team** — surface what matters most to them right now before the conversation starts
+- **Surface where you and a colleague see things differently** — the radar can reveal where two people's priorities actually diverge, which often reframes the conflict
+- **Understand what users need before shaping a product, service, or process** — classic customer discovery application
+- **Get aligned on what matters before a project begins** — directly matches the project kick-off variation
+
+---
+
 ## Accessible Demo Scenarios
 
 When teaching or demonstrating What's on Your Radar, the directive needs to be universally relatable — something everyone in the room has a genuine opinion about regardless of their role or function. Internal process scenarios work well: they're experienced across the business and generate real responses across all four default categories (Vision, Impact, People, Challenges).
