@@ -80,10 +80,38 @@ The `method.md` file should follow this structure:
 
 **Method names are for navigation, not for participants.** A method name that is technical, jargon-heavy, or opaque should never be the first thing participants hear. Lead with what the method does: its purpose and what it produces. Use the formal name only in contexts where it is meaningful — such as teaching practitioners to recognise methods in the Luma system or another named framework. The name is how we find the method; the experience is what participants remember.
 
-**Protocol for adding a new method — in order:**
+There are two pathways for adding a method. They differ in *who supplies the knowledge*, and the difference is visible in the resulting method's provenance — never hidden.
+
+### Pathway A — practitioner-taught (preferred)
+
+Used when someone with real facilitation experience can teach the method. This is the higher-rigor path and the default to push for.
+
 1. Have the practitioner teach the method before building any files. Teaching sessions encode stories, facilitation edge cases, and conviction closes that cannot be approximated from research.
 2. Collect templates before building files. Seeing actual template language produces better first drafts and avoids updating method.md after the fact when template section names differ from what was written.
 3. For the FAQ: generate a prioritized list of plausible questions, then ask the practitioner to add any from real experience and flag any as non-issues. Work through them together one at a time — don't make the practitioner generate the list from scratch, but don't build the FAQ from generated questions alone either.
+
+### Pathway B — artifact-seeded reconstruction (provisional)
+
+> This protocol is itself provisional — first written while reconstructing Hypothesis Statements, revised from what that run exposed. Expect it to change.
+
+Used when no expert is available but the person can supply artifacts — a template, a worked example, a link. The method gets reconstructed from those artifacts plus research. It is honest, useful, and explicitly second-best.
+
+Offer it as the fallback, in order of rigor: first try to find an expert to teach it; failing that, reconstruct from materials; either way, label what was built so a reconstruction is never mistaken for lived knowledge.
+
+1. **Get the worked example, not just the blank.** The blank template gives structure (what the method asks for); the worked example gives the *quality bar* (what good output looks like). The run confirmed this is the single highest-signal input — with structure alone you can describe the method but not its standard. If only the blank is available, say plainly that the quality bar is unestablished.
+2. **Research the lineage.** Find where the method comes from and cite it in `references.md`. Ground what you can in real sources; never present inference as canon. This file is the reconstruction's firmest footing — invest in it.
+3. **Build `method.md` from artifacts + research.** State purpose and structure from what the artifacts directly show.
+4. **Flag at two granularities.** Every file carries a `provenance:` field in frontmatter (`grounded` or `reconstructed`). Files that mix both — like `method.md` — additionally carry inline `[reconstructed]` tags on each inferred claim. Facilitation process, timing, and edge cases are never in the artifacts and are always reconstructed.
+5. **Classify by what the artifact *is*, not when it's used.** If taxonomy placement is ambiguous, don't agonise — the folder is a cheap, reversible index. Spend the saved effort on `recipes.md` (what precedes, what follows), which is what actually drives when the method gets surfaced.
+6. **Register and name the upgrade.** Add the method to the Target Method Set table with status `Provisional (reconstructed)`. In `method.md`, name the specific things a practitioner must supply to upgrade it (e.g. the live facilitation moves, the real conviction close) — the upgrade path must be concrete, not a vague "needs review."
+
+**Provenance ladder.** Construction provenance is distinct from the `source:` field (which marks *who* contributed). A method's `provenance:` field records *how much we trust the construction*, and it is a ladder, not a binary:
+
+- `reconstructed` — built from artifacts + research; never run or verified. The agent says so whenever it teaches or facilitates the method.
+- `field-tested` — someone has run it and reported back; edge cases are starting to be real.
+- `practitioner-verified` — an expert has taught or corrected it; equivalent to Pathway A.
+
+A Pathway B method carries `status: provisional` and `provenance: reconstructed` in `method.md` frontmatter until it climbs the ladder. A reconstructed method is an open assumption in the library, waiting to be validated by use — the core Diamonds principle pointed at its own content. The moment an expert touches it, prompt to upgrade it.
 
 Create the method folder in the appropriate subcategory. At minimum, create `method.md`. Add `mechanics.md` and `teaching.md` when the content is available.
 
@@ -107,3 +135,4 @@ The 12 methods below form the core training programme — the first complete set
 | Round Robin | Making | Concept Ideation | † | Active |
 | Rough & Ready Prototyping | Making | Modeling & Prototyping | ✓ | To be built |
 | Value Proposition Poster | Making | Design Rationale | ✓ | To be built |
+| Hypothesis Statements | Making | Design Rationale | † | Provisional (reconstructed) |
