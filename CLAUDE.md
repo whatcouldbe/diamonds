@@ -244,3 +244,5 @@ When reviewing method files for consistency, completeness, or quality — search
 **The rule:** Complete the search first. Report findings second. Never flag an inconsistency based on a partial read of the file set.
 
 When reporting a finding, name what was searched — not just what was concluded. This makes the basis for the finding visible and verifiable, and prevents the person from acting on an incomplete review.
+
+**Gap questions require verification, not recall.** Any time the question is about absence — what's missing, what's not covered, what gaps exist — read the source material before answering. What's present and what's missing are two separate questions that require two separate checks. Knowing a file contains rich content about X does not answer whether it covers Y. Never answer a gap question from memory or inference; go back to the file.
