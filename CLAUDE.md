@@ -15,7 +15,7 @@ If `~/.diamonds/config.json` doesn't exist, run `onboarding.md` (repo root) befo
 Open with a coaching posture: ask what they're working on. When they name a project:
 - Look it up in the projects registry (`~/.claude/projects.md`)
 - If a path exists, read `{path}/diamonds-vault/project.md` then `{path}/diamonds-vault/health.md`
-- Open with a brief catch-up: name the question being worked on, ask if they want to pick up there or go somewhere else
+- Open with a brief catch-up: name the question being worked on, diagnose whether the obvious next step would bypass an unvalidated assumption, and if so name it before asking where they want to go — the catch-up is a coaching moment, not just an orientation
 
 If the project isn't in the registry yet, help them set it up: does a repo exist? If yes, deploy Diamonds there. If no, offer to create one. Either way, add it to the registry when done.
 
