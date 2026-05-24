@@ -72,14 +72,22 @@ Before engaging, read in this order:
 
 This project uses the Diamonds HCD agent system.
 
-To load the engine: read `~/.diamonds/config.json` to get the `diamonds_path` value, then read `{diamonds_path}/CLAUDE.md` for full instructions.
+**To load the engine:** read `~/.diamonds/config.json` to get the `diamonds_path` value, then read `{diamonds_path}/CLAUDE.md` for full instructions.
 
-When assessing project status or determining what to work on next:
+**If either file cannot be read** — for example, in a web/cloud session where the engine has not been bootstrapped — the Diamonds engine is not available in this environment. In that case:
+
+1. Do **not** simulate Diamonds behaviour from the summary below. The summary describes posture, not methods, navigation, or coaching arcs. Acting as if the engine is loaded when it isn't is the failure mode this section exists to prevent.
+2. Tell the user explicitly that the engine is unreachable: which file failed to load, and that you are operating without it.
+3. Pause before proceeding so the user can choose to continue degraded, switch to a session where the engine is available, or bootstrap it.
+
+A SessionStart hook at `.claude/bootstrap-diamonds-engine.sh` attempts to bootstrap the engine automatically in web sessions. If the engine is still unreachable, that script's stderr output (visible in the session start logs) will explain why.
+
+When assessing project status or determining what to work on next (engine required):
 - Read `{diamonds_path}/navigation/key-questions.md` (path resolved from config)
 - Map the health.md question status against the key questions to diagnose what's validated, what's assumed, and what needs to happen next
 - Use the coaching arc to recommend the next move: receive → diagnose → name what's missing → recommend → offer support
 
-Key behaviors:
+Key behaviours (summary only — full methods live in the engine):
 - Infer mode from context (Coaching is default)
 - Ask one question at a time
 - Diagnose before recommending
@@ -92,18 +100,27 @@ Two rules for paths in any project CLAUDE.md:
 
 **Step 3 — Create the project's `.claude/settings.json`**
 
-This wires the SessionStart hook so the vault loads automatically at the start of every session, without depending on the agent following a written instruction.
+This wires two SessionStart hooks that run in order: first the engine bootstrap (so the engine exists on disk in web sessions), then the projects-registry load (so the agent is oriented to known projects). Both are no-ops in environments where they don't apply, so the same template works on desktop and web.
 
 - Check for `.claude/settings.json` in the project root
 - If none exists: create `.claude/` and add `settings.json`
 - If one exists: merge the `hooks` block into it, preserving existing settings
 
-**Standard SessionStart hook for a project settings.json:**
+**Standard SessionStart hooks for a project settings.json:**
 
 ```json
 {
   "hooks": {
     "SessionStart": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": ".claude/bootstrap-diamonds-engine.sh"
+          }
+        ]
+      },
       {
         "hooks": [
           {
@@ -118,7 +135,18 @@ This wires the SessionStart hook so the vault loads automatically at the start o
 }
 ```
 
-This resolves the startup script from the engine path at runtime — no hardcoded paths, works on any machine where Diamonds is installed.
+The first hook bootstraps the engine in web sessions (no-op on desktop via the `CLAUDE_CODE_REMOTE_SESSION_ID` guard). The second resolves the startup script from the engine path at runtime — no hardcoded paths, works on any machine where Diamonds is installed.
+
+**Step 4 — Drop in the engine bootstrap script**
+
+The engine bootstrap script is what makes the engine reachable in web/cloud sessions, where the container starts without `~/.diamonds/` on disk. It is a no-op on desktop.
+
+- Copy `{diamonds_path}/templates/bootstrap-diamonds-engine.sh` to the project's `.claude/bootstrap-diamonds-engine.sh`
+- `chmod +x .claude/bootstrap-diamonds-engine.sh`
+
+The script ships with the canonical engine URL (`https://github.com/whatcouldbe/diamonds.git`) as the default. If this project should bootstrap from a fork instead, set `DIAMONDS_ENGINE_REPO_URL` in the project's cloud environment configuration — no edit to the script needed.
+
+Why this lives in the repo (not as a cloud setup script): per [Claude Code on the Web docs](https://code.claude.com/docs/en/claude-code-on-the-web), cloud setup scripts live in cloud environment configuration, not the repo, which means they cannot be templated and inherited by new projects. A SessionStart hook in the repo is templatable and travels with the project.
 
 ---
 
