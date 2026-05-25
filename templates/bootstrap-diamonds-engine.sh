@@ -21,11 +21,15 @@ fi
 # DIAMONDS_ENGINE_REPO_URL in this project's cloud environment configuration if
 # this project should bootstrap from a fork instead.
 #
-# The engine repo must be publicly accessible (or the env must supply auth via
-# GH_TOKEN, etc.). The web container's git client is NOT transparently
-# authenticated for arbitrary github.com URLs — only for the session's own
-# scoped repo. Plain `git clone https://github.com/...` will fail with
-# "could not read Username" if the target is private and no auth is supplied.
+# Authentication for private engines: set GH_TOKEN (or GITHUB_TOKEN) in the
+# project's cloud environment configuration. A fine-grained PAT with read-only
+# access to the engine repo is sufficient. The token is spliced into the clone
+# via `git -c http.extraheader=...` — never written to .git/config, never
+# embedded in the URL, never echoed to the session log. The web container's
+# git client is NOT transparently authenticated for arbitrary github.com URLs
+# (only for the session's own scoped repo), so without a token only public
+# engine repos can be cloned — a plain clone of a private repo fails with
+# "could not read Username".
 ENGINE_REPO_URL="${DIAMONDS_ENGINE_REPO_URL:-https://github.com/whatcouldbe/diamonds.git}"
 ENGINE_DIR="$HOME/.diamonds-engine"
 CONFIG_FILE="$HOME/.diamonds/config.json"
@@ -47,9 +51,29 @@ rm -rf "$ENGINE_DIR"
 # `set -o pipefail` (above) is critical here: without it, the pipeline's exit
 # status would be sed's (always 0), masking any git clone failure and letting
 # the script silently proceed to write a config pointing at nothing.
+#
+# When GH_TOKEN (or GITHUB_TOKEN) is set, the clone runs under a one-shot
+# `http.extraheader` config flag. That flag is scoped to this single git
+# invocation: it is not written to the cloned repo's .git/config, not embedded
+# in the URL, and not part of the echo'd progress lines. The token is briefly
+# visible in the process arglist (`ps`) while git runs — acceptable on a
+# single-tenant web container.
+GH_AUTH_TOKEN="${GH_TOKEN:-${GITHUB_TOKEN:-}}"
+
+clone_engine() {
+  if [ -n "$GH_AUTH_TOKEN" ]; then
+    local b64
+    b64=$(printf 'x-access-token:%s' "$GH_AUTH_TOKEN" | base64 | tr -d '\n')
+    git -c "http.extraheader=Authorization: Basic $b64" \
+        clone --depth=1 "$ENGINE_REPO_URL" "$ENGINE_DIR" 2>&1 | sed 's/^/[diamonds-bootstrap] /'
+  else
+    git clone --depth=1 "$ENGINE_REPO_URL" "$ENGINE_DIR" 2>&1 | sed 's/^/[diamonds-bootstrap] /'
+  fi
+}
+
 echo "[diamonds-bootstrap] Cloning Diamonds engine from $ENGINE_REPO_URL ..."
-if ! git clone --depth=1 "$ENGINE_REPO_URL" "$ENGINE_DIR" 2>&1 | sed 's/^/[diamonds-bootstrap] /'; then
-  echo "[diamonds-bootstrap] Clone failed. Engine will be unreachable; CLAUDE.md will surface this to the user." >&2
+if ! clone_engine; then
+  echo "[diamonds-bootstrap] Clone failed. If the engine repo is private, set GH_TOKEN (read-only PAT) in the project's cloud environment configuration. Engine will be unreachable; CLAUDE.md will surface this to the user." >&2
   exit 0
 fi
 
