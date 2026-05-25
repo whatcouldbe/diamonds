@@ -151,6 +151,8 @@ The engine bootstrap script is what makes the engine reachable in web/cloud sess
 
 The `DIAMONDS_ENGINE_REPO_URL` env var still overrides at runtime for one-off exceptions.
 
+**If the engine URL points to a private repo** — the common case for client deployments from forks — also tell the user to set `GH_TOKEN` in the project's cloud environment configuration. A fine-grained PAT with read-only access to the engine repo is sufficient. The bootstrap script splices the token into the clone via `git -c http.extraheader=...` so it is never written to `.git/config`, never embedded in the URL, and never echoed to the session log. Without it, the web-session clone of a private engine fails with "could not read Username". For canonical (public) engine users, no token is needed.
+
 Why this lives in the repo (not as a cloud setup script): per [Claude Code on the Web docs](https://code.claude.com/docs/en/claude-code-on-the-web), cloud setup scripts live in cloud environment configuration, not the repo, which means they cannot be templated and inherited by new projects. A SessionStart hook in the repo is templatable and travels with the project.
 
 ---
