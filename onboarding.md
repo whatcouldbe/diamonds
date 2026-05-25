@@ -14,7 +14,7 @@ Check for `~/.diamonds/config.json` at the start of every session. If it doesn't
 
    > "What's the full path to your Diamonds folder? For example: `/Users/yourname/projects/diamonds`"
 
-3. Once confirmed, write `~/.diamonds/config.json` with the captured path (see config schema below).
+3. Once confirmed, detect the engine's remote URL by running `git remote get-url origin` from inside the diamonds path. Then write `~/.diamonds/config.json` with both values (see config schema below). If the engine isn't a git working tree — for example, an unzipped download — set `diamonds_repo_url` to `null` and continue; nothing else in onboarding depends on it.
 
 4. Confirm and move on:
 
@@ -52,6 +52,7 @@ If no: proceed without a vault. Don't ask again in the same session.
   "config_version": "1.0",
   "environment": "claude-code",
   "diamonds_path": "/absolute/path/to/diamonds",
+  "diamonds_repo_url": "https://github.com/whatcouldbe/diamonds.git",
   "projects": [
     {
       "name": "Project Name",
@@ -60,5 +61,7 @@ If no: proceed without a vault. Don't ask again in the same session.
   ]
 }
 ```
+
+`diamonds_repo_url` is detected automatically (see Step 3) and records which engine the user installed from. New projects scaffolded from this engine read it to stamp the correct URL into their web-session bootstrap script, so a project scaffolded from a fork bootstraps from that fork — not canonical. May be `null` if the engine isn't a git working tree.
 
 `projects` starts as an empty array and grows as projects are introduced during usage.

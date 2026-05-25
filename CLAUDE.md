@@ -142,9 +142,16 @@ The first hook bootstraps the engine in web sessions (no-op on desktop via the `
 The engine bootstrap script is what makes the engine reachable in web/cloud sessions, where the container starts without `~/.diamonds/` on disk. It is a no-op on desktop.
 
 - Copy `{diamonds_path}/templates/bootstrap-diamonds-engine.sh` to the project's `.claude/bootstrap-diamonds-engine.sh`
+- **Stamp this engine's URL into the copy.** The template ships with `https://github.com/whatcouldbe/diamonds.git` as a placeholder default. Replace that URL in the project's copy with the URL of the engine that's doing the scaffolding — read `diamonds_repo_url` from `~/.diamonds/config.json`; if that field is missing or null (older installs), fall back to `git remote get-url origin` run from `diamonds_path`. The resulting line in the project's script should look like:
+  ```bash
+  ENGINE_REPO_URL="${DIAMONDS_ENGINE_REPO_URL:-<url-of-the-engine-that-scaffolded-this-project>}"
+  ```
+  Why: every project should default to bootstrapping from the engine that created it. A project scaffolded from a fork must bootstrap from that fork, not from canonical, or web sessions silently load the wrong engine.
 - `chmod +x .claude/bootstrap-diamonds-engine.sh`
 
-The script ships with the canonical engine URL (`https://github.com/whatcouldbe/diamonds.git`) as the default. If this project should bootstrap from a fork instead, set `DIAMONDS_ENGINE_REPO_URL` in the project's cloud environment configuration — no edit to the script needed.
+The `DIAMONDS_ENGINE_REPO_URL` env var still overrides at runtime for one-off exceptions.
+
+**If the engine URL points to a private repo** — the common case for client deployments from forks — also tell the user to set `GH_TOKEN` in the project's cloud environment configuration. A fine-grained PAT with read-only access to the engine repo is sufficient. The bootstrap script splices the token into the clone via `git -c http.extraheader=...` so it is never written to `.git/config`, never embedded in the URL, and never echoed to the session log. Without it, the web-session clone of a private engine fails with "could not read Username". For canonical (public) engine users, no token is needed.
 
 Why this lives in the repo (not as a cloud setup script): per [Claude Code on the Web docs](https://code.claude.com/docs/en/claude-code-on-the-web), cloud setup scripts live in cloud environment configuration, not the repo, which means they cannot be templated and inherited by new projects. A SessionStart hook in the repo is templatable and travels with the project.
 
