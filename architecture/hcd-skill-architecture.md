@@ -37,9 +37,9 @@ Philosophy, mindsets, double diamond framework, diagnostic 2×2, validation prin
 **`navigation/key-questions.md`**
 Process checkpoints that guide teams through innovation work. Tool-agnostic. Helps determine which methods to apply and when it's safe to move forward vs. when to iterate.
 
-### Layer 3 — Selection *(to be built)*
+### Layer 3 — Selection
 **`selection/hcd-method-selection.md`**
-The art of choosing methods — recipes, sequences, progressions. Bridges the navigation layer and individual method skills. Helps agents and teams decide which specific methods to use at each stage.
+The reasoning engine for choosing methods — six principles for selecting, sequencing, and combining methods based on where someone is in their process. Bridges the navigation layer and individual method skills. Used as internal reasoning in Coaching/Facilitating/Executing modes, and as a teachable framework in Teaching mode.
 
 ### Layer 4 — Method Classification & Recommendation System
 
@@ -54,7 +54,7 @@ Layer 4 is not a fixed library of approved methods — it is a **classification 
 4. The agent recommends methods that fit — whether pre-loaded, user-brought, or discovered
 5. If a user brings their own method, the agent can classify it and tell them how and when it applies
 
-**The taxonomy is the intelligence.** Methods slot into it. The system is designed to work with Justin's existing 36 methods, future methods, and methods the agent surfaces — without being dependent on any of them.
+**The taxonomy is the intelligence.** Methods slot into it. The system is designed to work with any methods — those built into the engine, future additions, or methods someone brings in mid-session — without being dependent on any specific one.
 
 ---
 
@@ -97,14 +97,14 @@ Modes are independent of methods. The same method skill behaves differently depe
 
 **Important distinction — Coaching vs. Facilitating:** These are not the same thing. Coaching guides someone's thinking and decision-making — it's a conversation about what to do and why. Facilitating runs an activity — it's serving a process that a group is moving through. A coach asks "what do you actually need here?" A facilitator asks "what's next in the process?"
 
-### Mode 05 — Coaching *(default)*
+### Coaching *(default)*
 The agent's default posture. When someone arrives without a clear method request — with an idea, a problem, a situation, or a question about what to do next — the agent starts here. Guides someone's thinking toward better decisions about their innovation work.
 
 **Posture:** Trusted advisor
 **Example:** "We're thinking about building a paid community after our masterclass." / "I'm not sure where to start with this project."
 **Governing framework:** See `modes/mode-coaching.md`
 
-### Mode 01 — Executing
+### Executing
 The agent performs the method independently on someone's behalf. The human is the recipient of output, not a co-participant.
 
 **Includes simulation:** Executing also covers running simulated versions of methods — for example, conducting synthetic empathy interviews by inhabiting a described persona. Simulation produces real value for hypothesis-testing and question refinement, but the agent is always transparent about what synthetic work can and cannot do. See coaching principle 2 in `modes/mode-coaching.md`.
@@ -113,21 +113,21 @@ The agent performs the method independently on someone's behalf. The human is th
 **Example:** "Can you synthesize these interview notes for me?" / "Run a simulated interview as someone who took our masterclass."
 **Governing framework:** `modes/mode-executing.md`
 
-### Mode 02 — Participating
+### Participating
 The agent is a team member alongside humans — contributing ideas, taking notes, filling out templates, co-creating. It's in the work with people but not leading the process.
 
 **Posture:** Peer contributor
 **Example:** "Join our brainstorm and help us generate ideas." / "Take notes while we run these interviews."
 **Governing framework:** `modes/mode-participating.md`
 
-### Mode 03 — Facilitating
+### Facilitating
 The agent guides a team through a specific method or activity — asking questions, keeping the process moving, noticing when the group is stuck, prompting next steps. It is serving the process, not contributing content. Facilitating is not coaching — the agent is running an activity, not guiding someone's thinking about what to do.
 
 **Posture:** Process servant
 **Example:** "Help us run an ideation session." / "Facilitate us through affinity clustering."
 **Governing framework:** `modes/mode-facilitating.md`
 
-### Mode 04 — Teaching
+### Teaching
 The agent is an instructor introducing a method to someone for the first time. Follows the Method Instruction Mechanics 7-step arc.
 
 **Posture:** Instructor
@@ -158,7 +158,6 @@ Method (from Skill Library)  ×  Mode (from Mode Engine)  =  Agent Behavior
 
 - Modes can blur mid-session (Coaching into Facilitating once a method is chosen, Participating into Facilitating if the human steps back). How does the agent handle mode transitions gracefully?
 - Executing and Participating can overlap when the agent is both taking notes and beginning to synthesize in real time. This is a feature, not a bug — but worth naming explicitly in the governing frameworks.
-- Governing behavioral frameworks for Executing, Participating, and Facilitating modes still to be developed.
 - There may be additional modes beyond the current five — discover through use.
 
 ---
@@ -167,22 +166,24 @@ Method (from Skill Library)  ×  Mode (from Mode Engine)  =  Agent Behavior
 
 | File | Location | Status | Purpose |
 |---|---|---|---|
-| HCD Philosophy | `foundation/hcd-philosophy.md` | Migrated | Core philosophy, theory of change, validation principle |
-| HCD Mindsets | `foundation/hcd-mindsets.md` | Migrated | The six HCD mindsets |
-| HCD Double Diamond | `foundation/hcd-double-diamond.md` | Migrated | Double diamond framework, practice structure, diagnostic tool |
-| HCD Principles | `foundation/hcd-principles.md` | Migrated | Critical principles, facilitation guidelines, tone and approach |
-| Key Questions Process | `navigation/key-questions.md` | Migrated | Navigation framework |
-| Skill Architecture | `architecture/hcd-skill-architecture.md` | Migrated | This file — system blueprint |
-| Coaching Mode | `modes/mode-coaching.md` | Migrated | Coaching arc, 5 support options, coaching principles |
-| Teaching Mode | `modes/mode-teaching.md` | Migrated | 7-step Method Instruction Mechanics arc |
-| Instruction Mechanics | `modes/mechanics/method-instruction-mechanics.md` | Migrated | Full instructional arc detail |
+| HCD Philosophy | `foundation/hcd-philosophy.md` | Active | Core philosophy, theory of change, validation principle |
+| HCD Mindsets | `foundation/hcd-mindsets.md` | Active | The six HCD mindsets |
+| HCD Double Diamond | `foundation/hcd-double-diamond.md` | Active | Double diamond framework, practice structure, diagnostic tool |
+| HCD Principles | `foundation/hcd-principles.md` | Active | Critical principles, facilitation guidelines, tone and approach |
+| HCD Bridge Exercise | `foundation/hcd-bridge-exercise.md` | Active | 3-minute facilitated activity that establishes why teams must explore the problem before developing solutions |
+| Key Questions Process | `navigation/key-questions.md` | Active | Navigation framework |
+| Skill Architecture | `architecture/hcd-skill-architecture.md` | Active | This file — system blueprint |
+| Design Principles | `design-principles.md` | Active | Six principles governing how Diamonds is built and how new methods are contributed |
+| Coaching Mode | `modes/mode-coaching.md` | Active | Coaching arc, 5 support options, coaching principles |
+| Teaching Mode | `modes/mode-teaching.md` | Active | 7-step Method Instruction Mechanics arc |
+| Instruction Mechanics | `modes/mechanics/method-instruction-mechanics.md` | Active | Full instructional arc detail |
 | Facilitating Mode | `modes/mode-facilitating.md` | Active | Governing framework for facilitating mode |
 | Executing Mode | `modes/mode-executing.md` | Active | Governing framework for executing mode |
 | Participating Mode | `modes/mode-participating.md` | Active | Governing framework for participating mode |
 | Facilitation Mechanics | `modes/mechanics/method-facilitation-mechanics.md` | Active | Mechanics for facilitation mode — method mechanics framework |
 | Execution Mechanics | `modes/mechanics/method-execution-mechanics.md` | Active | Mechanics for execution mode |
 | Participation Mechanics | `modes/mechanics/method-participation-mechanics.md` | Active | Mechanics for participation mode |
-| Method Selection | `selection/hcd-method-selection.md` | To be built | Method recipes and sequencing — Layer 3 |
+| Method Selection | `selection/hcd-method-selection.md` | Active | Six principles for selecting, sequencing, and combining methods — Layer 3 reasoning engine |
 | Affinity Clustering | `methods/understanding/patterns-and-priorities/affinity-clustering/` | Active | Synthesis method — Understanding / Patterns & Priorities (method.md, mechanics.md, teaching.md, resources/) |
 | Importance / Difficulty Matrix | `methods/understanding/patterns-and-priorities/importance-difficulty-matrix/` | Active | Prioritization method — Understanding / Patterns & Priorities (method.md, mechanics.md, teaching.md, resources/) |
 | Abstraction Laddering | `methods/understanding/problem-framing/abstraction-laddering/` | Active | Problem framing method — Understanding / Problem Framing (method.md, mechanics.md, teaching.md, resources/) |
@@ -203,3 +204,4 @@ Method (from Skill Library)  ×  Mode (from Mode Engine)  =  Agent Behavior
 | Feb 2026 | Method Instruction Mechanics added as governing framework for Teaching mode |
 | Mar 2026 | Mode 05 Coaching added as default mode; mode frameworks extracted to separate files; Facilitating/Coaching distinction clarified; Executing updated to include simulation; file manifest added |
 | Mar 2026 | Migrated to whatcouldbe/diamonds repo; foundation split into four files; file manifest updated with new paths |
+| May 2026 | Layer 3 (Method Selection) shipped — six principles for selecting, sequencing, and combining methods. Mode-vocab and key-question-number rules refined in CLAUDE.md and propagated across architecture and navigation files. Practice-area-to-stage mapping made explicit (Discover/Define/Develop/Deliver). Mode numbering dropped from this file — historical artifact, not load-bearing. |
