@@ -60,7 +60,7 @@ Layer 4 is not a fixed library of approved methods — it is a **classification 
 
 #### Looking
 *Becoming a student of human behavior — observing, watching, listening, experiencing firsthand*
-*Maps to: Key Questions 3 (Discover customer needs)*
+*Maps to: Discovering what people are actually trying to accomplish*
 
 | Subcategory | Purpose |
 |---|---|
@@ -70,7 +70,7 @@ Layer 4 is not a fixed library of approved methods — it is a **classification 
 
 #### Understanding
 *Making sense of what was observed — synthesizing, identifying patterns, framing opportunities*
-*Maps to: Key Questions 4 (Define the right problem)*
+*Maps to: Defining the most impactful problems to solve*
 
 | Subcategory | Purpose |
 |---|---|
@@ -80,7 +80,7 @@ Layer 4 is not a fixed library of approved methods — it is a **classification 
 
 #### Making
 *Developing and testing solutions — prototyping, experimenting, iterating*
-*Maps to: Key Questions 5–6 (Develop and Deliver)*
+*Maps to: Developing solutions and delivering something that works*
 
 | Subcategory | Purpose |
 |---|---|

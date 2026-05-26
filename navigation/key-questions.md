@@ -319,11 +319,11 @@ Sustain, scale, or sunset based on validated performance.
 
 If you're using HCD methods to answer these questions:
 
-- **Q1-2:** Strategic planning methods, stakeholder alignment
-- **Q3:** Looking methods (empathy interviews, observation, contextual studies)
-- **Q4:** Understanding methods (synthesis, affinity mapping, abstraction laddering, how might we)
-- **Q5-6:** Making methods (ideation, prototyping, testing)
-- **Q7-10:** Launch, scale, sustain methods
+- **Strategic context (goals; what to work on):** Strategic planning methods, stakeholder alignment
+- **Discovering what people are actually trying to accomplish:** Looking methods (empathy interviews, observation, contextual studies)
+- **Defining the most impactful problems to solve:** Understanding methods (synthesis, affinity mapping, abstraction laddering, problem framing)
+- **Developing solutions and delivering something that works:** Making methods (ideation, prototyping, testing)
+- **Post-launch (launch, scale, sustain, sunset):** Launch, scale, sustain methods
 
 The HCD foundations skill provides the philosophy and validation principle. This skill provides the process checkpoints. Together, they give you both the why and the what of innovation work.
 
