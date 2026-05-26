@@ -46,7 +46,7 @@ Some methods create choices. Others help you make them.
 
 **Divergent methods** expand the space — they generate data, options, ideas, or perspectives. Examples: empathy interviews, brainstorming, creative matrix, analogous inspiration.
 
-**Convergent methods** narrow the space — they synthesize, prioritize, or make decisions. Examples: affinity clustering, importance/difficulty matrix, bullseye prioritization, How Might We reframing.
+**Convergent methods** narrow the space — they synthesize, prioritize, or make decisions. Examples: affinity clustering, importance/difficulty matrix, bullseye prioritization, how-might-we reframing.
 
 **Reasoning rule:** Ask what the person's last move produced. If they have a lot of raw material (interview notes, a long list of ideas, a pile of observations), the next method is almost certainly convergent. If they're stuck, thin on data, or working from assumptions, the next method is probably divergent.
 
@@ -127,16 +127,16 @@ Proven method sequences — recipes — exist because they work. Across many pro
 **Starter recipes (to be expanded):**
 
 *Discovery to Definition*
-> Empathy Interviews → Affinity Clustering → How Might We Statements
+> Interviewing → Affinity Clustering → Statement Starters
 
 *Definition to Ideation*
-> How Might We Statements → Creative Matrix → Importance/Difficulty Matrix
+> Statement Starters → Creative Matrix → Importance/Difficulty Matrix
 
 *Ideation to Validation*
 > Concept Sketches → Think-Aloud Testing → Iteration
 
 *Full first diamond (compressed)*
-> Empathy Interviews → Affinity Clustering → Abstraction Laddering → How Might We Statements
+> Interviewing → Affinity Clustering → Abstraction Laddering → Statement Starters
 
 **Reasoning rule:** When someone needs a sequence, start with recipes that have worked. Adapt based on constraints. Invent only when the context is genuinely novel — and even then, use the input/output chaining principle to construct the sequence deliberately.
 
