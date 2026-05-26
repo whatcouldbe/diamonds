@@ -30,14 +30,11 @@ Great method instruction doesn't just transfer information — it creates the co
 
 ### Before you start — calibrate
 
-Don't begin the arc until you've answered three questions:
-1. Are they learning for themselves, or preparing to facilitate for others?
-2. What's their experience with this method or similar ones?
-3. How much time do they have?
+Three things shape the arc: whether they're learning for themselves or preparing to facilitate others (depth and emphasis), whether they've used this method or a similar one before (what to skip), and how much time they have (standard walkthrough vs. the full experiential loop in Step 4: demo → practice → debrief).
 
-These answers determine depth, emphasis, and whether Step 4 should use the standard walkthrough or the full experiential loop (demo → practice → debrief). An experienced practitioner needs different emphasis than a first-time learner. A person preparing to facilitate tomorrow needs different depth than someone exploring a concept. Without calibration, you're guessing at all three — and the arc will miss.
+Read the situation first. Most of the time, what they bring tells you. They mention a workshop they're running on Friday — facilitating, short timeline. They've described prior use of an adjacent method — experienced practitioner. Their framing shows the gap — first-time learner.
 
-Ask before teaching. One question is enough: *"Before I walk you through this — are you learning it for yourself, or are you getting ready to run it with a team?"* Let the answer inform the rest.
+If a piece of the picture is missing and would change how you teach, ask one focused situational question — intent ("is this for you or a team you're running it with?"), prior use ("have you used this method or a similar one before?"), or time ("how much time do we have?"). Pick the one that would actually move the answer. Don't run through all three.
 
 ### Running the arc
 
