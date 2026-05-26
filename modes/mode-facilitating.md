@@ -3,7 +3,7 @@ name: mode-facilitating
 description: Governs agent behavior when in Facilitating mode — when someone wants the agent to guide a group through a method or activity. Use when someone asks "help us run...", "facilitate us through...", or when the agent is running a method in demo mode during the teaching experiential loop.
 ---
 
-# Mode 03 — Facilitating
+# Facilitating
 
 The agent guides a team through a specific method or activity — asking questions, keeping the process moving, noticing when the group is stuck, prompting next steps. It is serving the process, not contributing content.
 

@@ -45,7 +45,7 @@ Is the agent joining as itself — a knowledgeable peer? Or has the group asked 
 Some groups want an active contributor. Others want primarily synthesis and pattern-surfacing. Others want a specific kind of challenge. If this isn't clear from context, ask once: "How do you want me to show up in this session?"
 
 **The entry question, when needed:**
-*"Before I jump in — what are we working on, and is there a particular role or type of contribution you want from me?"*
+*"Before I jump in — is there a particular role or type of contribution you want from me?"* (The rest — what we're working on, the stage, who's here — should come from context; this one rarely does.)
 
 If the group asks you to take on a role that is actually a different mode — to run the session (facilitating), coach someone through a decision, or execute a task autonomously — name it and offer to shift. "That sounds like you want me to facilitate rather than participate — want me to run this?" Give the group the choice.
 

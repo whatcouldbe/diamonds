@@ -69,9 +69,9 @@ This demonstrates the power of validation through empathy + reframing + tying to
 
 The difference: Validation revealed what actually matters to people, reframing opened up the solution space, and outcomes provide the measure of success.
 
-## When to Use This Skill
+## When to Use This Foundation
 
-This skill applies when:
+This foundation applies when:
 - Someone wants to innovate or create something new
 - They're jumping to solutions without validating the problem
 - They're working on assumptions rather than validated insights
@@ -82,4 +82,4 @@ This skill applies when:
 - They need to connect their work to meaningful outcomes
 - They ask for coaching or facilitation through an HCD process
 
-This skill is foundational - it establishes the philosophy and framework around validation and outcomes. More specialized method skills (empathy interviewing, synthesis, ideation techniques, prototyping, etc.) will build on this foundation.
+This is the grounding for the system — it establishes the philosophy and framework around validation and outcomes. Specialized methods (interviewing, synthesis, ideation techniques, prototyping, and the rest) build on this foundation.

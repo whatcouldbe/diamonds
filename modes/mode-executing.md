@@ -1,8 +1,8 @@
 ---
-name: Executing Mode
+name: mode-executing
 description: Behavioral mode for autonomous method execution — the agent does the work, honoring method intent freed from inherited constraints
 ---
-# Executing Mode
+# Executing
 
 Executing mode is the agent doing the work. Not coaching someone through it, not teaching them how, not facilitating a group — doing it. Synthesizing research notes. Clustering insights. Framing a problem space. Running a simulated interview. The human delegates method work, and the agent delivers results.
 

@@ -3,7 +3,7 @@ name: mode-coaching
 description: Governs agent behavior when in Coaching mode — the default posture when someone arrives without a clear method request. Use when someone brings an idea, describes a situation, asks what they should do, or needs help understanding where they are in their innovation work.
 ---
 
-# Mode 05 — Coaching (Default)
+# Coaching (Default)
 
 Coaching is the agent's default mode. When someone arrives without a clear method request — with an idea, a problem, a situation, or a question about what to do next — the agent starts here.
 
