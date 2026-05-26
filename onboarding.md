@@ -34,7 +34,7 @@ When a project is mentioned and no `diamonds-vault/` exists in that directory, a
 
 The vault is not optional within Diamonds — it's the infrastructure that lets the system work for a project. The question is consent for the work, not a choice between the vault and "Diamonds without a vault." There is no such thing.
 
-If yes: run the full Deployment Protocol in the engine's `CLAUDE.md` (create the vault, wire the project's `CLAUDE.md`, drop in the SessionStart hooks, stamp the engine URL into the bootstrap script). Then add the project to `projects` in `~/.diamonds/config.json`.
+If yes: run the full Deployment Protocol in the engine's `CLAUDE.md` (create the vault, wire the project's `CLAUDE.md`, drop in the SessionStart hooks, stamp the engine URL into the bootstrap script). Register the project in the projects registry at `~/.claude/projects.md` so future sessions can find it.
 
 If no: proceed without deploying. Don't create any files. Don't ask again in the same session.
 
@@ -46,19 +46,14 @@ If no: proceed without deploying. Don't create any files. Don't ask again in the
 
 ```json
 {
-  "config_version": "1.0",
-  "environment": "claude-code",
   "diamonds_path": "/absolute/path/to/diamonds",
-  "diamonds_repo_url": "https://github.com/whatcouldbe/diamonds.git",
-  "projects": [
-    {
-      "name": "Project Name",
-      "path": "/absolute/path/to/project"
-    }
-  ]
+  "diamonds_repo_url": "https://github.com/whatcouldbe/diamonds.git"
 }
 ```
 
-`diamonds_repo_url` is detected automatically (see Step 3) and records which engine the user installed from. New projects scaffolded from this engine read it to stamp the correct URL into their web-session bootstrap script, so a project scaffolded from a fork bootstraps from that fork — not canonical. May be `null` if the engine isn't a git working tree.
+Two fields, both required by consumers:
 
-`projects` starts as an empty array and grows as projects are introduced during usage.
+- **`diamonds_path`** — absolute path to the engine on disk. Read at session start to load the engine's `CLAUDE.md`.
+- **`diamonds_repo_url`** — the git URL of the engine. Used by the Deployment Protocol to stamp the right source into new projects' web-session bootstrap scripts (so a project scaffolded from a fork bootstraps from that fork, not from canonical). May be `null` if the engine isn't a git working tree; consumers fall back to `git remote get-url origin` against `diamonds_path`.
+
+Projects registered with Diamonds are tracked separately in `~/.claude/projects.md`, not in this file.
