@@ -129,7 +129,7 @@ The 12 methods below form the core training programme — the first complete set
 | Affinity Clustering | Understanding | Patterns & Priorities | ✓ | Active |
 | Importance / Difficulty Matrix | Understanding | Patterns & Priorities | ✓ | Active |
 | Abstraction Laddering | Understanding | Problem Framing | ✓ | Active |
-| Statement Starters | Understanding | Problem Framing | ✓ | To be built |
+| Statement Starters | Understanding | Problem Framing | ✓ | Active |
 | Rose, Thorn, Bud | Understanding | Problem Framing | ✓ | Active |
 | Creative Matrix | Making | Concept Ideation | ✓ | To be built |
 | Round Robin | Making | Concept Ideation | † | Active |
