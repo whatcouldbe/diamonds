@@ -88,7 +88,8 @@ fi
 mkdir -p "$(dirname "$CONFIG_FILE")"
 cat > "$CONFIG_FILE" <<EOF
 {
-  "diamonds_path": "$ENGINE_DIR"
+  "diamonds_path": "$ENGINE_DIR",
+  "diamonds_repo_url": "$ENGINE_REPO_URL"
 }
 EOF
 
