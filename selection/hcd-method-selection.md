@@ -27,12 +27,12 @@ The same six principles serve both functions. Mode determines how you surface th
 Your position in the innovation process is the first filter.
 
 Map the person's situation to the right stage of the work:
-- **Strategic context (goals; what to work on):** Alignment and planning methods — goal-setting, prioritization, stakeholder mapping
-- **Discovering what people are actually trying to accomplish:** Looking methods — ethnographic research, empathy interviews, observation, contextual inquiry
-- **Defining the most impactful problems to solve:** Understanding methods — synthesis, affinity clustering, abstraction laddering, problem framing
-- **Developing solutions:** Making / Concept Ideation methods — brainstorming, creative matrix, analogous inspiration
-- **Delivering something that works:** Making / Prototyping and Evaluative methods — concept testing, usability testing, pilots
-- **Post-launch (launch, scale, sustain, sunset):** Scaling, sustaining, and sunsetting methods
+- **Pre-Discovery — strategic context (goals; what to work on):** Alignment and planning methods — goal-setting, prioritization, stakeholder mapping
+- **Discover — discovering what people are actually trying to accomplish:** Looking methods — ethnographic research, empathy interviews, observation, contextual inquiry
+- **Define — defining the most impactful problems to solve:** Understanding methods — synthesis, affinity clustering, abstraction laddering, problem framing
+- **Develop — developing solutions:** Making / Concept Ideation methods — brainstorming, creative matrix, analogous inspiration
+- **Deliver — delivering something that works:** Making / Prototyping and Evaluative methods — concept testing, usability testing, pilots
+- **Post-Launch — lifecycle (launch, scale, sustain, sunset):** Scaling, sustaining, and sunsetting methods
 
 **Reasoning rule:** When someone describes their situation, internally identify which validation question their work is currently trying to answer. That maps to a practice area (Looking, Understanding, or Making) and a subcategory. The right method lives in that subcategory. Start there before evaluating individual methods.
 
