@@ -26,20 +26,17 @@ Don't ask about projects during onboarding. Projects get registered during real 
 
 ---
 
-## Project vault creation (during usage, not onboarding)
+## When a project gets Diamonds (during usage, not onboarding)
 
-When a project is mentioned and no `diamonds-vault/` exists in that directory:
+When a project is mentioned and no `diamonds-vault/` exists in that directory, ask once:
 
-> "Do you want to keep a record of the work we do on this project? I can create a diamonds-vault folder here to track progress, decisions, and open questions."
+> "Do you want to use Diamonds with this project? I'll add a `diamonds-vault/` folder to the repo so we can keep history across sessions — that's how the system maintains continuity and lets work move from single-player to multiplayer."
 
-If yes:
-1. Create `diamonds-vault/` in the project root containing:
-   - `project.md` — prompt the user for: what is this project, who's involved, where do external resources live
-   - `health.md` — initialize with empty validation status and open assumptions
-   - `log/` — empty directory for dated session records
-2. Add the project to `projects` in `~/.diamonds/config.json`
+The vault is not optional within Diamonds — it's the infrastructure that lets the system work for a project. The question is consent for the work, not a choice between the vault and "Diamonds without a vault." There is no such thing.
 
-If no: proceed without a vault. Don't ask again in the same session.
+If yes: run the full Deployment Protocol in the engine's `CLAUDE.md` (create the vault, wire the project's `CLAUDE.md`, drop in the SessionStart hooks, stamp the engine URL into the bootstrap script). Then add the project to `projects` in `~/.diamonds/config.json`.
+
+If no: proceed without deploying. Don't create any files. Don't ask again in the same session.
 
 ---
 

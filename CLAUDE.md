@@ -43,16 +43,26 @@ When starting a session on any project using Diamonds, read `diamonds-vault/proj
 
 ### Deployment Protocol
 
-When deploying Diamonds to a new project for the first time:
+The vault is how Diamonds works for a project — it's where history persists across sessions, how single-player work becomes multiplayer, and how the agent stays oriented next time. The vault is not optional; it's the infrastructure. But because deploying Diamonds drops several files into the user's repo, the agent asks once for consent before any of it happens. Full sweep on yes; nothing on no.
 
-**Step 1 — Create the vault**
+**Step 1 — Get consent**
+
+When a project is mentioned and no `diamonds-vault/` exists in that directory, ask once:
+
+> "Do you want to use Diamonds with this project? I'll add a `diamonds-vault/` folder to the repo so we can keep history across sessions — that's how the system maintains continuity and lets work move from single-player to multiplayer."
+
+If no: stop. Don't create any files. Don't ask again in the same session.
+
+If yes: proceed through the remaining steps.
+
+**Step 2 — Create the vault**
 
 Create `diamonds-vault/` with:
 - `project.md` — populate with project name, what it is, who's involved, key decisions made, open questions, and links to external resources
 - `health.md` — populate with the standard template: current frame, question status table (each question stated in full, with status and notes — no question numbers), open assumptions, activity log
 - `log/` — empty directory, ready for dated entries
 
-**Step 2 — Wire the project's CLAUDE.md**
+**Step 3 — Wire the project's CLAUDE.md**
 
 An agent working inside a project reads that project's `CLAUDE.md` first. Without it, the vault is invisible. Always:
 - Check for a `CLAUDE.md` in the project root
@@ -98,7 +108,7 @@ Two rules for paths in any project CLAUDE.md:
 1. **Diamonds path** — never hardcode it. Always resolve from `~/.diamonds/config.json`.
 2. **Project path** — never write the absolute project path into the CLAUDE.md. The agent is already at the project root; all vault references should be relative (`diamonds-vault/project.md`, not `~/projects/foo/diamonds-vault/project.md`). Relative paths travel. Absolute paths don't.
 
-**Step 3 — Create the project's `.claude/settings.json`**
+**Step 4 — Create the project's `.claude/settings.json`**
 
 This wires two SessionStart hooks that run in order: first the engine bootstrap (so the engine exists on disk in web sessions), then the projects-registry load (so the agent is oriented to known projects). Both are no-ops in environments where they don't apply, so the same template works on desktop and web.
 
@@ -137,7 +147,7 @@ This wires two SessionStart hooks that run in order: first the engine bootstrap 
 
 The first hook bootstraps the engine in web sessions (no-op on desktop via the `CLAUDE_CODE_REMOTE_SESSION_ID` guard). The second resolves the startup script from the engine path at runtime — no hardcoded paths, works on any machine where Diamonds is installed.
 
-**Step 4 — Drop in the engine bootstrap script**
+**Step 5 — Drop in the engine bootstrap script**
 
 The engine bootstrap script is what makes the engine reachable in web/cloud sessions, where the container starts without `~/.diamonds/` on disk. It is a no-op on desktop.
 
