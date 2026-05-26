@@ -26,7 +26,7 @@ The skill library is organized in layers, from foundational philosophy down to i
 
 ### Layer 1 — Foundation
 **`foundation/`**
-Philosophy, mindsets, double diamond framework, diagnostic 2×2, validation principle, 9 core principles. The WHY behind all method work. Every other skill builds on this foundation.
+Philosophy, mindsets, double diamond framework, diagnostic 2×2, validation principle, 8 HCD methodology principles. The WHY behind all method work. Every other skill builds on this foundation.
 
 - `hcd-philosophy.md` — core philosophy, theory of change, validation principle
 - `hcd-mindsets.md` — the six HCD mindsets
