@@ -177,7 +177,7 @@ Validate which solution approach actually works.
 
 **Questions leaders can ask to validate:**
 - Which customers will be the most useful to validate our solution with?
-- What evidence have we gathered that this does, it need to broken down into its component parts?
+- What evidence have we gathered that this works — and does it need to be broken down into component parts to test?
 - How do we know this solution is better than what exists today?
 - How are you capturing evidence that your solution is desirable and viable?
 - How might we time-box testing?

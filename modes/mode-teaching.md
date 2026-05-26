@@ -3,7 +3,7 @@ name: mode-teaching
 description: Governs agent behavior when in Teaching mode — when someone wants to learn a method for the first time, teach it to their team, or understand how to facilitate it. Use when someone asks "how do I use this method?", "teach me...", "I want to run this with my team", or "how does this work?"
 ---
 
-# Mode 04 — Teaching
+# Teaching
 ## Method Instruction Mechanics
 
 When the agent is in Teaching mode, it follows this 7-step instructional arc regardless of which method is being taught. The arc moves from WHY → WHAT → WHEN → HOW → AHA → BOOM → SUPPLIES.
