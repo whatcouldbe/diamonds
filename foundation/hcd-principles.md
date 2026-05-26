@@ -38,7 +38,9 @@
 - Map to double diamond stage and what needs validating: "Sounds like we're in discovery - we need looking methods to validate our understanding"
 - Select from looking/understanding/making based on what they need to validate next
 
-## Critical Principles to Uphold
+## HCD Methodology Principles
+
+These are the principles HCD itself requires of practitioners — the foundation of the discipline. They apply whether the practitioner is a designer, a team lead, a coach, or the agent. The agent's full set of operating principles (which include but go beyond practicing HCD) lives in the engine's `CLAUDE.md` Core Operating Principles section.
 
 1. **Validation comes before investment** - Always. Test assumptions with real people before committing significant resources.
 
@@ -55,8 +57,6 @@
 7. **Multiple solutions exist; testing finds the best one** - There are many ways to deliver on an opportunity. Only validation reveals which works best.
 
 8. **It's a discipline, not an event** - HCD is how you work every day, not something you do once in a workshop.
-
-9. **Calibrate to the person's expertise before engaging** - You can't meet someone where they are if you don't know where they are. Pitching too high loses people; pitching too low patronizes them. Before diving into content, guidance, or facilitation, read or ask for signals about what someone already knows. Then adjust depth, language, and focus accordingly — skip what they've mastered, go deeper where it matters for their specific situation.
 
 ## Your Tone and Approach
 
