@@ -2,7 +2,15 @@
 
 **The Human-Centered Design Agent System**
 
-Diamonds is a structured knowledge base that teaches AI agents to apply human-centered design (HCD) methodology. It encodes decades of design practice into a format that AI can reason with — not just retrieve from.
+Diamonds is an agent you invite into your work. It encodes decades of human-centered design practice into a structured knowledge base that Claude can reason with — not just retrieve from. Clone it, open Claude Code, and the agent handles the rest.
+
+## What It Does
+
+Humans are bad at process adherence. They have good ideas in the shower and go straight to building. They shortcut validation because they're excited or under pressure. They assume alignment that doesn't exist.
+
+Diamonds is the friction that prevents this — consistently, without judgment, every time. It runs you through the questions you'd ask yourself if you had the discipline, brings the right method at the right moment, and keeps a persistent record of what's been validated versus what's still an assumption.
+
+The secondary purpose is helping people apply HCD thinking, methods, and process to their innovation work — whether they're discovering problems, defining opportunities, developing solutions, or scaling what works.
 
 ## Architecture
 
@@ -16,104 +24,37 @@ Located in: `foundation/`, `methods/`, `navigation/`, `architecture/`
 
 ### Mode Engine
 
-The behavioral layer that controls *how* the agent engages. The same skill (e.g., affinity clustering) plays differently depending on whether the agent is coaching a learner, teaching a concept, facilitating a workshop, or executing directly.
+The behavioral layer that controls *how* the agent engages. The same method (e.g., affinity clustering) plays differently depending on whether the agent is coaching a learner, teaching a concept, facilitating a workshop, or executing the method directly.
 
 Located in: `modes/`
 
-## Setup
+## Getting Started
 
-Diamonds works as a persistent context layer in Claude Code — available across all your projects, not just inside this repo.
+1. Clone this repository to your machine.
+2. Open any project in Claude Code.
+3. The agent handles the rest.
 
-1. Clone this repository to your machine
-2. Create `~/.claude/CLAUDE.md` if it doesn't already exist
-3. Add the following to that file, replacing the path with wherever you cloned the repo:
+On your first session, the agent will ask where you cloned Diamonds and write a small config file so it can find the engine in future sessions. You won't be asked again.
 
-```markdown
-# Global Agent Configuration
+When you mention a project for the first time, the agent will offer to scaffold a `diamonds-vault/` in it — the persistent record where project orientation, validation status, and open assumptions live.
 
-## Diamonds — HCD Agent System
+### What Gets Created
 
-Diamonds is a human-centered design knowledge base, located at `/path/to/diamonds`.
+You don't have to set any of this up. The agent does. But it's worth knowing what to expect when you see it:
 
-This system governs how the agent thinks, communicates, and behaves across all work — not just HCD projects. When in doubt about how to engage, default to the Diamonds architecture.
+**`~/.diamonds/config.json`** — points at your engine, records which projects use Diamonds. Written on first run.
 
-Start with `/path/to/diamonds/CLAUDE.md` for full instructions.
+**`diamonds-vault/` (inside a project)** — the project's knowledge layer. Contains `project.md` (orientation), `health.md` (current status), and `log/` (dated session records). Scaffolded the first time a project comes up in conversation.
 
-**Key behaviors this system defines:**
-- Five modes of engagement: Coaching (default), Teaching, Facilitating, Executing, Participating
-- Infer the mode from context — never announce it, never label it
-- Ask one question at a time
-- Coaching arc: receive → diagnose → name what's missing → recommend → offer support
-- Validation before investment — everything is an assumption until tested with real people
-```
+**`.claude/settings.json` and `.claude/bootstrap-diamonds-engine.sh` (inside a project)** — the wiring that makes Diamonds reachable in web/cloud sessions. No-op on desktop. Added when the agent deploys Diamonds to a project.
 
-Once set up, Diamonds will be available in every Claude Code session automatically — across all your projects, not just inside this repo.
+## Web Sessions
 
-**Note:** `~/.claude/CLAUDE.md` is the global persistent layer in Claude Code. If you already have content there, add the Diamonds block alongside it rather than replacing it. If you also maintain a project-level or home directory `CLAUDE.md` with personal context, add a pointer to that file as well so the agent has your full profile in every session.
+Diamonds works in Claude Code on the Web as well as the desktop app. When a project is opened in a web session, the SessionStart hook clones the engine into the container so the agent has its full instructions — even though the container starts fresh.
 
-## Project Setup
+If the engine repo is private — for example, a fork being used for client work — set `GH_TOKEN` in the project's cloud environment configuration. A fine-grained PAT with read-only access to the engine repo is sufficient. The token is spliced into the clone at runtime, never written to disk.
 
-The engine above tells the agent *how* to think. Projects need a place for the agent to remember *what it's learning* — that's the vault.
-
-Each project using Diamonds gets a `diamonds-vault/` folder at its root. This is the project's knowledge layer: persistent context the agent reads at the start of every session and updates as work progresses.
-
-```
-your-project/
-└── diamonds-vault/
-    ├── project.md     — orientation: who, what, where (read first to get oriented)
-    ├── health.md      — status: what's validated, what's open (read to get current)
-    └── log/           — dated records of actions and experiments
-```
-
-To set up a vault in a new project:
-
-**1.** Create `diamonds-vault/` at the root of the project.
-
-**2.** Create `diamonds-vault/project.md`:
-
-```markdown
-# Project
-
-## What
-One or two sentences on what this project is and why it exists.
-
-## Who
-- Team:
-- Customers / users being served:
-- Stakeholders:
-
-## Where
-- Build / code:
-- Research notes:
-- Other resources:
-
-## Key decisions
-Decisions made that shape the work — added as they happen.
-```
-
-**3.** Create `diamonds-vault/health.md`:
-
-```markdown
-# Health
-
-*Last updated: YYYY-MM-DD*
-
-## Current focus
-The question the team is trying to answer right now, and why it matters.
-
-## Validation progress
-What's been tested with real people and what was learned.
-
-## Open assumptions
-Things being treated as true but not yet validated — flagged for testing.
-
-## Activity log
-- YYYY-MM-DD —
-```
-
-The `log/` folder will appear the first time the agent records a dated entry — no need to create it manually.
-
-Once the vault exists, the agent will orient itself by reading `project.md` and `health.md` at the start of every session, and update them as work progresses.
+For the canonical public engine, no token is needed.
 
 ## Repository Structure
 
@@ -121,15 +62,17 @@ Once the vault exists, the agent will orient itself by reading `project.md` and 
 diamonds/
 ├── CLAUDE.md                    — Agent instructions
 ├── README.md                    — You are here
+├── onboarding.md                — First-run setup the agent walks the user through
 │
 ├── foundation/                  — Core HCD knowledge
 │   ├── hcd-philosophy.md            — Why HCD works
 │   ├── hcd-mindsets.md              — How to think
 │   ├── hcd-double-diamond.md        — The process framework
-│   └── hcd-principles.md            — Operating principles
+│   ├── hcd-principles.md            — Operating principles
+│   └── hcd-bridge-exercise.md       — 3-minute opener for resistant audiences
 │
 ├── navigation/                  — Process guidance
-│   └── 10-questions-process.md      — Structured discovery process
+│   └── key-questions.md             — 10 process checkpoints
 │
 ├── modes/                       — Behavioral modes
 │   ├── mode-coaching.md             — Guide learners through practice
@@ -161,8 +104,11 @@ diamonds/
 ├── architecture/                — System design docs
 │   └── hcd-skill-architecture.md
 │
-└── selection/                   — Method selection logic
-    └── hcd-method-selection.md
+├── selection/                   — Method selection logic
+│   └── hcd-method-selection.md
+│
+└── templates/                   — Files the agent copies into projects
+    └── bootstrap-diamonds-engine.sh
 ```
 
 ## Contributing a New Method
@@ -174,11 +120,12 @@ See [`methods/README.md`](methods/README.md) for the method file format and cont
 | Component | Status |
 |-----------|--------|
 | Foundation (philosophy, mindsets, double diamond, principles) | Complete |
-| Navigation (10-questions process) | Complete |
+| Navigation (key questions) | Complete |
 | Modes: Coaching, Teaching, Facilitating, Participating, Executing | Complete |
 | Mechanics: Instruction, Facilitation, Participation, Execution | Complete |
 | Skill Architecture | Complete |
 | Method Selection | Complete |
+| Project deployment automation (vault, hooks, web bootstrap) | Complete |
 | Methods Library (taxonomy structure) | In place |
 | Methods Library (individual methods) | In progress |
 
