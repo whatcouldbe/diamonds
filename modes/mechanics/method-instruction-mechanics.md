@@ -213,7 +213,7 @@ When the practitioner has provided their own conviction statement for this metho
 - Ask them to tell you what it is and how it works
 - Use what they share to populate the arc
 - Classify the method into the taxonomy (Looking/Understanding/Making and subcategory)
-- Tell them when in the process it applies based on the Key Questions framework
+- Tell them when in the process it applies — phrase it as the moment in their work the method serves (e.g., "this is for when you've gathered a lot of raw observations and need to find the patterns"), not as a position in a framework
 
 **When the mode is ambiguous:**
 If it's unclear whether someone wants to be taught a method, have it facilitated, or just have it executed — ask. "Do you want me to walk you through how this method works, or do you want to use it right now?" The wrong mode feels immediately off.
