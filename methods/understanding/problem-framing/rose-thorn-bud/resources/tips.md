@@ -10,6 +10,118 @@ Collected practitioner wisdom for running RTB well. These are the things that co
 
 ---
 
+## Prompts
+
+The prompt tells participants what to put in each category. The right prompt depends on your context — who's in the room, what you're reviewing, and what you need from the output. Start with a prompt from the relevant context and adapt it to fit.
+
+### By Context
+
+**Research Codification** — *organizing notes from interviews, field visits, or observational research*
+
+| Category | Prompt |
+|---|---|
+| Rose | What did you observe or hear that was positive? What was working for this person? |
+| Thorn | What did you observe or hear that signaled a problem? What wasn't working, or caused friction? |
+| Bud | What idea, suggestion, or opportunity emerged? What did this person wish for? |
+
+**Workshop or Event Feedback** — *end-of-session reflection*
+
+| Category | Prompt |
+|---|---|
+| Rose | What worked well in this session? |
+| Thorn | What was challenging, confusing, or could have been better? |
+| Bud | What would you want to explore or try next? |
+
+**Product or Service Evaluation** — *reviewing a product, prototype, or service experience*
+
+| Category | Prompt |
+|---|---|
+| Rose | What do you like? What's working? |
+| Thorn | What's frustrating? What isn't working? |
+| Bud | What would make this better? What potential do you see? |
+
+**Team Retrospective** — *end of a project, sprint, or initiative*
+
+| Category | Prompt |
+|---|---|
+| Rose | What went well? What should we keep doing? |
+| Thorn | What didn't go well? What caused friction? |
+| Bud | What should we try differently next time? |
+
+**Onboarding Check-In** — *end of a first day, week, or month*
+
+| Category | Prompt |
+|---|---|
+| Rose | What has been going well? What are you enjoying or feeling confident about? |
+| Thorn | What has been challenging or confusing? What do you need more of? |
+| Bud | What do you wish you had? What would you like to explore? |
+
+**Personal Reflection / Performance Preparation** — *before a review conversation or at the end of a significant period*
+
+| Category | Prompt |
+|---|---|
+| Rose | What are you proud of? What has been working? |
+| Thorn | What has been difficult? What do you want to improve? |
+| Bud | What would you like to develop? What do you want to try? |
+
+### By Naming Convention
+
+If you've renamed the categories to fit your audience, match the prompts to the convention.
+
+**Strength / Weakness / Opportunity**
+
+| Category | Prompt |
+|---|---|
+| Strength | What is working? What is this doing well? |
+| Weakness | What is not working? Where are the gaps or pain points? |
+| Opportunity | What could be better? What has untapped potential? |
+
+**I Like / I Dislike / I Wish**
+
+| Category | Prompt |
+|---|---|
+| I like... | Complete the sentence with something that's working or that you appreciate |
+| I dislike... (or I worry...) | Complete the sentence with something that's not working or that concerns you |
+| I wish... | Complete the sentence with something you'd want to be different or possible |
+
+**Warm / Cool / Feed-Forward**
+
+| Category | Prompt |
+|---|---|
+| Warm feedback | What is strong? What should stay as-is? |
+| Cool feedback | What could be stronger? What isn't landing the way it should? |
+| Feed-forward suggestion | What specific change would make this better? |
+
+**What Worked / What Didn't / What We Should Try**
+
+| Category | Prompt |
+|---|---|
+| What worked | What should we repeat or build on? |
+| What didn't work | What should we stop or change? |
+| What we should try | What should we experiment with next? |
+
+### Sentence Starters
+
+For when you want consistent-format output across a group or for async collection.
+
+**Rose / Strength / Warm / What worked:**
+- "Something that's working well is..."
+- "I noticed [person / team / product] doing [X] effectively..."
+- "What I appreciate about this is..."
+
+**Thorn / Weakness / Cool / What didn't work:**
+- "Something that's not working is..."
+- "A challenge I observed was..."
+- "What I found frustrating or unclear was..."
+
+**Bud / Opportunity / Feed-forward / What we should try:**
+- "An opportunity I see is..."
+- "One thing that would make this better is..."
+- "I wish we would try..."
+- "Something worth exploring is..."
+
+---
+
 ## Setup
 
 **Show the visual at the start.**
