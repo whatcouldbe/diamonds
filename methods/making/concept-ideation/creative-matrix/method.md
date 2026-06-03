@@ -174,6 +174,8 @@ Explicitly give permission for wild, bold, unusual ideas. The tame-duck line lan
 ### Alternative Worlds as a Mid-Sprint Injection
 If the team is generating safe or predictable ideas, introducing Alternative Worlds partway through adds a forcing function. Name an inspiring organisation (Patagonia, Apple, SpaceX) or a bold individual and ask: *"For the next three minutes, imagine you're them — what ideas would they generate?"* This doesn't require setting up Alternative Worlds as a standalone method; it works as an in-session prompt.
 
+When Alternative Worlds has been used mid-sprint, consider distinguishing the two rounds visually in your capture — for example, using two text colours on a shared digital surface, or two sticky note colours on a physical grid. This keeps the provenance of ideas visible when you move to selection: you can see which ideas came from the original sprint and which emerged from the alternative perspective.
+
 ### Tool Choices and Shared Visibility
 The ideation surface has one non-negotiable requirement: **shared visibility** — everyone seeing what others are generating in real time. That cross-pollination is what makes Creative Matrix structurally different from individual brainstorming. Any tool that provides it can work; any tool that doesn't produces a different exercise.
 
@@ -198,6 +200,12 @@ With groups larger than five or six, run parallel grids — same challenge, same
 
 ### Digital Execution
 Miro, Mural, and FigJam all support the method. Emojis replace drawings for visual thinking. The silence mechanic holds in digital sessions — participants work on the same board without speaking. The main facilitation adjustment is ensuring everyone can navigate to the right cell; pre-building the grid with clear frames helps.
+
+### PowerPoint or Slides in Co-Authoring Mode
+For organisations where whiteboard tools aren't available but Microsoft 365 or Google Workspace is standard, a shared presentation file can serve as the ideation surface. Build a single slide with the grid as a table — challenge top-left, column and row headings pre-populated, idea cells ready to receive text. Share the file link before the session. Participants work in normal view (not presentation mode), typing directly into cells simultaneously. The facilitator manages timing verbally. Pre-populate each idea cell with bullet placeholders so participants arrive at a surface that's ready to use and know what format to follow. This approach preserves shared visibility and the collaborative mechanic; it trades drawings and free-form sticky placement for the structure of a table.
+
+### Auto-Advance Presentation Format
+A timed deck that cycles automatically through one challenge/enabler pairing per slide, prompting participants to generate ideas for each combination in turn. Participants capture ideas individually — on paper, in their own notes, or in a separate document — while the deck drives the cadence. This works when shared visibility isn't achievable and simplicity matters. The structured prompt sequence is preserved; the cross-pollination is not. What remains is structured individual ideation rather than collaborative ideation. Use it knowingly rather than as a default — it is a different exercise from the collaborative version of the method.
 
 ---
 
@@ -228,5 +236,5 @@ Creative Matrix sits in **Making / Concept Ideation** — early in the Develop p
 
 ### Related Methods
 - **Round Robin** — also in Concept Ideation; produces fewer, more developed ideas through a generate-critique-resolve sequence. Use Round Robin when quality and pressure-testing matter more than volume; use Creative Matrix when volume and speed matter more.
-- **Alternative Worlds** — a method that can be inserted mid-Creative Matrix sprint as a creative forcing function; also a standalone ideation method with its own selection logic
+- **Alternative Worlds** — a separate method used to generate ideas from fresh perspectives; can be injected mid-Creative Matrix sprint as a facilitation move to spark a second burst of more unusual ideas. It is not a downstream method — it has its own place in the library and its own selection logic independent of Creative Matrix.
 - **Brainstorming** — Creative Matrix is a structured antidote to unstructured brainstorming; shares the quantity-over-quality principle but provides the grid structure and silent working mechanic that address brainstorming's common failure modes
