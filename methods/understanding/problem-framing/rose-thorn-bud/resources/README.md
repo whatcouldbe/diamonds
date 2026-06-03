@@ -25,7 +25,8 @@ This folder contains supplementary materials for the Rose, Thorn, Bud method, or
 
 **Already covered elsewhere:**
 - Overview and full method reference → `../method.md`
-- Facilitation cheat sheet → `../mechanics.md`
+- Facilitation cheat sheet (general) → `../mechanics.md`
+- Facilitation cheat sheet (retrospective context) → `../mechanics-retrospective.md`
 - Teaching arc content → `../teaching.md`
 
 ---
@@ -35,7 +36,7 @@ This folder contains supplementary materials for the Rose, Thorn, Bud method, or
 | Mode | What to reach for first |
 |---|---|
 | **Teaching** | `visuals/rtb-color-guide.png` for the introduction → `../teaching.md` for the arc → `examples/` for real sessions |
-| **Facilitating** | `../mechanics.md` for the cheat sheet → `tips.md` for in-the-moment guidance |
+| **Facilitating** | `../mechanics.md` for the general cheat sheet → `../mechanics-retrospective.md` for retrospective sessions → `tips.md` for in-the-moment guidance |
 | **Coaching** | `tips.md` for situational advice → `recipes.md` for method sequencing → `faq.md` for common questions |
 | **Executing** | `ai-usage.md` for codification and synthesis guidance |
 
