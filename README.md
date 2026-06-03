@@ -2,13 +2,13 @@
 
 **The Human-Centered Design Agent System**
 
-Diamonds is an agent you invite into your work. It encodes decades of human-centered design practice into a structured knowledge base that Claude can reason with — not just retrieve from. Clone it, open Claude Code, and the agent handles the rest.
+Diamonds is an agent you invite into your work. It encodes decades of human-centered design practice into a structured knowledge base that Claude can reason with not just retrieve from. Clone it, open Claude Code, and the agent handles the rest.
 
 ## What It Does
 
 Humans are bad at process adherence. They have good ideas in the shower and go straight to building. They shortcut validation because they're excited or under pressure. They assume alignment that doesn't exist.
 
-Diamonds is the friction that prevents this — consistently, without judgment, every time. It runs you through the questions you'd ask yourself if you had the discipline, brings the right method at the right moment, and keeps a persistent record of what's been validated versus what's still an assumption.
+Diamonds is the friction that prevents this consistently, without judgment, every time. It runs you through the questions you'd ask yourself if you had the discipline, brings the right method at the right moment, and keeps a persistent record of what's been validated versus what's still an assumption.
 
 The secondary purpose is helping people apply HCD thinking, methods, and process to their innovation work — whether they're discovering problems, defining opportunities, developing solutions, or scaling what works.
 
