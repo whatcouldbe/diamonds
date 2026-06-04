@@ -5,9 +5,34 @@ description: How to use AI with Creative Matrix — generating challenge stateme
 
 # Creative Matrix — AI Usage
 
-AI can support this method in three ways: generating the challenge statements (columns) for a given topic, helping select and customise enablers (rows), and running the full matrix autonomously to generate ideas at scale.
+AI can support this method in five ways: building the full matrix from upstream work, generating challenge statements (columns) for a given topic, selecting and customising enablers (rows), running the matrix autonomously to generate ideas at scale, and running parallel matrices across multiple column types simultaneously.
 
 **Important:** AI-generated ideas are a starting point, not answers. They reflect patterns based on the inputs provided — they are not validated perspectives from real people. Always make this clear when sharing AI output with a team.
+
+---
+
+## Build the Matrix from Upstream Work
+
+The highest-leverage AI use for this method. Given raw upstream work — research notes, insight themes, affinity clusters, a stakeholder map, a journey map — AI constructs the complete matrix: recommends the right column type, generates the column headings, selects the enablers that will create the most productive tension, and populates the sub-bullet "think about" prompts for each enabler in context.
+
+Use this when the team has done upstream research or synthesis and needs to move into ideation, and wants AI to handle the matrix construction rather than doing it manually.
+
+```
+I have the following upstream work from a recent research or synthesis activity:
+
+[PASTE RESEARCH NOTES, INSIGHT THEMES, AFFINITY CLUSTERS, STAKEHOLDER MAP, JOURNEY MAP, OR OTHER UPSTREAM OUTPUT]
+
+Topic or challenge: [INSERT THE OVERARCHING TOPIC OR INITIATIVE]
+Context: [DESCRIBE THE ORGANISATION, INDUSTRY, AND AUDIENCE — e.g. "a hospital system improving the patient intake experience" or "a SaaS company improving adoption of a new internal analytics tool across finance and operations teams"]
+
+Please:
+1. Recommend the most appropriate column type for a Creative Matrix session based on this upstream work — either HMW challenge statements (from research insights), customer segments or stakeholder roles (when distinct groups need different ideas), or experience stages (when the work points to a customer journey). Briefly explain the recommendation.
+2. Generate four column headings of the recommended type, grounded in the upstream work provided.
+3. Recommend four enablers that will create the most productive tension with these columns, drawing from: Technology & Digital Media, Games & Competitions, People & Partnerships, Events & Programs, Public Policies & Laws, Hotspots & Hangouts, Internal Policies & Procedures, Facilities & Environments, Surprise & Provocation, Lifestyle Tracking, Celebrities & Superstars, Engage All Senses. Briefly explain each choice.
+4. For each enabler, provide 4–6 sub-bullet "think about" prompts — specific examples within that category that would spark ideas given this particular context.
+
+Format the output as a ready-to-use matrix specification: overarching challenge, four column headings, four enabler rows with sub-bullets.
+```
 
 ---
 
@@ -99,6 +124,40 @@ Format: a table with columns as column headers and rows as row headers. Each cel
 ```
 
 **Note on scale:** Unlike a human sprint, AI is not constrained by a 5×5 grid or a 10-minute time limit. You can run a larger matrix — more challenges, more enablers — and the output will still be coherent. Consider using the full extended enabler set from `enablers.md` for a comprehensive sweep, then filtering the output to the most promising intersections before sharing with the team.
+
+---
+
+## Run Parallel Matrices
+
+In a human session, you choose one column type — HMW statements, segments, or experience stages — because mixing creates confusion and the 10-minute sprint only has room for one grid. AI has neither of those constraints. You can run all three column types against the same enabler set simultaneously and surface the most generative intersections across the full output.
+
+Use this when you want comprehensive coverage of a topic, or when you're not sure which column type will yield the most interesting ideas and want to let the output tell you.
+
+```
+Please run three parallel Creative Matrix sessions on the following topic, each using a different column type, all using the same four enablers.
+
+Topic: [INSERT TOPIC]
+Overarching challenge: [INSERT OVERARCHING HMW OR CHALLENGE STATEMENT]
+Context: [DESCRIBE THE ORGANISATION, INDUSTRY, AND AUDIENCE]
+
+Enablers (same for all three matrices):
+1. [ENABLER 1] — [sub-bullets]
+2. [ENABLER 2] — [sub-bullets]
+3. [ENABLER 3] — [sub-bullets]
+4. [ENABLER 4] — [sub-bullets]
+
+Matrix A — HMW Statements: Generate four How Might We challenge statements from the topic and run the full matrix. Each HMW should address a distinct dimension of the challenge.
+
+Matrix B — Customer Segments or Stakeholder Roles: Identify four meaningful segments or roles relevant to the topic and run the full matrix. Each column should represent a group with distinct needs or perspectives.
+
+Matrix C — Experience Stages: Use the Five E's (Entice, Enter, Engage, Exit, Extend) as the five columns and run the full matrix.
+
+For each intersection in each matrix, generate two specific, sticky-note–style ideas.
+
+After completing all three matrices, identify the five most generative intersections across the full output — the cells that produced the most surprising, concrete, or strategically interesting ideas — and highlight them with a brief explanation of why each stands out.
+```
+
+**Note on parallel matrices:** Running three matrices produces a large volume of output. The highlight step at the end is important — it surfaces the signal from the noise and gives a human reviewer a starting point rather than 60+ cells to read. If you want to go deeper on any single matrix, use the standalone "Run the Full Matrix Autonomously" prompt instead.
 
 ---
 
