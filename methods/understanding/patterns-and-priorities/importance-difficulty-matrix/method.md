@@ -119,8 +119,8 @@ The quadrants:
 
 | | Low Difficulty | High Difficulty |
 |---|---|---|
-| **High Importance** | **Quick Wins** — Highest ROI. Start here. | **Strategic** — Important but hard. Stage these. Build toward them. |
-| **Low Importance** | **Fill-ins** — Easy but less critical. Do if time allows. | **Deprioritize** — Hard and less important. Not now. |
+| **High Importance** | **High ROI** — Highest return. Start here. | **Strategic** — Important but hard. Stage these. Build toward them. |
+| **Low Importance** | **Quick Wins** — Easy but less critical. Do if time allows. | **Luxury** — Hard and less important. Not now. |
 
 ### Step 8 — Sequence the Road Map
 Start with items in the bottom-right (high importance, low difficulty) — highest ROI. Plot a suggested sequence:
@@ -130,7 +130,7 @@ Start with items in the bottom-right (high importance, low difficulty) — highe
 - Consider connections between items — sometimes a quick win enables a strategic initiative
 - Each item is a potential business case. The strategic ones are bigger cases to be made, but they should still be made.
 
-**The strategic quadrant trap:** The most common pitfall is that strategic items — important but difficult — never get addressed because the team keeps picking quick wins. Treat strategic items like a horizon model: stage work toward them deliberately while executing on quick wins. Draw a line from the quick wins up to the strategic items so the connection is visible.
+**The strategic quadrant trap:** The most common pitfall is that strategic items — important but difficult — never get addressed because the team keeps picking High ROI items. Treat strategic items like a horizon model: stage work toward them deliberately while executing on High ROI items. Draw a line from the High ROI quadrant up to the strategic items so the connection is visible.
 
 ### Step 9 — Capture Next Steps
 Document the emergent plan. Note who will do what by when. Suggest getting feedback from others not in the room within the next week or two — the matrix reflects a moment in time and a specific group's perspective.
