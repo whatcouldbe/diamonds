@@ -64,10 +64,10 @@ Mark the sticky that feels least important with (LEAST).
 The other two should be unmarked but still meaningful.
 
 The categories are:
-Vision – What would the future look like if this initiative succeeds?
-Impact – How would success be measured for this initiative?
-People – Who is this for?
-Challenges – What problems need solving?
+Vision – What would the future look like if this initiative succeeds? (Aspirational, future-state outcomes)
+Impact – How would success be measured for this initiative? (Observable or measurable indicators of progress or value)
+People – Who is this for? (End users, target audience, or key stakeholders)
+Challenges – What problems need solving? (Current pain points, blockers, or constraints)
 
 Please format your output as a 4-column table with the category label
 in the first column and four sticky notes in the columns that follow.
