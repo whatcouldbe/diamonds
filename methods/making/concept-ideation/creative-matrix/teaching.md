@@ -25,6 +25,10 @@ Let people answer. Acknowledge the positives — energy, quantity, building on i
 
 ## Step 2 — Content (The Personal Story)
 
+Every team has at least one person who's naturally good at generating ideas. They move fast, they think in combinations, they seem to conjure something new out of nothing. Watch what they're actually doing: they're taking the problem and pairing it against something that has no obvious connection — a trend, a technology, a behaviour from a completely different domain — and asking "what if?" That's the move. Most people don't do it naturally. They stay close to what they already know, and that's why brainstorming produces the same ideas it always does.
+
+Creative Matrix is the structure that makes that move available to everyone. The grid forces the combination. The columns name the problems. The rows name the activators. Every cell is a "what if?" that the team wouldn't have thought to ask on their own.
+
 The most common moment this method earns its place: a team that's done the hard work — research, interviews, synthesis, problem framing — and now has to make the leap into solutions. They know the problem. They know their customers. And they're about to do what teams always do: they'll go into a breakout room, talk for forty minutes, and come out with five ideas, three of which they had before the session started.
 
 Creative Matrix changes that. Instead of talking their way to ideas, they look at a grid. The challenge sits top-left. The columns name the people — maybe five How Might We questions from Statement Starters. The rows name the enablers — technology, cultural drivers, internal levers. And at every intersection, there's a cell waiting for an idea.

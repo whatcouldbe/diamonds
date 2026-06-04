@@ -24,6 +24,9 @@ Use when a team needs to generate a large number of diverse ideas quickly, espec
 **The core question:** How might we create the best concepts to solve the customer problem?
 
 **Why Creative Matrix works:**
+
+People who are naturally good at generating ideas tend to do one thing automatically: they create unlikely combinations. They juxtapose a problem they're trying to solve against something that has no obvious connection to it, and ask "what if?" Most people don't do this naturally — they stay close to what they already know. Creative Matrix is the structure that makes unlikely combinations available to everyone, not just the idea savants in the room.
+
 - The grid structure provides a systematic prompt at every intersection — teams don't stare at a blank page waiting for inspiration. Each cell is a concrete invitation to ideate.
 - Ideas are generated simultaneously and silently. No one waits for permission to contribute, no voice crowds out others, and no one feels put on the spot mid-conversation.
 - The column/row pairing forces unusual combinations. An enabler row you wouldn't naturally connect to a problem statement column produces ideas that wouldn't emerge from free brainstorming.
@@ -52,32 +55,53 @@ A Creative Matrix is a five-by-five (or similar) grid with:
 
 ### Populating the Columns
 
-Columns are always about people. Common column types:
+Columns are always about people. There are three main column types, and the right choice follows from whatever upstream work the team has already done.
 
-- **Market segments** — the distinct customer groups the challenge affects
-- **Personas or customer profiles** — named archetypes built from research
-- **Service touchpoints** — the moments in a customer journey where the challenge shows up
-- **How Might We statements** — individual problem statements, often generated upstream through Statement Starters; the overarching challenge stays top-left, and individual HMW statements become the column headings
+**How Might We statements** — Use when the team has done research or strategic reflection and synthesised it into problem statements. HMW statements come from user or stakeholder research (interviews, observations, surveys), from affinity clustering of insights, or from retrospectives and strategic planning sessions. The overarching challenge stays in the top-left cell; the individual HMW statements become column headings. This is the most research-grounded column type — each column reflects a validated insight turned into an opportunity.
+
+**Customer segments, personas, or stakeholders** — Use when the challenge requires generating ideas that are meaningful to different types of people, or when adoption or buy-in from distinct groups matters. The signal: you have a stakeholder map, a set of personas, or a list of key roles that need to be served differently. Common examples: departments in an organisation (finance, HR, product, executives) for a technology adoption challenge; user archetypes built from research; key stakeholder groups whose buy-in is required for a change initiative. Columns drawn from a stakeholder map often produce the most targeted ideas for organisational or internal challenges.
+
+**Stages of an experience** — Use when you are doing service design or experience design and have a customer journey map with identified stages, pain points, or break points. The standard framework is the **Five E's: Entice, Enter, Engage, Exit, Extend** — someone learns about the experience, chooses to begin it, uses it, reaches its end, and moves on to what comes next. Each stage becomes a column. Ideas generated at each intersection are about how to improve or innovate that specific moment in the journey.
 
 ### Populating the Rows
 
-Rows are enablers — categories that inspire solution thinking. Common row types:
+Rows are enablers. The most useful definition of an enabler: **something you could activate to solve the problem**. Each row asks, in effect, "What if we solved this using [this type of thing]?" The best enablers create productive tension with the columns — they don't obviously connect, which is exactly the point. Enablers that feel slightly odd or uncomfortable tend to produce wilder, more generative ideas. If an enabler feels too safe or predictable for the challenge at hand, replace it.
 
-- Emerging technologies or digital media
-- Cultural drivers or social trends
-- Market trends
-- Internal policies and procedures
-- Games and competitions
-- Facilities and environments
-- Lifestyle and behaviour tracking
+Each enabler works best when it comes with a short set of sub-examples — specific things within that category that give participants something to grab onto. "Games & Competitions" is abstract; "motivations, rewards, badges, scoring, leaderboards, teamwork" gives people a foothold. These sub-examples function as "think about" prompts that do the priming work a facilitator would normally do in person.
 
-The bottom row is always Wild Card.
+**The default four** — these work across almost any challenge type and can be used as a starting set when context doesn't drive a more specific choice:
 
-Pre-established enabler sets (such as Luma's) can be used as a starting point, especially with teams new to the method.
+- **Technology & Digital Media** — mobile devices, wearables, social media, gaming and simulations, embedded sensors, AI. Nearly universal: almost every challenge has a technology dimension worth forcing.
+- **Games & Competitions** — motivations, rewards, badges, points, prizes, teamwork, scoring, leaderboards. Consistently produces ideas teams wouldn't arrive at on their own; the slight discomfort of "why would we turn this into a game?" is productive.
+- **People & Partnerships** — strategic partnerships, companies and their leaders, spokespeople, evangelists, peer communities. Forces thinking beyond the organisation: who else could help solve this?
+- **Events & Programs** — meet-up events, conferences, workshops, courses of study, peer-to-peer forums. Universally activatable: any organisation can run an event or build a program, regardless of industry or challenge type.
 
-### The Most Frequently Asked Question
+**Selecting enablers** — someone has to make the call. Three modes:
+- **Facilitator decides** — based on knowledge of the context, strategic priorities, or what's currently de rigueur. Faster, but the facilitator needs to have done enough homework to make good choices.
+- **Facilitator suggests, team weighs in** — the facilitator proposes a set and the group votes or reacts before the sprint. Adds a small amount of time; increases buy-in and surfaces context the facilitator may not have had.
+- **Team generates their own** — participants identify enablers themselves, often in a short activity before the sprint. Takes more time but produces the highest ownership; the team arrives at the sprint having already invested in the structure.
 
-How do you decide what goes in the columns and rows? The core principle: **columns are always people, rows are always enablers.** Beyond that, use what you know from upstream research. If the team has completed Statement Starters, those HMW statements are strong column candidates. If the team has identified distinct customer segments or personas, those become columns. Rows should inspire — choose categories that create genuine tension with the columns, not ones so familiar they produce predictable ideas.
+A useful frame for any of the three: look at what's currently happening in the world or the industry. AI is the dominant activator right now; a few years ago it was social media; before that, the quantified self movement. There is almost always something de rigueur that belongs as an enabler for contemporary challenges. Similarly, look at the organisation's strategic priorities — if they're focused on partnerships, or on a specific technology, or on specific locations, those are candidate enablers.
+
+**Experience-specific enabler sets** — when columns are stages of an experience, two additional enabler frameworks are useful:
+
+*The theatrical model* — think of delivering an experience as putting on a play. The enablers become:
+- **Actors** — your product, service, or staff
+- **Audience** — your users or customers
+- **Stage** — where the interaction takes place (physical, digital, or both)
+- **Script** — what is said or communicated at each moment
+- **Backstage** — what needs to happen behind the scenes to make the front-of-house experience work
+
+*RATER* — a service quality framework that names the five dimensions people use to evaluate any experience:
+- **Reliable** — the experience works consistently; errors are rare and recovery is graceful
+- **Assured** — trust is established and reinforced throughout
+- **Tangible** — the physical or visual elements that make quality visible
+- **Empathetic** — needs are understood and reflected back; people feel seen
+- **Responsive** — interactions acknowledge people appropriately; responsiveness is about fit, not just speed
+
+When the columns are experience stages and the rows are RATER dimensions, the Creative Matrix begins to function as a service blueprint — systematically mapping what quality looks like at every stage.
+
+**The bottom row is always Wild Card** — a catch-all for ideas that don't fit any named enabler but clearly connect to a column. No good idea should be left homeless.
 
 ---
 
@@ -171,6 +195,9 @@ The most common problem is stickies that are too sparse — a single word like "
 ### Wild Ideas Are an Asset
 Explicitly give permission for wild, bold, unusual ideas. The tame-duck line lands well: *"You can tame a wild duck, but you can't make a tame duck wild."* Wilder ideas during the sprint often spark the most interesting combinations; evaluation is for later.
 
+### The 5×5 Grid Is a Human Constraint
+The grid format — typically four or five columns, four or five rows — exists because it is what four to six people can meaningfully cover in ten minutes. It is not a constraint of the method itself. The method is systematic juxtaposition: taking a problem and pairing it against an enabler to force an idea. The grid is how humans do that at pace. With AI, that constraint disappears — a larger matrix with more columns and more enablers can be generated without the time limit that shapes the human version. This distinction matters when designing AI-assisted or AI-run versions of the method.
+
 ### Alternative Worlds as a Mid-Sprint Injection
 If the team is generating safe or predictable ideas, introducing Alternative Worlds partway through adds a forcing function. Name an inspiring organisation (Patagonia, Apple, SpaceX) or a bold individual and ask: *"For the next three minutes, imagine you're them — what ideas would they generate?"* This doesn't require setting up Alternative Worlds as a standalone method; it works as an in-session prompt.
 
@@ -205,7 +232,35 @@ Miro, Mural, and FigJam all support the method. Emojis replace drawings for visu
 For organisations where whiteboard tools aren't available but Microsoft 365 or Google Workspace is standard, a shared presentation file can serve as the ideation surface. Build a single slide with the grid as a table — challenge top-left, column and row headings pre-populated, idea cells ready to receive text. Share the file link before the session. Participants work in normal view (not presentation mode), typing directly into cells simultaneously. The facilitator manages timing verbally. Pre-populate each idea cell with bullet placeholders so participants arrive at a surface that's ready to use and know what format to follow. This approach preserves shared visibility and the collaborative mechanic; it trades drawings and free-form sticky placement for the structure of a table.
 
 ### Auto-Advance Presentation Format
-A timed deck that cycles automatically through one challenge/enabler pairing per slide, prompting participants to generate ideas for each combination in turn. Participants capture ideas individually — on paper, in their own notes, or in a separate document — while the deck drives the cadence. This works when shared visibility isn't achievable and simplicity matters. The structured prompt sequence is preserved; the cross-pollination is not. What remains is structured individual ideation rather than collaborative ideation. Use it knowingly rather than as a default — it is a different exercise from the collaborative version of the method.
+A timed deck that cycles automatically through one challenge/enabler pairing per slide, prompting participants to generate ideas for each combination in turn. Participants capture ideas individually — on paper, in their own notes, or in a separate document — while the deck drives the cadence. This works when shared visibility isn't achievable and simplicity matters. The structured prompt sequence is preserved; the cross-pollination is not. Use it knowingly — it is a different exercise from the collaborative version of the method.
+
+**When to use it:** Remote sessions where participants don't have access to a shared whiteboard tool; training contexts where the facilitator wants a ready-to-run structure that requires no digital setup; situations where simplicity and low friction matter more than collaborative cross-pollination.
+
+**Deck structure** — a standard 4×4 matrix (four challenges, four enablers) produces 16 one-minute slides and runs for 16 minutes of ideation:
+
+1. **Title slide** — the topic name and session framing
+2. **Overview slide** — the overarching topic and all four HMW challenge statements, so participants can orient before the sprint starts
+3. **Instructions slide** — "You will see 16 mash-ups. Each will appear on screen for one minute. For each, try to write down at least one idea. Remember to work quietly and individually."
+4. **Ready slide** — "For the next 16 minutes, slides will advance automatically."
+5. **For each challenge (repeated four times):**
+   - **Challenge intro slide** — the HMW statement displayed alone, giving participants a moment to orient before the enablers appear
+   - **Slide: Challenge + Enabler 1** — the enabler card appears with the challenge; one minute to ideate
+   - **Slide: Challenge + Enabler 1 + Enabler 2** — Enabler 2 card is added; previous card remains visible; one minute to ideate on the new intersection
+   - **Slide: Challenge + Enablers 1–3** — Enabler 3 added; one minute
+   - **Slide: Challenge + all four enablers** — Enabler 4 added; one minute; full row now visible
+6. **Time's up slide**
+
+The progressive build — adding one enabler at a time while keeping previous ones visible — lets participants see the growing history of what they've worked through. Even in individual format, seeing the prior enabler cards can spark connections across intersections.
+
+**Each enabler card contains:**
+- The enabler category name
+- "USING…" framing
+- Sub-bullets naming specific examples within the category — these are the "think about" prompts that make the abstract enabler concrete and accessible without a facilitator in the room
+- "THINK ABOUT:" prompt bridging the enabler to the challenge
+- The challenge statement
+- "1 MINUTE" timing indicator
+
+**Constructing the deck** — the challenge statements (columns) should come from upstream research or the team's framing work; the facilitator selects four HMW statements that represent the most important opportunity areas for the topic. The enablers (rows) default to the standard four: Technology & Digital Media, Games & Competitions, People & Partnerships, and Events & Programs. Both can be customised to the specific engagement. The deck can be pre-built for a topic and reused; swapping the challenge statements converts it to a new context without changing the structure.
 
 ---
 

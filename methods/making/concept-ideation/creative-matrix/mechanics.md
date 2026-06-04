@@ -42,6 +42,24 @@ Use these in the introduction — lead with why, not what:
 
 ## Process
 
+### Pre-Session: Construct the Matrix
+
+Before participants arrive, the grid must be ready. The facilitator (or the facilitator working with the client) makes two decisions:
+
+**Columns (challenges):** Choose the column type based on upstream work:
+- HMW statements → from user research, stakeholder research, or strategic planning synthesis
+- Customer segments or stakeholder roles → from a stakeholder map or persona set; use when ideas need to be meaningful to distinct groups
+- Experience stages → from a customer journey map; default to the Five E's (Entice, Enter, Engage, Exit, Extend)
+
+**Rows (enablers):** Default to the four: Technology & Digital Media, Games & Competitions, People & Partnerships, Events & Programs. Adjust for context — add something de rigueur (AI, a current platform, a strategic priority), or substitute experience-specific enablers (theatrical model or RATER) if columns are experience stages. Choose enablers that create productive tension; slightly uncomfortable choices produce wilder ideas.
+
+**Enabler selection mode:**
+| Mode | When to use |
+|---|---|
+| Facilitator decides | Context is clear; need to move fast |
+| Facilitator proposes, team votes | Want buy-in; have 5–10 extra minutes |
+| Team generates their own | Ownership matters most; have time for a short pre-activity |
+
 ### Introduction
 
 | Step | What to say |
