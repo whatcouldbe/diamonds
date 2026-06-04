@@ -33,8 +33,8 @@ Use these in the introduction — lead with why, not what:
 
 ## Outputs
 
-- Items characterized as: quick wins (high importance, low difficulty), high-value/strategic (high importance, high difficulty), fill-ins (low importance, low difficulty), and luxuries (low importance, high difficulty)
-- A suggestion where to start — with items that yield great impact at low cost
+- Items characterized as: High ROI (high importance, low difficulty), Strategic Investments (high importance, high difficulty), Quick Wins (low importance, low difficulty), and Low Priority (low importance, high difficulty)
+- A suggestion where to start — with High ROI items that yield great impact at low cost
 - An agreed-upon set of priorities
 - The beginning of an action plan
 
@@ -74,9 +74,9 @@ Use these in the introduction — lead with why, not what:
 | Step | What to do |
 |---|---|
 | Reveal quadrants | Add horizontal and vertical center lines to the working space, making four equal quadrants |
-| Label quadrants | Bottom right = "High ROI" (returns on investment). Bottom left = "Quick wins" (need less planning). Top right = "Strategic" (need careful planning). Top left = "Luxury" or "Low ROI" (not now). |
+| Label quadrants | Bottom right = **High ROI** or **Best Bets** (high importance, low difficulty — highest return on investment; use "Best Bets" for cross-cultural or mixed audiences). Bottom left = **Quick Wins** (low importance, low difficulty — do these when you have capacity). Top right = **Strategic Investments** (high importance, high difficulty — stage these deliberately). Top left = **Low Priority** (low importance, high difficulty — explicitly defer). |
 | Discuss patterns | Discuss the completed matrix and any patterns you see. Are there more items than expected in one quadrant? What connections are there between items? Where should we start? |
-| Draft roadmap | Which High ROI items should be worked on first? Which Quick Wins will be helpful to work in? Which Strategic initiatives need project planning? Which Luxury items are you explicitly deferring? Assign owners to action items. |
+| Draft roadmap | Which High ROI items should be worked on first? Draw connections from High ROI items to the Strategic Investments they enable. Which Quick Wins can be knocked out alongside the High ROI work? Which Strategic Investments need dedicated project planning? Which Low Priority items are you explicitly deferring? Assign owners to action items. |
 
 ### Next Steps
 

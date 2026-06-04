@@ -117,20 +117,19 @@ Unlock and reveal the four quadrants. Half the items should fall above the cente
 
 The quadrants:
 
-| | Low Difficulty | High Difficulty |
+| | Low Importance | High Importance |
 |---|---|---|
-| **High Importance** | **Quick Wins** — Highest ROI. Start here. | **Strategic** — Important but hard. Stage these. Build toward them. |
-| **Low Importance** | **Fill-ins** — Easy but less critical. Do if time allows. | **Deprioritize** — Hard and less important. Not now. |
+| **High Difficulty** | **Low Priority** — Hard and less critical. Explicitly defer these. | **Strategic Investments** — Important but hard. Stage these deliberately and build toward them. |
+| **Low Difficulty** | **Quick Wins** — Easy, lower stakes. Knock these out when you have capacity. | **High ROI** — High importance, low difficulty. Highest return on investment. Start here. |
 
 ### Step 8 — Sequence the Road Map
-Start with items in the bottom-right (high importance, low difficulty) — highest ROI. Plot a suggested sequence:
+Start with High ROI items — high importance, low difficulty — they give the highest return on investment. Plot a suggested sequence:
 
-- *"Perhaps if we start with career growth clarity, that enables a conversation around workload sustainability, then we pick up strategic clarity..."*
-- Draw arrows or lines showing the suggested order
-- Consider connections between items — sometimes a quick win enables a strategic initiative
-- Each item is a potential business case. The strategic ones are bigger cases to be made, but they should still be made.
+- Suggest a starting order: *"Let's start here — this gives us the highest return early on. Then we can stage toward this Strategic Investment once that foundation is in place."*
+- Draw arrows connecting High ROI items upward to the Strategic Investments they enable
+- Each item is a potential business case — High ROI items are the easiest cases to make; Strategic Investments are bigger cases that require more planning, but they should still be made
 
-**The strategic quadrant trap:** The most common pitfall is that strategic items — important but difficult — never get addressed because the team keeps picking quick wins. Treat strategic items like a horizon model: stage work toward them deliberately while executing on quick wins. Draw a line from the quick wins up to the strategic items so the connection is visible.
+**The strategic quadrant trap:** The most common pitfall is that Strategic Investments — important but difficult — never get addressed because teams keep executing on High ROI and Quick Wins items. Treat Strategic Investments like a horizon model: stage work toward them deliberately while executing quick wins. Draw a connection line from High ROI items up to the Strategic Investments they enable — making that pathway visible is what keeps important-but-hard work from drifting off the map.
 
 ### Step 9 — Capture Next Steps
 Document the emergent plan. Note who will do what by when. Suggest getting feedback from others not in the room within the next week or two — the matrix reflects a moment in time and a specific group's perspective.
@@ -157,18 +156,24 @@ Move them close to the active workspace. Participants lose track of what "import
 ### Know Which Hat You're Wearing
 If you're the facilitator, you're neutral — you serve the process. If you're also a team member, you can challenge, but you must still allow the group to have the final say. You can't move a sticky and say "I think this should be here" — you ask the question and let the group decide.
 
+With a co-facilitator, you can explicitly hand the facilitation role over for a section and become a participant — but name the transition clearly. *"For this part, [name] is going to facilitate and I'm going to contribute as a team member."*
+
+**Being a stranger is an advantage.** If you're facilitating a team you don't know, the unfamiliarity creates natural separation between you and the content — it's easier to stay process-neutral when you have no stake in the outcome. Do enough pre-work to understand the context, then lean on the structure: the method itself creates the ground rules.
+
 ### Managing Disagreement
 - Ask the dissenter to state their position
 - Ask others to respond
 - If it's one position apart, invoke the one-position rule
 - If it's a major disagreement, seek a third voice to break the deadlock
-- "Disagree and commit" is a valid outcome — name it and move on
+- **Disagree and commit** — when a reasonable resolution isn't emerging and one position difference won't change the quadrant, name it explicitly: *"It sounds like we're not going to fully resolve this — can we disagree and commit to this placement and move on?"* Note the disagreement on the sticky so it isn't lost.
+- For larger groups, a **show of hands** can break the deadlock when the dissent isn't bridgeable through discussion
+- Disagreements about placement are often disagreements about how people are defining importance or difficulty — step back and check the definition before trying to resolve the placement
 
 ### Difficulty Is Often Unknown
 Participants may not know the true difficulty of something. That's okay — the method captures *relative qualitative difficulty*, not precise estimates. The conversation about how the group is thinking about difficulty is itself valuable, even when exact numbers don't exist.
 
 ### Scope Ambiguity in Items
-An item like "improve meeting effectiveness" could mean one meeting or every meeting across 15,000 people. When this surfaces, draw a range line on the board showing the spectrum. Help the group decide which scope they're prioritizing for.
+An item like "improve meeting effectiveness" could mean one meeting or every meeting across a large organization. When this surfaces, use the slider technique: copy the sticky and place it in two spots on the difficulty axis to show the low and high ends of the scope range. Help the group decide which scope they're actually committing to prioritize — the conversation about scope is often as valuable as the placement itself.
 
 ### Timing
 Timing is consistently the hardest thing to get right. With 8 items, plan for the importance discussion to take longer than you expect. Co-facilitator pairs can split the axes — one handles importance, one handles difficulty — which helps with pacing and energy.
@@ -184,6 +189,22 @@ Two facilitators work well for this method. Natural split: one facilitates impor
 - **Impact / Effort** — Same structure, different labels. More common in agile/product contexts
 - **Eisenhower Matrix** — Uses Important / Urgent instead of Important / Difficult. Different second dimension entirely — urgency is not difficulty
 - Choose labels that resonate with your audience. The underlying mechanics are the same
+
+### Quadrant Label Variations
+The four default quadrant labels can be adapted to context:
+- **High ROI** (high importance, low difficulty) can also be called **Best Bets** — more accessible across languages and cultures where "ROI" as an acronym may not land. "Best Bets" reads intuitively as "the obvious moves" even if the gambling connotation is slightly off (these are actually your least risky items). Use "High ROI" when financial return framing resonates with the audience; use "Best Bets" when the group is mixed, cross-cultural, or non-English-primary.
+- **Strategic Investments** is sometimes shortened to **Strategic** — both work, though "Investments" signals that these require deliberate resourcing, not just planning
+- **Low Priority** is the most neutral fourth-quadrant label and signals explicit deferral rather than abandonment; some groups prefer **Luxury** (signals "nice to have, not now") or **Low ROI**, which frames it as a return-on-investment argument
+- The labels are defaults, not fixed vocabulary. When a label creates friction with your audience, rename it — what matters is that everyone agrees on the underlying definition
+
+**Action-oriented alternative set:** Some practitioners use labels that tell participants what to *do* with an item rather than how to categorize it:
+
+| | Low Importance | High Importance |
+|---|---|---|
+| **High Difficulty** | **Forget It for Now** | **Make It a Project** |
+| **Low Difficulty** | **Make It a Task** | **Do It Now!** |
+
+This set works well with groups who want immediate, practical direction out of the session. The trade-off: "Make It a Task" can cause groups to undervalue low importance / low difficulty items by implying they're small or routine.
 
 ### Scope Variations for Definitions
 - More specific topics with expert groups → more specific definitions of both importance and difficulty
@@ -212,7 +233,7 @@ When participants notice relationships between items — one enables another, or
 - **A prioritized 2×2 matrix** showing relative importance and difficulty of all items
 - **An emergent road map** — a suggested sequence for tackling items, typically starting from quick wins and building toward strategic investments
 - **Documented connections** between related items
-- **Shared understanding** of the group's alignment and disagreements — often the most valuable output, though intangible
+- **Shared understanding** of the group's alignment and disagreements — often the most valuable output, though intangible. Understanding *why* people are willing to make the trade-offs they make is often more important than arriving at a final prioritization quickly.
 - **Next steps** with assigned ownership and timeline
 - The matrix reflects a moment in time. It's a snapshot of a conversation as much as an artifact. Revisit it as context changes.
 

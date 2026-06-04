@@ -27,7 +27,7 @@ The method sits at the top of a prioritization progression — Visualize the Vot
 
 **Inputs:** 8–10 items that need prioritizing (from research, surveys, brainstorms, or prior synthesis), a group familiar with the subject matter, and agreed definitions of what "importance" and "difficulty" mean in this context.
 
-**Outputs:** Items plotted on a 2×2 matrix, characterized as quick wins, strategic investments, fill-ins, or luxuries. An emergent road map with a suggested sequence. An agreed set of priorities. The beginning of an action plan.
+**Outputs:** Items plotted on a 2×2 matrix, characterized as High ROI, Strategic Investments, Quick Wins, or Low Priority. An emergent road map with a suggested sequence. An agreed set of priorities. The beginning of an action plan.
 
 **Connection forward:** The output feeds directly into business case development, road mapping, and sprint planning. Each sticky is a potential business case — the matrix helps you figure out which cases to make first.
 
