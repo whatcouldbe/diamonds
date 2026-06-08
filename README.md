@@ -36,7 +36,7 @@ Located in: `modes/`
 
 On your first session, the agent will ask where you cloned Diamonds and write a small config file so it can find the engine in future sessions. You won't be asked again.
 
-When you mention a project for the first time, the agent will offer to scaffold a `diamonds-vault/` in it — the persistent record where project orientation, validation status, and open assumptions live.
+When you mention a project for the first time, the agent will offer to scaffold a `diamonds-vault/` in it, creating the persistent record where project orientation, validation status, and open assumptions live.
 
 ### What Gets Created
 
@@ -50,9 +50,9 @@ You don't have to set any of this up. The agent does. But it's worth knowing wha
 
 ## Web Sessions
 
-Diamonds works in Claude Code on the Web as well as the desktop app. When a project is opened in a web session, the SessionStart hook clones the engine into the container so the agent has its full instructions — even though the container starts fresh.
+Diamonds works in Claude Code on the Web as well as the desktop app. When a project is opened in a web session, the SessionStart hook clones the engine into the container so the agent has its full instructions even though the container starts fresh.
 
-If the engine repo is private — for example, a fork being used for client work — set `GH_TOKEN` in the project's cloud environment configuration. A fine-grained PAT with read-only access to the engine repo is sufficient. The token is spliced into the clone at runtime, never written to disk.
+If the engine repo is private (for example, a fork being used for client work) set `GH_TOKEN` in the project's cloud environment configuration. A fine-grained PAT with read-only access to the engine repo is sufficient. The token is spliced into the clone at runtime, never written to disk.
 
 For the canonical public engine, no token is needed.
 
