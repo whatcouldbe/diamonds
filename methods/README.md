@@ -133,6 +133,6 @@ The 12 methods below form the core training programme — the first complete set
 | Rose, Thorn, Bud | Understanding | Problem Framing | ✓ | Active |
 | Creative Matrix | Making | Concept Ideation | ✓ | To be built |
 | Round Robin | Making | Concept Ideation | † | Active |
-| Rough & Ready Prototyping | Making | Modeling & Prototyping | ✓ | To be built |
+| Rough & Ready Prototyping | Making | Modeling & Prototyping | ✓ | Active |
 | Value Proposition Poster | Making | Design Rationale | ✓ | To be built |
 | Hypothesis Statements | Making | Design Rationale | † | Provisional (reconstructed) |
