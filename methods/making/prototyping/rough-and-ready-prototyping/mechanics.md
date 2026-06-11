@@ -57,6 +57,7 @@ Use these in the introduction — lead with why, not what:
 | Step | What to say / do |
 |---|---|
 | Name the assumption | Before anyone builds anything: *"What's the one thing that must be true for this concept to work? That's what we're testing."* |
+| Decide what to model | Use the three circles — physical, information, people — to decide what the prototype actually needs to include. Build only what the assumption touches. |
 | Choose the format | Decide as a group: physical, screen-based, service? Match the format to the assumption being tested. |
 | Define the scenario | Pick the scenario — in a workshop, select from a pre-written list or choose the highest-risk task |
 | Plan the structure | Block out 4–8 screens or components: *"What are the steps someone needs to take to complete this scenario? One step = one screen or artifact."* |

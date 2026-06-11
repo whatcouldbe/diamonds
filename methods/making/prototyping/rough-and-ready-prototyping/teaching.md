@@ -17,11 +17,15 @@ The follow-up question for groups: *"What's a prototype? When you hear that word
 
 This surfaces the wide range of prototype types before you define anything. People always know more examples than they expect. Common answers: paper sketches, cardboard models, wireframes, role-playing a service, Figma mocks. They're all right. The point is that prototypes don't require sophisticated tools, and they're not just for digital products.
 
+Two lines worth landing here: *if it's the first time you're making the thing, it's a prototype — no argument.* And *if you're not 100% sure your idea will work, you need a prototype to test it.* Together they reframe prototyping from a specialist activity into something anyone does whenever they're uncertain.
+
 ---
 
 ## Step 2 — Content (The Personal Story and Key Concepts)
 
 **The name itself is the first lesson.** *Rough* means low effort — an approximation, not a finished product. *Ready* means it has a purpose: it's built to test something, not to demonstrate polish. The method is a discipline against over-investing in an idea before you know it's worth investing in.
+
+**Build to learn.** IDEO talk about "build to think" (or "make to think"); we say build to *learn*. Either way the point is the same: making isn't the reward at the end of thinking — it's a way of thinking. You build the thing in order to find out something you could never find out by talking about it.
 
 **The 1x/10x/100x principle.** Tom Gilb's development cost pyramid: problems caught at the concept stage cost 1x to fix. The same problem in active development costs 10x. After release: 100x. Draw the pyramid — concept at the top, build in the middle, release at the bottom. This is why we prototype. It's not about process purity; it's about managing the cost of learning.
 
@@ -30,6 +34,12 @@ Frank Lloyd Wright: *"You can use an eraser on the drafting table or a sledgeham
 **The Time/Love Continuum.** The longer you spend on something, the more attached you become to it, and the less receptive you are to feedback. This runs in both directions: you become less likely to change the work, and reviewers become less likely to be honest because the effort is visible and they don't want to hurt you. This is why rough prototypes get better feedback than polished ones. The roughness is not a limitation — it's an invitation.
 
 **Little loops of learning vs. giant leaps of faith.** A common failure mode: you write a spec, spend months building, show it to people at the very end, and find out it doesn't work. Wouldn't you have wanted to know that sooner? The alternative is small, frequent loops: build something rough, test it, learn, adjust, repeat. Each loop is cheap. The leap is expensive.
+
+**Draw it — twice.** First, the leap versus the loops: one big arc running from idea straight to a finished thing handed over to people (the leap of faith), set against a string of small make–test–learn circles (the little loops of logic). Second, a simple graph — prototyping on one axis, risk on the other: as prototyping goes up, risk comes down, and the inverse is just as true. The less you prototype, the more risk you carry, usually without noticing.
+
+**Be wary of the word "pilot."** Especially in the public sector, a "pilot" can quietly mean six months of work and hundreds of thousands — sometimes millions — of pounds, building something substantial for hundreds or thousands of people *before* anyone has tested whether it works. That's a leap of faith wearing the costume of caution. Keep asking the question: why not make something quickly and cheaply — in weeks, days, hours, increasingly minutes — put it in front of a handful of people, and learn from it first? A pilot loaded with untested assumptions is the expensive way to find out you were wrong.
+
+**Looks, works, behaves.** At the simplest level, a prototype lets you test how something *looks*, how it *works*, or how it *behaves* — one of these, or all three. You can build something that only looks like the final thing and does nothing, or something ugly that behaves exactly right. Decide which you're testing before you build, because it changes what's worth the effort.
 
 **What can you test?** Desirability (do people want this?), usability (can people use it?), viability (will people pay for it?), feasibility (can we build it?). Early in development, desirability is almost always the first gate — don't invest in making something beautiful or easy to use before you know people want it at all.
 
@@ -40,6 +50,8 @@ Frank Lloyd Wright: *"You can use an eraser on the drafting table or a sledgeham
 - Business model: one van, one branded stand — the simplest possible test of whether the real-world delivery works
 
 The right format is whatever lets you test your critical assumption using the least effort. Fidelity should be proportional to confidence: the more validated the concept, the higher the fidelity you can justify.
+
+**What to model — physical, information, people.** A useful way to decide *what* to build (you rarely need everything): picture three overlapping circles — the physical (objects and space), the information (what's shown, and in what form, digital or analogue), and the people (who interacts, what they say, how they feel). Most offers live in the overlap. Name which circle your assumption touches, and build only that.
 
 ---
 

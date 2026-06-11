@@ -27,6 +27,8 @@ Use when you have a concept and need to test whether it's worth building further
 
 Both words in the name carry meaning. *Rough* means low effort, approximate, not polished — you're building only what's necessary to test your assumption. *Ready* means it's ready for a purpose: not rough for its own sake, but rough because that's all you need to learn something.
 
+**Two things worth saying plainly:** if it's the first time you're making the thing, it's a prototype — there's no argument about that. And if you're not 100% sure your idea will work, you need to make a prototype to test it. Prototyping isn't a specialist activity reserved for designers or engineers; it's what anyone does when they're uncertain and want to find out cheaply.
+
 **Why prototype early:**
 
 Tom Gilb's development cost pyramid is the clearest argument: correcting a problem at the concept stage costs 1x. The same problem found in active development costs 10x. After release, it costs 100x. The pyramid doesn't say "don't build" — it says "test before you build, and learn as early as possible."
@@ -39,12 +41,22 @@ The antidote is to make little loops of learning rather than taking giant leaps 
 
 **What you can test:**
 
+A prototype lets you test how something *looks*, how it *works*, and how it *behaves* — any one of these, or all three. You can build something that only looks like the final thing and does nothing, or something that behaves correctly but looks like nothing at all. Be clear which you're testing, because it changes what's worth building. Underneath that sit four sharper lenses:
+
 - **Desirability** — do people actually want or need this? Is the core idea compelling?
 - **Usability** — can people navigate and use it? Task-based prototypes test whether people can accomplish what you intend.
 - **Viability** — will people pay for this? Does the business model hold up? Early tests of value and willingness to pay.
 - **Feasibility** — can this actually be built and delivered? Early tests of technical or operational possibility.
 
 Early in development, desirability is usually the most important thing to test — don't invest in usability refinement until you've validated that people want the thing at all.
+
+**What prototyping gives you:**
+
+- It brings the idea to life — you stop only *looking* at a concept and start interacting with it
+- It lets you test ideas quickly, and sets up its companion method, Think-Aloud Testing
+- It lowers development cost and supports iterative improvement
+- It reduces risk — every loop of make/test/learn drives risk down; stop prototyping and risk climbs back up
+- It reduces your attachment — feedback from other people loosens your grip on your own idea
 
 ---
 
@@ -105,6 +117,18 @@ Construct only what you need to test the scenario. Key principles:
 
 ---
 
+## Deciding what to model — physical, information, people
+
+A prototype rarely needs to model everything. One way to decide what to build is to picture three overlapping circles — the physical, the information, and the people — and ask which one (or which overlap) your critical assumption actually touches.
+
+- **Physical** — the objects, large and small, and the space. What stuff is needed to use or deliver the offer? How are those objects handled and used?
+- **Information** — what's shown, and what form it takes, digital or analogue. Increasingly a physical object also conveys information — through screens, sound, or labelling — so the physical and the informational rarely sit fully apart.
+- **People** — the interactions. Who's talking to who? What do they say? What do they do, and how do they feel?
+
+Most modern offers live in the overlap: a physical thing that carries information and is used by people. Naming where your assumption sits tells you what to build — and, just as usefully, what to leave out.
+
+---
+
 ## Facilitation Notes
 
 ### The roughness is the point
@@ -127,7 +151,7 @@ When groups divide and conquer, they often produce screens that look and sound d
 ## Variations
 
 ### Physical prototype
-Using cardboard, foam, index cards, found objects, and paper to approximate physical products, environments, or service touchpoints. Best for testing form factor, ergonomics, spatial layout, and service flows. The hawker center cardboard model and pharmacy wayfinding prototype are examples.
+Using cardboard, foam, index cards, found objects, and paper to approximate physical products, environments, or service touchpoints. Best for testing form factor, ergonomics, spatial layout, and service flows. Examples: the hawker centre cardboard model and the pharmacy wayfinding prototype; at domestic scale, taping out the size of a TV on the wall before drilling, or laying objects on the floor to feel where furniture should go; and at full scale, the McDonald's brothers in *The Founder* chalking out their kitchen on a tennis court to prototype the service system before building it.
 
 ### Screen-based prototype (digital)
 Using PowerPoint, Keynote, Miro/Mural, Figma, or prototyping tools like Lovable to create interactive or static screen flows. Best for testing digital products, apps, or web services. The activity guide in `resources/activity-guide.md` covers this format in detail.
@@ -180,3 +204,4 @@ Rough & Ready Prototyping lives in **Making / Prototyping**. It is the primary m
 - **Think-Aloud Testing** — Rough & Ready Prototyping and Think-Aloud Testing are a natural pair; one builds, the other tests. They are typically taught and run together.
 - **Critique** — also evaluative, but collects structured opinion rather than observing behavior
 - **Hypothesis Statements** — a method for making assumptions explicit before prototyping; useful for articulating the critical assumption that drives the prototype
+- **Storyboarding, Schematic Diagramming, and Appearance Modelling** — the other methods in the modelling & prototyping family. They're better seen as relatives of Rough & Ready Prototyping than as alternatives to it: a storyboard or a schematic diagram is itself a kind of prototype. What distinguishes a rough & ready prototype is its emphasis on the *look* — it approximates how the final thing appears and behaves. Appearance Modelling pushes that furthest, making something look exactly like the final artefact while having no function at all.

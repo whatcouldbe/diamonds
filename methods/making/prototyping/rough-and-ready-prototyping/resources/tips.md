@@ -71,3 +71,6 @@ When teaching prototype types, this example lands every time. A branded van and 
 
 **The pharmacy service prototype story.**
 Cardboard signage and wayfinding elements placed in a real pharmacy to observe whether the redesign actually changed traffic patterns. The prototype was rough (cardboard and Play-Doh); the learning was real (actual people, actual behavior, actual space).
+
+**Found objects beat fidelity for form-factor questions.**
+When the question is about shape, size, or how something sits in the hand, don't build — assemble. A possible handheld surgical instrument was mocked up in seconds from a fat marker pen, a 35mm film canister, and a couple of found bits, stuck together just enough for the surgeon to hold it and react. The feedback was immediate and real. For ergonomics and form, a crude physical stand-in you can hold beats a polished render you can only look at.
