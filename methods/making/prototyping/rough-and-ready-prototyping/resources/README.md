@@ -15,6 +15,7 @@ This folder contains supplementary materials for the Rough & Ready Prototyping m
 | File / Folder | What it contains |
 |---|---|
 | `tips.md` | Practitioner wisdom, facilitation gotchas, and things that trip people up |
+| `reference-houde-hill-1997.md` | Distillation of Houde & Hill (1997) — the Role/Look & Feel/Implementation model, the pizza-box example, and the origin of the method name |
 | `visuals/` | Concept drawings, the 1x/10x/100x pyramid sketch, the Time/Love Continuum sketch |
 | `templates/` | Device frame templates, wireframe component library |
 | `examples/` | Real prototype examples: physical, screen-based, service |
