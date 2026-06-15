@@ -122,7 +122,7 @@ The 12 methods below form the core training programme — the first complete set
 | Method | Phase | Category | Training | Status |
 |--------|-------|----------|----------|--------|
 | Interviewing | Looking | Ethnographic | ✓ | Active |
-| Think-Aloud Testing | Looking | Evaluative | ✓ | To be built |
+| Think-Aloud Testing | Looking | Evaluative | ✓ | Active |
 | Critique | Looking | Evaluative | ✓ | Active |
 | What's on Your Radar | Looking | Participatory | † | Active |
 | Stakeholder Mapping | Understanding | People & Systems | ✓ | To be built |
@@ -131,7 +131,7 @@ The 12 methods below form the core training programme — the first complete set
 | Abstraction Laddering | Understanding | Problem Framing | ✓ | Active |
 | Statement Starters | Understanding | Problem Framing | ✓ | Active |
 | Rose, Thorn, Bud | Understanding | Problem Framing | ✓ | Active |
-| Creative Matrix | Making | Concept Ideation | ✓ | To be built |
+| Creative Matrix | Making | Concept Ideation | ✓ | Active |
 | Round Robin | Making | Concept Ideation | † | Active |
 | Rough & Ready Prototyping | Making | Modeling & Prototyping | ✓ | Active |
 | Value Proposition Poster | Making | Design Rationale | ✓ | To be built |
