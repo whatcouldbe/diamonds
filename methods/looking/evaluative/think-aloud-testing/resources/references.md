@@ -42,7 +42,17 @@ The academic foundation for using people's spoken thoughts as research data — 
 ## Related Internal Concepts
 
 **The Time/Love Continuum** (shared with Critique — see `methods/looking/evaluative/critique/`)
-The longer you spend with an idea, the more attached you become and the less able you are to hear that it's not working. Plotted as time/money/effort on one axis and attachment on the other, with a 45° line: test early, near the origin, and failure is survivable; test late and it isn't. The core motivator for testing rough work early — and for testing the thing you think is already "probably close."
+The longer you spend with an idea, the more attached you become and the less able you are to hear that it's not working. Plotted as time/money/effort on one axis and attachment on the other, with a 45° line: test early, near the origin, and failure is survivable; test late and it isn't. The core motivator for testing rough work early — and for testing the thing you think is already "probably close." Visuals in `visuals/`.
+
+**Frank Lloyd Wright on early correction**
+*"You can use an eraser on the drafting table or a sledgehammer on the construction site."*
+The principle that design changes made early — on paper, in a prototype, before anything is built — cost nearly nothing; changes made after building begins cost enormously. A vivid one-line argument for testing rough work early. Pairs naturally with the Tom Gilb cost model and the Time/Love Continuum as a conviction-close line when someone asks "do I really need to test this now?"
+
+**The Tom Gilb 1x / 10x / 100x Pyramid**
+A cost-of-change model (after Tom Gilb) showing that fixing a problem at the concept stage costs 1×; at the build stage, 10×; after release, 100×. Most teams have stakeholder touch-points only at build and release — the ideal is frequent, early feedback at every stage. The pyramid is a visual argument for why testing rough prototypes is always cheaper than testing finished products. Visual in `visuals/`.
+
+**Loops of Learning vs. Giant Leaps of Faith**
+A WCB sketch-planation contrasting two approaches: making small, iterative loops of learning (test → learn → iterate → repeat) vs. one giant leap straight from idea to release. The loops expose problems cheaply at each stage; the leap exposes them expensively at the end. Connects directly to the Tom Gilb cost model — each loop is a 1× fix; the leap is a 100× fix waiting to happen. Visual in `visuals/`.
 
 ---
 

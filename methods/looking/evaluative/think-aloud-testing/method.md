@@ -97,6 +97,10 @@ If the participant goes quiet but is still clicking around, re-enter small and t
 *"It looks like you're still engaging — can you tell me what you're thinking right now?"*
 Then go silent again. Re-enter small, leave again. (See Facilitation Notes — most of the work against silence is done in the setup, not the moment.)
 
+A useful phrase to set up early: *"When you think you've completed the task, let me know."* This gives people a natural out and prevents them from sitting in confused silence once they've mentally given up on a task.
+
+If someone is clearly stuck or frustrated, name it and redirect: *"You seem stuck — what were you expecting to happen here?"* Then, if the task has gone badly wrong, offer to move on: *"Would you like to move to the next task?"* A participant who has given up is still giving you data — a significant usability problem — but continuing to push through a broken task rarely yields more signal.
+
 ### Step 9 — Handle unfinished parts of the prototype
 When they reach something that isn't built yet, turn the gap into more signal:
 *"What did you expect to find here? What would be useful?"*
@@ -108,6 +112,9 @@ Defer any held direct questions to now, answer what's useful, and thank them. Th
 ---
 
 ## Facilitation Notes
+
+### You won't be there
+The deepest reason to stay quiet is not a facilitation rule — it's the logic of the whole method. When someone uses your product or service in the real world, you are not there. Nobody will swap in the next screen, nobody will explain what the link does, nobody will confirm they're on the right track. The test is a window into that reality. The moment you intervene, you've obscured the window. Stay quiet not because the protocol says so, but because you're trying to see what actually happens when you're not in the room.
 
 ### This is a test, not a demonstration
 The single most common mistake — and it's the *facilitator's* mistake, not the participant's. When a learner is first taught to run this method, the instinct, the moment a participant hesitates or asks a question, is to jump in and explain what the thing does or what *will* be there. That turns a test into a demo and destroys the data. The skill being learned is to resist that instinct: hand over the task and get out of the way.

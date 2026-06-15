@@ -93,3 +93,6 @@ See `mechanics.md` → Stuff section for the complete list. Key items:
 - A quiet space
 - The light intro–consent–task protocol (moderated or unmoderated — see `resources/templates/`)
 - The Time/Love Continuum visual (optional — useful for explaining why testing early, while you're still close to the origin, means failure is survivable)
+- The Tom Gilb 1x/10x/100x pyramid (optional — makes the cost argument concrete: fixing at concept costs 1×, at build 10×, after release 100×)
+- The Loops of Learning visual (optional — contrasts small iterative test cycles with one giant leap of faith; pairs naturally with the Gilb pyramid)
+- Frank Lloyd Wright quote (optional — *"You can use an eraser on the drafting table or a sledgehammer on the construction site."* A one-line conviction closer when someone asks whether they really need to test now)

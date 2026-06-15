@@ -24,6 +24,10 @@ A light protocol for a moderated session. It's lighter than an interview script 
 
 *(Record by default — but only with permission. If they decline, take written notes instead.)*
 
+*(Remote alternative: for in-person or Zoom sessions where setup comes first — send the link, get them sharing their screen, then ask for recording consent. The framing below works well because it's specific about purpose and lowers the surveillance feeling:)*
+
+> "One final thing — may I record our session for the sole purpose of me being able to refer back to it as I make sense of my research notes?"
+
 ## 3. Set them at ease
 
 > "Two things before we start. First — we're not testing *you*. There are no wrong answers, and anything you say is useful. Second — I didn't make this, so you genuinely can't offend me. Please be completely honest. If something's confusing or annoying, I want to hear it."
@@ -36,13 +40,19 @@ A light protocol for a moderated session. It's lighter than an interview script 
 
 *(Some moderators mime it: a hand on top of the head, moving as if thoughts are streaming out.)*
 
-## 5. Give the task
+## 5. Check in before starting
+
+> "Any other questions before we get started?"
+
+*(Give them a moment. Then move to the task.)*
+
+## 6. Give the task
 
 > "Okay — here's what I'd like you to do: [the task, framed as a goal to accomplish — e.g. 'find a relevant flight from London to Pittsburgh in September and book it,' or 'use the tool to assess your readiness']."
 
 *(One task at a time, though a task can be a whole flow.)*
 
-## 6. Go quiet
+## 7. Go quiet
 
 Stop talking. Listen, take notes, let the recording run. Resist the urge to demonstrate or explain. Then:
 
@@ -58,9 +68,23 @@ Stop talking. Listen, take notes, let the recording run. Resist the urge to demo
 **Direct questions you can't reflect** → defer:
 > "Good question — let me come back to that at the end."
 
-## 7. Close
+## 8. Follow-up questions
 
-> "That's everything I wanted to watch. [Answer any questions you held to the end.] Thank you — this was genuinely useful, and exactly what we needed."
+Once they've completed (or finished with) the task, move to a short debrief. These questions are a verbal Rose/Thorn/Bud — open, in order:
+
+> "Is there anything else you'd like to say about [the thing]?"
+
+> "What did you find easy or helpful — and why?"
+
+> "What was difficult or confusing — and why?"
+
+> "What ideas do you have to make this experience better?"
+
+*(These are not a required script — adapt to the conversation. The point is to give them a structured chance to reflect after the task, in their own words, before you close.)*
+
+## 9. Close
+
+> "This has been incredibly useful. Thank you for your time." [Answer any direct questions you held to the end.]
 
 ---
 
