@@ -84,7 +84,7 @@ Early in development, desirability is usually the most important thing to test �
 
 ## Steps
 
-### Step 1 — Choose your concept
+### Step 1 — Choose a concept
 Identify the idea you're prototyping. If you have a concept poster or value proposition poster, review it. Name the core idea in one sentence: what is the product or service, and what does it do for people?
 
 ### Step 2 — Decide what you want to learn
@@ -109,7 +109,7 @@ Choose a realistic scenario that puts your core assumption to the test. Identify
 
 In a workshop: if you're providing pre-written scenarios, have participants choose from a short list rather than generating scenarios from scratch — this keeps momentum and prevents teams from spending build time on scenario debate.
 
-### Step 4 — Build a rough approximation
+### Step 4 — Build just enough to test
 Construct only what you need to test the scenario. Key principles:
 - **Simulate as much functionality as possible** — if it's a screen, show the state of each screen at each point in the flow, even if transitions aren't interactive
 - **Use realistic, legible content** — placeholder text and lorem ipsum reduce the realism of the test. Use real words, real (or realistic) numbers, real images where possible. Google image search + "icon" finds usable visual shorthand for almost anything.
