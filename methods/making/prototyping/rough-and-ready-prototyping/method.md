@@ -4,7 +4,7 @@ category: prototyping
 phase: making
 provenance: practitioner-verified
 tags: [prototyping, build-to-learn, low-fidelity, testing, assumptions, iteration, making, desirability, usability, viability, feasibility]
-also-known-as: [rough prototyping, rapid prototyping, low-fi prototype, lo-fi prototype, build to learn]
+also-known-as: [quick and dirty prototyping, rough prototyping, rapid prototyping, low-fi prototype, lo-fi prototype, build to learn]
 files:
   - method.md (this file) — Core reference: purpose, steps, facilitation notes, variations, connections
   - mechanics.md — Facilitation cheat sheet: purpose statements, inputs, outputs, five-stage process, stuff
