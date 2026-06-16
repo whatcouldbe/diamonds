@@ -104,21 +104,12 @@ Identify the idea you're prototyping. If you have a concept poster or value prop
 
 Everything you build should answer that question. If a screen or a component doesn't help you answer it, leave it out.
 
-### Step 3 — Choose your format
-Pick the simplest format that lets you test your assumption:
-- Physical product ideas → cardboard, foam, found objects, index card mockups
-- Screen-based or app ideas → paper prototype, wireframes, or PowerPoint/Miro screen flows
-- Service or experience ideas → storyboard, role-play, physical environment simulation
-- Business model or distribution ideas → real-world proof of concept (a pop-up, a pilot, a one-van-one-stand test)
-
-Fidelity should match your confidence: lower confidence = lower fidelity. As you validate assumptions and build confidence, fidelity can increase.
-
-### Step 4 — Define a scenario and critical tasks
+### Step 3 — Define a scenario and critical tasks
 Choose a realistic scenario that puts your core assumption to the test. Identify the 4–8 tasks or steps a person would need to complete to walk through that scenario. These become the structure of your prototype.
 
 In a workshop: if you're providing pre-written scenarios, have participants choose from a short list rather than generating scenarios from scratch — this keeps momentum and prevents teams from spending build time on scenario debate.
 
-### Step 5 — Build a rough approximation
+### Step 4 — Build a rough approximation
 Construct only what you need to test the scenario. Key principles:
 - **Simulate as much functionality as possible** — if it's a screen, show the state of each screen at each point in the flow, even if transitions aren't interactive
 - **Use realistic, legible content** — placeholder text and lorem ipsum reduce the realism of the test. Use real words, real (or realistic) numbers, real images where possible. Google image search + "icon" finds usable visual shorthand for almost anything.
