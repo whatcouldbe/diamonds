@@ -94,7 +94,7 @@ Then identify what kind of assumption that is — because it determines what you
 
 - **Do people want it?** → desirability assumption → prototype the concept or value proposition (storyboard, concept poster, landing page)
 - **Can people use it?** → usability assumption → prototype the experience (screen flow, paper prototype, Wizard of Oz)
-- **Can we deliver it?** → feasibility assumption → prototype the mechanism (service walkthrough, technical proof-of-concept)
+- **Can we deliver it?** → feasibility assumption → prototype the delivery capability or system (service walkthrough, technical proof-of-concept)
 - **Is it worth doing?** → viability assumption → prototype the model (business model test, pricing experiment, proof of concept)
 
 Frame your learning question in one sentence: *"We need to find out whether [specific thing]."* Everything you build should answer that question. If a screen or a component doesn't help you answer it, leave it out.
