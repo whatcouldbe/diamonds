@@ -84,30 +84,32 @@ Early in development, desirability is usually the most important thing to test �
 
 ## Steps
 
-### Step 1 — Choose your concept
+### Step 1 — Choose a concept
 Identify the idea you're prototyping. If you have a concept poster or value proposition poster, review it. Name the core idea in one sentence: what is the product or service, and what does it do for people?
 
-### Step 2 — Name your critical assumption
-What must be true for this concept to work? What's the riskiest assumption you're making right now? Early-stage prototypes should test desirability first: *"People will want this."* Later-stage prototypes test usability, viability, or feasibility.
+### Step 2 — Decide what you want to learn
 
-### Step 3 — Determine what you want to learn
-Translate your assumption into a learning question: *"We want to find out whether people can [do X] / whether people would [pay for / value / use] this / whether [key mechanism] works as we imagine."* This question governs every decision about the prototype — if a feature doesn't help you answer it, you probably don't need to build it.
+**Name the riskiest assumption:**
+*"The one thing that must be true for this to work is..."*
 
-### Step 4 — Choose your format
-Pick the simplest format that lets you test your assumption:
-- Physical product ideas → cardboard, foam, found objects, index card mockups
-- Screen-based or app ideas → paper prototype, wireframes, or PowerPoint/Miro screen flows
-- Service or experience ideas → storyboard, role-play, physical environment simulation
-- Business model or distribution ideas → real-world proof of concept (a pop-up, a pilot, a one-van-one-stand test)
+**Identify the assumption type** — because it determines what you need to build:
 
-Fidelity should match your confidence: lower confidence = lower fidelity. As you validate assumptions and build confidence, fidelity can increase.
+- **Do people want it?** → desirability assumption → prototype the concept or value proposition (storyboard, concept poster, landing page with sign-up, explainer video)
+- **Can people use it?** → usability assumption → prototype the experience (screen flow, paper prototype, Wizard of Oz, role-play or bodystorming)
+- **Can we deliver it?** → feasibility assumption → prototype the delivery capability or system (service walkthrough, technical proof-of-concept, pilot program)
+- **Is it worth doing?** → viability assumption → prototype the business model (business model test, pricing experiment, pre-sale or pre-order, letter of intent)
 
-### Step 5 — Define a scenario and critical tasks
+**Write the learning question:**
+*"We need to find out whether..."*
+
+Everything you build should answer that question. If a screen or a component doesn't help you answer it, leave it out.
+
+### Step 3 — Define a scenario and critical tasks
 Choose a realistic scenario that puts your core assumption to the test. Identify the 4–8 tasks or steps a person would need to complete to walk through that scenario. These become the structure of your prototype.
 
 In a workshop: if you're providing pre-written scenarios, have participants choose from a short list rather than generating scenarios from scratch — this keeps momentum and prevents teams from spending build time on scenario debate.
 
-### Step 6 — Build a rough approximation
+### Step 4 — Build just enough to test
 Construct only what you need to test the scenario. Key principles:
 - **Simulate as much functionality as possible** — if it's a screen, show the state of each screen at each point in the flow, even if transitions aren't interactive
 - **Use realistic, legible content** — placeholder text and lorem ipsum reduce the realism of the test. Use real words, real (or realistic) numbers, real images where possible. Google image search + "icon" finds usable visual shorthand for almost anything.
@@ -134,8 +136,8 @@ Most modern offers live in the overlap: a physical thing that carries informatio
 ### The roughness is the point
 Frame this explicitly at the start. You're not building something polished; you're building something testable. Teams — especially teams with design or engineering backgrounds — need explicit permission to be rough. Name the Time/Love Continuum: the reason we keep it rough is that rough work gets honest feedback. Polished work gets protected feelings.
 
-### Start from the assumption, not the interface
-The most common mistake is jumping to "what should the screens look like" before establishing "what question are we trying to answer?" Hold the group on the planning step until they can articulate: *what is our critical assumption, and how will this prototype test it?* A prototype that doesn't test a specific assumption is just decoration.
+### Start from what you want to learn, not the interface
+The most common mistake is jumping to "what should the screens look like" before establishing "what question are we trying to answer?" Hold the group on Step 2 until they can name what they want to learn and what kind of assumption it is. That answer determines the format — not the other way around. A prototype that isn't testing a specific question is just decoration.
 
 ### 4–8 screens is usually enough
 For a task-based screen prototype in a workshop, 4–8 screens covers a realistic scenario without becoming a production effort. If a team is trying to prototype more than 8 screens, ask what assumption requires all of that — usually the answer reveals they're building more than they need to learn what they're trying to learn.
