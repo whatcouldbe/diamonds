@@ -88,16 +88,21 @@ Early in development, desirability is usually the most important thing to test �
 Identify the idea you're prototyping. If you have a concept poster or value proposition poster, review it. Name the core idea in one sentence: what is the product or service, and what does it do for people?
 
 ### Step 2 — Decide what you want to learn
-Ask: *What is the one thing that must be true for this concept to work?*
 
-Then identify what kind of assumption that is — because it determines what you need to build:
+**Name the riskiest assumption:**
+*"The one thing that must be true for this to work is..."*
+
+**Identify the assumption type** — because it determines what you need to build:
 
 - **Do people want it?** → desirability assumption → prototype the concept or value proposition (storyboard, concept poster, landing page with sign-up, explainer video)
 - **Can people use it?** → usability assumption → prototype the experience (screen flow, paper prototype, Wizard of Oz, role-play or bodystorming)
 - **Can we deliver it?** → feasibility assumption → prototype the delivery capability or system (service walkthrough, technical proof-of-concept, pilot program)
 - **Is it worth doing?** → viability assumption → prototype the business model (business model test, pricing experiment, pre-sale or pre-order, letter of intent)
 
-Frame your learning question in one sentence: *"We need to find out whether [specific thing]."* Everything you build should answer that question. If a screen or a component doesn't help you answer it, leave it out.
+**Write the learning question:**
+*"We need to find out whether..."*
+
+Everything you build should answer that question. If a screen or a component doesn't help you answer it, leave it out.
 
 ### Step 3 — Choose your format
 Pick the simplest format that lets you test your assumption:
