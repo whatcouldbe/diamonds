@@ -134,5 +134,5 @@ The 12 methods below form the core training programme — the first complete set
 | Creative Matrix | Making | Concept Ideation | ✓ | Active |
 | Round Robin | Making | Concept Ideation | † | Active |
 | Rough & Ready Prototyping | Making | Modeling & Prototyping | ✓ | Active |
-| Value Proposition Poster | Making | Design Rationale | ✓ | To be built |
+| Value Proposition Poster | Making | Design Rationale | ✓ | Active |
 | Hypothesis Statements | Making | Design Rationale | † | Provisional (reconstructed) |
