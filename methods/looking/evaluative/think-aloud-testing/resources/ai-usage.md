@@ -48,6 +48,13 @@ When asking an AI to code a transcript into Rose/Thorn/Bud, hold two rules:
 
 ## Prompt Patterns
 
+**Drafting a moderation script:**
+> "I'm running a moderated think-aloud test with [N] participants to evaluate [the thing being tested]. I want to learn whether [specific goal]. My tasks are:
+> 1. [Task 1]
+> 2. [Task 2]
+>
+> Please write a light moderation script that: introduces me and the purpose, reassures participants we're not testing them, explains the think-aloud instruction clearly ('put your brain on speakerphone'), delivers the tasks one at a time, and closes with thanks. Write it in conversational language — it's a guide I'll adapt in the moment, not a word-for-word recitation."
+
 **Drafting tasks:**
 > "We're testing a prototype of [thing] with real users. We want to learn whether they can [goal]. Draft 3–4 think-aloud tasks framed as concrete goals to accomplish, not features to inspect."
 
