@@ -15,6 +15,7 @@ Ready-to-use scripts and protocols for running Think-Aloud Testing. The two prot
 | Template | Use | Status |
 |---|---|---|
 | `moderated-test-protocol.md` | The light intro–consent–task script for a moderated session (in person or remote) | Available |
+| `protocol-builder.md` | A fill-in scaffold for writing your own moderation script; includes sentence starters and facilitator tips | Available |
 | `unmoderated-participant-brief.md` | The written brief you send a participant who will record their own session, with no moderator present | Available |
 
 ---
