@@ -128,7 +128,6 @@
       align-items: center; justify-content: space-between;
       margin-bottom: 10px;
     }
-    .footer-send-row.visible { display: flex; }
 
     .cycle-btn {
       background: none; border: none; padding: 0;
@@ -169,7 +168,7 @@
 <div id="chat"></div>
 
 <footer>
-  <div class="footer-send-row" id="footer-send-row">
+  <div class="footer-send-row" id="footer-send-row" style="display:none">
     <button class="cycle-btn" id="footer-cycle" onclick="cycleReply()" style="visibility:hidden">↕ Try a different reply</button>
     <button class="send-btn" id="footer-send" onclick="sendDraft()" disabled>Send →</button>
   </div>
@@ -359,7 +358,7 @@ let draftBubble = null;
 function clearDraft() {
   draftWrap?.remove();
   draftWrap = draftBubble = null;
-  footerSendRow.classList.remove('visible');
+  footerSendRow.style.display = 'none';
   footerSend.disabled = true;
   footerCycle.style.visibility = 'hidden';
 }
@@ -377,7 +376,7 @@ function typeDraftText(text) {
   function revealSend() {
     replyTyping = false;
     footerSend.disabled = false;
-    footerSendRow.classList.add('visible');
+    footerSendRow.style.display = 'flex';
   }
 
   const timer = setInterval(() => {
