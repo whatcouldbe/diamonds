@@ -368,6 +368,7 @@ function typeDraftText(text) {
   if (!draftBubble) return;
   replyTyping = true;
   draftBubble.textContent = '';
+  footerSendRow.classList.remove('visible'); // hidden while typing
   footerSend.disabled = true;
 
   const speed = 28;
@@ -381,6 +382,7 @@ function typeDraftText(text) {
     } else {
       replyTyping = false;
       footerSend.disabled = false;
+      footerSendRow.classList.add('visible'); // appears fully active
     }
   }
   setTimeout(tick, 0);
@@ -428,8 +430,7 @@ function showReplies(replies) {
   chat.appendChild(draftWrap);
   scroll();
 
-  // Send row in footer — always visible
-  footerSendRow.classList.add('visible');
+  // Prepare footer send row (revealed by typeDraftText when typing finishes)
   footerCycle.style.visibility = replies.length > 1 ? 'visible' : 'hidden';
   footerSend.disabled = true;
 
