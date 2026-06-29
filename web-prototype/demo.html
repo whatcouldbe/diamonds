@@ -9,7 +9,6 @@
 
     :root {
       --navy: #16213e;
-      --navy-mid: #1a2a4a;
       --navy-light: #243556;
       --accent: #6b8de4;
       --bg: #f4f5f7;
@@ -27,12 +26,7 @@
       line-height: 1.6;
     }
 
-    body {
-      display: flex;
-      flex-direction: column;
-      height: 100vh;
-      overflow: hidden;
-    }
+    body { display: flex; flex-direction: column; height: 100vh; overflow: hidden; }
 
     header {
       background: var(--navy);
@@ -45,201 +39,67 @@
       flex-shrink: 0;
     }
 
-    .logo {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      font-size: 16px;
-      font-weight: 600;
-      letter-spacing: 0.04em;
-    }
+    .logo { display: flex; align-items: center; gap: 10px; font-size: 16px; font-weight: 600; letter-spacing: 0.04em; }
 
     .logo-diamond {
-      width: 20px;
-      height: 20px;
+      width: 20px; height: 20px;
       background: var(--accent);
       clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
     }
 
     .demo-pill {
-      font-size: 11px;
-      font-weight: 600;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      background: rgba(107, 141, 228, 0.2);
-      color: var(--accent);
+      font-size: 11px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase;
+      background: rgba(107, 141, 228, 0.2); color: var(--accent);
       border: 1px solid rgba(107, 141, 228, 0.4);
-      padding: 3px 10px;
-      border-radius: 20px;
+      padding: 3px 10px; border-radius: 20px;
     }
 
-    .header-right {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-    }
+    .header-right { display: flex; align-items: center; gap: 12px; }
 
     .btn-ghost {
-      background: none;
-      border: 1px solid rgba(255,255,255,0.2);
-      color: rgba(255,255,255,0.65);
-      padding: 5px 12px;
-      border-radius: 6px;
-      cursor: pointer;
-      font-size: 12px;
-      font-family: inherit;
+      background: none; border: 1px solid rgba(255,255,255,0.2);
+      color: rgba(255,255,255,0.65); padding: 5px 12px; border-radius: 6px;
+      cursor: pointer; font-size: 12px; font-family: inherit;
     }
     .btn-ghost:hover { background: rgba(255,255,255,0.08); color: white; }
 
+    .progress-bar { height: 2px; background: var(--border); flex-shrink: 0; }
+    .progress-fill { height: 100%; background: var(--accent); transition: width 0.4s ease; }
+
     #chat {
-      flex: 1;
-      overflow-y: auto;
-      padding: 32px 24px;
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
-      scroll-behavior: smooth;
+      flex: 1; overflow-y: auto; padding: 32px 24px;
+      display: flex; flex-direction: column; gap: 20px; scroll-behavior: smooth;
     }
 
-    .message-wrap {
-      display: flex;
-      flex-direction: column;
-      max-width: 680px;
-    }
+    .message-wrap { display: flex; flex-direction: column; max-width: 680px; }
     .message-wrap.user { align-self: flex-end; align-items: flex-end; }
     .message-wrap.assistant { align-self: flex-start; }
 
-    .message {
-      padding: 14px 18px;
-      border-radius: 14px;
-      font-size: 15px;
-      line-height: 1.65;
-    }
+    .message { padding: 14px 18px; border-radius: 14px; font-size: 15px; line-height: 1.65; }
 
     .message.assistant {
-      background: var(--surface);
-      border: 1px solid var(--border);
-      box-shadow: 0 1px 4px rgba(0,0,0,0.05);
-      border-bottom-left-radius: 4px;
+      background: var(--surface); border: 1px solid var(--border);
+      box-shadow: 0 1px 4px rgba(0,0,0,0.05); border-bottom-left-radius: 4px;
     }
 
-    .message.user {
-      background: var(--navy);
-      color: white;
-      border-bottom-right-radius: 4px;
-    }
+    .message.user { background: var(--navy); color: white; border-bottom-right-radius: 4px; }
 
     .message.assistant strong { font-weight: 600; }
     .message.assistant em { font-style: italic; }
     .message.assistant p { margin-bottom: 10px; }
     .message.assistant p:last-child { margin-bottom: 0; }
+    .message.assistant ul { padding-left: 20px; margin-bottom: 10px; }
+    .message.assistant li { margin-bottom: 4px; }
 
-    /* Typing cursor */
-    .cursor {
-      display: inline-block;
-      width: 2px;
-      height: 1em;
-      background: var(--accent);
-      vertical-align: text-bottom;
-      animation: blink 0.8s step-end infinite;
-      margin-left: 1px;
-    }
-
-    @keyframes blink {
-      0%, 100% { opacity: 1; }
-      50% { opacity: 0; }
-    }
-
-    /* Reply options */
-    .reply-area {
-      display: flex;
-      flex-direction: column;
-      gap: 8px;
-      align-self: flex-end;
-      max-width: 680px;
-      width: 100%;
-      align-items: flex-end;
-    }
-
-    .reply-label {
-      font-size: 12px;
-      color: var(--text-muted);
-      margin-bottom: 2px;
-    }
-
-    .reply-btn {
-      background: white;
-      border: 1.5px solid var(--border);
-      color: var(--text);
-      padding: 11px 16px;
-      border-radius: 12px;
-      border-bottom-right-radius: 4px;
-      cursor: pointer;
-      font-size: 14px;
-      font-family: inherit;
-      line-height: 1.4;
-      text-align: left;
-      transition: all 0.15s;
-      max-width: 520px;
-    }
-
-    .reply-btn:hover {
-      border-color: var(--accent);
-      background: #f5f7ff;
-      color: var(--navy);
-    }
-
-    /* Footer */
-    footer {
-      background: var(--surface);
-      border-top: 1px solid var(--border);
-      padding: 14px 24px;
-      flex-shrink: 0;
-      text-align: center;
-    }
-
-    .footer-note {
-      font-size: 13px;
-      color: var(--text-muted);
-    }
-
-    .footer-note a {
-      color: var(--accent);
-      text-decoration: none;
-    }
-
-    /* Progress */
-    .progress-bar {
-      height: 2px;
-      background: var(--border);
-      position: relative;
-      flex-shrink: 0;
-    }
-
-    .progress-fill {
-      height: 100%;
-      background: var(--accent);
-      transition: width 0.4s ease;
-    }
-
-    /* Typing dots */
     .typing {
-      display: flex;
-      align-items: center;
-      gap: 5px;
-      padding: 14px 18px;
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: 14px;
-      border-bottom-left-radius: 4px;
+      display: flex; align-items: center; gap: 5px;
+      padding: 14px 18px; background: var(--surface);
+      border: 1px solid var(--border); border-radius: 14px; border-bottom-left-radius: 4px;
       width: fit-content;
     }
     .typing span {
-      width: 7px; height: 7px;
-      background: var(--accent);
-      border-radius: 50%;
-      animation: bounce 1.1s infinite;
-      opacity: 0.5;
+      width: 7px; height: 7px; background: var(--accent);
+      border-radius: 50%; animation: bounce 1.1s infinite; opacity: 0.5;
     }
     .typing span:nth-child(2) { animation-delay: 0.18s; }
     .typing span:nth-child(3) { animation-delay: 0.36s; }
@@ -248,6 +108,28 @@
       40% { transform: translateY(-5px); opacity: 1; }
     }
 
+    .reply-area {
+      display: flex; flex-direction: column; gap: 8px;
+      align-self: flex-end; max-width: 680px; width: 100%; align-items: flex-end;
+    }
+
+    .reply-label { font-size: 12px; color: var(--text-muted); margin-bottom: 2px; }
+
+    .reply-btn {
+      background: white; border: 1.5px solid var(--border);
+      color: var(--text); padding: 11px 16px; border-radius: 12px; border-bottom-right-radius: 4px;
+      cursor: pointer; font-size: 14px; font-family: inherit; line-height: 1.4;
+      text-align: left; transition: all 0.15s; max-width: 520px;
+    }
+    .reply-btn:hover { border-color: var(--accent); background: #f5f7ff; color: var(--navy); }
+
+    footer {
+      background: var(--surface); border-top: 1px solid var(--border);
+      padding: 14px 24px; flex-shrink: 0; text-align: center;
+    }
+    .footer-note { font-size: 13px; color: var(--text-muted); }
+    .footer-note a { color: var(--accent); text-decoration: none; }
+
     #chat::-webkit-scrollbar { width: 5px; }
     #chat::-webkit-scrollbar-thumb { background: var(--border); border-radius: 10px; }
   </style>
@@ -255,19 +137,14 @@
 <body>
 
 <header>
-  <div class="logo">
-    <div class="logo-diamond"></div>
-    Diamonds
-  </div>
+  <div class="logo"><div class="logo-diamond"></div>Diamonds</div>
   <div class="header-right">
     <span class="demo-pill">Demo</span>
     <button class="btn-ghost" onclick="restartDemo()">↺ Restart</button>
   </div>
 </header>
 
-<div class="progress-bar">
-  <div class="progress-fill" id="progress" style="width: 0%"></div>
-</div>
+<div class="progress-bar"><div class="progress-fill" id="progress" style="width:0%"></div></div>
 
 <div id="chat"></div>
 
@@ -279,97 +156,102 @@
 </footer>
 
 <script>
-// ── Demo script ────────────────────────────────────────────────────────────
-//
-// Each step has a Diamonds message and the user's reply options.
-// Clicking a reply shows it as a user message and advances to the next step.
-// The last step has no replies — conversation ends naturally.
 
-const SCRIPT = [
-  {
-    agent: `I'm Diamonds — I help you make sure you're solving a real problem before you build the answer to it.
+// ── Script ─────────────────────────────────────────────────────────────────
+// Branching conversation. Each step has an agent message and replies.
+// Each reply has { text, next } — next is the key of the following step.
 
-What are you hoping something like this actually does for you?`,
+const STEPS = {
+
+  'open': {
+    agent: `I'm Diamonds — I help you make sure you're solving a real problem before you build the answer to it.\n\nWhat are you hoping something like this actually does for you?`,
     replies: [
-      "I want to make sure we're not building the wrong thing.",
-      "I need to figure out what to work on next.",
+      { text: `I want to make sure we're not building the wrong thing.`, next: 'what-working-on' },
+      { text: `I need to figure out what to work on next.`, next: 'what-working-on' },
     ]
   },
-  {
-    agent: `That's the right instinct — and the most common way teams end up there is by skipping steps they know they should take.
 
-What are you working on right now?`,
+  'what-working-on': {
+    agent: `That's the right instinct — and the most common way teams end up there is by skipping steps they know they should take.\n\nWhat are you working on right now?`,
     replies: [
-      "A meal planning app for busy families. We've been at it about three months and just kicked off our MVP.",
+      { text: `A meal planning app for busy families. We've been at it about three months and just kicked off our MVP.`, next: 'ask-validation' },
     ]
   },
-  {
-    agent: `Three months in, MVP underway — that's meaningful investment already.
 
-Before we talk about what's next, I want to understand the foundation you're building on. What's your evidence that busy families actually need a better meal planning solution — not a sense that it's a pain point, but something you've validated with real people?`,
+  'ask-validation': {
+    agent: `Three months in, MVP underway — that's real investment already.\n\nWhat's your evidence that busy families need a better meal planning solution — not a sense that it's a pain point, but something you've validated with real people?`,
     replies: [
-      "We talked to a few friends with kids and they all said meal planning is a hassle. We also looked at the App Store — there are loads of apps but none of them seem great.",
+      { text: `We talked to a few friends with kids and they all said meal planning is a hassle. We also looked at the App Store — lots of apps but none of them seem great.`, next: 'name-gap' },
     ]
   },
-  {
-    agent: `That's a starting point, but it's not yet validation — and the distinction matters.
 
-Your friends confirming it's a hassle tells you the problem is real in their experience. But it doesn't tell you what they *actually* need, how they're solving it today, what workarounds they've developed, or whether a new app is what they'd reach for. The App Store observation tells you there's a market, not that there's an unmet need your solution specifically addresses.
-
-The question to answer before going deeper into the MVP: have you sat with real families, watched how they actually manage meals, and let them show you the problem — rather than confirm your hypothesis about it?`,
+  'name-gap': {
+    agent: `That's a starting point, not validation. Your friends confirming it's a hassle tells you the problem is real for them — but not what they actually need, how they're solving it today, or whether an app is what they'd reach for. The App Store tells you there's a market, not that there's an unmet need your solution addresses.\n\nHave you sat with real families and let them show you the problem — rather than confirm what you already believe?`,
     replies: [
-      "Honestly, no. We assumed we knew enough to start building.",
+      { text: `Honestly, no. We assumed we knew enough to start building.`, next: 'offer-support' },
     ]
   },
-  {
-    agent: `That's honest — and it's where most teams are when they arrive here.
 
-The good news is that three months isn't too far in to course-correct. The risk of not doing this now is that you build something shaped by your assumptions rather than what people actually need. That's expensive to fix once you've shipped.
-
-What I'd recommend before writing another line of code: spend time with five to eight real families — not asking them what they want, but watching how they actually navigate meal decisions across a week. The insights that shift your direction don't come from confirming the problem. They come from seeing how people are already solving it.
-
-I can help you design that research, or we can run a simulation first to sharpen your questions before you go out. Which would be more useful right now?`,
+  'offer-support': {
+    agent: `That's honest — and it's where most teams are.\n\nBefore another line of code, I'd spend time with five to eight real families — not asking what they want, but watching how they actually navigate meals across a week. What shifts direction isn't confirming the problem exists; it's seeing how people are already solving it.\n\nI can help you design that research, or run a simulation to sharpen your questions first. Which is more useful?`,
     replies: [
-      "A simulation sounds useful — what would that look like?",
-      "I'd rather design the real research. What does that involve?",
+      { text: `A simulation sounds useful — what would that look like?`, next: 'sim-setup' },
+      { text: `I'd rather design the real research. What does that involve?`, next: 'research-focus' },
     ]
   },
-  {
-    agent: `A simulation means I'll play the role of someone who fits your target — a parent managing meals for a family — and you'll run me through your questions as if it were a real interview. It draws on general patterns rather than your specific people, so treat it as a rehearsal: a way to surface the assumptions baked into your questions and find out which ones you can't actually answer yet.
 
-The limit is real: simulated people don't surprise you the way real ones do. The things that shift your direction most are usually things you didn't think to ask about. Simulation doesn't give you that — it helps you get your questions sharp enough to find it.
+  // ── Simulation path ───────────────────────────────────────────────────
 
-Want to set up the simulation now? I'll need to know: who specifically are you trying to learn from — what does the family look like, and what do you most want to understand about how they manage meals today?`,
+  'sim-setup': {
+    agent: `I'll play someone who fits your target — a parent in that household — and you run me through your questions as if it's a real interview. Treat it as a rehearsal: it surfaces the assumptions baked into your questions. The surprises that shift direction only come from real people.\n\nTo set it up: what does the family look like, and what do you most want to understand about how they manage meals?`,
     replies: [
-      "Two working parents, kids between 5 and 12. We want to understand where meal planning actually breaks down for them.",
+      { text: `Two working parents, kids between 5 and 12. We want to understand where meal planning breaks down for them.`, next: 'sim-caution' },
     ]
   },
-  {
-    agent: `Good framing. That's specific enough to run a useful simulation.
 
-One thing before we start: "where it breaks down" is still slightly solution-shaped — it assumes the problem is in the planning. What you might find is that planning isn't the issue at all; execution is, or shopping is, or the negotiation between family members about what everyone will actually eat. Going in with that openness will make the session more useful.
+  'sim-caution': {
+    agent: `Good framing. One thing before we start: "where it breaks down" is still solution-shaped — it assumes the problem is in the planning. You might find that planning isn't the issue at all; execution is, or shopping, or the negotiation about what everyone will eat. Go in with that openness.\n\nReady when you are — ask your first question.`,
+    replies: null
+  },
 
-I'm ready when you are. Ask your first question — I'll respond as someone who fits that profile, and we can debrief as we go.`,
-    replies: null // End of demo
-  }
-];
+  // ── Real research path ────────────────────────────────────────────────
+
+  'research-focus': {
+    agent: `Good. Before you talk to anyone, nail three things: who you're talking to, what you're trying to learn, and how you'll create conditions for people to tell you something you don't already know.\n\nYou've got the who. What's the single most important thing you don't yet know about how these families manage meals?`,
+    replies: [
+      { text: `Whether the problem is in deciding what to cook, or in the actual shopping and prep.`, next: 'protocol' },
+    ]
+  },
+
+  'protocol': {
+    agent: `That's exactly the right question — and the fact you don't know the answer yet is why you're doing this research.\n\nHere's a starter protocol for a 45-minute conversation. These are a spine, not a script — your follow-up questions matter more than getting through the list.\n\n**Opening — 5 min**\n\nTell me about your week. What does a typical week look like for your family?\n\n**Their current reality — 15 min**\n\n- Walk me through how you handled meals this past week — not ideally, but how it actually went.\n- What had to happen before you could decide what to cook?\n- Where did things feel easy? Where did they break down?\n\n**Workarounds — 10 min**\n\n- What do you do when dinner just doesn't come together?\n- Is there anything you use to help — an app, a list, a group chat? Show me.\n\n**Stakes — 10 min**\n\n- What's the cost when it goes wrong?\n- What would it take for this to feel genuinely easy?\n\n**Closing — 5 min**\n\nWhat would you want someone building a tool for this to understand that most people get wrong?`,
+    replies: [
+      { text: `How do I make sure I'm actually listening, and not just confirming what I already think?`, next: 'listening-advice' },
+    ]
+  },
+
+  'listening-advice': {
+    agent: `A few rules for the session: ask about the past, not the future. Never "would you use this?" — always "walk me through when this last happened." When they offer a solution idea, ask what problem it's solving. When something surprises you, stay curious — don't explain it away.\n\nThe interview isn't done when you've covered every question. It's done when they've shown you something you didn't expect.`,
+    replies: null
+  },
+
+};
+
+const MAX_VISITS = 7; // longest path
 
 // ── Engine ─────────────────────────────────────────────────────────────────
 
-let step = 0;
-let typing = false;
+let currentStepId = 'open';
+let visitCount = 0;
 
 const chat = document.getElementById('chat');
-const progress = document.getElementById('progress');
+const progressEl = document.getElementById('progress');
 
 function updateProgress() {
-  const pct = Math.round((step / (SCRIPT.length - 1)) * 100);
-  progress.style.width = pct + '%';
+  progressEl.style.width = Math.round((visitCount / MAX_VISITS) * 100) + '%';
 }
 
-function scroll() {
-  chat.scrollTop = chat.scrollHeight;
-}
+function scroll() { chat.scrollTop = chat.scrollHeight; }
 
 function addUserMessage(text) {
   const wrap = document.createElement('div');
@@ -391,22 +273,26 @@ function showTypingDots() {
   scroll();
 }
 
-function removeTypingDots() {
-  document.getElementById('typing-wrap')?.remove();
-}
+function removeTypingDots() { document.getElementById('typing-wrap')?.remove(); }
 
-function renderMarkdown(text) {
-  let h = text
+function renderMarkdown(raw) {
+  let h = raw
     .replace(/&/g, '&amp;')
     .replace(/</g, '&lt;')
     .replace(/>/g, '&gt;');
+
   h = h.replace(/\*\*\*(.+?)\*\*\*/gs, '<strong><em>$1</em></strong>');
   h = h.replace(/\*\*(.+?)\*\*/gs, '<strong>$1</strong>');
   h = h.replace(/\*([^*\n]+?)\*/g, '<em>$1</em>');
-  const paras = h.split(/\n{2,}/);
-  return paras.map(p => {
+
+  return h.split(/\n{2,}/).map(p => {
     p = p.trim();
     if (!p) return '';
+    if (/^[-•] /m.test(p)) {
+      const items = p.split('\n').filter(l => l.trim())
+        .map(l => `<li>${l.replace(/^[-•]\s+/, '')}</li>`).join('');
+      return `<ul>${items}</ul>`;
+    }
     return `<p>${p.replace(/\n/g, '<br>')}</p>`;
   }).filter(Boolean).join('\n');
 }
@@ -420,10 +306,8 @@ function typeMessage(text, onDone) {
   wrap.appendChild(bubble);
   chat.appendChild(wrap);
 
+  const speed = text.length > 800 ? 5 : text.length > 500 ? 8 : text.length > 300 ? 13 : 18;
   let i = 0;
-  // Speed: faster for longer messages so it doesn't feel endless
-  const baseSpeed = 18;
-  const speed = text.length > 600 ? 10 : text.length > 300 ? 14 : baseSpeed;
 
   function tick() {
     if (i < text.length) {
@@ -432,28 +316,33 @@ function typeMessage(text, onDone) {
       i++;
       setTimeout(tick, speed);
     } else {
-      // Swap to rendered markdown
       bubble.style.whiteSpace = '';
       bubble.innerHTML = renderMarkdown(text);
       scroll();
       if (onDone) setTimeout(onDone, 300);
     }
   }
-
   setTimeout(tick, 0);
+}
+
+function handleReply(text, nextId) {
+  document.getElementById('reply-wrap')?.remove();
+  addUserMessage(text);
+  visitCount++;
+  currentStepId = nextId;
+  updateProgress();
+  setTimeout(() => showStep(nextId), 600);
 }
 
 function showReplies(replies) {
   if (!replies || replies.length === 0) {
-    // End of demo — show a closing note
     const wrap = document.createElement('div');
     wrap.className = 'reply-area';
-    wrap.style.marginTop = '8px';
-    wrap.innerHTML = `
-      <p style="font-size:13px;color:var(--text-muted);text-align:right;">
-        End of demo ·
-        <a href="/" style="color:var(--accent);text-decoration:none;">Run a live session →</a>
-      </p>`;
+    wrap.style.marginTop = '4px';
+    wrap.innerHTML = `<p style="font-size:13px;color:var(--text-muted);text-align:right;">
+      End of demo ·
+      <a href="/" style="color:var(--accent);text-decoration:none;">Run a live session →</a>
+    </p>`;
     chat.appendChild(wrap);
     scroll();
     return;
@@ -465,14 +354,14 @@ function showReplies(replies) {
 
   const label = document.createElement('p');
   label.className = 'reply-label';
-  label.textContent = 'Choose a reply';
+  label.textContent = replies.length > 1 ? 'Choose a reply' : 'Continue';
   wrap.appendChild(label);
 
-  replies.forEach(text => {
+  replies.forEach(({ text, next }) => {
     const btn = document.createElement('button');
     btn.className = 'reply-btn';
     btn.textContent = text;
-    btn.onclick = () => handleReply(text);
+    btn.onclick = () => handleReply(text, next);
     wrap.appendChild(btn);
   });
 
@@ -480,41 +369,29 @@ function showReplies(replies) {
   scroll();
 }
 
-function handleReply(text) {
-  document.getElementById('reply-wrap')?.remove();
-  addUserMessage(text);
-  step++;
-  updateProgress();
-  setTimeout(advance, 600);
-}
-
-function advance() {
-  if (step >= SCRIPT.length) return;
-
-  const entry = SCRIPT[step];
+function showStep(stepId) {
+  const entry = STEPS[stepId];
+  if (!entry) return;
   showTypingDots();
-
-  // Pause to simulate thinking time
-  const thinkTime = entry.agent.length > 400 ? 1400 : 900;
-
+  const thinkTime = entry.agent.length > 500 ? 1400 : 900;
   setTimeout(() => {
     removeTypingDots();
-    typeMessage(entry.agent, () => {
-      showReplies(entry.replies);
-    });
+    typeMessage(entry.agent, () => showReplies(entry.replies));
   }, thinkTime);
 }
 
 function restartDemo() {
-  step = 0;
+  currentStepId = 'open';
+  visitCount = 0;
   chat.innerHTML = '';
   updateProgress();
-  setTimeout(advance, 400);
+  setTimeout(() => showStep('open'), 400);
 }
 
 // ── Start ──────────────────────────────────────────────────────────────────
 updateProgress();
-setTimeout(advance, 600);
+setTimeout(() => showStep('open'), 600);
+
 </script>
 </body>
 </html>
