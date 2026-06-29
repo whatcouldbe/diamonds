@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Diamonds</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --navy: #16213e;
+      --navy-mid: #1a2a4a;
+      --navy-light: #243556;
+      --accent: #6b8de4;
+      --accent-hover: #5a7cd8;
+      --bg: #f4f5f7;
+      --surface: #ffffff;
+      --border: #e2e5eb;
+      --text: #1a2035;
+      --text-muted: #6b7280;
+      --user-bg: #16213e;
+      --user-text: #ffffff;
+    }
+
+    html, body {
+      height: 100%;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    /* ── Header ── */
+    header {
+      background: var(--navy);
+      color: white;
+      padding: 0 24px;
+      height: 56px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-shrink: 0;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 16px;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+    }
+
+    .logo-diamond {
+      width: 22px;
+      height: 22px;
+      background: var(--accent);
+      clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+      flex-shrink: 0;
+    }
+
+    .header-right {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .key-badge {
+      font-size: 12px;
+      color: rgba(255,255,255,0.45);
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .key-badge.active { color: #6bce6b; }
+
+    .key-dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: currentColor;
+    }
+
+    .btn-ghost {
+      background: none;
+      border: 1px solid rgba(255,255,255,0.2);
+      color: rgba(255,255,255,0.7);
+      padding: 5px 12px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 12px;
+      font-family: inherit;
+      transition: all 0.15s;
+    }
+
+    .btn-ghost:hover {
+      background: rgba(255,255,255,0.08);
+      color: white;
+      border-color: rgba(255,255,255,0.35);
+    }
+
+    .btn-icon {
+      background: none;
+      border: none;
+      color: rgba(255,255,255,0.5);
+      cursor: pointer;
+      padding: 4px 8px;
+      border-radius: 4px;
+      font-size: 13px;
+      font-family: inherit;
+    }
+
+    .btn-icon:hover { color: rgba(255,255,255,0.8); background: rgba(255,255,255,0.08); }
+
+    /* ── Chat area ── */
+    #chat {
+      flex: 1;
+      overflow-y: auto;
+      padding: 32px 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      scroll-behavior: smooth;
+    }
+
+    .message-wrap {
+      display: flex;
+      flex-direction: column;
+      max-width: 680px;
+    }
+
+    .message-wrap.user {
+      align-self: flex-end;
+      align-items: flex-end;
+    }
+
+    .message-wrap.assistant {
+      align-self: flex-start;
+      align-items: flex-start;
+    }
+
+    .message {
+      padding: 14px 18px;
+      border-radius: 14px;
+      font-size: 15px;
+      line-height: 1.65;
+    }
+
+    .message.assistant {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+      border-bottom-left-radius: 4px;
+    }
+
+    .message.user {
+      background: var(--user-bg);
+      color: var(--user-text);
+      border-bottom-right-radius: 4px;
+    }
+
+    .message.error {
+      background: #fff5f5;
+      border: 1px solid #fecaca;
+      color: #991b1b;
+    }
+
+    /* Markdown rendering inside assistant messages */
+    .message.assistant strong { font-weight: 600; }
+    .message.assistant em { font-style: italic; }
+    .message.assistant p { margin-bottom: 10px; }
+    .message.assistant p:last-child { margin-bottom: 0; }
+    .message.assistant ul, .message.assistant ol {
+      padding-left: 20px;
+      margin-bottom: 10px;
+    }
+    .message.assistant li { margin-bottom: 4px; }
+    .message.assistant h3 {
+      font-size: 14px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--text-muted);
+      margin-bottom: 8px;
+      margin-top: 16px;
+    }
+    .message.assistant h3:first-child { margin-top: 0; }
+
+    /* Typing indicator */
+    .typing {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      padding: 14px 18px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      border-bottom-left-radius: 4px;
+      width: fit-content;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+    }
+
+    .typing span {
+      width: 7px;
+      height: 7px;
+      background: var(--accent);
+      border-radius: 50%;
+      animation: bounce 1.2s infinite;
+      opacity: 0.7;
+    }
+
+    .typing span:nth-child(2) { animation-delay: 0.2s; }
+    .typing span:nth-child(3) { animation-delay: 0.4s; }
+
+    @keyframes bounce {
+      0%, 80%, 100% { transform: translateY(0); opacity: 0.4; }
+      40% { transform: translateY(-5px); opacity: 1; }
+    }
+
+    /* ── Input area ── */
+    footer {
+      background: var(--surface);
+      border-top: 1px solid var(--border);
+      padding: 16px 24px 20px;
+      flex-shrink: 0;
+    }
+
+    .input-row {
+      max-width: 728px;
+      margin: 0 auto;
+      display: flex;
+      gap: 10px;
+      align-items: flex-end;
+    }
+
+    textarea#user-input {
+      flex: 1;
+      padding: 11px 16px;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      font-family: inherit;
+      font-size: 15px;
+      line-height: 1.5;
+      resize: none;
+      min-height: 46px;
+      max-height: 160px;
+      background: var(--bg);
+      color: var(--text);
+      transition: border-color 0.15s;
+      overflow-y: auto;
+    }
+
+    textarea#user-input:focus {
+      outline: none;
+      border-color: var(--accent);
+      background: white;
+    }
+
+    textarea#user-input::placeholder { color: var(--text-muted); }
+    textarea#user-input:disabled { opacity: 0.5; cursor: not-allowed; }
+
+    #send-btn {
+      width: 46px;
+      height: 46px;
+      background: var(--navy);
+      color: white;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      font-size: 18px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      transition: background 0.15s;
+    }
+
+    #send-btn:hover { background: var(--navy-light); }
+    #send-btn:disabled { background: var(--border); cursor: not-allowed; }
+
+    .hint {
+      text-align: center;
+      font-size: 12px;
+      color: var(--text-muted);
+      margin-top: 8px;
+    }
+
+    /* ── Setup overlay ── */
+    #setup-overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(16, 24, 48, 0.65);
+      backdrop-filter: blur(4px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 200;
+    }
+
+    .setup-card {
+      background: white;
+      border-radius: 20px;
+      padding: 44px 40px;
+      max-width: 420px;
+      width: 90%;
+      box-shadow: 0 24px 64px rgba(0,0,0,0.18);
+    }
+
+    .setup-logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 24px;
+    }
+
+    .setup-logo .logo-diamond {
+      width: 26px;
+      height: 26px;
+    }
+
+    .setup-logo span {
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--navy);
+      letter-spacing: 0.04em;
+    }
+
+    .setup-card h2 {
+      font-size: 17px;
+      font-weight: 600;
+      color: var(--text);
+      margin-bottom: 6px;
+    }
+
+    .setup-card p {
+      font-size: 14px;
+      color: var(--text-muted);
+      margin-bottom: 24px;
+      line-height: 1.55;
+    }
+
+    .setup-card p a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    .field-label {
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--text-muted);
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      margin-bottom: 6px;
+    }
+
+    .setup-card input[type="password"] {
+      width: 100%;
+      padding: 12px 14px;
+      border: 1.5px solid var(--border);
+      border-radius: 8px;
+      font-size: 14px;
+      font-family: inherit;
+      color: var(--text);
+      margin-bottom: 6px;
+      transition: border-color 0.15s;
+      letter-spacing: 0.06em;
+    }
+
+    .setup-card input:focus {
+      outline: none;
+      border-color: var(--accent);
+    }
+
+    .setup-card input.error { border-color: #ef4444; }
+
+    .error-text {
+      font-size: 13px;
+      color: #ef4444;
+      min-height: 20px;
+      margin-bottom: 16px;
+    }
+
+    .btn-primary {
+      width: 100%;
+      padding: 13px;
+      background: var(--navy);
+      color: white;
+      border: none;
+      border-radius: 10px;
+      font-size: 15px;
+      font-weight: 600;
+      font-family: inherit;
+      cursor: pointer;
+      transition: background 0.15s;
+    }
+
+    .btn-primary:hover { background: var(--navy-light); }
+    .btn-primary:disabled { background: var(--border); cursor: not-allowed; }
+
+    /* Scrollbar */
+    #chat::-webkit-scrollbar { width: 5px; }
+    #chat::-webkit-scrollbar-track { background: transparent; }
+    #chat::-webkit-scrollbar-thumb { background: var(--border); border-radius: 10px; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">
+      <div class="logo-diamond"></div>
+      Diamonds
+    </div>
+    <div class="header-right">
+      <div class="key-badge" id="key-badge">
+        <div class="key-dot"></div>
+        No API key
+      </div>
+      <button class="btn-ghost" onclick="showSetup()">Change key</button>
+      <button class="btn-icon" onclick="resetSession()" title="New session">↺</button>
+    </div>
+  </header>
+
+  <div id="chat"></div>
+
+  <footer>
+    <div class="input-row">
+      <textarea
+        id="user-input"
+        placeholder="Reply to Diamonds…"
+        rows="1"
+        disabled
+      ></textarea>
+      <button id="send-btn" onclick="sendMessage()" disabled title="Send (Enter)">↑</button>
+    </div>
+    <p class="hint">Enter sends · Shift+Enter for new line</p>
+  </footer>
+
+  <div id="setup-overlay">
+    <div class="setup-card">
+      <div class="setup-logo">
+        <div class="logo-diamond"></div>
+        <span>Diamonds</span>
+      </div>
+      <h2>Enter your Anthropic API key</h2>
+      <p>
+        Your key is used only for this session and never stored beyond the browser tab.
+        Get one at <a href="https://console.anthropic.com" target="_blank">console.anthropic.com</a>.
+      </p>
+      <div class="field-label">API Key</div>
+      <input
+        type="password"
+        id="setup-key"
+        placeholder="sk-ant-api03-…"
+        autocomplete="off"
+      />
+      <div class="error-text" id="setup-error"></div>
+      <button class="btn-primary" id="setup-btn" onclick="saveKey()">Start session</button>
+    </div>
+  </div>
+
+  <script>
+    let apiKey = sessionStorage.getItem('diamonds_key') || '';
+    let messages = [];
+    let loading = false;
+    let currentText = '';
+
+    // ── Init ──────────────────────────────────────────────────────────────
+
+    if (apiKey) {
+      closeSetup();
+      beginSession();
+    }
+
+    // ── Setup ─────────────────────────────────────────────────────────────
+
+    function showSetup() {
+      document.getElementById('setup-overlay').style.display = 'flex';
+      document.getElementById('setup-key').value = '';
+      document.getElementById('setup-error').textContent = '';
+    }
+
+    function closeSetup() {
+      document.getElementById('setup-overlay').style.display = 'none';
+      const badge = document.getElementById('key-badge');
+      badge.className = 'key-badge active';
+      badge.innerHTML = '<div class="key-dot"></div> Key set';
+      document.getElementById('user-input').disabled = false;
+      document.getElementById('send-btn').disabled = false;
+    }
+
+    function saveKey() {
+      const input = document.getElementById('setup-key');
+      const key = input.value.trim();
+      const errEl = document.getElementById('setup-error');
+
+      if (!key) {
+        errEl.textContent = 'Please enter your API key.';
+        input.classList.add('error');
+        return;
+      }
+      if (!key.startsWith('sk-ant-')) {
+        errEl.textContent = 'Anthropic keys start with sk-ant- — double-check yours.';
+        input.classList.add('error');
+        return;
+      }
+
+      input.classList.remove('error');
+      errEl.textContent = '';
+      apiKey = key;
+      sessionStorage.setItem('diamonds_key', key);
+      closeSetup();
+      beginSession();
+    }
+
+    // ── Session ───────────────────────────────────────────────────────────
+
+    function beginSession() {
+      // Send invisible trigger so Diamonds opens the conversation
+      const trigger = { role: 'user', content: '_session_start_' };
+      messages = [trigger];
+      callApi(true);
+    }
+
+    function resetSession() {
+      if (loading) return;
+      document.getElementById('chat').innerHTML = '';
+      messages = [];
+      beginSession();
+    }
+
+    // ── Rendering ─────────────────────────────────────────────────────────
+
+    function renderMarkdown(text) {
+      // Escape HTML
+      let h = text
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;');
+
+      // Bold + italic combos
+      h = h.replace(/\*\*\*(.+?)\*\*\*/gs, '<strong><em>$1</em></strong>');
+      h = h.replace(/\*\*(.+?)\*\*/gs, '<strong>$1</strong>');
+      h = h.replace(/(?<!\*)\*(?!\*)([^*\n]+?)(?<!\*)\*(?!\*)/g, '<em>$1</em>');
+
+      // Split into paragraphs
+      const paras = h.split(/\n{2,}/);
+      const rendered = paras.map(p => {
+        p = p.trim();
+        if (!p) return '';
+
+        // Unordered list block
+        if (/^[-•] /m.test(p)) {
+          const items = p.split('\n')
+            .filter(l => l.trim())
+            .map(l => `<li>${l.replace(/^[-•]\s+/, '')}</li>`)
+            .join('');
+          return `<ul>${items}</ul>`;
+        }
+
+        // Numbered list block
+        if (/^\d+\. /m.test(p)) {
+          const items = p.split('\n')
+            .filter(l => l.trim())
+            .map(l => `<li>${l.replace(/^\d+\.\s+/, '')}</li>`)
+            .join('');
+          return `<ol>${items}</ol>`;
+        }
+
+        // Headings (## ### treat as labelled section)
+        if (/^#{1,3} /.test(p)) {
+          return `<h3>${p.replace(/^#{1,3} /, '')}</h3>`;
+        }
+
+        // Normal paragraph — preserve single newlines as line breaks within
+        return `<p>${p.replace(/\n/g, '<br>')}</p>`;
+      });
+
+      return rendered.filter(Boolean).join('\n');
+    }
+
+    // ── Messages ──────────────────────────────────────────────────────────
+
+    function addBubble(role, htmlContent) {
+      const chat = document.getElementById('chat');
+      const wrap = document.createElement('div');
+      wrap.className = `message-wrap ${role}`;
+
+      const bubble = document.createElement('div');
+      bubble.className = `message ${role}`;
+
+      if (role === 'assistant') {
+        bubble.innerHTML = htmlContent;
+      } else {
+        bubble.textContent = htmlContent;
+      }
+
+      wrap.appendChild(bubble);
+      chat.appendChild(wrap);
+      chat.scrollTop = chat.scrollHeight;
+      return bubble;
+    }
+
+    function addTyping() {
+      const chat = document.getElementById('chat');
+      const wrap = document.createElement('div');
+      wrap.className = 'message-wrap assistant';
+      wrap.id = 'typing-wrap';
+      wrap.innerHTML = `
+        <div class="typing">
+          <span></span><span></span><span></span>
+        </div>`;
+      chat.appendChild(wrap);
+      chat.scrollTop = chat.scrollHeight;
+    }
+
+    function removeTyping() {
+      document.getElementById('typing-wrap')?.remove();
+    }
+
+    // ── API call (streaming) ──────────────────────────────────────────────
+
+    async function callApi(isOpening = false) {
+      if (loading) return;
+      loading = true;
+      document.getElementById('send-btn').disabled = true;
+      document.getElementById('user-input').disabled = true;
+
+      addTyping();
+      currentText = '';
+
+      let bubble = null;
+
+      try {
+        const resp = await fetch('/api/chat', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ api_key: apiKey, messages }),
+        });
+
+        if (!resp.ok) {
+          removeTyping();
+          const data = await resp.json().catch(() => ({}));
+          addBubble('assistant error', data.error || `HTTP ${resp.status}`);
+          return;
+        }
+
+        const reader = resp.body.getReader();
+        const decoder = new TextDecoder();
+        let buffer = '';
+
+        while (true) {
+          const { done, value } = await reader.read();
+          if (done) break;
+
+          buffer += decoder.decode(value, { stream: true });
+          const lines = buffer.split('\n');
+          buffer = lines.pop();
+
+          for (const line of lines) {
+            if (!line.startsWith('data: ')) continue;
+            const payload = line.slice(6);
+            if (payload === '[DONE]') break;
+
+            let evt;
+            try { evt = JSON.parse(payload); } catch { continue; }
+
+            if (evt.error) {
+              removeTyping();
+              addBubble('message error', evt.error);
+              return;
+            }
+
+            if (evt.text) {
+              if (!bubble) {
+                removeTyping();
+                bubble = addBubble('assistant', '');
+              }
+              currentText += evt.text;
+              // Show raw text with pre-wrap during streaming for instant feedback
+              bubble.style.whiteSpace = 'pre-wrap';
+              bubble.textContent = currentText;
+              document.getElementById('chat').scrollTop =
+                document.getElementById('chat').scrollHeight;
+            }
+          }
+        }
+
+        // After stream: render markdown properly
+        if (bubble && currentText) {
+          bubble.style.whiteSpace = '';
+          bubble.innerHTML = renderMarkdown(currentText);
+          messages.push({ role: 'assistant', content: currentText });
+        } else if (!bubble) {
+          removeTyping();
+        }
+
+      } catch (e) {
+        removeTyping();
+        addBubble('message error', `Connection error: ${e.message}`);
+      } finally {
+        loading = false;
+        document.getElementById('send-btn').disabled = false;
+        document.getElementById('user-input').disabled = false;
+        document.getElementById('user-input').focus();
+      }
+    }
+
+    // ── Send ──────────────────────────────────────────────────────────────
+
+    async function sendMessage() {
+      const input = document.getElementById('user-input');
+      const text = input.value.trim();
+      if (!text || loading) return;
+
+      input.value = '';
+      resetTextareaHeight(input);
+
+      addBubble('user', text);
+      messages.push({ role: 'user', content: text });
+
+      await callApi();
+    }
+
+    // ── Input behaviour ───────────────────────────────────────────────────
+
+    const inputEl = document.getElementById('user-input');
+
+    inputEl.addEventListener('keydown', e => {
+      if (e.key === 'Enter' && !e.shiftKey) {
+        e.preventDefault();
+        sendMessage();
+      }
+    });
+
+    inputEl.addEventListener('input', () => {
+      resetTextareaHeight(inputEl);
+    });
+
+    function resetTextareaHeight(el) {
+      el.style.height = 'auto';
+      el.style.height = Math.min(el.scrollHeight, 160) + 'px';
+    }
+
+    document.getElementById('setup-key').addEventListener('keydown', e => {
+      if (e.key === 'Enter') saveKey();
+    });
+  </script>
+
+</body>
+</html>
