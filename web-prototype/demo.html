@@ -367,25 +367,38 @@ function clearDraft() {
 function typeDraftText(text) {
   if (!draftBubble) return;
   replyTyping = true;
-  draftBubble.textContent = '';
-  footerSendRow.classList.remove('visible'); // hidden while typing
+  footerSendRow.classList.remove('visible');
   footerSend.disabled = true;
 
-  const speed = 28;
+  const target = draftBubble; // pin reference — guards against clearDraft mid-loop
+  target.textContent = '';
   let i = 0;
-  function tick() {
-    if (i < text.length) {
-      draftBubble.textContent = text.slice(0, i + 1);
-      scroll();
-      i++;
-      setTimeout(tick, speed);
-    } else {
-      replyTyping = false;
-      footerSend.disabled = false;
-      footerSendRow.classList.add('visible'); // appears fully active
-    }
+
+  function revealSend() {
+    replyTyping = false;
+    footerSend.disabled = false;
+    footerSendRow.classList.add('visible');
   }
-  setTimeout(tick, 0);
+
+  const timer = setInterval(() => {
+    if (target !== draftBubble) { clearInterval(timer); return; } // draft was cleared
+    if (i < text.length) {
+      target.textContent = text.slice(0, ++i);
+      scroll();
+    } else {
+      clearInterval(timer);
+      revealSend();
+    }
+  }, 28);
+
+  // Fallback: guarantee button appears even if interval misfires
+  setTimeout(() => {
+    if (replyTyping && target === draftBubble) {
+      target.textContent = text;
+      scroll();
+      revealSend();
+    }
+  }, text.length * 28 + 1500);
 }
 
 function cycleReply() {
