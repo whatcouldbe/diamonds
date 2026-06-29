@@ -28,44 +28,41 @@
 
     body { display: flex; flex-direction: column; height: 100vh; overflow: hidden; }
 
+    /* ── Header ── */
     header {
-      background: var(--navy);
-      color: white;
-      padding: 0 24px;
-      height: 56px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
+      background: var(--navy); color: white;
+      padding: 0 24px; height: 56px;
+      display: flex; align-items: center; justify-content: space-between;
       flex-shrink: 0;
     }
 
     .logo { display: flex; align-items: center; gap: 10px; font-size: 16px; font-weight: 600; letter-spacing: 0.04em; }
 
     .logo-diamond {
-      width: 20px; height: 20px;
-      background: var(--accent);
+      width: 20px; height: 20px; background: var(--accent);
       clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
     }
 
     .demo-pill {
       font-size: 11px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase;
-      background: rgba(107, 141, 228, 0.2); color: var(--accent);
-      border: 1px solid rgba(107, 141, 228, 0.4);
-      padding: 3px 10px; border-radius: 20px;
+      background: rgba(107,141,228,0.2); color: var(--accent);
+      border: 1px solid rgba(107,141,228,0.4); padding: 3px 10px; border-radius: 20px;
     }
 
     .header-right { display: flex; align-items: center; gap: 12px; }
 
     .btn-ghost {
       background: none; border: 1px solid rgba(255,255,255,0.2);
-      color: rgba(255,255,255,0.65); padding: 5px 12px; border-radius: 6px;
-      cursor: pointer; font-size: 12px; font-family: inherit;
+      color: rgba(255,255,255,0.65); padding: 5px 12px;
+      border-radius: 6px; cursor: pointer; font-size: 12px; font-family: inherit;
     }
     .btn-ghost:hover { background: rgba(255,255,255,0.08); color: white; }
 
+    /* ── Progress ── */
     .progress-bar { height: 2px; background: var(--border); flex-shrink: 0; }
     .progress-fill { height: 100%; background: var(--accent); transition: width 0.4s ease; }
 
+    /* ── Chat ── */
     #chat {
       flex: 1; overflow-y: auto; padding: 32px 24px;
       display: flex; flex-direction: column; gap: 20px; scroll-behavior: smooth;
@@ -91,6 +88,7 @@
     .message.assistant ul { padding-left: 20px; margin-bottom: 10px; }
     .message.assistant li { margin-bottom: 4px; }
 
+    /* ── Typing dots ── */
     .typing {
       display: flex; align-items: center; gap: 5px;
       padding: 14px 18px; background: var(--surface);
@@ -103,32 +101,66 @@
     }
     .typing span:nth-child(2) { animation-delay: 0.18s; }
     .typing span:nth-child(3) { animation-delay: 0.36s; }
+
     @keyframes bounce {
       0%, 80%, 100% { transform: translateY(0); opacity: 0.35; }
       40% { transform: translateY(-5px); opacity: 1; }
     }
 
-    .reply-area {
-      display: flex; flex-direction: column; gap: 8px;
-      align-self: flex-end; max-width: 680px; width: 100%; align-items: flex-end;
-    }
-
-    .reply-label { font-size: 12px; color: var(--text-muted); margin-bottom: 2px; }
-
-    .reply-btn {
-      background: white; border: 1.5px solid var(--border);
-      color: var(--text); padding: 11px 16px; border-radius: 12px; border-bottom-right-radius: 4px;
-      cursor: pointer; font-size: 14px; font-family: inherit; line-height: 1.4;
-      text-align: left; transition: all 0.15s; max-width: 520px;
-    }
-    .reply-btn:hover { border-color: var(--accent); background: #f5f7ff; color: var(--navy); }
-
+    /* ── Footer ── */
     footer {
       background: var(--surface); border-top: 1px solid var(--border);
-      padding: 14px 24px; flex-shrink: 0; text-align: center;
+      padding: 14px 24px 18px; flex-shrink: 0;
     }
-    .footer-note { font-size: 13px; color: var(--text-muted); }
+
+    .input-row {
+      max-width: 728px; margin: 0 auto;
+      display: flex; gap: 10px; align-items: flex-end;
+    }
+
+    #user-input {
+      flex: 1; padding: 11px 16px;
+      border: 1.5px solid var(--border); border-radius: 10px;
+      font-family: inherit; font-size: 15px; line-height: 1.5;
+      resize: none; min-height: 46px; max-height: 160px;
+      background: var(--bg); color: var(--text);
+      overflow-y: auto; transition: border-color 0.15s;
+    }
+
+    #user-input.active {
+      border-color: var(--accent);
+      background: white;
+    }
+
+    #send-btn {
+      width: 46px; height: 46px;
+      background: var(--navy); color: white;
+      border: none; border-radius: 10px;
+      cursor: pointer; font-size: 18px;
+      display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0; transition: background 0.15s;
+    }
+    #send-btn:hover:not(:disabled) { background: var(--navy-light); }
+    #send-btn:disabled { background: var(--border); cursor: not-allowed; }
+
+    .footer-meta {
+      max-width: 728px; margin: 8px auto 0;
+      display: flex; align-items: center; justify-content: space-between;
+    }
+
+    #cycle-btn {
+      background: none; border: none; padding: 0;
+      font-size: 12px; color: var(--accent);
+      cursor: pointer; font-family: inherit;
+      display: none; gap: 4px; align-items: center;
+    }
+    #cycle-btn:hover { text-decoration: underline; }
+
+    .footer-note {
+      font-size: 12px; color: var(--text-muted);
+    }
     .footer-note a { color: var(--accent); text-decoration: none; }
+    .footer-note a:hover { text-decoration: underline; }
 
     #chat::-webkit-scrollbar { width: 5px; }
     #chat::-webkit-scrollbar-thumb { background: var(--border); border-radius: 10px; }
@@ -149,17 +181,23 @@
 <div id="chat"></div>
 
 <footer>
-  <p class="footer-note">
-    This is a scripted demo — a real session adapts to you.
-    To run the live version: <a href="/">open Diamonds with your API key →</a>
-  </p>
+  <div class="input-row">
+    <textarea id="user-input" rows="1" readonly placeholder="Waiting for Diamonds…"></textarea>
+    <button id="send-btn" disabled onclick="sendMessage()">↑</button>
+  </div>
+  <div class="footer-meta">
+    <button id="cycle-btn" onclick="cycleReply()">↕ Try a different reply</button>
+    <p class="footer-note">
+      Scripted demo — a real session adapts to you ·
+      <a href="/">Run a live session →</a>
+    </p>
+  </div>
 </footer>
 
 <script>
 
 // ── Script ─────────────────────────────────────────────────────────────────
-// Branching conversation. Each step has an agent message and replies.
-// Each reply has { text, next } — next is the key of the following step.
+// Branching conversation graph. Each step: { agent, replies: [{text, next}] | null }
 
 const STEPS = {
 
@@ -195,26 +233,12 @@ const STEPS = {
   'offer-support': {
     agent: `That's honest — and it's where most teams are.\n\nBefore another line of code, I'd spend time with five to eight real families — not asking what they want, but watching how they actually navigate meals across a week. What shifts direction isn't confirming the problem exists; it's seeing how people are already solving it.\n\nI can help you design that research, or run a simulation to sharpen your questions first. Which is more useful?`,
     replies: [
-      { text: `A simulation sounds useful — what would that look like?`, next: 'sim-setup' },
       { text: `I'd rather design the real research. What does that involve?`, next: 'research-focus' },
+      { text: `A simulation sounds useful — what would that look like?`, next: 'sim-setup' },
     ]
   },
 
-  // ── Simulation path ───────────────────────────────────────────────────
-
-  'sim-setup': {
-    agent: `I'll play someone who fits your target — a parent in that household — and you run me through your questions as if it's a real interview. Treat it as a rehearsal: it surfaces the assumptions baked into your questions. The surprises that shift direction only come from real people.\n\nTo set it up: what does the family look like, and what do you most want to understand about how they manage meals?`,
-    replies: [
-      { text: `Two working parents, kids between 5 and 12. We want to understand where meal planning breaks down for them.`, next: 'sim-caution' },
-    ]
-  },
-
-  'sim-caution': {
-    agent: `Good framing. One thing before we start: "where it breaks down" is still solution-shaped — it assumes the problem is in the planning. You might find that planning isn't the issue at all; execution is, or shopping, or the negotiation about what everyone will eat. Go in with that openness.\n\nReady when you are — ask your first question.`,
-    replies: null
-  },
-
-  // ── Real research path ────────────────────────────────────────────────
+  // ── Real research path ─────────────────────────────────────────────────
 
   'research-focus': {
     agent: `Good. Before you talk to anyone, nail three things: who you're talking to, what you're trying to learn, and how you'll create conditions for people to tell you something you don't already know.\n\nYou've got the who. What's the single most important thing you don't yet know about how these families manage meals?`,
@@ -235,17 +259,37 @@ const STEPS = {
     replies: null
   },
 
+  // ── Simulation path ────────────────────────────────────────────────────
+
+  'sim-setup': {
+    agent: `I'll play someone who fits your target — a parent in that household — and you run me through your questions as if it's a real interview. Treat it as a rehearsal: it surfaces the assumptions baked into your questions. The surprises that shift direction only come from real people.\n\nTo set it up: what does the family look like, and what do you most want to understand about how they manage meals?`,
+    replies: [
+      { text: `Two working parents, kids between 5 and 12. We want to understand where meal planning breaks down for them.`, next: 'sim-caution' },
+    ]
+  },
+
+  'sim-caution': {
+    agent: `Good framing. One thing before we start: "where it breaks down" is still solution-shaped — it assumes the problem is in the planning. You might find that planning isn't the issue at all; execution is, or shopping, or the negotiation about what everyone will eat. Go in with that openness.\n\nReady when you are — ask your first question.`,
+    replies: null
+  },
+
 };
 
-const MAX_VISITS = 7; // longest path
+const MAX_VISITS = 7;
 
 // ── Engine ─────────────────────────────────────────────────────────────────
 
-let currentStepId = 'open';
-let visitCount = 0;
+let pendingReplies = [];
+let selectedIndex  = 0;
+let visitCount     = 0;
+let agentTyping    = false;
+let replyTyping    = false;
 
-const chat = document.getElementById('chat');
+const chat       = document.getElementById('chat');
 const progressEl = document.getElementById('progress');
+const inputEl    = document.getElementById('user-input');
+const sendBtn    = document.getElementById('send-btn');
+const cycleBtn   = document.getElementById('cycle-btn');
 
 function updateProgress() {
   progressEl.style.width = Math.round((visitCount / MAX_VISITS) * 100) + '%';
@@ -280,11 +324,9 @@ function renderMarkdown(raw) {
     .replace(/&/g, '&amp;')
     .replace(/</g, '&lt;')
     .replace(/>/g, '&gt;');
-
   h = h.replace(/\*\*\*(.+?)\*\*\*/gs, '<strong><em>$1</em></strong>');
   h = h.replace(/\*\*(.+?)\*\*/gs, '<strong>$1</strong>');
   h = h.replace(/\*([^*\n]+?)\*/g, '<em>$1</em>');
-
   return h.split(/\n{2,}/).map(p => {
     p = p.trim();
     if (!p) return '';
@@ -297,7 +339,8 @@ function renderMarkdown(raw) {
   }).filter(Boolean).join('\n');
 }
 
-function typeMessage(text, onDone) {
+function typeAgentMessage(text, onDone) {
+  agentTyping = true;
   const wrap = document.createElement('div');
   wrap.className = 'message-wrap assistant';
   const bubble = document.createElement('div');
@@ -308,7 +351,6 @@ function typeMessage(text, onDone) {
 
   const speed = text.length > 800 ? 5 : text.length > 500 ? 8 : text.length > 300 ? 13 : 18;
   let i = 0;
-
   function tick() {
     if (i < text.length) {
       bubble.textContent = text.slice(0, i + 1);
@@ -319,71 +361,111 @@ function typeMessage(text, onDone) {
       bubble.style.whiteSpace = '';
       bubble.innerHTML = renderMarkdown(text);
       scroll();
+      agentTyping = false;
       if (onDone) setTimeout(onDone, 300);
     }
   }
   setTimeout(tick, 0);
 }
 
-function handleReply(text, nextId) {
-  document.getElementById('reply-wrap')?.remove();
-  addUserMessage(text);
+function typeIntoInput(text, onDone) {
+  replyTyping = true;
+  inputEl.value = '';
+  inputEl.style.height = 'auto';
+  inputEl.classList.add('active');
+  sendBtn.disabled = true;
+
+  let i = 0;
+  const speed = 28; // human typing speed
+
+  function tick() {
+    if (i < text.length) {
+      inputEl.value = text.slice(0, i + 1);
+      // auto-grow
+      inputEl.style.height = 'auto';
+      inputEl.style.height = Math.min(inputEl.scrollHeight, 160) + 'px';
+      i++;
+      setTimeout(tick, speed);
+    } else {
+      replyTyping = false;
+      sendBtn.disabled = false;
+    }
+  }
+  setTimeout(tick, 0);
+}
+
+function cycleReply() {
+  if (replyTyping || agentTyping || pendingReplies.length < 2) return;
+  selectedIndex = (selectedIndex + 1) % pendingReplies.length;
+  typeIntoInput(pendingReplies[selectedIndex].text);
+}
+
+function sendMessage() {
+  if (sendBtn.disabled || pendingReplies.length === 0) return;
+
+  const chosen = pendingReplies[selectedIndex];
+  inputEl.value = '';
+  inputEl.style.height = 'auto';
+  inputEl.classList.remove('active');
+  sendBtn.disabled = true;
+  cycleBtn.style.display = 'none';
+  pendingReplies = [];
+
+  addUserMessage(chosen.text);
   visitCount++;
-  currentStepId = nextId;
   updateProgress();
-  setTimeout(() => showStep(nextId), 600);
+
+  setTimeout(() => showStep(chosen.next), 600);
 }
 
 function showReplies(replies) {
   if (!replies || replies.length === 0) {
-    const wrap = document.createElement('div');
-    wrap.className = 'reply-area';
-    wrap.style.marginTop = '4px';
-    wrap.innerHTML = `<p style="font-size:13px;color:var(--text-muted);text-align:right;">
-      End of demo ·
-      <a href="/" style="color:var(--accent);text-decoration:none;">Run a live session →</a>
-    </p>`;
-    chat.appendChild(wrap);
-    scroll();
+    // End of this path
+    inputEl.placeholder = 'End of demo';
+    inputEl.classList.remove('active');
+    const note = document.createElement('div');
+    note.style.cssText = 'text-align:right;font-size:13px;color:var(--text-muted);max-width:728px;margin:8px auto 0;';
+    note.innerHTML = `End of this path · <a href="/" style="color:var(--accent);text-decoration:none;">Run a live session →</a>`;
+    document.querySelector('footer').appendChild(note);
     return;
   }
 
-  const wrap = document.createElement('div');
-  wrap.className = 'reply-area';
-  wrap.id = 'reply-wrap';
+  pendingReplies = replies;
+  selectedIndex  = 0;
 
-  const label = document.createElement('p');
-  label.className = 'reply-label';
-  label.textContent = replies.length > 1 ? 'Choose a reply' : 'Continue';
-  wrap.appendChild(label);
-
-  replies.forEach(({ text, next }) => {
-    const btn = document.createElement('button');
-    btn.className = 'reply-btn';
-    btn.textContent = text;
-    btn.onclick = () => handleReply(text, next);
-    wrap.appendChild(btn);
-  });
-
-  chat.appendChild(wrap);
-  scroll();
+  cycleBtn.style.display = replies.length > 1 ? 'flex' : 'none';
+  inputEl.placeholder = '';
+  typeIntoInput(replies[0].text);
 }
 
 function showStep(stepId) {
   const entry = STEPS[stepId];
   if (!entry) return;
+
+  inputEl.placeholder = 'Waiting for Diamonds…';
+  inputEl.classList.remove('active');
   showTypingDots();
+
   const thinkTime = entry.agent.length > 500 ? 1400 : 900;
   setTimeout(() => {
     removeTypingDots();
-    typeMessage(entry.agent, () => showReplies(entry.replies));
+    typeAgentMessage(entry.agent, () => showReplies(entry.replies));
   }, thinkTime);
 }
 
 function restartDemo() {
-  currentStepId = 'open';
-  visitCount = 0;
+  pendingReplies = [];
+  selectedIndex  = 0;
+  visitCount     = 0;
+  inputEl.value  = '';
+  inputEl.style.height = 'auto';
+  inputEl.classList.remove('active');
+  inputEl.placeholder = 'Waiting for Diamonds…';
+  sendBtn.disabled = true;
+  cycleBtn.style.display = 'none';
   chat.innerHTML = '';
+  // Remove any appended end-state notes
+  document.querySelectorAll('footer > div:not(.input-row):not(.footer-meta)').forEach(el => el.remove());
   updateProgress();
   setTimeout(() => showStep('open'), 400);
 }
