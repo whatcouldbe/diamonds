@@ -124,7 +124,7 @@
     }
 
     .footer-send-row {
-      display: none;
+      display: flex;
       align-items: center; justify-content: space-between;
       margin-bottom: 10px;
     }
@@ -168,9 +168,9 @@
 <div id="chat"></div>
 
 <footer>
-  <div class="footer-send-row" id="footer-send-row" style="display:none">
+  <div class="footer-send-row" id="footer-send-row">
     <button class="cycle-btn" id="footer-cycle" onclick="cycleReply()" style="visibility:hidden">↕ Try a different reply</button>
-    <button class="send-btn" id="footer-send" onclick="sendDraft()" disabled>Send →</button>
+    <button class="send-btn" id="footer-send" onclick="sendDraft()" disabled style="visibility:hidden">Send →</button>
   </div>
   <p class="footer-note">
     Scripted demo — a real session adapts to you ·
@@ -358,7 +358,7 @@ let draftBubble = null;
 function clearDraft() {
   draftWrap?.remove();
   draftWrap = draftBubble = null;
-  footerSendRow.style.display = 'none';
+  footerSend.style.visibility = 'hidden';
   footerSend.disabled = true;
   footerCycle.style.visibility = 'hidden';
 }
@@ -376,7 +376,7 @@ function typeDraftText(text) {
   function revealSend() {
     replyTyping = false;
     footerSend.disabled = false;
-    footerSendRow.style.display = 'flex';
+    footerSend.style.visibility = 'visible';
   }
 
   const timer = setInterval(() => {
