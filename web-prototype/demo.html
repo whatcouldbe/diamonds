@@ -170,7 +170,7 @@
 <footer>
   <div class="footer-send-row" id="footer-send-row">
     <button class="cycle-btn" id="footer-cycle" onclick="cycleReply()" style="visibility:hidden">↕ Try a different reply</button>
-    <button class="send-btn" id="footer-send" onclick="sendDraft()" disabled style="visibility:hidden">Send →</button>
+    <button class="send-btn" id="footer-send" onclick="sendDraft()" disabled>Send →</button>
   </div>
   <p class="footer-note">
     Scripted demo — a real session adapts to you ·
@@ -358,7 +358,6 @@ let draftBubble = null;
 function clearDraft() {
   draftWrap?.remove();
   draftWrap = draftBubble = null;
-  footerSend.style.visibility = 'hidden';
   footerSend.disabled = true;
   footerCycle.style.visibility = 'hidden';
 }
@@ -367,7 +366,6 @@ function typeDraftText(text) {
   if (!draftBubble) return;
   replyTyping = true;
   footerSend.disabled = true;
-  footerSend.style.visibility = 'hidden';
 
   const target = draftBubble;
   target.textContent = '';
@@ -377,7 +375,6 @@ function typeDraftText(text) {
     if (target !== draftBubble) return;
     replyTyping = false;
     footerSend.disabled = false;
-    footerSend.style.visibility = 'visible';
   }
 
   function tick() {
@@ -391,12 +388,13 @@ function typeDraftText(text) {
     }
   }
 
-  // Hard fallback — always shows button after max typing time
+  // Hard fallback — enables button after max typing time regardless
   setTimeout(() => {
     if (target === draftBubble) {
       target.textContent = text;
       scroll();
-      done();
+      replyTyping = false;
+      footerSend.disabled = false;
     }
   }, text.length * 28 + 2000);
 
