@@ -117,16 +117,18 @@
       min-width: 120px;
     }
 
-    /* ── Footer — always visible, holds Send ── */
+    /* ── Footer ── */
     footer {
       background: var(--surface); border-top: 1px solid var(--border);
-      padding: 12px 24px; flex-shrink: 0;
+      padding: 10px 24px; flex-shrink: 0;
     }
 
-    .footer-send-row {
-      display: flex;
-      align-items: center; justify-content: space-between;
-      margin-bottom: 10px;
+    .footer-note { font-size: 12px; color: var(--text-muted); text-align: center; }
+
+    /* ── Draft actions (inline, below draft bubble) ── */
+    .draft-actions {
+      display: flex; align-items: center; justify-content: space-between;
+      margin-top: 8px;
     }
 
     .cycle-btn {
@@ -144,8 +146,6 @@
     }
     .send-btn:hover:not(:disabled) { background: var(--navy-light); }
     .send-btn:disabled { background: var(--border); cursor: not-allowed; }
-
-    .footer-note { font-size: 12px; color: var(--text-muted); text-align: center; }
     .footer-note a { color: var(--accent); text-decoration: none; }
     .footer-note a:hover { text-decoration: underline; }
 
@@ -168,10 +168,6 @@
 <div id="chat"></div>
 
 <footer>
-  <div class="footer-send-row" id="footer-send-row">
-    <button class="cycle-btn" id="footer-cycle" onclick="cycleReply()" style="visibility:hidden">↕ Try a different reply</button>
-    <button class="send-btn" id="footer-send" onclick="sendDraft()" disabled>Send →</button>
-  </div>
   <p class="footer-note">
     Scripted demo — a real session adapts to you ·
     <a href="/">Run a live session →</a>
@@ -268,11 +264,8 @@ let visitCount     = 0;
 let agentTyping    = false;
 let replyTyping    = false;
 
-const chat          = document.getElementById('chat');
-const progressEl    = document.getElementById('progress');
-const footerSendRow = document.getElementById('footer-send-row');
-const footerSend    = document.getElementById('footer-send');
-const footerCycle   = document.getElementById('footer-cycle');
+const chat       = document.getElementById('chat');
+const progressEl = document.getElementById('progress');
 
 function updateProgress() {
   progressEl.style.width = Math.round((visitCount / MAX_VISITS) * 100) + '%';
@@ -351,21 +344,21 @@ function typeAgentMessage(text, onDone) {
   setTimeout(tick, 0);
 }
 
-// Draft bubble (chat) — actions live in the footer
+// Draft bubble + inline send button
 let draftWrap   = null;
 let draftBubble = null;
+let inlineSend  = null;
+let inlineCycle = null;
 
 function clearDraft() {
   draftWrap?.remove();
-  draftWrap = draftBubble = null;
-  footerSend.disabled = true;
-  footerCycle.style.visibility = 'hidden';
+  draftWrap = draftBubble = inlineSend = inlineCycle = null;
 }
 
 function typeDraftText(text) {
   if (!draftBubble) return;
   replyTyping = true;
-  footerSend.disabled = true;
+  if (inlineSend) inlineSend.disabled = true;
 
   const target = draftBubble;
   target.textContent = '';
@@ -374,7 +367,8 @@ function typeDraftText(text) {
   function done() {
     if (target !== draftBubble) return;
     replyTyping = false;
-    footerSend.disabled = false;
+    if (inlineSend) inlineSend.disabled = false;
+    scroll();
   }
 
   function tick() {
@@ -388,13 +382,13 @@ function typeDraftText(text) {
     }
   }
 
-  // Hard fallback — enables button after max typing time regardless
+  // Hard fallback
   setTimeout(() => {
     if (target === draftBubble) {
       target.textContent = text;
-      scroll();
       replyTyping = false;
-      footerSend.disabled = false;
+      if (inlineSend) inlineSend.disabled = false;
+      scroll();
     }
   }, text.length * 28 + 2000);
 
@@ -408,11 +402,10 @@ function cycleReply() {
 }
 
 function sendDraft() {
-  if (!pendingReplies.length || footerSend.disabled) return;
+  if (!pendingReplies.length || inlineSend?.disabled) return;
   const chosen = pendingReplies[selectedIndex];
   clearDraft();
   pendingReplies = [];
-
   addUserMessage(chosen.text);
   visitCount++;
   updateProgress();
@@ -434,18 +427,35 @@ function showReplies(replies) {
   pendingReplies = replies;
   selectedIndex  = 0;
 
-  // Draft bubble in chat
+  // Draft bubble
   draftWrap = document.createElement('div');
   draftWrap.className = 'draft-wrap';
+
   draftBubble = document.createElement('div');
   draftBubble.className = 'draft-bubble';
   draftWrap.appendChild(draftBubble);
+
+  // Actions row below the bubble (scrolls with content — works on mobile)
+  const actionsEl = document.createElement('div');
+  actionsEl.className = 'draft-actions';
+
+  inlineCycle = document.createElement('button');
+  inlineCycle.className = 'cycle-btn';
+  inlineCycle.textContent = '↕ Try a different reply';
+  inlineCycle.style.visibility = replies.length > 1 ? 'visible' : 'hidden';
+  inlineCycle.onclick = cycleReply;
+  actionsEl.appendChild(inlineCycle);
+
+  inlineSend = document.createElement('button');
+  inlineSend.className = 'send-btn';
+  inlineSend.textContent = 'Send →';
+  inlineSend.disabled = true;
+  inlineSend.onclick = sendDraft;
+  actionsEl.appendChild(inlineSend);
+
+  draftWrap.appendChild(actionsEl);
   chat.appendChild(draftWrap);
   scroll();
-
-  // Prepare footer send row (revealed by typeDraftText when typing finishes)
-  footerCycle.style.visibility = replies.length > 1 ? 'visible' : 'hidden';
-  footerSend.disabled = true;
 
   typeDraftText(replies[0].text);
 }
@@ -471,9 +481,8 @@ function restartDemo() {
   setTimeout(() => showStep('open'), 400);
 }
 
-// Allow Enter key on footer send button
 document.addEventListener('keydown', e => {
-  if (e.key === 'Enter' && !footerSend.disabled && pendingReplies.length) sendDraft();
+  if (e.key === 'Enter' && inlineSend && !inlineSend.disabled && pendingReplies.length) sendDraft();
 });
 
 // ── Start ──────────────────────────────────────────────────────────────────
