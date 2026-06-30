@@ -366,38 +366,41 @@ function clearDraft() {
 function typeDraftText(text) {
   if (!draftBubble) return;
   replyTyping = true;
-  footerSendRow.classList.remove('visible');
   footerSend.disabled = true;
+  footerSend.style.visibility = 'hidden';
 
-  const target = draftBubble; // pin reference — guards against clearDraft mid-loop
+  const target = draftBubble;
   target.textContent = '';
   let i = 0;
 
-  function revealSend() {
+  function done() {
+    if (target !== draftBubble) return;
     replyTyping = false;
     footerSend.disabled = false;
     footerSend.style.visibility = 'visible';
   }
 
-  const timer = setInterval(() => {
-    if (target !== draftBubble) { clearInterval(timer); return; } // draft was cleared
+  function tick() {
+    if (target !== draftBubble) return;
     if (i < text.length) {
       target.textContent = text.slice(0, ++i);
       scroll();
+      setTimeout(tick, 28);
     } else {
-      clearInterval(timer);
-      revealSend();
+      done();
     }
-  }, 28);
+  }
 
-  // Fallback: guarantee button appears even if interval misfires
+  // Hard fallback — always shows button after max typing time
   setTimeout(() => {
-    if (replyTyping && target === draftBubble) {
+    if (target === draftBubble) {
       target.textContent = text;
       scroll();
-      revealSend();
+      done();
     }
-  }, text.length * 28 + 1500);
+  }, text.length * 28 + 2000);
+
+  setTimeout(tick, 0);
 }
 
 function cycleReply() {
