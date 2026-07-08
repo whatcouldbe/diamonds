@@ -148,6 +148,12 @@ But when teaching the method, establish the chain mechanic first. Give each pers
 ### Visual Alignment
 When the full ladder is mapped, HOWs that broadly correspond to WHYs can be organised into loose columns. This creates a visual path from a specific tactic at the bottom, through the directive in the middle, up to a benefit at the top — making the ladder readable as a connected system rather than a scatter of stickies. This is worth doing when the content allows it; don't force alignment that isn't there.
 
+### The HOWs Reveal the Decision the Team Has Already Made
+When you inherit a ladder that has been generated but never resolved — plenty of stickies, no level ever chosen — don't assume the choice is still open. Cluster the HOWs and align them under the WHY clusters they serve. Where the HOWs concentrate is the framing the team has *implicitly* committed to, whether or not anyone said so: solutioning votes with its feet. Read the imbalance both ways. A WHY cluster that everyone endorses but that has almost no HOWs pointing at it has quietly been dropped — often the highest-stakes ambition, abandoned without a decision. Surfacing that gap between what the top of the ladder reaches for and what the bottom actually builds is frequently the most useful thing a review of an existing ladder can produce — and it turns the level-selection discussion from "what could we choose?" into "here's what we've already chosen; did we mean to?"
+
+### Cluster the WHYs to Make a Hidden Fork Decidable
+A single directive can hide two (or more) genuinely different games inside its WHYs — different goals, different success measures, likely different sponsors — tangled together and reading as agreement. Left unclustered, the fork stays invisible and the team proceeds as if aligned when they aren't. Clustering the WHYs by shared meaning is the move that makes the fork *visible and decidable*: it turns an abstract worry ("are we solving two different problems?") into two labelled piles the whole team can point at. Watch especially for a third, ambiguous cluster that commits to neither side — "quality," "reputation," "being trusted." That pile is often what let the fork hide: it sounds like consensus while deciding nothing. When you see it, name it, and force the choice the clustering has exposed.
+
 ### Lead with What It Does, Not What It's Called
 "Abstraction laddering" is a poor introduction to the method. It's the Luma system name, and it's useful in contexts where that naming matters. In any other context — facilitation with clients, training sessions, informal conversations — lead with what the method does: *"We're going to explore the whys and hows of this challenge."* That's immediately accessible. The method name is for navigation; the participant's experience is what counts.
 
@@ -210,4 +216,5 @@ Abstraction laddering lives in **Understanding / Problem Framing**. It is most o
 
 ### Related Methods
 - **How Might We** — also a reframing method, but focused on converting insights into design challenges. Abstraction laddering comes before HMW; HMW typically follows.
+- **Affinity Clustering** — the companion method for making sense of a large or tangled ladder. Step 4 (Share and Cluster) is affinity clustering in miniature; when the ladder is big, the fork is stubborn, or you're reviewing a ladder someone else generated, borrow the fuller discipline — cluster by shared meaning and give each group an insight-statement title (verb-led, one idea) rather than a category label.
 - **Rose/Thorn/Bud** — evaluative rather than framing; surfaces what's working, what's not, and what's emerging. Different purpose, but sometimes used together at project kickoff.
