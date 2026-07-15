@@ -126,6 +126,8 @@ The starters — "In order to..." and "So that..." — are your first line of de
 ### The Level-Selection Discussion Is the Method
 Everything before it is generating material. The real value comes from the team looking at the full ladder together and choosing a level. Don't let the session end without an explicit decision. If the team can't agree, that disagreement is the insight — surface it, name it, and decide how to proceed.
 
+Name an explicit convergence moment when you close — *"this ladder is complete for this phase, and here's the framing we're taking forward."* This matters most when the ladder has been built over time or by a distributed group: without a stated point of completion, the board keeps growing and the decision never gets made (see the *Asynchronous and At Scale* variation).
+
 ### Watch the Language
 The starters are not suggestions — they're guardrails. If a WHY doesn't begin with "In order to..." or "So that...", ask the person to reframe it. If a HOW drops into a specific product or solution, redirect: "Can you say that as an approach rather than a specific answer?" The discipline of staying in the right register is what makes the method work.
 
@@ -146,10 +148,12 @@ WHYs don't form a single line. Multiple independent reasons can exist at the sam
 But when teaching the method, establish the chain mechanic first. Give each person two stickies: their WHY, and the WHY of their WHY. That small chain — one link up — is enough to demonstrate the core movement before expanding to the full tree. Once people understand that each WHY can ladder further, the branching structure becomes intuitive.
 
 ### Visual Alignment
-When the full ladder is mapped, HOWs that broadly correspond to WHYs can be organised into loose columns. This creates a visual path from a specific tactic at the bottom, through the directive in the middle, up to a benefit at the top — making the ladder readable as a connected system rather than a scatter of stickies. This is worth doing when the content allows it; don't force alignment that isn't there.
+When the full ladder is mapped, HOWs that broadly correspond to WHYs can be organised into loose columns. This creates a visual path from a specific tactic at the bottom, through the directive in the middle, up to a benefit at the top — making the ladder readable as a connected system rather than a scatter of stickies. This is worth doing when the content allows it; don't force alignment that isn't there. Aligning the columns also lets the resolved ladder be narrated in order — see *Sequence the Clusters into a Narration*.
 
 ### The HOWs Reveal the Decision the Team Has Already Made
 When you inherit a ladder that has been generated but never resolved — plenty of stickies, no level ever chosen — don't assume the choice is still open. Cluster the HOWs and align them under the WHY clusters they serve. Where the HOWs concentrate is the framing the team has *implicitly* committed to, whether or not anyone said so: solutioning votes with its feet. Read the imbalance both ways. A WHY cluster that everyone endorses but that has almost no HOWs pointing at it has quietly been dropped — often the highest-stakes ambition, abandoned without a decision. Surfacing that gap between what the top of the ladder reaches for and what the bottom actually builds is frequently the most useful thing a review of an existing ladder can produce — and it turns the level-selection discussion from "what could we choose?" into "here's what we've already chosen; did we mean to?"
+
+Trace each HOW cluster upward and check where it lands. Every activity below the directive should connect, at some level, to a strategic WHY above it. Watch for two failures: a HOW that ladders up to nothing strategic (busywork with no end), and — subtler — a HOW that appears to support a high-stakes WHY but actually terminates at an operational cousin one rung below it (for example, "measure quality" laddering to "be a trusted centre of excellence," but never to "make the leadership sessions land"). A strategic WHY that nothing genuinely reaches has been chosen against, whatever the board seems to say.
 
 ### Cluster the WHYs to Make a Hidden Fork Decidable
 A single directive can hide two (or more) genuinely different games inside its WHYs — different goals, different success measures, likely different sponsors — tangled together and reading as agreement. Left unclustered, the fork stays invisible and the team proceeds as if aligned when they aren't. Clustering the WHYs by shared meaning is the move that makes the fork *visible and decidable*: it turns an abstract worry ("are we solving two different problems?") into two labelled piles the whole team can point at. Watch especially for a third, ambiguous cluster that commits to neither side — "quality," "reputation," "being trusted." That pile is often what let the fork hide: it sounds like consensus while deciding nothing. When you see it, name it, and force the choice the clustering has exposed.
@@ -163,8 +167,22 @@ If a project sponsor or stakeholder is in the room, their WHYs often reveal the 
 ### Unclustered Items May Belong Higher on the Ladder
 When items can't be placed in any existing cluster during Share and Cluster, resist the urge to force them in. Unclustered items are often operating at a different level of abstraction — they may belong above the existing clusters as a bridge between themes and the top of the ladder, or as a standalone capstone. Before creating a new cluster for a single item, ask: "Is this item at a higher level than the clusters we have? What is it pointing toward?"
 
+An over-large cluster can be the same problem in reverse: not one theme but a means fused to the end it serves — "cut cost" (a benefit) tangled with "become one coherent capability" (what the cost-cutting is *for*). When a cluster feels heavy, check whether it is stacking two altitudes; if so, split it along that seam and let the higher half rise — sometimes all the way to the capstone.
+
 ### The Capstone and Bridge Node Pattern
 At the top of a well-built ladder, two distinct roles often emerge: a **bridge node** (the mechanism — what needs to happen for everything below it to lead somewhere) and a **capstone** (the ultimate outcome — the final "so that" the whole ladder is pointing toward). These are not the same thing. The bridge node sits just above the themed clusters and connects them; the capstone sits above that and names the final destination. When these two roles are conflated into one item, or when teams treat the bridge as the capstone, the ladder loses its top. Look for both.
+
+### The Clusters Themselves Have Altitude — Band Them
+Once the WHYs and HOWs are clustered, the clusters don't sit at one level — they stack. Above the directive, WHY clusters separate into **strategic** (the ends the work ultimately serves) and **operational** (the nearer benefits of doing it well); below it, HOW clusters separate into **general** (broad approaches) and **specific** (concrete tactics). Name those bands and lay the clusters out in them — benefits above the directive, tactics below — to turn a scatter of clusters into a readable ladder. The capstone and bridge node sit at the top of the strategic band.
+
+### You're Doing Affinity Clustering — Borrow Its Discipline
+Share and Cluster (Step 4) is affinity clustering inside the ladder, so use that method's mechanics rather than improvising. Two in particular. **Cluster size:** a cluster of one is legitimate, and a cluster past roughly eight items is worth interrogating for a second theme (see Affinity Clustering → Handle Edge Cases). **Labelling:** title each cluster as a verb-led insight sentence — one idea, with every claim traceable to a sticky inside it (see Affinity Clustering → Label the Clusters). Don't reduce a cluster to a one-word category ("Cost," "Quality"); that hides the insight the ladder is trying to surface.
+
+### Sequence the Clusters into a Narration
+A resolved ladder isn't only a decision aid — it's something you'll have to talk a sponsor or the wider team through. Order the clusters within each band left to right so the row reads as a short narrative — above the directive, for example: the stakes, then the principle that governs them, then the vehicle that delivers them. Where HOWs correspond to the WHYs above them, line them up in the same order (the Visual Alignment move) so the eye can travel from a tactic, through the directive, up to the benefit it serves. A ladder that narrates is a ladder people remember — and it makes the level-selection discussion easier to hold.
+
+### The Title Isn't Finished Until Its Owner Can Explain It
+Cluster titles are an interpretive layer written over the team's verbatim stickies — and whoever drafts them (a facilitator, or an AI assistant) can quietly overclaim, especially at the capstone, which tends to inflate toward grandiosity. Guard against it by handing each title back to the person responsible and asking them to explain it in their own words. If they can't — if the label doesn't quite sit right, or reaches past what the stickies support — that discomfort is the signal it needs more work, not less. This is Affinity Clustering's accuracy constraint applied to the ladder: every claim in a title should be traceable to a sticky beneath it.
 
 ---
 
@@ -187,6 +205,9 @@ Done individually to prepare a brief, proposal, or project plan. Follow the same
 
 ### Extended Ladder
 Ladder multiple levels up and down to explore more abstract goals or more concrete tactics. Useful when the team is genuinely unsure of the right altitude and needs to see a wider range of framings before deciding.
+
+### Asynchronous and At Scale
+When the team is distributed or too large for one room, run the ladder as a cadence rather than a single session: ask everyone to add their WHYs and HOWs by a deadline; take a pass to cluster and synthesise the result (borrowing the affinity discipline in the facilitation notes); share it back; then invite people to vote on where to focus — dot votes on the clusters or candidate framings — before the group moves on. Generation is distributed, but the synthesis is best done by one or two people so the clustering stays coherent. Close with an explicit convergence moment (see *The Level-Selection Discussion Is the Method*) — otherwise an async board keeps growing and never resolves.
 
 ---
 
