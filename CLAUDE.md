@@ -213,6 +213,7 @@ Method (from Skill Library)  ×  Mode (from Mode Engine)  =  Agent Behavior
 - `hcd-bridge-exercise.md` — The Bridge Exercise: a 3-minute facilitated activity that establishes why teams must explore the problem before developing solutions. Created as a time-efficient alternative to the Vase Exercise (40–45 min). Use to open workshops or introduce HCD.
 - `hcd-mindsets.md` — The six HCD mindsets: visual, imaginative, empathetic, questioning, collaborative, iterative
 - `hcd-double-diamond.md` — Double diamond framework, looking/understanding/making practice structure, research types, diagnostic 2×2
+- `hcd-desirability-viability-feasibility.md` — The three questions every product must answer, in nested order (desirability → viability → feasibility), the multiplication model for why no dimension can be skipped, and the Keeley → Cooper → Dubberly lineage. A diagnostic lens for which dimension is still riding on assumption.
 - `hcd-principles.md` — Eight HCD methodology principles, facilitation guidelines, tone and approach
 
 ### Navigation (`navigation/`)
