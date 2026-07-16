@@ -81,6 +81,8 @@ Stickies capturing what the team doesn't yet know, sorted across three dimension
 
 The most critical questions — the deal-breakers — are promoted onto the poster itself. This zone is the heart of the method's integrity: it is the team saying, in public, "here is what would have to be true, and here is what we still need to find out."
 
+> These three dimensions are the desirability/viability/feasibility trio. For why they matter equally, why the order runs desirability first, and the lineage behind them, see `foundation/hcd-desirability-viability-feasibility.md`.
+
 ### Layer 4 — Feedback (temporary)
 When the poster is shared, reviewers add feedback stickies directly onto it, initialled and placed where they apply. The prompts come from **Critique** and **Rose, Thorn, Bud**:
 - What clarifying questions do you have?
