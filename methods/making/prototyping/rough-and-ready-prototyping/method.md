@@ -50,6 +50,8 @@ A prototype lets you test how something *looks*, how it *works*, and how it *beh
 
 Early in development, desirability is usually the most important thing to test — don't invest in usability refinement until you've validated that people want the thing at all.
 
+> Desirability, viability, and feasibility are the trio at the core of product success. The "test desirability first" rule is that model's ordering applied to prototyping. For the full model — the nested order and why no dimension can be skipped — see `foundation/hcd-desirability-viability-feasibility.md`.
+
 **What prototyping gives you:**
 
 - It brings the idea to life — you stop only *looking* at a concept and start interacting with it
