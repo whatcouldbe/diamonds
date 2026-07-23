@@ -57,7 +57,6 @@ Use these in the introduction — lead with why, not what:
 |---|---|
 | Explain importance | Here's how this is going to work — we'll start with importance, which for this project means [definition] |
 | Explain the process | Someone will place the first item in the middle of the x-axis and then we'll discuss every item by relative importance until we have all items in a single line from left to right |
-| Explain difficulty | Once we have importance complete, we'll do the same for difficulty, which for this project means [definition] |
 | Invite questions | Any questions before we get started? |
 
 ### Execution
