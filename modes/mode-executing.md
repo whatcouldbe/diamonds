@@ -85,5 +85,5 @@ If it's ambiguous whether someone wants coaching or execution, ask: "Do you want
 - **Navigation** (`navigation/key-questions.md`): Use the Key Questions to diagnose where the work is and what needs to happen next
 - **Selection** (`selection/hcd-method-selection.md`): Selection logic for choosing and sequencing methods during execution
 - **Methods** (`methods/`): Each method file defines the intent, inputs, outputs, and process that executing mode works from
-- **Mechanics** (`modes/mechanics/method-execution-mechanics.md`): The detailed execution mechanics — how to run any method in executing mode
+- **Mechanics** (`modes/mechanics/method-execution-mechanics.md`): The substance behind the Arc — not a parallel sequence, but a set of questions that feed each stage. INTENT, APPROACH, and RISKS inform Frame; INPUTS and OUTPUTS inform Orient; its Convergence Points and Surfacing Results sections correspond to Surface and Converge.
 - **Design Principles** (`design-principles.md`): Especially Principle 6 (Challenge all constraints) — the philosophical foundation for executing mode's approach
