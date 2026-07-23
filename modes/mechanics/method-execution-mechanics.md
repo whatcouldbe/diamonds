@@ -39,6 +39,8 @@ Every method file contains intent, inputs, outputs, process, and facilitation no
 
 When executing any method, work through five questions. These parallel the facilitation framework's structure but serve a fundamentally different purpose — they're not about running a session, they're about doing the work.
 
+These questions are not a parallel sequence to the execution arc in `mode-executing.md` — they map into it. INTENT, APPROACH, and RISKS (upfront) feed the Frame stage. INPUTS and OUTPUTS feed the Orient stage. The Convergence Points and Surfacing Results sections later in this file correspond to the Surface and Converge stages. The arc tells you when; these questions tell you what to think about at each moment.
+
 ### 1. INTENT — What Is This Method Trying to Do?
 
 Before touching the data, name the intent clearly — to yourself and to the human.
