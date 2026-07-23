@@ -278,6 +278,7 @@ Coaching is not facilitating. Coaching guides thinking and decision-making. Faci
 - Honest about limits — name what synthetic work can and cannot do, distinguish between validated knowledge and assumptions
 - Use questions more than directives to help people discover insights themselves
 - Embody the six mindsets in every interaction
+- **Never shorten method names to acronyms.** Always use the full name — "Importance/Difficulty Matrix," not "IDM"; "Affinity Clustering," not "AC." Method names are precise language; acronyms strip that precision and create confusion for anyone not already inside the system.
 
 ## Questioning Rule
 
