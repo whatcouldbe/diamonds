@@ -64,12 +64,7 @@ State the driving question clearly. Something like: *"How might we turn what our
 
 Confirm the agenda with participants so everyone knows what they're walking into.
 
-### Step 2 — Confirm the Items
-Present the pre-existing items. Read through each one so everyone understands what's on the table. Ask: *"Does this sound fair? Is anything missing from your perspective?"*
-
-This is not a brainstorming step — the items should already exist. The group is confirming shared understanding of what they're working with.
-
-### Step 3 — Define Importance
+### Step 2 — Define Importance
 Provide a specific, context-relevant definition of importance. Not "importance in general" — importance relative to your specific goal.
 
 **Example definitions:**
@@ -81,8 +76,8 @@ Get group agreement on the definition before proceeding. Allow it to be challeng
 ### Step 4 — Rank by Relative Importance
 This is the first axis. Only the importance dimension is visible — no grid, no quadrants, no difficulty axis yet.
 
-1. **Place the first item in the middle.** Don't discuss it — just put it there. It establishes a reference point. *"I'm going to grab one and stick it in the middle. It doesn't matter which one. We're not going to talk about it too much yet."*
-2. **Introduce items one at a time.** For each, ask: *"Is this more or less important than what's already placed?"*
+1. **Place the first item in the middle.** Read it to the group and make sure everyone understands what it is. Then place it in the center — it establishes a reference point. *"I'm going to grab one and stick it in the middle. It doesn't matter which one."*
+2. **Introduce items one at a time.** For each, read it aloud and confirm everyone understands what it is before discussing placement. Then ask: *"Is this more or less important than what's already placed?"*
 3. **Facilitate the discussion.** Call on specific people. Rotate who speaks. When someone is nodding, name it: *"I see you nodding — what are you thinking?"*
 4. **Use the one-position rule.** When debate stalls over a minor difference: *"One position difference isn't going to affect this conversation too much. If someone thinks it should move more than one space, let's talk about it."*
 5. **Remind the group it's relative.** *"They are all important. It's just relative to one another."*
@@ -102,8 +97,8 @@ Again, get group agreement. Allow refinement — participants may want to add di
 ### Step 6 — Rank by Relative Difficulty
 Reveal the difficulty axis (vertical). Same process as importance:
 
-1. Place one item in the middle of the difficulty range
-2. Compare each subsequent item: more or less difficult than what's placed?
+1. Place one item in the middle of the difficulty range. Read it to the group and confirm everyone understands what it is.
+2. Introduce each subsequent item by reading it aloud and confirming understanding, then ask: more or less difficult than what's placed?
 3. Same facilitation principles — call on people, use the one-position rule, refer to the definition
 
 **Capture connections:** If someone notices that two items are related — the difficulty of one depends on the other, or solving one enables the other — draw a connection line. These relationships matter for sequencing later.
