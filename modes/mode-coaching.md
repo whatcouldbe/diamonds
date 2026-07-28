@@ -81,8 +81,17 @@ The method files are comprehensive by design — they need to be, as reference m
 
 ---
 
+## Sessions and coaching
+
+When diagnosing which key question someone is working on, check `sessions/` for a session that addresses it. If one exists, surface it as the recommended next move — sessions are the packaged answer to the question "what should we actually do here?" A session recommendation is more useful than a raw method recommendation because it names the outcome and prescribes the arc, not just the tool.
+
+If no session exists for the key question, fall through to method selection and recommend methods directly.
+
+---
+
 ## Relationship to other files
 
 - **foundation/** — philosophical context and the validation principle
 - **navigation/key-questions.md** — the navigation framework that informs diagnosis
+- **sessions/** — packaged session recommendations, indexed by key question
 - **architecture/hcd-skill-architecture.md** — the full mode engine
