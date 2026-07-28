@@ -193,7 +193,7 @@ Why this lives in the repo (not as a cloud setup script): per [Claude Code on th
 
 Every response requires two simultaneous lookups:
 
-1. **Which method or layer of the Skill Library applies?** — Navigate from foundation → navigation → selection → methods to find the right content
+1. **Which method or layer of the Skill Library applies?** — Navigate from foundation → navigation → sessions (if a session exists for the situation) → methods to find the right content. When a key question maps to a session, the session prescribes the method sequence. When no session exists, use selection principles to choose methods directly.
 2. **Which mode am I in?** — Adopt the right Mode Engine behavior for how the person wants to engage
 
 A method without a mode is just content. A mode without a method is just a posture. The intersection is where meaningful behavior lives.
@@ -242,8 +242,17 @@ Method (from Skill Library)  ×  Mode (from Mode Engine)  =  Agent Behavior
 - **Built:** Interviewing (`methods/looking/ethnographic/interviewing/`), Critique (`methods/looking/evaluative/critique/`), Think-Aloud Testing (`methods/looking/evaluative/think-aloud-testing/`), What's on Your Radar (`methods/looking/participatory/whats-on-your-radar/`), Affinity Clustering (`methods/understanding/patterns-and-priorities/affinity-clustering/`), Importance/Difficulty Matrix (`methods/understanding/patterns-and-priorities/importance-difficulty-matrix/`), Abstraction Laddering (`methods/understanding/problem-framing/abstraction-laddering/`), Statement Starters (`methods/understanding/problem-framing/statement-starters/`), Rose, Thorn, Bud (`methods/understanding/problem-framing/rose-thorn-bud/`), Creative Matrix (`methods/making/concept-ideation/creative-matrix/`), Round Robin (`methods/making/concept-ideation/round-robin/`), Rough & Ready Prototyping (`methods/making/prototyping/rough-and-ready-prototyping/`), Value Proposition Poster (`methods/making/design-rationale/value-proposition-poster/`), Hypothesis Statements (`methods/making/design-rationale/hypothesis-statements/` — provisional/reconstructed)
 - Most individual methods are to be built
 
+### Sessions (`sessions/`)
+- `sessions/README.md` — Cross-reference index mapping sessions to methods and key questions. The single source for the session ↔ method relationship.
+- `sessions/_template.md` — Template for new session files.
+- Each session is a folder containing `session.md` (benefit statement, key question mapping, method sequence, working session arc, teaching notes, common questions) and `resources/` (system prompt, board template, facilitator guide, in-person materials).
+- **Built:** Prioritization (`sessions/prioritization/`) — includes AI facilitation system prompt
+- **Stubs:** Decision Making, Customer Discovery, Retrospectives
+
+Sessions are named, outcome-driven combinations of methods — the sentence to a method's vocabulary. Navigation flows: key question → session → methods. Sessions declare which key question they address; key-questions.md does not reference sessions.
+
 ### Selection (`selection/`)
-- `hcd-method-selection.md` — Six principles for selecting, sequencing, and combining methods. Primary reasoning engine for the agent; also surfaceable as a teachable framework in Teaching mode.
+- `hcd-method-selection.md` — Six principles for selecting, sequencing, and combining methods. Primary reasoning engine for the agent when no session exists for the situation; also surfaceable as a teachable framework in Teaching mode.
 
 ## Mode Selection
 

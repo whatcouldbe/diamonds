@@ -37,11 +37,21 @@ Philosophy, mindsets, double diamond framework, diagnostic 2×2, validation prin
 **`navigation/key-questions.md`**
 Process checkpoints that guide teams through innovation work. Tool-agnostic. Helps determine which methods to apply and when it's safe to move forward vs. when to iterate.
 
-### Layer 3 — Selection
-**`selection/hcd-method-selection.md`**
-The reasoning engine for choosing methods — six principles for selecting, sequencing, and combining methods based on where someone is in their process. Bridges the navigation layer and individual method skills. Used as internal reasoning in Coaching/Facilitating/Executing modes, and as a teachable framework in Teaching mode.
+### Layer 3 — Sessions
+**`sessions/`**
+Named, outcome-driven combinations of methods — the sentence to a method's vocabulary. Sessions bridge key questions and methods: when a key question maps to a session, the session prescribes the method sequence, the working arc, and the facilitation approach. Sessions also carry teaching notes and resources for deploying the session in different contexts.
 
-### Layer 4 — Method Classification & Recommendation System
+Navigation flows: key question → session → methods. Sessions declare which key question they address; key-questions.md does not reference sessions. The `sessions/README.md` is the cross-reference index for the session ↔ method relationship.
+
+When a key question has no matching session yet, fall through to Layer 4 (Selection).
+
+**Current sessions:** Prioritization (active), Decision Making (stub), Customer Discovery (stub), Retrospectives (stub)
+
+### Layer 4 — Selection
+**`selection/hcd-method-selection.md`**
+The reasoning engine for choosing methods when no session exists for the situation — six principles for selecting, sequencing, and combining methods based on where someone is in their process. Also surfaceable as a teachable framework in Teaching mode.
+
+### Layer 5 — Method Classification & Recommendation System
 
 **The architecture matters more than any specific method.**
 
@@ -183,7 +193,10 @@ Method (from Skill Library)  ×  Mode (from Mode Engine)  =  Agent Behavior
 | Facilitation Mechanics | `modes/mechanics/method-facilitation-mechanics.md` | Active | Mechanics for facilitation mode — method mechanics framework |
 | Execution Mechanics | `modes/mechanics/method-execution-mechanics.md` | Active | Mechanics for execution mode |
 | Participation Mechanics | `modes/mechanics/method-participation-mechanics.md` | Active | Mechanics for participation mode |
-| Method Selection | `selection/hcd-method-selection.md` | Active | Six principles for selecting, sequencing, and combining methods — Layer 3 reasoning engine |
+| Sessions Index | `sessions/README.md` | Active | Cross-reference index — sessions ↔ methods, sessions ↔ key questions |
+| Sessions Template | `sessions/_template.md` | Active | Template for new session files |
+| Prioritization Session | `sessions/prioritization/` | Active | Working session arc, teaching notes, system prompt — Layer 3 |
+| Method Selection | `selection/hcd-method-selection.md` | Active | Six principles for selecting, sequencing, and combining methods — Layer 4 reasoning engine (used when no session exists) |
 | Affinity Clustering | `methods/understanding/patterns-and-priorities/affinity-clustering/` | Active | Synthesis method — Understanding / Patterns & Priorities (method.md, mechanics.md, teaching.md, resources/) |
 | Importance / Difficulty Matrix | `methods/understanding/patterns-and-priorities/importance-difficulty-matrix/` | Active | Prioritization method — Understanding / Patterns & Priorities (method.md, mechanics.md, teaching.md, resources/) |
 | Abstraction Laddering | `methods/understanding/problem-framing/abstraction-laddering/` | Active | Problem framing method — Understanding / Problem Framing (method.md, mechanics.md, teaching.md, resources/) |
@@ -205,3 +218,4 @@ Method (from Skill Library)  ×  Mode (from Mode Engine)  =  Agent Behavior
 | Mar 2026 | Mode 05 Coaching added as default mode; mode frameworks extracted to separate files; Facilitating/Coaching distinction clarified; Executing updated to include simulation; file manifest added |
 | Mar 2026 | Migrated to whatcouldbe/diamonds repo; foundation split into four files; file manifest updated with new paths |
 | May 2026 | Layer 3 (Method Selection) shipped — six principles for selecting, sequencing, and combining methods. Mode-vocab and key-question-number rules refined in CLAUDE.md and propagated across architecture and navigation files. Practice-area-to-stage mapping made explicit (Discover/Define/Develop/Deliver). Mode numbering dropped from this file — historical artifact, not load-bearing. |
+| Jul 2026 | Sessions layer added as new Layer 3 — named, outcome-driven method combinations. Method Selection renumbered to Layer 4. Navigation flow updated: key question → session → methods (fall through to selection when no session exists). Four sessions scoped: Prioritization (active), Decision Making / Customer Discovery / Retrospectives (stubs). |
