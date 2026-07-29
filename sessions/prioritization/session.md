@@ -5,7 +5,7 @@ time: 45–60 min
 participants: 4–8
 files:
   - session.md (this file)
-  - resources/system-prompt.md — AI facilitation prompt
+  - resources/facilitation-system-prompt.md — AI facilitation prompt
   - resources/board-template.md — not yet created
   - resources/facilitator-guide.md — not yet created
 ---

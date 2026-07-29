@@ -245,7 +245,7 @@ Method (from Skill Library)  ×  Mode (from Mode Engine)  =  Agent Behavior
 ### Sessions (`sessions/`)
 - `sessions/README.md` — Cross-reference index mapping sessions to methods and key questions. The single source for the session ↔ method relationship.
 - `sessions/_template.md` — Template for new session files.
-- Each session is a folder containing `session.md` (benefit statement, key question mapping, method sequence, working session arc, teaching notes, common questions) and `resources/` (system prompt, board template, facilitator guide, in-person materials).
+- Each session is a folder containing `session.md` (benefit statement, key question mapping, method sequence, working session arc, teaching notes, common questions) and `resources/` (`[mode]-system-prompt.md` files, board template, facilitator guide, in-person materials).
 - **Built:** Prioritization (`sessions/prioritization/`) — includes AI facilitation system prompt
 - **Stubs:** Decision Making, Customer Discovery, Retrospectives
 
