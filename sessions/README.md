@@ -30,7 +30,7 @@ sessions/
 
 **`resources/`** — Supplementary materials for running, teaching, or deploying the session:
 - `board-template.md` — digital workspace setup (Miro, Mural, FigJam)
-- `system-prompt.md` — AI facilitation prompt for deploying the session as an agent
+- `[mode]-system-prompt.md` — AI system prompt for deploying the session in a specific mode (e.g., `facilitation-system-prompt.md`, `coaching-system-prompt.md`)
 - `facilitator-guide.md` — condensed run sheet for live facilitation
 - `materials.md` — in-person delivery checklist (printed templates, room setup)
 

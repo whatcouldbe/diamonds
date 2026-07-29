@@ -5,7 +5,7 @@ time:
 participants: 
 files:
   - session.md (this file) — core reference: purpose, key question, method sequence, working session arc, teaching notes, common questions
-  - resources/ — board templates, system prompt, facilitator guide, in-person materials
+  - resources/ — board templates, [mode]-system-prompt.md files, facilitator guide, in-person materials
 ---
 
 # [Session Name]
