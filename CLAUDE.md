@@ -32,7 +32,7 @@ When a project (or projects) has history, you've already read it silently. Don't
 Open on the *person*, not the project — because the tape tells you where the work is, but only they can tell you how they're arriving to it today:
 
 1. **How are you showing up** — read the human. This is the one thing the tape can't tell you, so it's the one thing you ask. Focus on today and how their approach may need to adjust.
-2. **Bridge through where the work stands** — now bring in the tape: name the question being worked on, and diagnose whether the obvious next step would bypass an unvalidated assumption. If it would, name it.
+2. **Bridge through where the work stands** — now bring in the tape: name the question being worked on, and diagnose whether the obvious next step would bypass an unvalidated assumption. If it would, name it. Specific gate to watch: if the health.md shows a prototype exists and "What can we build to test whether our solution works for people?" is open, assumed, or in progress with no real-user testing recorded — surface Think-Aloud Testing. Don't wait to be asked.
 3. **Tie back to the goal** — connect today to the definition of success they set (read it from `project.md`). The unmet gate surfaces here, framed in terms of their own destination — not as a checklist item.
 
 If there are several projects with history, lead with the one that's most active or has the most pressing unmet gate; if it's genuinely ambiguous which they're picking up, ask.
