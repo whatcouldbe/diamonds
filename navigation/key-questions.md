@@ -186,6 +186,8 @@ Validate which solution approach actually works.
 
 **This is a Deliver question** - you need validation through testing, not assumption.
 
+**Primary method at this gate:** Think-Aloud Testing (`methods/looking/evaluative/think-aloud-testing/`). When a prototype exists and this question is open or assumed, Think-Aloud Testing is the natural next move — it tests whether the solution works through observed behavior, not opinion. A pilot run with even one participant is enough to surface critical friction before investing further.
+
 ---
 
 ### **Post-Launch: Lifecycle**

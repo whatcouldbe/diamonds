@@ -150,6 +150,17 @@ The participant records their own screen and voice from a written brief, in thei
 ### Rough prototype vs. live experience
 Most often run on a rough prototype (the natural pairing with Rough & Ready Prototyping). But the same method works on an existing experience or a shipping product — anywhere you want to see real use rather than collect opinion.
 
+### Pilot run (single participant)
+When you need signal quickly before investing further, a single participant is enough to surface critical friction. This is especially useful after a first prototype build — a one-person pilot often reveals the one thing that needs to change before anything else. Frame it explicitly as a pilot: the goal isn't pattern confirmation (that requires 6–8), it's identifying blockers and quick wins to iterate before the next round.
+
+The "I didn't make this" move is harder when the participant is also the product owner or designer. Name the limitation and run it anyway — a product owner narrating their own prototype still surfaces flow breaks, missing context, and moments of hesitation that the builder can't see. The signal is real, just not the same as external validation.
+
+### Transcription-based capture
+When a participant can speak their thoughts while you listen via text (transcription service, voice-to-text, or async audio), you can run an effective moderated session without screen recording. The moderator reads the transcript in near-real-time and captures findings as they appear. Works well when the participant is remote or using the artifact on their own device. The lack of screen capture is a tradeoff — you lose what they clicked; you keep what they said.
+
+### Stage-organized synthesis
+When testing a sequential artifact (a step-by-step flow, a co-pilot, a facilitation guide), organize findings by stage rather than by type. Instead of a flat list of thorns and roses, map each finding to the stage it came from. This makes the findings immediately actionable — you know exactly which screen or step to fix — and prevents the common mistake of fixing the last thing you heard instead of the most critical thing you found.
+
 ---
 
 ## Outputs
