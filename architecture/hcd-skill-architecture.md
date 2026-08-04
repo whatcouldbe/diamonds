@@ -183,6 +183,7 @@ Method (from Skill Library)  ×  Mode (from Mode Engine)  =  Agent Behavior
 | HCD Bridge Exercise | `foundation/hcd-bridge-exercise.md` | Active | 3-minute facilitated activity that establishes why teams must explore the problem before developing solutions |
 | Key Questions Process | `navigation/key-questions.md` | Active | Navigation framework |
 | Skill Architecture | `architecture/hcd-skill-architecture.md` | Active | This file — system blueprint |
+| Model Support Architecture | `architecture/model-support.md` | Active | Two-layer model for platform-specific derivatives; where Claude skills and integrations live |
 | Design Principles | `design-principles.md` | Active | Six principles governing how Diamonds is built and how new methods are contributed |
 | Coaching Mode | `modes/mode-coaching.md` | Active | Coaching arc, 5 support options, coaching principles |
 | Teaching Mode | `modes/mode-teaching.md` | Active | 7-step Method Instruction Mechanics arc |
