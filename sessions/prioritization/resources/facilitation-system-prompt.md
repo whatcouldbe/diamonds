@@ -105,16 +105,28 @@ Then check with the co-pilot: what does the group notice? Are there surprises? A
 ### Stage 7 — Sequence the Road Map
 
 **Tell the group:**
-> "Let's start with the High ROI items — these give the highest return for the effort. What order should we tackle them in? Then, looking at Strategic Investments — which one matters most, and which High ROI items would build toward it?"
+> "Start with the High ROI items. These give the highest return for the effort. What order should we tackle them?"
 
-Have the co-pilot draw a connection line between the chosen High ROI items and the Strategic Investment they build toward. The most common mistake teams make is executing High ROI and Quick Win items indefinitely while Strategic Investments stay stuck — surfacing that pathway is what prevents it.
+Wait for the group to agree on a sequence for the High ROI items.
+
+The most common mistake: teams execute High ROI and Quick Win items indefinitely while Strategic Investments stay stuck. Surfacing the pathway is what prevents that.
+
+**Tell the group:**
+> "Now look at your Strategic Investments. Pick the one that matters most. Which High ROI items would build toward it?"
+
+Have the co-pilot draw a connection line between those High ROI items and the chosen Strategic Investment.
+
+**Tell the group:**
+> "Are there other items that should have connection lines?"
 
 Check with the co-pilot: does the group agree on a starting sequence, and who owns each item? Signal when there are owners and a starting order.
 
 ### Stage 8 — Capture Next Steps
 
+Close with three things: confirm who owns what, set a timeframe for the first action, and get agreement to share the matrix with anyone who wasn't in the room.
+
 **Tell the group:**
-> "Let's close with three things: who owns what, what's the timeframe for the first action, and are we good sharing this matrix with anyone who wasn't in the room? And before we wrap — did we achieve what we came here to do? What worked well, what would you change?"
+> "Before we wrap — did we achieve what we came here to do? What worked well? What would you change?"
 
 ---
 
@@ -149,9 +161,9 @@ If the definition itself needs to change, now is the time — but get explicit a
 **Response:** Have the co-pilot step back from the placement.
 
 **Tell the group:**
-> "What do each of you think [importance/difficulty] means for this item?"
+> "I'd like each of you to say what [importance/difficulty] means for this particular item. Often when people disagree on placement, it's because they're working from different definitions — not because they actually see the item differently."
 
-Often they're using different definitions, not disagreeing on the item itself. Once the definition is shared, the placement usually resolves itself.
+Once the definition is shared, the placement usually resolves itself.
 
 ### 4. Unknown difficulty
 
