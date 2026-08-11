@@ -52,12 +52,16 @@ Use these in the introduction — lead with why, not what:
 | State the purpose | I'd like to understand [what you're exploring]. Your perspective will directly inform how we approach this. |
 | Set expectations | This should take about [time]. There are no right or wrong answers — I'm just interested in hearing about your experience. |
 
+**Scripted example** (combine the steps above into a natural opening):
+
+> "Thanks for taking the time to speak with me today. We're doing a short series of interviews to understand [what you're exploring] — what's actually happening, what's in the way, and what would make [the outcome] genuinely useful rather than just interesting. This is a conversation; there are no right answers. The more specific and honest you can be, the more useful it is for us."
+
 ### Instructions
 
 | Step | What to say |
 |---|---|
+| Confirm time | Is [time commitment] still OK for you? |
 | Ask for permission to record | Would you be willing to let me record our conversation? It's just for me to refer back to during synthesis. You may hear me typing notes as well. |
-| Confirm time | Is [time commitment] still OK? |
 | Invite questions | Any questions before we get started? |
 
 ### Execution
@@ -69,6 +73,7 @@ Use these in the introduction — lead with why, not what:
 | Pain points | Ask about struggles and frustrations: *"What's the most frustrating thing about [topic]?"* *"Where do things break down?"* |
 | Specific instance | Ask about a specific recent moment: *"Tell me about the last time you [did this thing]."* Use sub-questions to probe: What were you trying to accomplish? How did it go? What helped? What got in the way? |
 | Topic deep-dives | Move into specific topic areas as needed. Signal transitions: *"Let's talk about [next topic]..."* |
+| Branch when needed | Protocols rarely survive contact with a real interviewee unchanged. Build in explicit branch logic for common divergence points — e.g. "if they don't currently use [X], skip Q4 and go straight to Q5." State what to skip and where to go, not just what to ask. |
 | Magic button | *"If you could push a button and change one thing about [this], what would it do?"* Follow up: *"Why is that important?"* |
 | Why | Throughout — use "why" to move from what people do to why they do it. This is the probe that turns surface answers into insights about underlying motivations. |
 
@@ -85,11 +90,11 @@ Use these in the introduction — lead with why, not what:
 
 | Step | What to do |
 |---|---|
-| Debrief immediately | Within 15 minutes of the interview, capture your top-of-mind observations, surprising moments, and gut reactions. These fade fast. |
+| Debrief immediately | Within 15 minutes of the interview, capture your top-of-mind observations, surprising moments, and gut reactions. These fade fast. Don't skip this even when you're back-to-back. |
 | Clean up notes | Fill in gaps while memory is fresh. Highlight key quotes verbatim. |
+| Share as you go | Share key quotes and emerging patterns with the team after each interview — don't wait until all interviews are complete. Early sharing surfaces alignment gaps and can shape subsequent interviews. |
+| Iterate the protocol | If early interviews reveal new topics or better questions, update the protocol for subsequent interviews. A protocol should improve as you learn. |
 | Synthesize across interviews | After 3–5 interviews, begin affinity clustering to identify emerging themes. |
-| Iterate the protocol | If early interviews reveal new topics or better questions, update the protocol for subsequent interviews. |
-| Share raw insights | Share key quotes and emerging patterns with the team — don't wait until all interviews are complete. |
 
 ---
 
