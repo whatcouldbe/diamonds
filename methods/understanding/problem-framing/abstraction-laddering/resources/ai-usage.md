@@ -67,6 +67,30 @@ The AI-generated ladder is a starting point, not a finished product. Use it in o
 
 ---
 
+## Synthesising an Existing Ladder
+
+The prompt above *generates* a ladder from a directive. The opposite — being handed a ladder that already exists and making sense of it — is just as common, and a distinct AI use. A populated, multi-contributor board (often exported to a PDF or image) where generation happened but the decision never did is raw material, not a result. Synthesising it turns a wall of stickies into a decision the team can actually make.
+
+This is not a new set of moves. It is the method's own facilitation notes run as one deliberate pass — follow them in order, and lean on the sections named rather than re-deriving them:
+
+1. **Transcribe verbatim.** Read every sticky exactly as written, with its author, and reconcile the count against the source's own totals before going further — a synthesis built on a miscount is worse than none. Never paraphrase: the team's words are the evidence every later claim traces back to.
+
+2. **Cluster by shared meaning, and label with discipline.** This is affinity clustering inside the ladder (method.md → *You're Doing Affinity Clustering — Borrow Its Discipline*). Non-negotiable: each cluster title is a **verb-led insight sentence — one idea, every claim traceable to a sticky beneath it** — never a one-word category ("Support," "Format"). A terse category label is the single most common failure of an AI synthesis; it hides the very insight the clustering exists to surface (Affinity Clustering → *Label the Clusters*; method.md → *The Title Isn't Finished Until Its Owner Can Explain It*).
+
+3. **Band by altitude.** Separate the WHY clusters into strategic and operational and the HOW clusters into general and specific, and look for the capstone and bridge node at the top (method.md → *The Clusters Themselves Have Altitude — Band Them*, *The Capstone and Bridge Node Pattern*).
+
+4. **Align HOWs under the WHYs they serve.** Altitude is the vertical axis; narrative order is the horizontal one — they are independent, so columns can be aligned for narration without disturbing the bands. Line each HOW cluster beneath the WHY it serves and order the columns left-to-right as a short story (method.md → *Visual Alignment*, *Sequence the Clusters into a Narration*).
+
+5. **Read the imbalance — this is the point.** Where the HOWs concentrate is the framing the team has *already* chosen, said or not; a WHY everyone endorses but no HOW points at has been quietly abandoned, and that gap is usually the sharpest finding on the board (method.md → *The HOWs Reveal the Decision the Team Has Already Made*, *Cluster the WHYs to Make a Hidden Fork Decidable*).
+
+6. **Flag AI-authored stickies for a human owner.** Where some of the raw stickies were themselves AI-generated — an increasingly common hybrid — say so plainly and treat them as provocations that need a human owner who can explain each, not as team consensus (see *What AI Does Not Do* below and the *Transparency Note*).
+
+The output is a decision aid, not the decision: it makes the fork and the gaps visible and *decidable*, but level selection still belongs to the team.
+
+**Where the synthesis goes matters as much as what it says.** Render it back into the team's own working board, in the ladder's native format, on a copy of the frame — not into a separate document, a different tool, or a differently-shaped diagram off to the side. A synthesis that lives somewhere inconsistent with how the team sees and talks about the work is a synthesis they will not adopt. The `render-synthesis-to-board` capability covers how to do this faithfully.
+
+---
+
 ## What AI Does Well Here
 
 - **Generates a full branching structure, not just a linear ladder.** In human facilitation, the single-path ladder is a practical constraint — sticky notes, wall space, cognitive load. AI isn't bound by those constraints. When executing this method, AI should generate multiple WHYs from the directive in parallel, branch further WHYs from each of those, and do the same going down with HOWs. The result is a complete map of the problem space before any level is chosen — which is what the method is actually trying to produce. The linear version is a workaround; the branching version is the intent.
