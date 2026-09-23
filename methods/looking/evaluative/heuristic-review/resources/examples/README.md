@@ -11,9 +11,10 @@ provenance: grounded
 |---|---|---|
 | `case-study-company-scorecard.md` | How a company built its own scorecard, calibrated it on a public checkout (14 / 20), and baselined an internal tool (4 / 20) | Grounded, anonymized client work |
 | `illustrative-findings.md` | Synthetic multi-reviewer findings table, and weak vs. strong issue notes | Reconstructed, format only |
+| `expert-review-demo/` | Worked demo of the guided expert review against LUMA's ten: a synthetic walkthrough transcript of a fictional banking app, the report produced from it (12 / 20), and a re-score of the next version (17 / 20) | Reconstructed, synthetic; shows format and facilitation moves, not evidence the approach works |
 
 The case study sets the **quality bar** for scoring: every score carries a specific, observable reason, strengths are recorded alongside problems, and the total is a baseline to re-score against.
 
 **Client material stays out of this repo.** Client scorecards and completed client reviews live in the client's own deployment. Examples here are anonymized and paraphrased.
 
-**Still wanted:** a completed review of a public product using Nielsen's or LUMA's ten; a multi-reviewer session board; a before/after re-score pair.
+**Still wanted:** a completed review of a public product using Nielsen's or LUMA's ten; a multi-reviewer session board; a real before/after re-score pair (the expert review demo has a synthetic one).

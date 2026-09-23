@@ -192,7 +192,7 @@ Published heuristics describe what is objectively good in experience design. But
 ## Variations
 
 ### Expert think-aloud review
-*Practitioner's design, not yet run.* A close cousin of Think-Aloud Testing. Instead of a user narrating, an **expert reviewer** narrates: they walk a flow with the heuristics reference beside them and talk through what they see, which heuristic applies, and whether it's met, while recording the screen. A facilitator (a person or the agent) prompts them about specific heuristics on specific screens. Afterward, the transcript is sorted by heuristic, the main issues are highlighted, and the flow is scored. This removes the mechanical overhead of writing, tagging, and placing notes, so the reviewer can focus on reviewing. See `resources/ai-usage.md`.
+*Practitioner's design. The agent-facilitated version is built but not yet field-tested.* A close cousin of Think-Aloud Testing. Instead of a user narrating, an **expert reviewer** narrates: they walk a flow with the heuristics reference beside them and talk through what they see, which heuristic applies, and whether it's met, while recording the screen. A facilitator (a person or the agent) prompts them about specific heuristics on specific screens. Afterward, the transcript is sorted by heuristic, the main issues are highlighted, and the flow is scored. This removes the mechanical overhead of writing, tagging, and placing notes, so the reviewer can focus on reviewing. The agent's prompt is `resources/facilitation-system-prompt.md`, the report template is `resources/templates/expert-review-report.md`, and a worked demo is in `resources/examples/expert-review-demo/`. See `resources/ai-usage.md`.
 
 ### Everyday experience review
 *Practitioner (a colleague's workshop exercise).* In a workshop or conference, give people the heuristics and send them to review an everyday, non-screen experience, such as the lunch line. Does it anticipate the needs of people with dietary restrictions? Does the order of plates and cutlery match how people expect to move through a line? Playful, and it proves the heuristics apply beyond screens.
@@ -231,5 +231,5 @@ Practitioner-verified in September 2026. What would still strengthen it:
 1. **A multi-reviewer synthesis, observed.** Steps 9 to 11 for a team session (pooling, deduplicating, agreeing scores) are still inferred.
 2. **Real timing.**
 3. **The Eye-Spy example set.** The full set of 10 to 12 images and which heuristic each teaches (only one frame was located).
-4. **The expert think-aloud review, run.** It's the practitioner's design and hasn't been tried yet.
+4. **The expert think-aloud review, run.** The agent-facilitated version is built (`resources/facilitation-system-prompt.md`) and demonstrated on a synthetic transcript, but hasn't been run with a real expert reviewer yet.
 5. **A public worked example.** A completed review of a public product using Nielsen's or LUMA's ten, to set the quality bar without client material.
