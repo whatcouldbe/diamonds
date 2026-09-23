@@ -9,7 +9,8 @@ provenance: grounded
 
 | File | What it is | Grounding |
 |---|---|---|
-| `heuristics-reference.md` | One-page reference sheet for the LUMA ten, for reviewers to keep beside them | Grounded, paraphrased from LUMA reference guide |
+| `scorecard-template.md` | Generic scorecard for any heuristic set (No / Somewhat / Yes), plus how to build a company scorecard | Grounded, practitioner and anonymized case study |
+| `heuristics-reference.md` | Reviewer reference sheets for LUMA's ten and Nielsen's ten | Grounded, paraphrased |
 | `review-board.md` | Board layout: task columns, issue notes, pooling and severity | Grounded in LUMA template (review stage); synthesis stage reconstructed |
 | `authoring-heuristics.md` | Worksheet for writing domain-specific heuristics, plus a scored self-assessment | Grounded in What Could Be client kits (anonymized) |
 

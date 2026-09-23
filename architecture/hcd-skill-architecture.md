@@ -205,7 +205,7 @@ Method (from Skill Library)  ×  Mode (from Mode Engine)  =  Agent Behavior
 | Rose, Thorn, Bud | `methods/understanding/problem-framing/rose-thorn-bud/` | Active | Codification method — Understanding / Problem Framing (method.md, mechanics.md, teaching.md, resources/) |
 | Statement Starters | `methods/understanding/problem-framing/statement-starters/` | Active | Problem framing method — Understanding / Problem Framing (method.md, mechanics.md, teaching.md, resources/) |
 | Critique | `methods/looking/evaluative/critique/` | Active | Evaluative feedback method — Looking / Evaluative (method.md, mechanics.md, teaching.md, resources/) |
-| Heuristic Review | `methods/looking/evaluative/heuristic-review/` | Provisional | Evaluative inspection method: Looking / Evaluative (method.md, mechanics.md, teaching.md, resources/). Reconstructed from LUMA materials, client kits, and published research |
+| Heuristic Review | `methods/looking/evaluative/heuristic-review/` | Active | Evaluative inspection method: Looking / Evaluative (method.md, mechanics.md, teaching.md, resources/). Built from a practitioner teaching session, the What Could Be scorecard, LUMA materials, client kits, and published research |
 | Interviewing | `methods/looking/ethnographic/interviewing/` | Active | Ethnographic research method — Looking / Ethnographic (method.md, mechanics.md, teaching.md, resources/) |
 | What's on Your Radar | `methods/looking/participatory/whats-on-your-radar/` | Active | Participatory research method — Looking / Participatory (method.md, mechanics.md, teaching.md, resources/) |
 | Round Robin | `methods/making/concept-ideation/round-robin/` | Active | Concept ideation method — Making / Concept Ideation (method.md, mechanics.md, teaching.md, resources/) |

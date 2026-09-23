@@ -15,7 +15,10 @@ Heuristic evaluation was introduced by **Jakob Nielsen and Rolf Molich** in 1990
 
 **LUMA Institute** adapted the method as **Heuristic Review**, part of the Looking / Evaluative Research category of the LUMA System, with its own ten heuristics broadened beyond software to "a product, service, presentation, or policy." This is the version What Could Be teaches, and the name Diamonds uses.
 
-**What Could Be** has extended the method with **authored heuristics**: short, domain-specific rules of thumb written by a team for a context where usability heuristics don't fit (for example, evaluating the quality of learning experiences, or the readiness of innovation program submissions). These kits are client work and are referenced here in anonymized form only.
+**What Could Be** has extended the method in three ways:
+- **Scoring**: turning a review into a score (No / Somewhat / Yes per heuristic) to measure design quality and re-score after changes, borrowing the idea of a single comparable number from the System Usability Scale. Clients have built their own scorecards this way; see the anonymized case study in `examples/` and `templates/scorecard-template.md`.
+- **Authored heuristics**: design principles written for a specific project or domain (for example, the quality of learning experiences, or the readiness of innovation program submissions). Client kits are referenced here in anonymized form only.
+- **Agent-facilitated expert review**: designed in the practitioner teaching session (September 2026), not yet built. See `ai-usage.md`.
 
 ## Primary sources
 
@@ -44,6 +47,16 @@ The printed handbook covering Heuristic Review alongside the rest of the LUMA Sy
 
 **What Could Be holds LUMA teaching materials** for this method: the basic module slides, the 8.5×11 reference guide, the review template, and the Eye-Spy practice activity. These are © LUMA Institute and its licensors and are not reproduced in this repo. The method files paraphrase and cite them.
 
+## Scoring
+
+**Brooke, J. (1996). "SUS: A 'quick and dirty' usability scale." In *Usability Evaluation in Industry*. Taylor & Francis.**
+The System Usability Scale, the model for turning an evaluation into a single comparable score.
+
+## Design principles
+
+**Dieter Rams, "Weniger, aber besser" (less but better).**
+Rams's design philosophy, used on a What Could Be project as an authored design principle. See Rams, D. (1995). *Less but Better*. Jo Klatt Design+Design Verlag.
+
 ## Other heuristic sets
 
 **[The Eight Golden Rules of Interface Design](https://www.cs.umd.edu/users/ben/goldenrules.html): Ben Shneiderman**
@@ -51,7 +64,8 @@ An earlier, overlapping set from *Designing the User Interface*.
 
 ## Neighbouring methods
 
-- **Think-Aloud Testing** (this library). The behavioural counterpart: real people, real tasks. Heuristic Review predicts; Think-Aloud Testing observes. See `../../think-aloud-testing/`.
+- **Think-Aloud Testing** (this library). The behavioural counterpart: real people, real tasks. Complementary: Heuristic Review evaluates against principles; Think-Aloud Testing observes people. See `../../think-aloud-testing/`.
 - **Critique** (this library). Structured open feedback rather than an audit against named principles. See `../../critique/`.
 - **Cognitive walkthrough.** Another inspection method, focused on learnability of a task step by step. Not yet in this library.
-- **System Usability Scale.** A questionnaire LUMA pairs with evaluative research to quantify perceived usability. Not yet in this library.
+- **System Usability Scale.** A questionnaire LUMA pairs with evaluative research to quantify perceived usability, and the inspiration for scoring a review. Not yet in this library.
+- **Alternative Worlds** (LUMA). Studying analogous systems to borrow their best practices; one source of authored design principles. Not yet in this library.

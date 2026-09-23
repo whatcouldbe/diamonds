@@ -2,35 +2,38 @@
 name: heuristic-review-faq
 description: Recurring questions about Heuristic Review
 source: canonical
-provenance: reconstructed
+provenance: practitioner-verified
 ---
 
 # Heuristic Review: FAQ
 
-`[Reconstructed.]` These are plausible questions, not questions observed in real sessions. A practitioner should add real ones and flag any of these as non-issues.
+Answers draw on the practitioner teaching session where marked. The questions themselves are anticipated, not yet observed in sessions.
 
 **Is this the same as heuristic evaluation?**
-Yes. Heuristic evaluation is the original name (Nielsen and Molich, 1990). LUMA calls it Heuristic Review and uses its own ten heuristics. The procedure is the same.
+Yes. Heuristic evaluation is Nielsen and Molich's original name. LUMA adapted Nielsen's ten into its own ten and calls the method Heuristic Review.
 
-**LUMA's ten or Nielsen's ten?**
-Either works; they overlap heavily. LUMA's set is broader, written to apply to services, presentations, and policies as well as interfaces. Nielsen's is more screen-specific and more widely known. Pick one and have every reviewer use the same set.
+**Which heuristics should we use?**
+*(Practitioner.)* The team's or client's own set if there is one. LUMA's ten for people who use LUMA methods (What Could Be's default). Otherwise Nielsen's ten, the standard. Whatever you choose, everyone uses the same set, and you say which one before starting.
 
-**Do reviewers need to be usability experts?**
-No, but they need to know the heuristics well. Published research shows experienced reviewers find more problems, and reviewers who know the domain as well as usability find the most. Mixing perspectives makes up for any one reviewer's gaps.
+**Is Heuristic Review as good as testing with users?**
+*(Practitioner.)* They're not ranked. They're different evaluative methods used for different reasons. Heuristic Review evaluates against known principles, and works without users. Think-Aloud Testing watches real people and finds things that don't trace back to any heuristic. Ideally you combine them; a Think-Aloud Test after a Heuristic Review is usually more productive. The most important thing is that you evaluate.
 
-**Why can't one person just do it?**
-One reviewer finds roughly a third of the problems. Different people find different problems, and the overlap between reviewers is smaller than you'd expect. Five reviewers find around three-quarters.
-
-**If it finds most of the problems, why do we still need Think-Aloud Testing?**
-Because it finds most of the *usability* problems you can predict. It can't tell you whether people want this, whether it fits their real context, or whether it solves the right problem. Those only show up when real people use it.
+**Can you really measure good design?**
+*(Practitioner.)* Yes. Some of it is qualitative, but scoring each heuristic No / Somewhat / Yes turns it into a number so you can see the difference between versions. It borrows the idea from the System Usability Scale.
 
 **Can we write our own heuristics?**
-Yes, and for non-interface work you usually should. Write 4 to 6, each with a short name, a guiding question, why it matters, and look-fors. Test them on a real example before relying on them. See `templates/authoring-heuristics.md`.
+*(Practitioner.)* Yes, and on many projects you should: design principles that define what good means for that work. Make sure they're evaluative (you can judge a design against them), not values or behaviours.
 
-**What's the difference between heuristics and a rubric?**
-A rubric is precise and exhaustive, with levels for each criterion. Heuristics are mental shortcuts: short enough to remember, less precise, meant to prompt judgment rather than replace it.
+**What's the difference between a design principle and a team value?**
+*(Practitioner.)* A value or team principle guides how people act. A heuristic or design principle is something you evaluate a design against. They're closely related and easily confused.
 
-**Should reviewers write solutions?**
-Not during the review. Describe the problem clearly. Solutions come after the findings are pooled and prioritized.
+**Do reviewers need to be usability experts?**
+No, but they need to know the heuristics well. That's the hardest part of the method, so everyone gets the reference and a chance to practice first.
 
-**Open, needs a practitioner:** real timing; how synthesis actually runs; how teams react when their design gets a long list of issues; what happens when reviewers can't agree on severity.
+**How many reviewers?**
+3 to 5 with different perspectives find the most. One reviewer still produces a useful review; the list is just more partial.
+
+**Can AI do the review?**
+*(Practitioner.)* It can facilitate an expert through a review and produce the report and score, or review screens itself. See `ai-usage.md` for how, and for the caveats it always states.
+
+**Open:** real timing; how multi-reviewer scoring disagreements get resolved in the room.

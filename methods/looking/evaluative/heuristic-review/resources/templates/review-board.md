@@ -31,13 +31,15 @@ Helpful hints (grounded): initials on every note; reviewers don't need a note fo
 
 Pool, merge duplicates, then fill one row per finding:
 
-| Finding | Task | Heuristic | Found by (count) | Severity 0–4 | Confident, or confirm with people? |
+| Finding | Task | Heuristic | Found by (count) | Severity 0–4 | Confident? |
 |---|---|---|---|---|---|
 | | | | | | |
 
 **Severity (Nielsen):** 0 not a problem · 1 cosmetic · 2 minor · 3 major · 4 catastrophe. Consider frequency, impact, persistence.
 
+**Score:** fill in `scorecard-template.md` (No / Somewhat / Yes per heuristic).
+
 **Hand-off:**
 - **Fix now:** high severity, confident
-- **Watch for in Think-Aloud Testing:** high severity, not sure
+- **Evaluate with users:** high severity but uncertain; a candidate for Think-Aloud Testing if users are within reach
 - **Backlog:** low severity

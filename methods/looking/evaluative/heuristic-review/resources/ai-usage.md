@@ -1,54 +1,65 @@
 ---
 name: heuristic-review-ai-usage
-description: Using Heuristic Review with AI tools
+description: Using Heuristic Review with AI tools, including agent-facilitated expert reviews and automated reviews
 source: canonical
 provenance: reconstructed
 ---
 
 # Heuristic Review: AI Usage
 
-The three AI patterns below are **grounded**: What Could Be has used them in client heuristic kits. The guardrails are **`[reconstructed]`**: Diamonds positioning, not field-tested.
+The direction here comes from the practitioner teaching session (Justin Knecht, September 2026). The authoring and scoring patterns are grounded in What Could Be client kits. The agent capabilities described below are **designed, not yet built or run**: treat them as the target, and flag them as untested when used.
+
+Heuristic Review suits AI especially well. A review has a lot of moving parts: write a note, tag it with a heuristic, say whether it's met, say why, place it on the right part of the right screen, then pool, sort, and score. Much of that is mechanical, and the agent can take it on so people spend their attention on judgment.
 
 ---
 
-## Where AI helps
+## Facilitating: the agent guides an expert reviewer
 
-### 1. Drafting authored heuristics *(grounded)*
-Give the AI the domain's definition of success and ask for 4 to 6 heuristics in a fixed format: a Verb + Outcome name, a plain-language guiding question, 2 to 3 sentences on why it matters, and 3 to 5 look-fors. Written plainly, self-contained, like a guide card.
+*The practitioner's priority use case.*
 
-The client kit's own instruction: use the output as **raw material**. Discuss as a team what feels right, what needs refining, what's missing. The final heuristics should reflect the team's shared perspective, not what the AI produced.
+The expert walks a flow while recording the screen and talks it through, a think-aloud by the reviewer rather than by a user. The agent:
 
-### 2. Generating scenarios to test heuristics *(grounded)*
-Before applying new heuristics to real work, ask the AI for a detailed, realistic scenario (a narrative, a persona's reflective account, or several perspectives on the same experience) with successes, struggles, and at least one surprising outcome. Run the heuristics against the scenario to see if they discriminate.
+1. **Names the heuristic set and provides its reference** before the walkthrough: the team's or client's own set if there is one (loaded from their deployment), LUMA's ten for LUMA users, otherwise Nielsen's ten.
+2. **Guides the walkthrough:** prompts the reviewer screen by screen, asks about specific heuristics on specific screens, and asks them to think aloud: what they see, which heuristic applies, met or not, and why.
+3. **Takes the recording or transcript afterward** and:
+   - Sorts every comment by heuristic
+   - Highlights the main issues
+   - Scores each heuristic and the total, with the reason and a screen reference
+   - Produces a report for the current version
+4. **Re-scores later versions** the same way, so improvement is measured.
 
-The client kit's own caveat, which Diamonds keeps: *this isn't a replacement for testing real experiences with actual people. It's a fast, low-stakes way to try out your heuristics before you apply them in the field.*
-
-### 3. Scoring against heuristics *(grounded)*
-For a scored self-assessment, paste the work and the heuristics and ask the AI to:
-1. Ask 2 to 3 clarifying questions first
-2. For each heuristic: score it (green / yellow / red), say what's strong, what's weak, and how to strengthen it
-3. Give an overall readiness score and priority areas
-
-Compare the AI's scoring with your own. The disagreements are where the learning is.
-
-### 4. Acting as an additional reviewer `[reconstructed]`
-Given screenshots, a prototype walkthrough, or a description of a flow, the agent can review against a heuristic set as one reviewer among several. It should work task by task, cite one heuristic per issue, and describe issues rather than fixes, following the same rules as human reviewers.
+The agent may not see the screens, only the transcript. That's fine: the expert is the eyes, and the agent carries the structure and the synthesis.
 
 ---
 
-## Where AI must not substitute `[reconstructed]`
+## Executing: the agent reviews on its own
 
-- **An AI review is one reviewer, not a panel.** The whole case for 3 to 5 reviewers is that different perspectives find different problems. An agent is one perspective, and not the perspective of the people being designed for.
-- **The agent can't use the thing.** Working from screenshots or descriptions, it misses timing, physical context, and anything that only appears in use. Say so in every AI review output.
-- **AI-authored heuristics the team didn't argue over aren't the team's heuristics.** The value of authoring is the convergence. Skip it and you have a list, not a shared standard.
+Given the chosen heuristic set (see `../method.md` → Choosing a set) and a set of screens (screenshots, a Figma file, a clickable prototype, or a live site it can walk task by task), the agent:
+
+- Walks each key task, screen by screen
+- Tags each observation with a heuristic, met or not, and why, referencing the screen
+- Scores each heuristic and the total
+- Makes suggestions for improvement (after the findings, kept separate from them)
+- Re-scores after changes
+
+### Reviewer personas
+
+Running several persona passes (for example accessibility, a first-time user, a domain expert) can widen what the agent notices. But persona passes on the same model are **not independent reviewers**. The published case for 3 to 5 reviewers rests on different people noticing different things, and one model with different prompts will largely converge. Treat multiple passes as one reviewer looking harder, not as a panel. Whether the passes add enough to justify running them is an open question to measure on a real review.
 
 ---
 
-## Transparency `[reconstructed]`
+## Authoring and self-assessment *(grounded, client kits)*
 
-When the agent runs a heuristic review, every output states:
-- That the method is provisional in this library
-- That the findings are **predictions of where people will struggle**, not evidence that they do
-- Which findings should be confirmed with real people first
+- **Drafting authored heuristics:** give the AI the definition of what good looks like and ask for 4 to 6 heuristics (Verb + Outcome name, guiding question, why it matters, look-fors). Treat the output as raw material; the team decides what's right.
+- **Testing heuristics on a scenario:** have the AI generate a realistic scenario and check whether the heuristics discriminate. The kits' own caveat: not a replacement for real experiences, a fast way to try out your heuristics.
+- **Scoring a submission:** the AI asks 2 to 3 clarifying questions first, then scores each heuristic with strengths, gaps, and suggestions, then gives an overall score. Compare with your own scoring; the disagreements are where the learning is.
 
-Never present an AI heuristic review as validation. It is the fastest way to get a team to believe they've tested something they haven't, which is exactly what Diamonds exists to prevent.
+---
+
+## Caveats the agent always states
+
+- **What the method is:** a design-quality evaluation against principles. When the agent has run it alone, say so.
+- **What the agent could see:** screenshots, a transcript, or a live walk. Name what it could *not* see (timing, physical context, real-world use).
+- **One reviewer:** an agent review is one perspective. Where possible, pair it with a human reviewer.
+- **The score is a design-quality score.** It measures how well the design follows the heuristics. When there's access to the people the design is for, Think-Aloud Testing finds what heuristics can't. Say this plainly, without ranking the methods.
+- **The method's status in this library:** the agent capabilities above are designed but untested.

@@ -2,12 +2,12 @@
 name: heuristic-review-resources
 description: Resource index and agent usage guide for the Heuristic Review method
 source: canonical
-provenance: reconstructed
+provenance: practitioner-verified
 ---
 
 # Heuristic Review: Resources
 
-> **Provisional method.** Files here are grounded where they cite LUMA materials, What Could Be client kits, or published research, and reconstructed where they describe synthesis and facilitation. Each file states which.
+> Files here are grounded where they cite the practitioner teaching session, an anonymized client case study, LUMA materials, client kits, or published research, and reconstructed where they describe multi-reviewer synthesis and timing. Each file states which.
 
 ---
 
@@ -16,12 +16,12 @@ provenance: reconstructed
 | File / Folder | What it contains | Grounding |
 |---|---|---|
 | `references.md` | Lineage and external sources | Grounded, cited |
-| `recipes.md` | How this method sequences with others | Mostly grounded in existing library recipes; positioning is a Diamonds decision |
-| `ai-usage.md` | Using the method with AI tools | Patterns grounded in What Could Be client kits; guardrails reconstructed |
-| `faq.md` | Recurring questions | Reconstructed, needs real questions |
+| `recipes.md` | How this method sequences with others | Practitioner-verified positioning |
+| `ai-usage.md` | Agent-facilitated and automated reviews, authoring, scoring | Practitioner-designed, not yet built; authoring patterns grounded in client kits |
+| `faq.md` | Recurring questions | Answers mostly from the practitioner; questions anticipated |
 | `tips.md` | Practitioner wisdom and gotchas | Mixed, flagged per tip |
-| `templates/` | Review board, reference sheet, authored-heuristics worksheet | Grounded in LUMA template and client kits |
-| `examples/` | Illustrative example | Reconstructed, not a real review |
+| `templates/` | Scorecard template, heuristics references (LUMA and Nielsen), review board, authored-heuristics worksheet | Grounded (practitioner, LUMA template, Nielsen, client kits) |
+| `examples/` | Anonymized case study of a company scorecard, plus a synthetic findings table | Case study grounded; synthetic table reconstructed |
 
 **Elsewhere:**
 - Full method reference: `../method.md`
@@ -34,14 +34,14 @@ provenance: reconstructed
 
 | Mode | What to reach for first | Caveat |
 |---|---|---|
-| **Teaching** | `../teaching.md` (Eye-Spy activity) → `templates/heuristics-reference.md` → `references.md` | Story and close are placeholders; say the method is provisional |
-| **Facilitating** | `../mechanics.md` → `templates/review-board.md` → `tips.md` | Synthesis stage is inferred; say so |
-| **Coaching** | `recipes.md` → `faq.md` | Strongest footing: when to use it, and what it can't tell you |
-| **Executing** | `ai-usage.md` | Agent findings are predictions, never validation |
+| **Teaching** | `../teaching.md` → `templates/heuristics-reference.md` → `examples/` | Captured from the practitioner |
+| **Facilitating** | `../mechanics.md` → `templates/scorecard-template.md` → `ai-usage.md` (guiding an expert walkthrough) | Multi-reviewer synthesis is inferred |
+| **Coaching** | `recipes.md` → `faq.md` | Complementary with other evaluative methods; not ranked |
+| **Executing** | `ai-usage.md` → `templates/scorecard-template.md` | State the caveats listed in `ai-usage.md` |
 | **Participating** | `templates/heuristics-reference.md` | Act as one reviewer among several; initial your notes |
 
 ---
 
 ## Provenance
 
-`source:` marks who contributed. `provenance:` marks how much we trust the construction: `reconstructed` → `field-tested` → `practitioner-verified`. This method is `reconstructed`. When the agent teaches or facilitates it, it says so. The first time someone runs it and reports back, move it to `field-tested`. When a practitioner teaches or corrects it, move it to `practitioner-verified`. See `../../../../README.md` for the Provenance ladder, and `../method.md` → Upgrade Path.
+`source:` marks who contributed. `provenance:` marks how much we trust the construction: `reconstructed` → `field-tested` → `practitioner-verified`. See `../method.md` frontmatter for this method's current level. When the agent teaches or facilitates it, it says so. The first time someone runs it and reports back, move it to `field-tested`. When a practitioner teaches or corrects it, move it to `practitioner-verified`. See `../../../../README.md` for the Provenance ladder, and `../method.md` → Open Gaps.

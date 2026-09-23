@@ -2,22 +2,23 @@
 name: heuristic-review-tips
 description: Practitioner wisdom and gotchas for Heuristic Review
 source: canonical
-provenance: reconstructed
+provenance: practitioner-verified
 ---
 
 # Heuristic Review: Tips
 
 Each tip is marked with its grounding.
 
-- **Initials on every note.** *(Grounded, LUMA.)* The count of reviewers who found an issue is some of the best signal you have.
-- **Problems, not solutions.** *(Grounded, LUMA.)* A reviewer who writes "make the button bigger" has skipped describing what went wrong. Ask for the problem underneath.
-- **Not every heuristic needs a note.** *(Grounded, LUMA.)* Reviewers who feel obliged to fill every heuristic invent problems.
-- **Tasks, not tours.** *(Grounded, LUMA: "select a small number of key tasks.")* Reviewers who browse find cosmetic issues. Reviewers who try to get something done find the ones that matter.
-- **Review alone, then pool.** *(Grounded, Nielsen.)* Talking during the review makes reviewers converge and the total drops.
-- **Spot the good too.** *(Grounded, LUMA Eye-Spy activity.)* Noting where a design follows a heuristic teaches the heuristic and tells the team what to protect.
-- **The label matters less than the issue.** `[reconstructed]` Don't let a debate over whether it's Consistency or Match stall the session.
-- **Keep designers from defending.** `[reconstructed]` Borrowed from Critique: the designer's job during review is to collect, not explain.
-- **Close with the watch-list.** `[reconstructed, Diamonds positioning]` End every review by naming the findings that need real people to confirm. Without that, the team walks away thinking they tested it.
-- **Authored heuristics need a trial run.** *(Grounded, client kits.)* Test new heuristics on a real or generated example before relying on them. Heuristics that every example passes, or every example fails, aren't discriminating.
-
-*Highest-priority gap for a practitioner: live synthesis. How pooling, deduplicating, and severity rating actually go in the room.*
+- **Knowing the heuristics is the hard part.** *(Practitioner.)* Hand out the reference first, and practice with Eye-Spy before reviewing real work.
+- **Always say why.** *(Practitioner.)* Heuristic, met or not, and why. A tag without a reason isn't a finding.
+- **Spot the good too.** *(Practitioner, LUMA Eye-Spy.)* It teaches the heuristic and shows the team what to protect.
+- **Make it playful.** *(Practitioner.)* Reviewing the lunch line at a workshop teaches the heuristics faster than a slide, and proves they work beyond screens.
+- **Score it, then re-score it.** *(Practitioner.)* The score is what lets you show a design got better.
+- **Give every score a specific, observable reason.** *(Client case study.)* "Promotional banners add visual noise" beats "a bit cluttered."
+- **Author principles with teeth.** *(Practitioner.)* "Less but better" forced a team to remove things. A principle that never changes a decision isn't doing its job.
+- **Don't confuse values with heuristics.** *(Practitioner.)* If you can't judge a design against it, it's a value.
+- **Initials on every note.** *(LUMA.)*
+- **Problems, not solutions.** *(LUMA.)*
+- **Tasks, not tours.** *(LUMA.)* Reviewers who try to get something done find the problems that matter.
+- **Review alone, then pool.** *(Nielsen.)*
+- **The label matters less than the issue.** `[reconstructed]` Don't let a debate over which heuristic stall the session.

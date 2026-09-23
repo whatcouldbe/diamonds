@@ -2,7 +2,7 @@
 name: heuristic-review-mechanics
 description: Facilitation cheat sheet for running Heuristic Review. Maps to the method mechanics framework in modes/mechanics/method-facilitation-mechanics.md. Use when preparing to facilitate or when in Facilitating mode.
 source: canonical
-provenance: reconstructed
+provenance: practitioner-verified
 ---
 
 # Heuristic Review: Mechanics
@@ -10,38 +10,36 @@ provenance: reconstructed
 An auditing procedure based on rules of thumb for good design.
 **Phase:** Looking | **Category:** Evaluative Research
 
-> **Provisional.** Purpose, Inputs, Outputs, Stuff, and the review steps are grounded in the LUMA Heuristic Review materials. The synthesis stage and all timings are `[reconstructed]`. The method has not been run and reported back on. Say this before facilitating. See `method.md` for the upgrade path.
+> Purpose, Inputs, Outputs, Stuff, the review steps, and scoring are grounded (LUMA materials, the practitioner teaching session, and an anonymized client case study). Multi-reviewer synthesis and all timings are `[reconstructed]`.
 
 ---
 
 ## Purpose Statements
 
-Lead with why, not what (grounded, LUMA benefits):
+Lead with why, not what:
 
-- Leverage proven principles of good design
+- Evaluate a design against proven principles of good design
 - Identify problems quickly
-- Get useful data before you have test participants
-- Show opportunities for improvement
-
-And the Diamonds framing, said out loud at the start: *"This finds the problems we can predict. It doesn't tell us whether it works for people. That comes next."*
+- Evaluate when you don't have access to users
+- Show opportunities for improvement, and measure them with a score
 
 ---
 
 ## Inputs
 
-- **The subject of the review:** a prototype, product, service, document, or device that the key tasks can be performed with
-- **A heuristic set:** the LUMA ten by default, or an authored set (see `resources/templates/`)
+- **The subject of the review:** screens, a flow, a prototype, a live product, or an everyday experience
+- **A heuristic set with a reference sheet:** the team's or client's own set if there is one; LUMA's ten for LUMA users (What Could Be's default); otherwise Nielsen's ten
 - **A small number of key tasks:** usually three
-- **Reviewers:** 3 to 5, with multiple perspectives, ideally not the designers
+- **Reviewers:** one or more; 3 to 5 with different perspectives find the most
 
 ---
 
 ## Outputs
 
-- Individual issue notes, each citing one heuristic, initialed, organized by task
-- A pooled, deduplicated findings list with reviewer counts
-- Severity ratings (optional)
-- A watch-list of findings to confirm with real people
+- Notes tagged by heuristic, each saying met or not met, and why, placed on the screen they refer to
+- A score per heuristic and a total (out of 20 for ten heuristics)
+- A prioritized list of fixes, ordered by effect on the system
+- A baseline to re-score after changes
 
 ---
 
@@ -51,56 +49,57 @@ And the Diamonds framing, said out loud at the start: *"This finds the problems 
 
 | Step | What to say |
 |---|---|
-| Why | *"We're going to look at this the way an expert would, against ten rules of thumb for good design. It's the fastest way to catch the obvious problems before we put it in front of real people."* |
-| What it isn't | *"This won't tell us if it works for the people it's for. It tells us where it's likely to trip them up."* |
-| Familiarize | Walk each heuristic with one example. The Eye-Spy activity works well here (see `teaching.md`). |
+| Why | *"We don't always have access to users, but we do know a lot about what good design looks like. We're going to evaluate this against those rules."* |
+| The set | Name the set in use. *"These are Jakob Nielsen's ten"*, or *"These were adapted by LUMA from Nielsen's ten"*, or introduce the project's own design principles. |
+| The hard part | *"The hardest part is knowing the heuristics. Keep the reference beside you the whole time."* |
+| Practice | Preview the heuristics, then run Eye-Spy (see `teaching.md`). |
 
 ### Instructions
 
 | Step | What to say |
 |---|---|
-| Tasks | *"Here are the tasks. Do them one at a time, as if you were the person trying to get this done."* |
-| Capture | *"Every time something breaks a rule, write it on a sticky. One issue per note. Say what happened, clearly enough that someone else could find it."* |
-| Cite | *"Put one heuristic on each note. The one that best explains why it's a problem."* |
+| Walk it | *"Walk through each task, screen by screen, as if you were the person trying to get it done. It's a walk a mile, with rules."* |
+| Tag | *"For every observation: which heuristic, is it met or not, and why."* |
+| Place | *"Put the note on the part of the screen it's about."* |
 | Initial | *"Initials on every note."* |
-| No fixes | *"Don't write solutions yet. Just the problem."* |
-| Not every heuristic | *"You don't need something for every heuristic. If it's fine, it's fine."* |
-| Solo | *"Work on your own. We'll compare after."* `[reconstructed]` |
+| No fixes yet | *"Describe the problem. Solutions come later."* |
+| Solo | *"Work on your own first. We'll compare after."* `[reconstructed]` |
 
 ### Execution
 
-- Keep reviewers working individually and quietly, task by task.
-- Watch for notes that are solutions ("move the button") and ask for the problem underneath.
-- Watch for taste dressed as a heuristic ("ugly") and ask what a person would experience.
-- `[reconstructed]` Time box each task, about 10 to 15 minutes.
+- Keep reviewers working individually, task by task.
+- Push for the *why* on every note.
+- Encourage good notes as well as bad.
+- Turn solutions ("move the button") back into problems.
+- Turn taste ("ugly") into what a person would experience.
+- `[reconstructed]` About 10 to 15 minutes per task.
 
-### End `[reconstructed]`
+### End
 
-- Pool all notes onto one board, organized by task.
-- Merge duplicates. Keep the initials so the reviewer count is visible.
-- Re-cluster by heuristic to see which principles break most.
-- Optionally, rate severity 0 to 4 (frequency, impact, persistence).
+- `[reconstructed]` Pool notes, merge duplicates, keep initials so agreement is visible.
+- Score each heuristic No / Somewhat / Yes (0 / 1 / 2) with the reason. Total out of 20.
+- Rate the severity of the main problems.
 
-### Next Steps `[reconstructed]`
+### Next Steps
 
-- Decide what to fix now: high severity, high confidence.
-- Decide what to confirm: high severity, low confidence. These go to Think-Aloud Testing as things to watch for.
-- Name out loud: *"None of this is validated yet. These are predictions."*
+- Prioritize fixes by the effect they'll have on the system.
+- Set a date to re-score after changes.
+- If users are within reach, plan Think-Aloud Testing to evaluate from their side too.
 
 ---
 
 ## Stuff
 
-- Heuristics reference sheet, one per reviewer
-- Sticky notes and pens (or a digital board)
-- A review board with a column per task (the LUMA template: three task columns)
-- The subject of the review, set up so every reviewer can perform the tasks
+- Heuristics reference, one per reviewer
+- Sticky notes and pens (two colours for good / bad), or a virtual whiteboard
+- A board with a place for each screen or task
+- A scorecard for the chosen set (`resources/templates/scorecard-template.md`)
 - A timer `[reconstructed: ~90 minutes for three tasks is an untested default]`
 
 ---
 
 ## In-the-Moment
 
-- Recurring question: *"What would a person experience here?"*
-- If reviewers argue about which heuristic fits, capture the issue and move on. The issue matters more than the label.
-- If a designer is reviewing their own work and starts explaining, gently return them to the task.
+- Recurring question: *"Which heuristic, met or not, and why?"*
+- If reviewers argue about which heuristic fits, capture the issue and move on.
+- If a designer starts explaining their work, gently return them to the task.

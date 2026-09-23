@@ -2,13 +2,18 @@
 name: heuristic-review-examples
 description: Examples for the Heuristic Review method
 source: canonical
-provenance: reconstructed
+provenance: grounded
 ---
 
 # Heuristic Review: Examples
 
-**There is no real worked example yet.** That means the quality bar for findings is unestablished. This is the single most valuable thing to add when the method is next run.
+| File | What it is | Grounding |
+|---|---|---|
+| `case-study-company-scorecard.md` | How a company built its own scorecard, calibrated it on a public checkout (14 / 20), and baselined an internal tool (4 / 20) | Grounded, anonymized client work |
+| `illustrative-findings.md` | Synthetic multi-reviewer findings table, and weak vs. strong issue notes | Reconstructed, format only |
 
-`illustrative-findings.md` is a **reconstructed, synthetic** example showing the shape of a pooled findings table. It is written to show format and the difference between a good issue note and a weak one. It is not a record of a real review and should not be presented as one.
+The case study sets the **quality bar** for scoring: every score carries a specific, observable reason, strengths are recorded alongside problems, and the total is a baseline to re-score against.
 
-**Wanted:** an anonymized findings board or report from a real Heuristic Review, with issue notes, the heuristic cited, reviewer counts, and severity.
+**Client material stays out of this repo.** Client scorecards and completed client reviews live in the client's own deployment. Examples here are anonymized and paraphrased.
+
+**Still wanted:** a completed review of a public product using Nielsen's or LUMA's ten; a multi-reviewer session board; a before/after re-score pair.

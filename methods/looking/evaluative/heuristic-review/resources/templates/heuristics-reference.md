@@ -5,7 +5,11 @@ source: canonical
 provenance: grounded
 ---
 
-# The Ten Heuristics: Reviewer Reference
+# Heuristics: Reviewer Reference
+
+Use the sheet for the set chosen for this review (see `../../method.md` → Choosing a set). If the team or client has its own set, use their reference instead.
+
+## LUMA's ten
 
 *Heuristic names and principles from LUMA Institute; descriptions paraphrased. Keep this beside you during the review. Cite one heuristic per issue.*
 
@@ -27,3 +31,22 @@ provenance: grounded
 - One heuristic
 - Your initials
 - No solution
+
+---
+
+## Nielsen's ten
+
+*Names from Jakob Nielsen; prompts paraphrased.*
+
+| # | Heuristic | Ask yourself |
+|---|---|---|
+| 1 | **Visibility of system status** | Can I always tell what's going on? |
+| 2 | **Match between system and the real world** | Are these my words and concepts, in an order that makes sense in my world? |
+| 3 | **User control and freedom** | If I go the wrong way, can I undo, cancel, or get out easily? |
+| 4 | **Consistency and standards** | Do the same words and actions always mean the same thing? Does it follow conventions I know? |
+| 5 | **Error prevention** | Does the design stop me making mistakes, or ask before I commit? |
+| 6 | **Recognition rather than recall** | Are options visible when I need them, or do I have to remember them? |
+| 7 | **Flexibility and efficiency of use** | Can experienced people go faster without confusing new ones? |
+| 8 | **Aesthetic and minimalist design** | Is anything here competing for attention that doesn't need to be? |
+| 9 | **Help users recognize, diagnose, and recover from errors** | When something goes wrong, do I understand what and how to fix it? |
+| 10 | **Help and documentation** | If I need help, can I find it, and is it about my task? |
