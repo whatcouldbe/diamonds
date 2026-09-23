@@ -10,6 +10,8 @@ status: built, not yet field-tested
 
 *Built from the practitioner's design (Justin Knecht, teaching session, September 2026) described in `ai-usage.md` and the Expert think-aloud review variation in `../method.md`. **Built, not yet field-tested.** The arc, the choice of heuristic set, and the scoring scale follow the method. The screen-type probe map, the two set-ups, and the scoring aggregation rules are `[reconstructed]` and should be checked against the first real run.*
 
+*A lighter version, a reviewer sheet plus a prompt that works from the transcript afterwards, may be the better place to start. See `ai-usage.md` → "A lighter version". This prompt's Stages 4 and 5 already cover the transcript half.*
+
 **Files this prompt uses:**
 - `../method.md` → Choosing a set: which heuristic set to use
 - `templates/heuristics-reference.md`: reference sheets for LUMA's ten and Nielsen's ten
