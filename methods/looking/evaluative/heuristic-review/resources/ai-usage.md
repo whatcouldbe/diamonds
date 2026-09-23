@@ -39,6 +39,19 @@ A team's or client's own set is read from their deployment at run time, and thei
 
 The demo shows the format and the moves; it isn't evidence the approach works. The first real run with an expert reviewer is what moves this to field-tested. Things to watch on that run: whether the probes help or interrupt, whether the reviewer agrees with the agent's reading of their comments when scoring, and how the set-up works when the agent can't hear the reviewer.
 
+### A lighter version, likely the better place to start
+
+*Practitioner, September 2026. Being tested in client work; not yet run.*
+
+Working through how to put this in front of a client team, the practitioner concluded that the guided walkthrough may be more than most reviewers need. The minimum version has two parts:
+
+1. **A one-page reviewer sheet.** The heuristics with their evaluating questions, plus four instructions for the recording: say the name of each step aloud; for each observation say the heuristic, whether it's met, and why; say what's working as well as what isn't; call issues and suggestions by those names. Any screen recorder that produces a transcript will do.
+2. **A synthesis prompt that works from the transcript.** After the recording, it asks the reviewer about any heuristic they didn't mention and lets them change the scores, then produces the score, a short summary of each step, and the fixes ranked by how much they'd raise the score. Later versions are re-scored the same way. The prompt is plain text and not tied to one AI assistant.
+
+The gaps get filled after the recording, not during it, so nothing interrupts the reviewer while they think aloud. Screenshots and notes placed on each screen turned out to matter less than the score, the step summaries, and the prioritized fixes. The recording is still there for anyone who needs to find an exact moment.
+
+What the test will show is whether reviewers cover the heuristics well enough from the sheet alone. If they do, this becomes the default and the guided walkthrough becomes the fuller option for reviewers who want prompting as they go. If they don't, the test shows what in-the-moment guidance needs to prompt for. General versions of the sheet and prompt will be added here once they've been tested.
+
 ---
 
 ## Executing: the agent reviews on its own
