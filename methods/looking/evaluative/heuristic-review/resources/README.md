@@ -17,11 +17,12 @@ provenance: practitioner-verified
 |---|---|---|
 | `references.md` | Lineage and external sources | Grounded, cited |
 | `recipes.md` | How this method sequences with others | Practitioner-verified positioning |
-| `ai-usage.md` | Agent-facilitated and automated reviews, authoring, scoring | Practitioner-designed, not yet built; authoring patterns grounded in client kits |
+| `ai-usage.md` | Agent-facilitated and automated reviews, authoring, scoring | Practitioner-designed; authoring patterns grounded in client kits |
+| `facilitation-system-prompt.md` | The agent guides an expert through a recorded think-aloud review, then scores the transcript and re-scores later versions | Practitioner-designed; built, not yet field-tested |
 | `faq.md` | Recurring questions | Answers mostly from the practitioner; questions anticipated |
 | `tips.md` | Practitioner wisdom and gotchas | Mixed, flagged per tip |
-| `templates/` | Scorecard template, heuristics references (LUMA and Nielsen), review board, authored-heuristics worksheet | Grounded (practitioner, LUMA template, Nielsen, client kits) |
-| `examples/` | Anonymized case study of a company scorecard, plus a synthetic findings table | Case study grounded; synthetic table reconstructed |
+| `templates/` | Scorecard template, heuristics references (LUMA and Nielsen), review board, authored-heuristics worksheet, expert review report | Grounded (practitioner, LUMA template, Nielsen, client kits) |
+| `examples/` | Anonymized case study of a company scorecard, a synthetic findings table, and a worked demo of the guided expert review | Case study grounded; synthetic table and demo reconstructed |
 
 **Elsewhere:**
 - Full method reference: `../method.md`
@@ -35,7 +36,7 @@ provenance: practitioner-verified
 | Mode | What to reach for first | Caveat |
 |---|---|---|
 | **Teaching** | `../teaching.md` → `templates/heuristics-reference.md` → `examples/` | Captured from the practitioner |
-| **Facilitating** | `../mechanics.md` → `templates/scorecard-template.md` → `ai-usage.md` (guiding an expert walkthrough) | Multi-reviewer synthesis is inferred |
+| **Facilitating** | `../mechanics.md` → `templates/scorecard-template.md`; for guiding one expert through a recorded walkthrough, `facilitation-system-prompt.md` | Multi-reviewer synthesis is inferred; the guided expert review is not yet field-tested |
 | **Coaching** | `recipes.md` → `faq.md` | Complementary with other evaluative methods; not ranked |
 | **Executing** | `ai-usage.md` → `templates/scorecard-template.md` | State the caveats listed in `ai-usage.md` |
 | **Participating** | `templates/heuristics-reference.md` | Act as one reviewer among several; initial your notes |
