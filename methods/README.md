@@ -126,6 +126,7 @@ The 12 methods below form the core training programme — the first complete set
 | Critique | Looking | Evaluative | ✓ | Active |
 | Heuristic Review | Looking | Evaluative | † | Active |
 | What's on Your Radar | Looking | Participatory | † | Active |
+| Contextual Inquiry | Looking | Ethnographic | † | Provisional (field-tested; practitioner-taught material, not yet practitioner-verified) |
 | Stakeholder Mapping | Understanding | People & Systems | ✓ | To be built |
 | Affinity Clustering | Understanding | Patterns & Priorities | ✓ | Active |
 | Importance / Difficulty Matrix | Understanding | Patterns & Priorities | ✓ | Active |

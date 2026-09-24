@@ -226,7 +226,7 @@ Interviewing lives in **Looking / Ethnographic** and is used primarily in the **
 
 ### Related Methods
 - **Observation / Fly on the Wall** — watch behavior without intervening. Complements interviewing by revealing what people do versus what they say they do.
-- **Contextual Inquiry** — interviewing plus observation, in the interviewee's environment. "Show me" instead of "tell me."
+- **Contextual Inquiry** — interviewing plus observation, in the interviewee's environment. "Show me" instead of "tell me." Now its own method: `../contextual-inquiry/method.md`.
 - **Try It Yourself / Walk a Mile** — experience the product or service yourself. No access to people required, but you get your perspective rather than theirs.
 - **Focus Groups** — group discussion rather than one-on-one. Faster but susceptible to social dynamics: loudest voice, pile-on, people presenting a better version of themselves. Interviewing produces more honest individual perspectives.
 - **Surveys** — quantitative complement to interviews. Surveys tell you how many; interviews tell you why.
