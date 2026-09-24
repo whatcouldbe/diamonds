@@ -124,6 +124,7 @@ The 12 methods below form the core training programme — the first complete set
 | Interviewing | Looking | Ethnographic | ✓ | Active |
 | Think-Aloud Testing | Looking | Evaluative | ✓ | Active |
 | Critique | Looking | Evaluative | ✓ | Active |
+| Heuristic Review | Looking | Evaluative | † | Active |
 | What's on Your Radar | Looking | Participatory | † | Active |
 | Stakeholder Mapping | Understanding | People & Systems | ✓ | To be built |
 | Affinity Clustering | Understanding | Patterns & Priorities | ✓ | Active |
