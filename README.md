@@ -60,7 +60,9 @@ For the canonical public engine, no token is needed.
 
 ```
 diamonds/
-├── CLAUDE.md                    — Agent instructions
+├── DIAMONDS.md                  — Agent instructions (platform-neutral core)
+├── CLAUDE.md                    — Front door for Claude Code
+├── AGENTS.md                    — Front door for GitHub Copilot and other AGENTS.md tools
 ├── README.md                    — You are here
 ├── onboarding.md                — First-run setup the agent walks the user through
 │

@@ -90,7 +90,7 @@ Every method, process, and format in Diamonds carries two kinds of constraints: 
 
 The methodology lives in `foundation/`, `navigation/`, `modes/`, `methods/`, `sessions/`, and `selection/`. These files are the source — they contain the thinking, the arcs, the frameworks, and the principles. They should be readable and usable by any sufficiently capable model or system. They do not belong to Claude, or to any other platform.
 
-Derivatives are platform-specific packagings of the source: a Claude Code plugin, a system prompt for Claude.ai Projects, a configuration for a different model, a standalone app. `CLAUDE.md` is a derivative. A GPT system prompt would be a derivative. A Miro integration would be a derivative. Derivatives are generated from the source — they are not the source.
+Derivatives are platform-specific packagings of the source: a Claude Code plugin, a system prompt for Claude.ai Projects, a configuration for a different model, a standalone app. `CLAUDE.md` and `AGENTS.md` are derivatives — thin front doors onto `DIAMONDS.md`, the platform-neutral operating core. A GPT system prompt would be a derivative. A Miro integration would be a derivative. Derivatives are generated from the source — they are not the source.
 
 This distinction exists because models change, surfaces change, and platforms change. The methodology should outlast any one deployment. Methodology content that lives only in a platform-specific file is at risk of being lost when the platform is replaced or extended. Methodology content that lives in the source files travels to every derivative automatically.
 
