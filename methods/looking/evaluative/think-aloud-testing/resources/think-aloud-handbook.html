@@ -1,0 +1,802 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Think-Aloud Testing Handbook</title>
+<style>
+:root {
+  --bg: #f7f5f0;
+  --surface: #ffffff;
+  --ink: #1f1d1a;
+  --muted: #6b665d;
+  --line: #e3ded3;
+  --accent: #2f5d50;
+  --accent-soft: #e4eee9;
+  --rose: #b4485b;
+  --thorn: #8a6a1f;
+  --bud: #3c7a4a;
+  --quote-bg: #f1eee6;
+  --shadow: 0 1px 2px rgba(0,0,0,.04), 0 4px 16px rgba(0,0,0,.04);
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #161614;
+    --surface: #1f1f1c;
+    --ink: #ece9e2;
+    --muted: #a39e93;
+    --line: #34332e;
+    --accent: #7fbfa9;
+    --accent-soft: #23302b;
+    --rose: #e08896;
+    --thorn: #d6b35e;
+    --bud: #86c595;
+    --quote-bg: #26251f;
+    --shadow: none;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #161614; --surface: #1f1f1c; --ink: #ece9e2; --muted: #a39e93; --line: #34332e;
+  --accent: #7fbfa9; --accent-soft: #23302b; --rose: #e08896; --thorn: #d6b35e; --bud: #86c595;
+  --quote-bg: #26251f; --shadow: none;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; }
+body {
+  background: var(--bg);
+  color: var(--ink);
+  font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+a { color: var(--accent); }
+.layout { display: grid; grid-template-columns: 280px 1fr; min-height: 100vh; }
+nav.side {
+  position: sticky; top: 0; height: 100vh; overflow-y: auto;
+  border-right: 1px solid var(--line); padding: 28px 20px; background: var(--surface);
+}
+.brand { font-size: 13px; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); margin: 0 0 4px; }
+.title { font-size: 22px; font-weight: 700; line-height: 1.25; margin: 0 0 24px; }
+nav.side ol { list-style: none; padding: 0; margin: 0; counter-reset: s; }
+nav.side li a {
+  display: flex; gap: 10px; align-items: baseline; padding: 8px 10px; border-radius: 8px;
+  color: var(--ink); text-decoration: none; font-size: 15px;
+}
+nav.side li a::before { counter-increment: s; content: counter(s); font-size: 12px; color: var(--muted); min-width: 14px; font-variant-numeric: tabular-nums; }
+nav.side .nonum li a::before { content: none; }
+nav.side li a:hover { background: var(--accent-soft); }
+nav.side li a[aria-current="page"] { background: var(--accent-soft); color: var(--accent); font-weight: 600; }
+nav.side .group { font-size: 12px; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); margin: 20px 10px 6px; }
+.menu-toggle { display: none; }
+main { padding: 48px 56px 80px; max-width: 860px; }
+section.page { display: none; }
+section.page.active { display: block; }
+.kicker { font-size: 13px; letter-spacing: .08em; text-transform: uppercase; color: var(--accent); margin: 0 0 6px; font-weight: 600; }
+h1 { font-size: 36px; line-height: 1.15; margin: 0 0 16px; letter-spacing: -.01em; }
+h2 { font-size: 23px; margin: 40px 0 12px; line-height: 1.3; }
+h3 { font-size: 18px; margin: 28px 0 8px; }
+.lede { font-size: 20px; color: var(--muted); margin: 0 0 28px; }
+.card { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 20px 24px; margin: 20px 0; box-shadow: var(--shadow); }
+.card.accent { border-left: 4px solid var(--accent); }
+.card h3:first-child, .card h2:first-child { margin-top: 0; }
+.grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.grid2 .card { margin: 0; }
+blockquote, .say {
+  margin: 12px 0; padding: 12px 16px; background: var(--quote-bg); border-radius: 8px;
+  border-left: 3px solid var(--accent); font-style: italic;
+}
+.say::before { content: "Say: "; font-style: normal; font-weight: 600; color: var(--accent); }
+.note { font-size: 15px; color: var(--muted); }
+table { width: 100%; border-collapse: collapse; margin: 16px 0; font-size: 15.5px; }
+th, td { text-align: left; vertical-align: top; padding: 10px 12px; border-bottom: 1px solid var(--line); }
+th { font-size: 13px; text-transform: uppercase; letter-spacing: .05em; color: var(--muted); font-weight: 600; }
+.table-wrap { overflow-x: auto; }
+.steps { counter-reset: st; list-style: none; padding: 0; }
+.steps > li { counter-increment: st; position: relative; padding: 0 0 18px 48px; }
+.steps > li::before {
+  content: counter(st); position: absolute; left: 0; top: 0; width: 32px; height: 32px; border-radius: 50%;
+  background: var(--accent-soft); color: var(--accent); font-weight: 700; display: grid; place-items: center; font-size: 15px;
+}
+.steps > li strong:first-child { display: block; margin-bottom: 2px; }
+.pipeline { display: flex; flex-direction: column; gap: 0; margin: 16px 0; }
+.pipeline .stage { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 12px 16px; }
+.pipeline .stage b { color: var(--accent); }
+.pipeline .arrow { text-align: center; color: var(--muted); line-height: 1; padding: 4px 0; }
+.rtb { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin: 16px 0; }
+.rtb div { border-radius: 10px; padding: 12px 14px; border: 1px solid var(--line); background: var(--surface); }
+.rtb .r b { color: var(--rose); } .rtb .t b { color: var(--thorn); } .rtb .b b { color: var(--bud); }
+details { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; margin: 10px 0; padding: 0 18px; }
+details summary { cursor: pointer; padding: 14px 0; font-weight: 600; list-style: none; }
+details summary::-webkit-details-marker { display: none; }
+details summary::after { content: "+"; float: right; color: var(--muted); font-weight: 400; }
+details[open] summary::after { content: "–"; }
+details > *:not(summary) { margin-top: 0; }
+details[open] { padding-bottom: 6px; }
+.transcript p { margin: 0 0 12px; }
+.transcript .ts { font-variant-numeric: tabular-nums; color: var(--accent); font-weight: 600; font-size: 14px; margin-right: 6px; font-style: normal; }
+.pager { display: flex; justify-content: space-between; gap: 12px; margin-top: 56px; padding-top: 24px; border-top: 1px solid var(--line); }
+.pager a { text-decoration: none; padding: 10px 16px; border: 1px solid var(--line); border-radius: 10px; background: var(--surface); color: var(--ink); font-size: 15px; max-width: 48%; }
+.pager a span { display: block; font-size: 12px; color: var(--muted); text-transform: uppercase; letter-spacing: .06em; }
+.pager a:hover { border-color: var(--accent); }
+.pager .next { margin-left: auto; text-align: right; }
+.toolbar { display: flex; gap: 8px; flex-wrap: wrap; margin: 8px 0 20px; }
+button.btn {
+  font: inherit; font-size: 14px; padding: 8px 14px; border-radius: 8px; cursor: pointer;
+  border: 1px solid var(--accent); background: var(--accent); color: var(--surface);
+}
+button.btn.ghost { background: transparent; color: var(--accent); }
+.builder label { display: block; font-weight: 600; margin: 18px 0 6px; }
+.builder .fixed { margin: 0 0 6px; }
+.builder input, .builder textarea {
+  width: 100%; font: inherit; padding: 10px 12px; border: 1px solid var(--line); border-radius: 8px;
+  background: var(--bg); color: var(--ink);
+}
+.builder textarea { min-height: 70px; resize: vertical; }
+.pill { display: inline-block; font-size: 12px; padding: 2px 8px; border-radius: 999px; background: var(--accent-soft); color: var(--accent); font-weight: 600; vertical-align: middle; margin-left: 6px; }
+.glossary dt { font-weight: 700; margin-top: 14px; }
+.glossary dd { margin: 2px 0 0; }
+.foot { margin-top: 40px; font-size: 13px; color: var(--muted); }
+.copied { font-size: 14px; color: var(--accent); align-self: center; }
+
+@media (max-width: 860px) {
+  .layout { grid-template-columns: 1fr; }
+  nav.side { position: sticky; height: auto; z-index: 5; padding: 12px 16px; border-right: 0; border-bottom: 1px solid var(--line); }
+  .title { font-size: 18px; margin: 0; }
+  .brand { display: none; }
+  .menu-toggle { display: inline-block; position: absolute; right: 16px; top: 10px; }
+  nav.side .navlist { display: none; margin-top: 12px; }
+  nav.side.open .navlist { display: block; }
+  main { padding: 28px 16px 60px; }
+  h1 { font-size: 28px; }
+  .lede { font-size: 18px; }
+  .grid2, .rtb { grid-template-columns: 1fr; }
+}
+
+@media print {
+  body { background: #fff; color: #000; font-size: 12pt; }
+  nav.side, .pager, .toolbar, .no-print { display: none !important; }
+  .layout { display: block; }
+  main { padding: 0; max-width: none; }
+  .card, details, .pipeline .stage { box-shadow: none; border-color: #ccc; break-inside: avoid; }
+  details { display: block; }
+  details > * { display: block !important; }
+  details summary::after { content: ""; }
+  blockquote, .say { background: #f3f3f3; }
+  .builder input, .builder textarea { border: 0; border-bottom: 1px solid #999; border-radius: 0; background: #fff; }
+  body.print-all section.page { display: block; break-after: page; }
+}
+</style>
+</head>
+<body>
+<div class="layout">
+  <nav class="side" id="side">
+    <p class="brand">What Could Be</p>
+    <p class="title">Think-Aloud Testing</p>
+    <button class="btn ghost menu-toggle" id="menuToggle" aria-expanded="false">Menu</button>
+    <div class="navlist">
+      <div class="group">Learn</div>
+      <ol id="navA">
+        <li><a href="#start">Start here</a></li>
+        <li><a href="#when">When to use it</a></li>
+        <li><a href="#plan">Plan your test</a></li>
+        <li><a href="#run">Run the session</a></li>
+        <li><a href="#after">Make sense of it</a></li>
+      </ol>
+      <div class="group">Use</div>
+      <ol id="navB" start="6" style="counter-reset: s 5">
+        <li><a href="#templates">Scripts &amp; templates</a></li>
+        <li><a href="#examples">Real examples</a></li>
+        <li><a href="#faq">Common questions</a></li>
+        <li><a href="#reading">Further reading</a></li>
+        <li><a href="#ai">Using AI around the test</a></li>
+      </ol>
+      <div class="group">Print</div>
+      <ol class="nonum">
+        <li><a href="#" id="printPage">Print this page</a></li>
+        <li><a href="#" id="printAll">Print the whole handbook</a></li>
+      </ol>
+    </div>
+  </nav>
+
+  <main id="main">
+
+<!-- 1. START HERE -->
+<section class="page" id="start" data-title="Start here">
+  <p class="kicker">Start here</p>
+  <h1>Put their brain on speakerphone</h1>
+  <p class="lede">Think-aloud testing is a simple way to find out where something works and where it breaks: you give a real person a task, ask them to narrate everything going through their head while they do it, and then you stay quiet and listen.</p>
+
+  <div class="card accent">
+    <h3>The question it answers</h3>
+    <p style="margin:0">What is this person actually experiencing as they try to do this, and where does it break?</p>
+  </div>
+
+  <h2>Why bother?</h2>
+  <p>Ask people what they think of your idea and they will tell you it looks good. Watch them try to use it and you will see them miss the button you thought was obvious. Think-aloud testing gives you behaviour, not opinion, and behaviour is far more honest.</p>
+  <ul>
+    <li><strong>It tests your assumptions with real use.</strong> A satisfaction rating tells you almost nothing. Watching someone fail to find a link tells you everything.</li>
+    <li><strong>It catches reactions in the moment,</strong> before people tidy them up into polite after-the-fact feedback.</li>
+    <li><strong>It builds empathy on the team.</strong> Watching a real person struggle lands in a way a summary never does.</li>
+    <li><strong>It shows you what you can't see from inside the work.</strong></li>
+    <li><strong>It saves money.</strong> Finding a problem before you build around it is always cheaper than finding it after.</li>
+  </ul>
+
+  <blockquote>"You can use an eraser on the drafting table or a sledgehammer on the construction site." Frank Lloyd Wright</blockquote>
+
+  <h2>What you can test</h2>
+  <p>Almost anything a person can attempt a task with. Most often it's a rough prototype (paper sketches, clickable mock-ups, a half-built tool), but it works just as well on an existing product, a service, a form, a document, or a competitor's website. Rough is fine, and often better.</p>
+
+  <h2>The whole method on one card</h2>
+  <div class="card">
+    <ol class="steps" style="margin:0">
+      <li><strong>Pick a task.</strong> Something to accomplish, like "book a flight to Pittsburgh in September," not "have a look around."</li>
+      <li><strong>Find a real person,</strong> as close to your intended user as you can get.</li>
+      <li><strong>Set them at ease.</strong> "We're not testing you. There are no wrong answers. I didn't make this, so you can't offend me."</li>
+      <li><strong>Ask them to think aloud.</strong> "Narrate everything: what you see, what you expect, what's confusing."</li>
+      <li><strong>Go quiet.</strong> Listen, take notes, record (with permission). Don't explain, don't help.</li>
+      <li><strong>Bounce questions back.</strong> "What do you think you should do?"</li>
+      <li><strong>Make sense of it afterwards</strong> and decide what to change.</li>
+    </ol>
+  </div>
+
+  <h2>How it differs from asking for feedback</h2>
+  <div class="grid2">
+    <div class="card"><h3>Asking for feedback</h3><p style="margin:0">"What do you think of this?" You get opinions, considered reactions and strengths and concerns. Useful, but people can only tell you what they're aware of.</p></div>
+    <div class="card"><h3>Think-aloud testing</h3><p style="margin:0">"Show me you doing this, and talk while you do." You get behaviour: the hesitations, wrong turns and expectations people would never think to mention.</p></div>
+  </div>
+</section>
+
+<!-- 2. WHEN -->
+<section class="page" id="when" data-title="When to use it">
+  <p class="kicker">When to use it</p>
+  <h1>Especially when you think you're nearly done</h1>
+  <p class="lede">The most dangerous assumption in product work is "we're probably close." It's the one that ships problems, and it's exactly the moment teams skip the test.</p>
+
+  <h2>Good moments to run one</h2>
+  <ul>
+    <li><strong>You've just built a rough prototype</strong> and want to know whether the basic idea holds up in use.</li>
+    <li><strong>Something feels simple and finished</strong> and you're about to launch it.</li>
+    <li><strong>You're arguing as a team</strong> about how people will use something. Stop debating and go watch.</li>
+    <li><strong>You're improving an existing product</strong> and need to see where people actually struggle today.</li>
+    <li><strong>You want to understand a competitor</strong> or a similar experience before designing your own.</li>
+  </ul>
+
+  <h2>The natural rhythm: build a little, test a little</h2>
+  <div class="pipeline">
+    <div class="stage"><b>Build</b> something rough and cheap</div>
+    <div class="arrow">↓</div>
+    <div class="stage"><b>Test</b> it by watching a few real people try to use it</div>
+    <div class="arrow">↓</div>
+    <div class="stage"><b>Change</b> what broke</div>
+    <div class="arrow">↓</div>
+    <div class="stage"><b>Test again</b> with the next version</div>
+  </div>
+  <p>Lots of small loops of learning beat one giant leap of faith. A common rule of thumb (after Tom Gilb): a problem that costs 1× to fix at the concept stage costs 10× once it's built and 100× after release.</p>
+
+  <h2>Think-aloud or asking for feedback?</h2>
+  <div class="table-wrap"><table>
+    <tr><th>If you want to know…</th><th>Use</th></tr>
+    <tr><td>How people actually <em>use</em> the thing: where they get stuck, what they expect</td><td><strong>Think-aloud testing</strong></td></tr>
+    <tr><td>What people <em>think</em> of the thing: considered reactions, strengths, concerns</td><td><strong>A structured critique or feedback session</strong></td></tr>
+  </table></div>
+  <p>They work well together. Get feedback on a concept to shape it, build a prototype, then think-aloud test the prototype to see if the shaping held up.</p>
+
+  <h2>Ways to run it</h2>
+  <div class="grid2">
+    <div class="card"><h3>In person <span class="pill">moderated</span></h3><p style="margin:0">You sit alongside them while they work. You can read body language and nudge gently. The richest version.</p></div>
+    <div class="card"><h3>Remote <span class="pill">moderated</span></h3><p style="margin:0">Over a video call with the participant sharing their screen. Same moves as in person; easy to record.</p></div>
+    <div class="card"><h3>On their own <span class="pill">unmoderated</span></h3><p style="margin:0">They record their own screen and voice from a written brief, in their own time. Great for reach and time zones, but the brief has to do everything you'd normally say out loud.</p></div>
+    <div class="card"><h3>Quick pilot <span class="pill">one person</span></h3><p style="margin:0">One participant, fast. Not enough to confirm patterns, but often enough to find the one blocker you need to fix before anything else.</p></div>
+  </div>
+</section>
+
+<!-- 3. PLAN -->
+<section class="page" id="plan" data-title="Plan your test">
+  <p class="kicker">Plan your test</p>
+  <h1>A little preparation does most of the work</h1>
+  <p class="lede">You need a thing to test, a few tasks, a few people, a way to record and a quiet room. That's it.</p>
+
+  <h2>Who's involved</h2>
+  <div class="table-wrap"><table>
+    <tr><th>Role</th><th>What they do</th></tr>
+    <tr><td><strong>Moderator</strong></td><td>Welcomes the person, sets them at ease, gives the task, then goes quiet. Listens hard and resists every urge to explain.</td></tr>
+    <tr><td><strong>Note-taker</strong> <span class="note">(optional but helpful)</span></td><td>Captures what the participant did and said, and keeps the team's interpretations separate. Frees the moderator to give full attention.</td></tr>
+    <tr><td><strong>Participants</strong></td><td>Real people, ideally matching who you're designing for. Each one gets the same task.</td></tr>
+  </table></div>
+
+  <h2>How many people?</h2>
+  <p>Plan for <strong>6 to 8</strong>, up to about 10. After that you mostly hear the same things again. This isn't about a statistically significant sample. It's about enough exposure to real behaviour to see the patterns.</p>
+  <p>And there's no minimum. Testing with zero people teaches you nothing; testing with one already starts the learning. Never skip a test because you can't find eight people.</p>
+
+  <h2>Who to recruit</h2>
+  <p>Think of it as a spectrum. At one end is a "warm body": anyone who isn't on your team. At the other is someone who exactly matches your intended user. Early on, a warm body catches the obvious problems. The closer you get to launch, the more it matters that you test with real target users, because the confusion that counts is the confusion <em>they</em> hit. A few short screening questions before you invite someone can help.</p>
+
+  <h2>Write tasks as goals, not tours</h2>
+  <div class="grid2">
+    <div class="card"><h3>Gives you behaviour</h3><p style="margin:0">"Find a direct flight to Pittsburgh in September under £800 and book it."</p></div>
+    <div class="card"><h3>Gives you a tour</h3><p style="margin:0">"Have a look at the booking page and tell me what you think."</p></div>
+  </div>
+  <p>Tie each task to something you're trying to learn. Have a few ready, but give them one at a time (a single task can be a whole flow).</p>
+
+  <h2>What you need</h2>
+  <ul>
+    <li><strong>The thing being tested,</strong> at any level of polish. Don't over-polish it.</li>
+    <li><strong>A few tasks,</strong> written as goals.</li>
+    <li><strong>A way to record</strong> screen and voice, always with permission. A video call recording works fine.</li>
+    <li><strong>A quiet place,</strong> especially for the participant. Distraction kills narration.</li>
+    <li><strong>Time.</strong> The test itself is often short (under 10 minutes in one of our examples), but allow time for welcome, consent and setup. Unmoderated briefs typically allow up to 45 minutes.</li>
+    <li><strong>A script.</strong> See <a href="#templates">Scripts &amp; templates</a>.</li>
+  </ul>
+
+  <div class="card accent">
+    <h3>Do a dry run</h3>
+    <p style="margin:0">Before your first real session, run the whole thing with a colleague or friend. You'll practise staying quiet, and you'll catch the technical failures (recording without audio, the prototype breaking on screen three, a dead link) before they embarrass you in front of a real participant.</p>
+  </div>
+</section>
+
+<!-- 4. RUN -->
+<section class="page" id="run" data-title="Run the session">
+  <p class="kicker">Run the session</p>
+  <h1>Hand over the task, then get out of the way</h1>
+  <p class="lede">This is a test, not a demonstration. The hardest part isn't the participant's job, it's yours: not jumping in to explain.</p>
+
+  <ol class="steps">
+    <li><strong>Welcome and confirm.</strong> Introduce yourself, confirm who they are, and say what you're doing and why.
+      <div class="say">Thanks for meeting with me. I'm [name], I [role]. I'm working on [the thing] and I'd love your help with an early version.</div></li>
+    <li><strong>Ask permission to record.</strong> Record by default, but only with a yes. If they decline, take notes.
+      <div class="say">May I record our session, just so I can refer back to it as I make sense of my notes?</div></li>
+    <li><strong>Set them at ease.</strong> This is the move that unlocks honesty. Say it out loud, even if you did build it.
+      <div class="say">We're not testing you. There are no wrong answers. And I didn't make this, so you genuinely can't offend me.</div></li>
+    <li><strong>Explain thinking aloud.</strong> Some moderators put a hand on top of their head and mime thoughts streaming out.
+      <div class="say">Keep your brain on speakerphone. Tell me what you're looking at, what you expect, what's confusing, what you'd do next. Please don't click around in silence. Talking aloud is the whole point.</div></li>
+    <li><strong>Give the first task.</strong> If you have several, frame them but only give one.
+      <div class="say">Time permitting, there are a few things I'd like you to try. Let's start with the first one: [task]. Let me know when you think you're done.</div></li>
+    <li><strong>Go quiet.</strong> Stop talking. Listen, take notes, let the recording run.</li>
+    <li><strong>Close.</strong> Ask a few reflective questions, answer anything you held back, and thank them sincerely. Their narration is a gift.</li>
+  </ol>
+
+  <h2>What to do when…</h2>
+  <div class="table-wrap"><table>
+    <tr><th>When</th><th>Do this</th></tr>
+    <tr><td><strong>They ask you a question</strong></td><td>Don't answer. Bounce it back: <em>"How do you think you should proceed?"</em> or <em>"What do you think should be here?"</em> Every question is data about what's unclear. Note that they had to ask.</td></tr>
+    <tr><td><strong>They go quiet but keep clicking</strong></td><td>Re-enter as lightly as possible, then withdraw: <em>"It looks like you're still engaging. Can you tell me what you're thinking right now?"</em></td></tr>
+    <tr><td><strong>They hit something that isn't built yet</strong></td><td>Turn the gap into a finding: <em>"What did you expect to find here? What would be useful?"</em></td></tr>
+    <tr><td><strong>They're clearly stuck or frustrated</strong></td><td>Name it: <em>"You seem stuck. What were you expecting to happen?"</em> If it's gone badly wrong, offer to move on. Giving up is itself a big finding.</td></tr>
+    <tr><td><strong>A question genuinely needs an answer</strong></td><td>Defer it: <em>"Good question. Let me come back to that at the end."</em></td></tr>
+  </table></div>
+
+  <h2>Why stay so quiet?</h2>
+  <div class="card accent">
+    <p style="margin:0">When someone uses your product in the real world, <strong>you won't be there.</strong> Nobody will explain what the link does or confirm they're on the right track. The test is a window into that reality, and every time you step in, you fog the window. Stay quiet not because a rulebook says so, but because you're trying to see what happens when you're not in the room.</p>
+  </div>
+
+  <h2>Taking good notes</h2>
+  <p>Capture two things, and keep them separate:</p>
+  <div class="grid2">
+    <div class="card"><h3>What happened</h3><p style="margin:0">What they did and said, in their own words. "Clicked 'Start planning' twice. Said: 'Why is this not already filled in?'"</p></div>
+    <div class="card"><h3>What you make of it</h3><p style="margin:0">Your interpretation, marked as yours (initials work well). "JK: the button label promises booking but leads to content."</p></div>
+  </div>
+  <p>Mixing the two quietly replaces the participant's experience with your opinion of it.</p>
+
+  <h2>Most silence is prevented in the setup</h2>
+  <p>A participant clicking around in silence is usually one who wasn't set up well. If you explain clearly that you want them narrating and that silent clicking is the one thing to avoid, silence rarely happens.</p>
+</section>
+
+<!-- 5. AFTER -->
+<section class="page" id="after" data-title="Make sense of it">
+  <p class="kicker">Make sense of it</p>
+  <h1>From recordings to a plan</h1>
+  <p class="lede">A short session produces a surprising amount of raw material. Here's how to turn it into decisions.</p>
+
+  <div class="pipeline">
+    <div class="stage"><b>1. Transcribe</b> each recording into text</div>
+    <div class="arrow">↓</div>
+    <div class="stage"><b>2. Code</b> every screen or step as Rose, Thorn or Bud</div>
+    <div class="arrow">↓</div>
+    <div class="stage"><b>3. Cluster</b> the coded notes into themes</div>
+    <div class="arrow">↓</div>
+    <div class="stage"><b>4. Prioritise</b> the themes (by vote or a bullseye diagram)</div>
+    <div class="arrow">↓</div>
+    <div class="stage"><b>5. Sort</b> into Must / Should / Could / Won't, with an owner for each</div>
+    <div class="arrow">↓</div>
+    <div class="stage"><b>6. Build</b> the next version, and test again</div>
+  </div>
+
+  <h2>Rose, Thorn, Bud</h2>
+  <p>A simple way to code what you heard. Go through the whole experience, not just the dramatic moments.</p>
+  <div class="rtb">
+    <div class="r"><b>Rose</b><br>Something that worked well or delighted them.</div>
+    <div class="t"><b>Thorn</b><br>Something that confused, frustrated or blocked them.</div>
+    <div class="b"><b>Bud</b><br>An opportunity: what they expected, wished for or suggested.</div>
+  </div>
+
+  <h2>Cluster before you prioritise</h2>
+  <p>Eight sessions can generate a hundred small notes. If you prioritise them one by one, you drown in tweaks and miss the pattern. Group the notes into themes first (for example, "people can't tell what's clickable"), then prioritise the <strong>themes</strong>.</p>
+
+  <h2>Organise by stage for step-by-step experiences</h2>
+  <p>If you're testing a sequence (a sign-up flow, a form, a guided process), map each finding to the step where it happened. You'll know exactly which screen to fix, and you'll avoid the trap of fixing the last thing you heard instead of the most important thing you found.</p>
+
+  <h2>Let the team watch</h2>
+  <p>The empathy payoff only happens if people actually see real users struggle. A summary slide moves nobody. A 20-second clip of someone saying "now what?" at the end of your flow changes the room.</p>
+
+  <h2>Terms used here</h2>
+  <dl class="glossary">
+    <dt>Affinity clustering</dt><dd>Grouping individual notes (usually sticky notes) by similarity until themes emerge, then naming each group.</dd>
+    <dt>Bullseye diagram</dt><dd>A target of concentric rings. The team places each theme closer to the centre the more important it is.</dd>
+    <dt>MoSCoW</dt><dd>Sorting work into Must have, Should have, Could have and Won't have (for now).</dd>
+  </dl>
+</section>
+
+<!-- 6. TEMPLATES -->
+<section class="page" id="templates" data-title="Scripts &amp; templates">
+  <p class="kicker">Scripts &amp; templates</p>
+  <h1>Ready to use</h1>
+  <p class="lede">Three tools: a full script for a moderated session, a fill-in builder for writing your own, and a brief to send someone who'll record themselves. Each one prints on its own.</p>
+
+  <details open id="t-moderated">
+    <summary>Moderated session script <span class="pill">in person or remote</span></summary>
+    <div class="toolbar no-print"><button class="btn ghost" data-print="t-moderated">Print this script</button></div>
+    <p class="note">A light protocol. Adapt the bracketed parts; keep the moves.</p>
+
+    <h3>1. Open and confirm</h3>
+    <blockquote>"Thanks for taking the time to speak with me today. I'm [name], I [role]. And you're [name and role], is that right?"</blockquote>
+    <blockquote>"I'm working on [the thing], and I'd like your feedback on an early version. In a moment I'll give you something to do."</blockquote>
+
+    <h3>2. Get consent to record</h3>
+    <blockquote>"I'd like to record the screen and your voice as we go, so I can pay attention to you rather than scribbling notes, and so the team can learn from it afterwards. Is that okay?"</blockquote>
+    <p class="note">Alternative, especially for remote sessions once they're sharing their screen: "One final thing: may I record our session for the sole purpose of being able to refer back to it as I make sense of my notes?" If they decline, take written notes.</p>
+
+    <h3>3. Set them at ease</h3>
+    <blockquote>"Two things before we start. First, we're not testing you. There are no wrong answers, and anything you say is useful. Second, I didn't make this, so you genuinely can't offend me. Please be completely honest. If something's confusing or annoying, I want to hear it."</blockquote>
+
+    <h3>4. Explain think-aloud</h3>
+    <blockquote>"The one thing I'll ask is that you keep your brain on speakerphone. Narrate everything going through your head: what you're looking at, what you expect to happen, what's confusing, what you'd do next. Even the boring bits."</blockquote>
+    <blockquote>"And please don't go quiet and click around in silence. Talking aloud is the whole point. We call it a think-aloud test."</blockquote>
+
+    <h3>5. Check in</h3>
+    <blockquote>"Any other questions before we get started?"</blockquote>
+
+    <h3>6. Give the task</h3>
+    <blockquote>"Okay, here's what I'd like you to do: [the task, framed as a goal]. Let me know when you think you've finished."</blockquote>
+
+    <h3>7. Go quiet</h3>
+    <p>Listen, take notes, let the recording run. Then:</p>
+    <ul>
+      <li><strong>They ask a question:</strong> "How do you think you should proceed?" / "What do you think should be here?"</li>
+      <li><strong>They go quiet:</strong> "It looks like you're still engaging. Can you tell me what you're thinking right now?"</li>
+      <li><strong>They hit something unbuilt:</strong> "What did you expect to find here? What would be useful?"</li>
+      <li><strong>A question you can't bounce back:</strong> "Good question. Let me come back to that at the end."</li>
+    </ul>
+
+    <h3>8. Follow-up questions</h3>
+    <blockquote>"Is there anything else you'd like to say about [the thing]?"</blockquote>
+    <blockquote>"What did you find easy or helpful, and why?"</blockquote>
+    <blockquote>"What was difficult or confusing, and why?"</blockquote>
+    <blockquote>"What ideas do you have to make this experience better?"</blockquote>
+
+    <h3>9. Close</h3>
+    <blockquote>"This has been incredibly useful. Thank you for your time."</blockquote>
+    <p class="note">Then answer any questions you held to the end.</p>
+
+    <div class="card accent">
+      <h3>Moderator reminders (don't read aloud)</h3>
+      <ul style="margin:0">
+        <li>This is a test, not a demonstration. The instinct to explain is the trap.</li>
+        <li>Most of the fight against silence is won in the setup, not in the moment.</li>
+        <li>Note what they did and said separately from what you think it means.</li>
+      </ul>
+    </div>
+  </details>
+
+  <details id="t-builder">
+    <summary>Script builder <span class="pill">fill in and print</span></summary>
+    <div class="toolbar no-print">
+      <button class="btn ghost" data-print="t-builder">Print my script</button>
+      <button class="btn ghost" id="clearBuilder">Clear</button>
+    </div>
+    <p class="note">Fill in the blanks, then read it aloud once before your first session. What you type stays in this browser only.</p>
+    <div class="builder">
+      <label for="b-name">Open</label>
+      <p class="fixed">Hello, my name is…</p><input id="b-name" data-save placeholder="e.g. Sam, and I lead product for the booking team">
+      <p class="fixed" style="margin-top:10px">We are working on…</p><input id="b-we" data-save placeholder="e.g. a new way to book group travel">
+      <p class="fixed" style="margin-top:10px">This is…</p><input id="b-this" data-save placeholder="e.g. an early prototype, so some parts won't work yet">
+
+      <label>Get consent to record</label>
+      <p class="fixed">Before we start, I'd like to record the screen and your voice. Is that okay?</p>
+
+      <label>Set them at ease</label>
+      <p class="fixed">I want to remind you: we are NOT testing you. There are no wrong answers. And I didn't make this, so you genuinely can't offend me.</p>
+
+      <label>Explain think-aloud</label>
+      <p class="fixed">The one thing I'll ask is that you put your brain on speakerphone. Narrate everything as you go: what you're looking at, what you expect, what's confusing. We call it a think-aloud test.</p>
+
+      <label for="b-task1">Task 1: What I would like you to do is…</label>
+      <textarea id="b-task1" data-save placeholder="Write it as a goal to accomplish"></textarea>
+      <label for="b-task2">Task 2 <span class="note" style="font-weight:400">(optional, give it only after task 1 is done)</span></label>
+      <textarea id="b-task2" data-save></textarea>
+      <label for="b-task3">Task 3 <span class="note" style="font-weight:400">(optional)</span></label>
+      <textarea id="b-task3" data-save></textarea>
+
+      <label>Check in</label>
+      <p class="fixed">Any questions before we get started?</p>
+
+      <label for="b-close">Close: Thank you…</label>
+      <input id="b-close" data-save placeholder="e.g. so much. This has been really useful for the team.">
+    </div>
+  </details>
+
+  <details id="t-brief">
+    <summary>Brief for a self-recorded session <span class="pill">unmoderated</span></summary>
+    <div class="toolbar no-print">
+      <button class="btn ghost" data-copy="briefText">Copy the brief</button>
+      <button class="btn ghost" data-print="t-brief">Print the brief</button>
+      <span class="copied" id="copiedMsg" hidden>Copied</span>
+    </div>
+    <p class="note">Send this to someone who will record their own session. With no moderator in the room, the brief has to carry the reassurance and the "don't go quiet" instruction in writing. Replace the email address before sending.</p>
+    <div class="card" id="briefText">
+      <p>Think-aloud testing is an easy way for you to share everything that comes to mind as you experience something new. It's like putting your brain on speakerphone and broadcasting your unfiltered thoughts. Seeing and hearing someone perform a task as they record it captures honest feedback in the moment, and that helps us quickly find ways to make this better.</p>
+      <p><strong>First, the most important thing:</strong> we're not testing you. There are no wrong answers, and you genuinely can't offend us. We didn't make this to show it off; we made it to learn. So please be completely honest. If something is confusing, annoying, or doesn't work, that's exactly what we want to hear.</p>
+      <p><strong>For this activity you'll need:</strong> a quiet place to work, the task or activity to complete, a way to record your screen and voice, and up to 45 minutes.</p>
+      <p><strong>Here's what to do:</strong> start recording your screen and voice, then complete the activity. While you do, say everything that pops into your head. Read content out loud as you try to understand it. As you go, talk through:</p>
+      <ul>
+        <li>What do you find easy or helpful, and why?</li>
+        <li>What is difficult or confusing, and why?</li>
+        <li>What ideas do you have to make this experience better?</li>
+      </ul>
+      <p><strong>The one way to get this wrong is to go quiet.</strong> If you notice you've stopped talking, that's your cue to start again. Narrate even the boring bits.</p>
+      <p>When you've finished, you'll have a screen recording of your honest feedback. Please share it with [feedback@yourdomain.com].</p>
+      <p style="margin-bottom:0">Ready? Start recording, and get started.</p>
+    </div>
+  </details>
+</section>
+
+<!-- 7. EXAMPLES -->
+<section class="page" id="examples" data-title="Real examples">
+  <p class="kicker">Real examples</p>
+  <h1>What it sounds like, and what it reveals</h1>
+  <p class="lede">Two real tests: one person booking a flight on their own, and eight people trying a simple online assessment.</p>
+
+  <details open>
+    <summary>Example 1: Booking a flight <span class="pill">unmoderated</span></summary>
+    <p><strong>The task:</strong> find direct flights from the UK to Pittsburgh, under £800, travelling in September, having been told British Airways flies the route. No moderator; the participant recorded themselves from a brief. Notice how much you learn just by listening.</p>
+    <div class="card transcript">
+      <p><span class="ts">0:02</span>So I want to find some direct flights from the UK to Pittsburgh. Ideally I want them to cost less than 800 pounds, I'm going in September, and someone's told me that British Airways do that. So I'm just going to go to the British Airways site…</p>
+      <p><span class="ts">0:24</span>"Good flights to Pittsburgh, connecting you to the city of bridges." Love it… And there's a button here, "start planning your trip." I'm going to click on that button because I want to plan my trip.</p>
+      <p><span class="ts">0:50</span>What's this? Oh, right. I've clicked on "plan your trip" and I'm not knowing what is going on here. A lot of information. "Why fly BA"… while I'm going to Pittsburgh? Why is this not already filled in?</p>
+      <p><span class="ts">1:16</span>I'm going to go back… "Start planning your trip," I'm not going to touch that again. Why is it showing me that? That's confusing.</p>
+      <p><span class="ts">2:05</span>Fly out on the Monday, leave on the Thursday… Come on BA, I hear great things about you. Your website is taking a while to load. That's mildly annoying.</p>
+      <p><span class="ts">2:47</span>"There are no direct flights for this route." No, that's not what I've been told. There are direct flights for this route… If it can't fly on certain days, why doesn't it just tell me the days that it does fly?</p>
+      <p><span class="ts">3:12</span>In some travel-related sites you can click a thing that says plus or minus a day. This is making me do it manually, which is annoying.</p>
+      <p><span class="ts">4:08</span>So what did I say? I said the Sunday. Why is it not showing me the date? It assumes I know.</p>
+      <p><span class="ts">5:12</span>…So I'm going to go and look elsewhere, because this has been really frustrating. I can't fly on the days that I want, and the website doesn't give me much help.</p>
+    </div>
+    <h3>What the narration surfaced</h3>
+    <ul>
+      <li><strong>The "Start planning your trip" button is a trap.</strong> It promises booking, leads to a page of content, and from then on they actively avoid it.</li>
+      <li><strong>"No direct flights for this route" is where trust breaks.</strong> They know direct flights exist, so the message just reads as wrong, and it dead-ends instead of suggesting days that work.</li>
+      <li><strong>No flexible-date option,</strong> so they have to search day by day.</li>
+      <li><strong>Slow loading</strong> adds friction throughout.</li>
+      <li><strong>The ending is the business case in one line:</strong> "I'm going to go and look elsewhere." Abandonment, narrated live.</li>
+    </ul>
+    <p>No satisfaction score would ever tell you that one error message made someone leave.</p>
+  </details>
+
+  <details>
+    <summary>Example 2: A "simple" online assessment <span class="pill">8 people, moderated</span></summary>
+    <p><strong>The product:</strong> a short online self-assessment from What Could Be. Four sections (Vision, Impact, People, Challenges), one question at a time, an encouraging tone, a report at the end. Under ten minutes to complete.</p>
+    <p><strong>The setup:</strong> the team already believed in think-aloud testing and thought the product was probably close. They tested anyway, precisely because "probably close" is when you're most tempted to skip it. Eight people, some over Zoom and some in person, every session recorded.</p>
+
+    <h3>On the surface, people loved it</h3>
+    <blockquote>"Design is clean and simple." · "I quite like this model, it's neat, it's precise." · "Super clean interface."</blockquote>
+    <p>A thumbs-up rating would have shipped it. Watching people use it told a different story:</p>
+
+    <div class="table-wrap"><table>
+      <tr><th>What broke</th><th>In their own words</th></tr>
+      <tr><td><strong>Links were invisible.</strong> Underlined text wasn't recognised as clickable.</td><td>"Didn't realise these were links until Impact." · "If these were links, I blew right by them."</td></tr>
+      <tr><td><strong>"We" confused everyone.</strong> The inclusive language backfired.</td><td>"Who is we?" · "I don't know who 'we' is." · "Assuming the we is me again."</td></tr>
+      <tr><td><strong>The progress bar broke trust.</strong></td><td>"Crikey, now my completion's gone backwards. I was on 86%."</td></tr>
+      <tr><td><strong>People lost their place</strong> in the four-section model they'd admired.</td><td>"I lost track of my journey… I wanted to see which section I was in."</td></tr>
+      <tr><td><strong>The ending was a cliff.</strong></td><td>"Now what?" · "I don't know what else to do now." · "I was expecting to see my report."</td></tr>
+    </table></div>
+
+    <h3>From observations to a plan</h3>
+    <p>The team coded every screen as Rose, Thorn or Bud, clustered the notes into themes, prioritised the themes on a bullseye, and sorted them into a backlog with owners. A sample:</p>
+    <ul>
+      <li><strong>Must:</strong> set expectations at the start (why, what, when, how, who); make links obviously clickable; make sure people aren't discouraged by their score; fix the called-out wording.</li>
+      <li><strong>Should:</strong> let people name their project; remind them the report is coming so they don't take notes; show their score with a quick interpretation; use section imagery so people know where they are.</li>
+      <li><strong>Could / Won't:</strong> extra report reminders and customised action text, parked honestly rather than silently dropped.</li>
+    </ul>
+    <div class="card accent"><p style="margin:0"><strong>The takeaway:</strong> eight people and a ten-minute assessment produced a complete, prioritised roadmap. The surface said "clean and simple." The behaviour said "I can't find the links, I don't know who 'we' is, and I've hit a dead end."</p></div>
+  </details>
+</section>
+
+<!-- 8. FAQ -->
+<section class="page" id="faq" data-title="Common questions">
+  <p class="kicker">Common questions</p>
+  <h1>Things people ask the first time</h1>
+
+  <details><summary>How many people should we test with?</summary>
+    <p>Roughly 6 to 8, up to about 10. After that you start hearing the same things. It doesn't need to be statistically significant; you need enough exposure to real behaviour to see patterns. And even one person is far better than none.</p></details>
+
+  <details><summary>Does it have to be a prototype?</summary>
+    <p>No. It works on anything a person can attempt a task with: a sketch, a prototype, an existing product, a competitor's site, a printed form.</p></details>
+
+  <details><summary>How is this different from asking for feedback?</summary>
+    <p>Feedback asks "what do you think of this?" and gets opinions. Think-aloud asks "show me you doing this, and talk while you do" and gets behaviour. Behaviour surfaces things people would never think to tell you.</p></details>
+
+  <details><summary>What do I do when the participant goes silent?</summary>
+    <p>Prevent it in the setup by saying plainly that silent clicking is the one thing to avoid. If it still happens, re-enter lightly ("Can you tell me what you're thinking right now?") and then go quiet again.</p></details>
+
+  <details><summary>They keep asking me questions. Do I answer?</summary>
+    <p>No. Bounce them back: "How do you think you should proceed?" Each question tells you something is unclear, and answering it both loses that signal and changes what they do next. If a question really needs an answer, save it for the end.</p></details>
+
+  <details><summary>Isn't it dishonest to say "I didn't make this" when I did?</summary>
+    <p>It's a framing move, and you can phrase it however feels right ("you can't offend me," "imagine someone else built this"). The point is to give the participant permission to be brutally honest. Their honesty is worth more than your ego, and the distance stops you getting defensive too.</p></details>
+
+  <details><summary>Can we do this remotely or asynchronously?</summary>
+    <p>Yes. Remote moderated sessions run over a video call with screen sharing. Unmoderated sessions have the participant record themselves from a written brief. The trade-off is that nobody is there to reassure or nudge, so the brief has to do that work. See the <a href="#templates">brief template</a>.</p></details>
+
+  <details><summary>Do I need a separate note-taker?</summary>
+    <p>It helps, because the moderator can then give full attention to the participant. Either way, record what the participant did and said separately from what you think it means.</p></details>
+
+  <details><summary>What happens to the recordings afterwards?</summary>
+    <p>They're your raw material. Transcribe, code as Rose / Thorn / Bud, cluster into themes, prioritise the themes, and turn them into a backlog. See <a href="#after">Make sense of it</a>.</p></details>
+
+  <details><summary>Can AI run the test for us?</summary>
+    <p>No. The whole value is a real person encountering your design for the first time, and AI has no genuine first-encounter confusion to offer. It tends to be more patient, competent and articulate than a real person. AI is useful around the test: drafting tasks and scripts, transcribing, and helping code transcripts. See <a href="#ai">Using AI around the test</a>.</p></details>
+
+  <details><summary>It seems simple and basically done. Is it worth testing?</summary>
+    <p>That's exactly when it's most worth it. "Probably close" is the assumption most likely to ship a flaw. See the <a href="#examples">online assessment example</a>.</p></details>
+</section>
+
+<!-- 9. READING -->
+<section class="page" id="reading" data-title="Further reading">
+  <p class="kicker">Further reading</p>
+  <h1>Going deeper</h1>
+  <p class="note">If a link has moved, search the title.</p>
+
+  <h2>Start with these</h2>
+  <div class="card"><h3><a href="https://www.nngroup.com/articles/thinking-aloud-the-1-usability-tool/" target="_blank" rel="noopener">Thinking Aloud: The #1 Usability Tool</a></h3><p style="margin:0">Jakob Nielsen, Nielsen Norman Group. The short, canonical case for the method: cheap, robust and hugely valuable.</p></div>
+  <div class="card"><h3><a href="https://sensible.com/rocket-surgery-made-easy/" target="_blank" rel="noopener">Rocket Surgery Made Easy</a> and <a href="https://sensible.com/dont-make-me-think/" target="_blank" rel="noopener">Don't Make Me Think</a></h3><p style="margin:0">Steve Krug. A friendly, practical manual for running your own tests without a lab or a budget.</p></div>
+
+  <h2>How many people?</h2>
+  <div class="card"><h3><a href="https://www.nngroup.com/articles/why-you-only-need-to-test-with-5-users/" target="_blank" rel="noopener">Why You Only Need to Test with 5 Users</a></h3><p style="margin:0">Nielsen Norman Group. The famous (and often misread) argument that you learn more from testing 5 people three times than 15 people once.</p></div>
+  <div class="card"><h3><a href="https://www.nngroup.com/articles/how-many-test-users/" target="_blank" rel="noopener">How Many Test Users in a Usability Study?</a></h3><p style="margin:0">Nielsen Norman Group. A fuller treatment, useful when someone asks "but is that enough?"</p></div>
+
+  <h2>Context and related ideas</h2>
+  <div class="card"><h3><a href="https://www.nngroup.com/articles/usability-testing-101/" target="_blank" rel="noopener">Usability Testing 101</a></h3><p style="margin:0">Nielsen Norman Group. Where think-aloud sits among moderated, unmoderated, remote and in-person testing.</p></div>
+  <div class="card"><h3>The Mom Test</h3><p style="margin:0">Rob Fitzpatrick. Not about think-aloud, but a kindred skill: getting honest signal from people without leading them.</p></div>
+  <div class="card"><h3>Protocol Analysis: Verbal Reports as Data</h3><p style="margin:0">K. Anders Ericsson &amp; Herbert A. Simon (MIT Press). The academic foundation. In short: narrating while you work is reliable; being asked to explain <em>why</em> mid-task distorts things. That's why you bounce questions back rather than asking for reasons.</p></div>
+</section>
+
+<!-- 10. AI -->
+<section class="page" id="ai" data-title="Using AI around the test">
+  <p class="kicker">Optional</p>
+  <h1>Using AI around the test</h1>
+  <p class="lede">AI can't stand in for a real participant. If you only have an AI, you don't have a think-aloud test, you have a thought experiment. But it's genuinely useful before and after the session.</p>
+
+  <div class="grid2">
+    <div class="card"><h3>Before the session</h3><ul style="margin:0"><li>Turn "test the booking flow" into concrete, goal-framed tasks</li><li>Draft or pressure-test your script or brief</li><li>Write screening questions for recruiting</li></ul></div>
+    <div class="card"><h3>After the session</h3><ul style="margin:0"><li>Transcribe recordings</li><li>A first pass at Rose / Thorn / Bud coding</li><li>Suggest candidate themes across sessions</li></ul></div>
+  </div>
+
+  <div class="card accent">
+    <h3>Two rules when AI codes your transcripts</h3>
+    <ol style="margin:0">
+      <li><strong>Keep the participant's own words.</strong> Ask it to quote, then label. Not paraphrase.</li>
+      <li><strong>Treat it as a first pass.</strong> Someone who watched the session should review it. AI misses tone, hesitation and what wasn't said.</li>
+    </ol>
+  </div>
+
+  <h2>Prompts you can copy</h2>
+  <details><summary>Draft a moderation script</summary>
+    <blockquote>I'm running a moderated think-aloud test with [N] participants to evaluate [the thing]. I want to learn whether [goal]. My tasks are: 1. [Task 1] 2. [Task 2]. Write a light moderation script that introduces me and the purpose, reassures participants we're not testing them, explains the think-aloud instruction clearly ("put your brain on speakerphone"), gives the tasks one at a time, and closes with thanks. Use conversational language; it's a guide I'll adapt, not a word-for-word script.</blockquote></details>
+  <details><summary>Draft tasks</summary>
+    <blockquote>We're testing a prototype of [thing] with real users. We want to learn whether they can [goal]. Draft 3 or 4 think-aloud tasks framed as concrete goals to accomplish, not features to inspect.</blockquote></details>
+  <details><summary>Pressure-test an unmoderated brief</summary>
+    <blockquote>Here is the brief we'll send participants before they record their own think-aloud test: [paste]. Does it (a) reassure them they can't get it wrong, (b) tell them clearly to narrate everything, and (c) tell them what to do if they notice they've gone quiet? Suggest edits.</blockquote></details>
+  <details><summary>Code a transcript</summary>
+    <blockquote>Here is a think-aloud test transcript: [paste]. Code it screen by screen as Rose (worked well), Thorn (didn't work or confused them) and Bud (opportunity or what they expected). Quote the participant's own words for each, and keep your interpretation in a separate column.</blockquote></details>
+  <details><summary>Find themes across sessions</summary>
+    <blockquote>Here are coded observations from [N] think-aloud sessions: [paste]. Group them into candidate themes, and flag which themes appeared across most participants versus just one.</blockquote></details>
+
+  <p class="foot">Think-Aloud Testing Handbook · What Could Be</p>
+</section>
+
+    <div class="pager" id="pager"></div>
+  </main>
+</div>
+
+<script>
+(function () {
+  var pages = Array.prototype.slice.call(document.querySelectorAll('section.page'));
+  var links = Array.prototype.slice.call(document.querySelectorAll('#navA a, #navB a'));
+  var pager = document.getElementById('pager');
+  var side = document.getElementById('side');
+
+  function show(id) {
+    var idx = pages.findIndex(function (p) { return p.id === id; });
+    if (idx < 0) idx = 0;
+    pages.forEach(function (p, i) { p.classList.toggle('active', i === idx); });
+    links.forEach(function (a) {
+      if (a.getAttribute('href') === '#' + pages[idx].id) a.setAttribute('aria-current', 'page');
+      else a.removeAttribute('aria-current');
+    });
+    var prev = pages[idx - 1], next = pages[idx + 1], html = '';
+    if (prev) html += '<a class="prev" href="#' + prev.id + '"><span>Previous</span>' + prev.dataset.title + '</a>';
+    if (next) html += '<a class="next" href="#' + next.id + '"><span>Next</span>' + next.dataset.title + '</a>';
+    pager.innerHTML = html;
+    document.title = pages[idx].dataset.title.replace('&amp;', '&') + ' · Think-Aloud Testing Handbook';
+    side.classList.remove('open');
+    window.scrollTo(0, 0);
+  }
+  function route() { show((location.hash || '#start').slice(1)); }
+  window.addEventListener('hashchange', route);
+  // Handle in-page links directly so navigation works even where hash changes don't (previews, sandboxes)
+  document.addEventListener('click', function (e) {
+    var a = e.target.closest('a[href^="#"]');
+    if (!a) return;
+    var id = a.getAttribute('href').slice(1);
+    if (!id || !document.getElementById(id) || !document.getElementById(id).classList.contains('page')) return;
+    e.preventDefault();
+    show(id);
+    try { history.replaceState(null, '', '#' + id); } catch (err) {}
+  });
+  route();
+
+  document.getElementById('menuToggle').addEventListener('click', function () {
+    var open = side.classList.toggle('open');
+    this.setAttribute('aria-expanded', open);
+  });
+
+  // Printing
+  document.getElementById('printPage').addEventListener('click', function (e) { e.preventDefault(); window.print(); });
+  document.getElementById('printAll').addEventListener('click', function (e) {
+    e.preventDefault();
+    document.body.classList.add('print-all');
+    var opened = [];
+    document.querySelectorAll('details:not([open])').forEach(function (d) { d.open = true; opened.push(d); });
+    window.print();
+    document.body.classList.remove('print-all');
+    opened.forEach(function (d) { d.open = false; });
+  });
+  document.querySelectorAll('[data-print]').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var target = document.getElementById(btn.dataset.print);
+      var style = document.createElement('style');
+      style.textContent = '@media print { section.page.active > *:not(#' + target.id + ') { display: none !important; } #' + target.id + ' { border: 0; padding: 0; } }';
+      document.head.appendChild(style);
+      target.open = true;
+      window.print();
+      style.remove();
+    });
+  });
+
+  // Copy brief
+  document.querySelectorAll('[data-copy]').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var text = document.getElementById(btn.dataset.copy).innerText;
+      var msg = document.getElementById('copiedMsg');
+      function done() { msg.hidden = false; setTimeout(function () { msg.hidden = true; }, 1800); }
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(text).then(done, fallback);
+      } else { fallback(); }
+      function fallback() {
+        var ta = document.createElement('textarea'); ta.value = text; document.body.appendChild(ta);
+        ta.select(); try { document.execCommand('copy'); done(); } catch (e) {} ta.remove();
+      }
+    });
+  });
+
+  // Script builder: remember entries in this browser only
+  var fields = document.querySelectorAll('[data-save]');
+  fields.forEach(function (f) {
+    try { var v = localStorage.getItem('tat-' + f.id); if (v) f.value = v; } catch (e) {}
+    f.addEventListener('input', function () { try { localStorage.setItem('tat-' + f.id, f.value); } catch (e) {} });
+  });
+  document.getElementById('clearBuilder').addEventListener('click', function () {
+    fields.forEach(function (f) { f.value = ''; try { localStorage.removeItem('tat-' + f.id); } catch (e) {} });
+  });
+})();
+</script>
+</body>
+</html>
