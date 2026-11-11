@@ -40,7 +40,7 @@
 
 ## HCD Methodology Principles
 
-These are the principles HCD itself requires of practitioners — the foundation of the discipline. They apply whether the practitioner is a designer, a team lead, a coach, or the agent. The agent's full set of operating principles (which include but go beyond practicing HCD) lives in the engine's `CLAUDE.md` Core Operating Principles section.
+These are the principles HCD itself requires of practitioners — the foundation of the discipline. They apply whether the practitioner is a designer, a team lead, a coach, or the agent. The agent's full set of operating principles (which include but go beyond practicing HCD) lives in the engine's `DIAMONDS.md` Core Operating Principles section.
 
 1. **Validation comes before investment** - Always. Test assumptions with real people before committing significant resources.
 

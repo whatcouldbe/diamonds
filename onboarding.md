@@ -34,7 +34,7 @@ When a project is mentioned and no `diamonds-vault/` exists in that directory, a
 
 The vault is not optional within Diamonds — it's the infrastructure that lets the system work for a project. The question is consent for the work, not a choice between the vault and "Diamonds without a vault." There is no such thing.
 
-If yes: run the full Deployment Protocol in the engine's `CLAUDE.md` (create the vault, wire the project's `CLAUDE.md`, drop in the SessionStart hooks, stamp the engine URL into the bootstrap script). Register the project in the projects registry at `~/.claude/projects.md` so future sessions can find it.
+If yes: run the full Deployment Protocol in the engine's `DIAMONDS.md` (create the vault, wire the project's front-door file, do any platform-specific setup). The engine's front-door file for your platform (`CLAUDE.md`, `AGENTS.md`) says which file to write and what setup applies. Register the project by appending `{"name": ..., "path": ...}` to the `projects` array in `~/.diamonds/config.json` (create the array if it's missing) so future sessions can find it — on every platform.
 
 If no: proceed without deploying. Don't create any files. Don't ask again in the same session.
 
@@ -47,13 +47,18 @@ If no: proceed without deploying. Don't create any files. Don't ask again in the
 ```json
 {
   "diamonds_path": "/absolute/path/to/diamonds",
-  "diamonds_repo_url": "https://github.com/whatcouldbe/diamonds.git"
+  "diamonds_repo_url": "https://github.com/whatcouldbe/diamonds.git",
+  "projects": [
+    { "name": "Example Project", "path": "/absolute/path/to/example-project" }
+  ]
 }
 ```
 
-Two fields, both required by consumers:
+Two fields are required by consumers, plus the projects registry:
 
-- **`diamonds_path`** — absolute path to the engine on disk. Read at session start to load the engine's `CLAUDE.md`.
+- **`diamonds_path`** — absolute path to the engine on disk. Read at session start to load the engine (`DIAMONDS.md`, via the platform's front-door file).
 - **`diamonds_repo_url`** — the git URL of the engine. Used by the Deployment Protocol to stamp the right source into new projects' web-session bootstrap scripts (so a project scaffolded from a fork bootstraps from that fork, not from canonical). May be `null` if the engine isn't a git working tree; consumers fall back to `git remote get-url origin` against `diamonds_path`.
 
-Projects registered with Diamonds are tracked separately in `~/.claude/projects.md`, not in this file.
+- **`projects`** — the projects registry, shared by every platform. One `{name, path}` object per project that uses Diamonds, with `path` absolute. Starts empty (or absent) after onboarding; entries are added when a project gets Diamonds. The startup loader (`.claude/diamonds-startup.sh`, run by each platform's startup hook) reads this to load each project's `diamonds-vault/health.md` before the first response.
+
+Older installs may keep a free-form markdown registry at `~/.claude/projects.md`. The loader still reads it, but only when `projects` is missing or empty here. New registrations go in this file.
